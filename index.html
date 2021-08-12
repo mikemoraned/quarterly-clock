@@ -4,40 +4,56 @@
     <meta charset="utf-8">
     <title>Quarterly Clock</title>
     <style>
-        canvas {
+        html, body {
+            height: 100%;
+        }
+        div#container {
             width: 100%;
             height: 100%;
         }
     </style>
   </head>
   <body>
-    <canvas id="clock">
-    </canvas>
+    <div id="container">
+        <canvas id="clock"></canvas>
+    </div>
   </body>
   <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
   <script src="https://unpkg.com/dayjs@1.8.21/plugin/weekOfYear.js"></script>
   <script>
     dayjs.extend(window.dayjs_plugin_weekOfYear);
-    console.log("Hola, today is " + dayjs().format());    
-    const canvas = document.getElementById("clock");
+    const container = document.getElementById("container");
+    const { width, height } = container.getBoundingClientRect();
+
+    var canvas = document.getElementById("clock");
+    canvas.style.width = `${width}px`;
+    canvas.style.height = `${height}px`;
+    
     const context = canvas.getContext("2d");
-    const width = canvas.width;
-    const height = canvas.height;
+    const scale = window.devicePixelRatio;
+    canvas.width = Math.floor(width * scale);
+    canvas.height = Math.floor(height * scale);
+    context.scale(scale, scale);
+
     const centerX = width / 2;
     const centerY = height / 2;
 
+    console.log("Hola, today is " + dayjs().format());
     const weekOfYear = dayjs().week();
     const yearFraction = weekOfYear / 52.0;
     
     const radius = Math.min(width, height) * 0.5 * 0.9;
+    context.lineCap = "round";
+    context.lineWidth = 20;
     context.beginPath();
     context.arc(centerX, centerY, radius, -0.5 * Math.PI, ((yearFraction * 2.0) - 0.5) * Math.PI);
     context.stroke();
 
     const quarter = Math.ceil(yearFraction * 4.0);
     context.textAlign = "center";
-    context.font = "25px Arial";
-    context.fillText(`Q${quarter.toFixed(0)}`, centerX, centerY); 
+    const textHeight = Math.min(width, height) * 0.3;
+    context.font = `${textHeight}px Arial`;
+    context.fillText(`Q${quarter.toFixed(0)}`, centerX, centerY + (textHeight / 4.0)); 
   </script>
   <script defer data-domain="quarterly.houseofmoran.io" src="https://plausible.io/js/plausible.js"></script>
 </html>
