@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Quarterly Clock</title>
     <style>
-        html, body {
-            height: 100%;
-        }
-        div#container {
-            width: 100%;
-            height: 100%;
-        }
+      html,
+      body {
+        height: 100%;
+      }
+      div#container {
+        width: 100%;
+        height: 100%;
+      }
     </style>
   </head>
   <body>
     <div id="container">
-        <canvas id="clock"></canvas>
+      <canvas id="clock"></canvas>
     </div>
   </body>
   <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+  <script src="https://unpkg.com/dayjs@1.8.21/locale/en-gb.js"></script>
   <script src="https://unpkg.com/dayjs@1.8.21/plugin/weekOfYear.js"></script>
   <script>
     dayjs.extend(window.dayjs_plugin_weekOfYear);
+    dayjs.locale("en-gb");
     const container = document.getElementById("container");
     const { width, height } = container.getBoundingClientRect();
 
     var canvas = document.getElementById("clock");
     canvas.style.width = `${width}px`;
     canvas.style.height = `${height}px`;
-    
+
     const context = canvas.getContext("2d");
     const scale = window.devicePixelRatio;
     canvas.width = Math.floor(width * scale);
@@ -40,20 +43,94 @@
 
     console.log("Hola, today is " + dayjs().format());
     const weekOfYear = dayjs().week();
+    // const weekOfYear = 14;
     const yearFraction = weekOfYear / 52.0;
-    
-    const radius = Math.min(width, height) * 0.5 * 0.9;
-    context.lineCap = "round";
-    context.lineWidth = 20;
-    context.beginPath();
-    context.arc(centerX, centerY, radius, -0.5 * Math.PI, ((yearFraction * 2.0) - 0.5) * Math.PI);
-    context.stroke();
-
     const quarter = Math.ceil(yearFraction * 4.0);
+    const weeksRemainingInQuarter = (quarter * 52.0) / 4.0 - weekOfYear;
+    console.log(weekOfYear, yearFraction, quarter, weeksRemainingInQuarter);
+
+    const patternCanvas = document.createElement("canvas");
+    const patternContext = patternCanvas.getContext("2d");
+    patternCanvas.width = 65;
+    patternCanvas.height = 50;
+    patternContext.fillStyle = "lightgray";
+    patternContext.fillRect(0, 0, patternCanvas.width, patternCanvas.height);
+    // patternContext.textAlign = "center";
+    const patternTextHeight = 50 * 0.7;
+    patternContext.font = `${patternTextHeight}px Courier`;
+    patternContext.fillStyle = "white";
+    patternContext.fillText(
+      `${weeksRemainingInQuarter}`,
+      20,
+      40 + patternTextHeight / 4.0
+    );
+
+    const pattern = context.createPattern(patternCanvas, "repeat");
+    const radius = Math.min(width, height) * 0.5 * 0.9;
+
+    context.fillStyle = "white";
+    context.fillRect(0, 0, width, height);
+
+    context.lineCap = "round";
+    context.lineJoin = "round";
+    context.lineWidth = 5;
+    context.lineDashOffset = 4;
+    context.setLineDash([4, 16]);
+    context.fillStyle = pattern;
+    context.beginPath();
+    context.moveTo(centerX, centerY);
+    context.lineTo(centerX, centerY - radius);
+    context.arc(
+      centerX,
+      centerY,
+      radius,
+      -0.5 * Math.PI,
+      ((quarter / 4.0) * 2.0 - 0.5) * Math.PI
+    );
+    context.lineTo(centerX, centerY);
+    context.stroke();
+    context.fill();
+
+    context.lineCap = "round";
+    context.lineJoin = "round";
+    context.lineWidth = 20;
+    context.lineDashOffset = 0;
+    context.setLineDash([]);
+    context.fillStyle = "white";
+    context.beginPath();
+    context.moveTo(centerX, centerY);
+    context.lineTo(centerX, centerY - radius);
+    context.arc(
+      centerX,
+      centerY,
+      radius,
+      -0.5 * Math.PI,
+      (yearFraction * 2.0 - 0.5) * Math.PI
+    );
+    context.lineTo(centerX, centerY);
+    context.stroke();
+    context.fill();
+
     context.textAlign = "center";
     const textHeight = Math.min(width, height) * 0.3;
     context.font = `${textHeight}px Arial`;
-    context.fillText(`Q${quarter.toFixed(0)}`, centerX, centerY + (textHeight / 4.0)); 
+    context.fillStyle = "white";
+    context.fillText(
+      `Q${quarter.toFixed(0)}`,
+      centerX,
+      centerY + textHeight / 4.0
+    );
+    context.lineCap = "round";
+    context.lineWidth = 2;
+    context.strokeText(
+      `Q${quarter.toFixed(0)}`,
+      centerX,
+      centerY + textHeight / 4.0
+    );
   </script>
-  <script defer data-domain="quarterly.houseofmoran.io" src="https://plausible.io/js/plausible.js"></script>
+  <script
+    defer
+    data-domain="quarterly.houseofmoran.io"
+    src="https://plausible.io/js/plausible.js"
+  ></script>
 </html>
