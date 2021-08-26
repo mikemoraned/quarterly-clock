@@ -576,33 +576,70 @@
 
     const { width, height, context } = canvas;
 
-    const radius = Math.min(width, height) / 2.0;
+    const radius = (0.9 * Math.min(width, height)) / 2.0;
 
     const arcGenerator = arc().context(context);
 
-    arcGenerator.innerRadius(radius - 20).outerRadius(radius);
-    arcGenerator.padAngle(0.02).padRadius(100).cornerRadius(4);
+    arcGenerator.innerRadius(0).outerRadius(radius);
 
-    const arcData = [
-      { startAngle: 0, endAngle: 0.2 },
-      { startAngle: 0.2, endAngle: 0.6 },
-      { startAngle: 0.6, endAngle: 1.4 },
-      { startAngle: 1.4, endAngle: 3 },
-      { startAngle: 3, endAngle: 2 * Math.PI },
-    ];
+    const yearSoFarArc = {
+      startAngle: 0,
+      endAngle: yearFraction * 2.0 * Math.PI,
+    };
 
-    context.fillStyle = "blue";
-    context.fillRect(0, 0, width, height);
+    const remainderArc = {
+      startAngle: yearFraction * 2.0 * Math.PI,
+      endAngle: 0.75 * 2.0 * Math.PI,
+    };
+
+    //   context.fillStyle = "blue";
+    //   context.fillRect(0, 0, width, height);
 
     context.translate(width / 2.0, height / 2.0);
 
-    context.strokeStyle = "red";
-    context.fillStyle = "red";
+    context.lineCap = "round";
+    context.lineJoin = "round";
+    context.lineWidth = 5;
+    context.lineDashOffset = 4;
+    context.setLineDash([4, 16]);
     context.beginPath();
-    arcData.forEach((d) => {
-      arcGenerator(d);
-    });
+    arcGenerator(remainderArc);
+    context.stroke();
+    context.fillStyle = patternBackground("5");
+    context.beginPath();
+    arcGenerator(remainderArc);
     context.fill();
+
+    context.lineDashOffset = 0;
+    context.setLineDash([]);
+    context.fillStyle = "white";
+    context.beginPath();
+    arcGenerator(yearSoFarArc);
+    context.fill();
+    context.lineCap = "round";
+    context.lineJoin = "round";
+    context.lineWidth = 10;
+    context.strokeStyle = "black";
+    context.beginPath();
+    arcGenerator(yearSoFarArc);
+    context.stroke();
+  }
+
+  function patternBackground(text) {
+    const canvas = document.createElement("canvas");
+    const context = canvas.getContext("2d");
+    canvas.width = 65;
+    canvas.height = 50;
+    context.fillStyle = "lightgray";
+    context.fillRect(0, 0, canvas.width, canvas.height);
+    const patternTextHeight = 50 * 0.7;
+    context.font = `${patternTextHeight}px Courier`;
+    context.fillStyle = "white";
+    context.fillText(`${text}`, 20, 40 + patternTextHeight / 4.0);
+
+    const pattern = context.createPattern(canvas, "repeat");
+
+    return pattern;
   }
 
   draw(wholeWeeksSoFar, canvas());
