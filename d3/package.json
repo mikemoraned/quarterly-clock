@@ -1,7 +1,8 @@
 {
   "scripts": {
     "build": "rollup --config",
-    "watch": "rollup --config --watch"
+    "watch": "rollup --config --watch",
+    "serve": "python3 -m http.server"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.0.4",
