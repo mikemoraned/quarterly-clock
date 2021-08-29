@@ -105,6 +105,7 @@ function svg() {
   const root = d3
     .select("#container")
     .append("svg")
+    .attr("class", "clock")
     .attr("width", width)
     .attr("height", height);
 
@@ -119,7 +120,8 @@ function svg() {
 }
 
 function drawSVG(wholeWeeksSoFar, svg) {
-  const clockRadius = (0.9 * Math.min(svg.width, svg.height)) / 2.0;
+  const margin = 100;
+  const clockRadius = Math.min(svg.width - margin, svg.height - margin) / 2.0;
 
   svg.selection
     .append("circle")
@@ -130,10 +132,10 @@ function drawSVG(wholeWeeksSoFar, svg) {
     .style("fill", "white")
     .style("stroke", "red");
 
-  const weekTickLength = 10;
+  const weekTickLength = 15;
   const weekTickStart = clockRadius - weekTickLength;
 
-  const weekRange = d3.range(0, 52);
+  const weekRange = d3.range(1, 53);
   const weekScale = d3.scaleLinear().range([0, 360]).domain([0, 52]);
   svg.selection
     .selectAll(".week-tick")
@@ -146,6 +148,31 @@ function drawSVG(wholeWeeksSoFar, svg) {
     .attr("y1", weekTickStart)
     .attr("y2", weekTickStart + weekTickLength)
     .attr("transform", (d) => `rotate(${weekScale(d)})`);
+
+  const weekLabelFontSize = 14;
+  const weekLabelYOffset = 6;
+  const weekLabelRadius =
+    clockRadius + weekTickLength / 2.0 + weekLabelFontSize / 2.0;
+
+  svg.selection
+    .selectAll(".week-label")
+    .data(weekRange)
+    .enter()
+    .append("text")
+    .attr("class", "week-label")
+    .attr("text-anchor", "middle")
+    .attr(
+      "x",
+      (d) => weekLabelRadius * Math.sin((weekScale(d) * Math.PI) / 180)
+    )
+    .attr(
+      "y",
+      (d) =>
+        -weekLabelRadius * Math.cos((weekScale(d) * Math.PI) / 180) +
+        weekLabelYOffset
+    )
+    .attr("style", `font-size: ${weekLabelFontSize}px`)
+    .text((d) => d);
 }
 
 // draw(wholeWeeksSoFar, canvas());
