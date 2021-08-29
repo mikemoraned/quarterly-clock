@@ -120,15 +120,33 @@ function svg() {
 }
 
 function drawSVG(wholeWeeksSoFar, svg) {
-  const overallRadius = (0.9 * Math.min(svg.width, svg.height)) / 2.0;
+  const clockRadius = (0.9 * Math.min(svg.width, svg.height)) / 2.0;
 
-  const circleScaffold = svg.selection
+  svg.selection
     .append("circle")
+    .attr("class", "circle-scaffold")
     .attr("cx", 0)
     .attr("cy", 0)
-    .attr("r", overallRadius)
+    .attr("r", clockRadius)
     .style("fill", "white")
     .style("stroke", "red");
+
+  const weekTickLength = 10;
+  const weekTickStart = clockRadius - weekTickLength;
+
+  const weekRange = d3.range(0, 52);
+  const weekScale = d3.scaleLinear().range([0, 360]).domain([0, 52]);
+  svg.selection
+    .selectAll(".week-tick")
+    .data(weekRange)
+    .enter()
+    .append("line")
+    .attr("class", "week-tick")
+    .attr("x1", 0)
+    .attr("x2", 0)
+    .attr("y1", weekTickStart)
+    .attr("y2", weekTickStart + weekTickLength)
+    .attr("transform", (d) => `rotate(${weekScale(d)})`);
 }
 
 // draw(wholeWeeksSoFar, canvas());
