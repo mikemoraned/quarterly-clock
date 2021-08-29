@@ -145,15 +145,25 @@ function drawRemainder(clockRadius, yearFraction, svg) {
     .append("defs")
     .append("pattern")
     .attr("id", "remainder-pattern")
-    .attr("width", "8")
-    .attr("height", "8")
+    .attr("width", "45")
+    .attr("height", "35")
     .attr("patternUnits", "userSpaceOnUse")
-    .attr("patternTransform", "rotate(30)")
+    .attr("patternTransform", "rotate(20)");
+
+  pattern
     .append("rect")
-    .attr("width", "4")
-    .attr("height", "8")
+    .attr("width", "45")
+    .attr("height", "35")
     .attr("transform", "translate(0,0)")
     .attr("fill", "#88AAEE");
+
+  pattern
+    .append("text")
+    .text("4")
+    .attr("x", 0)
+    .attr("y", 30)
+    .attr("style", "font: 30px Courier")
+    .attr("fill", "white");
 
   const arcGenerator = d3.arc();
 
@@ -227,8 +237,8 @@ function drawQuarterlyScale(clockRadius, svg) {
     .attr("y2", tickStart + tickLength)
     .attr("transform", (d) => `rotate(${scale(d)})`);
 
-  const labelFontSize = 28;
-  const labelYOffset = 10;
+  const labelFontSize = 40;
+  const labelYOffset = 13;
   const labelRadius = clockRadius - tickLength - labelFontSize;
 
   svg.selection
