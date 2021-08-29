@@ -98,4 +98,24 @@ function patternBackground(text) {
   return pattern;
 }
 
-draw(wholeWeeksSoFar, canvas());
+function svg() {
+  const container = document.getElementById("container");
+  const { width, height } = container.getBoundingClientRect();
+
+  const root = d3
+    .select("#container")
+    .append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+  return {
+    width,
+    height,
+    root,
+  };
+}
+
+function drawSVG(wholeWeeksSoFar, svg) {}
+
+// draw(wholeWeeksSoFar, canvas());
+drawSVG(wholeWeeksSoFar, svg());
