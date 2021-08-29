@@ -109,7 +109,6 @@ function svg() {
     .attr("height", height);
 
   const shiftToCenter = `translate(${width / 2.0} ${height / 2.0})`;
-
   const topLevelGroup = root.append("g").attr("transform", shiftToCenter);
 
   return {
@@ -124,7 +123,7 @@ function drawSVG(wholeWeeksSoFar, svg) {
 
   svg.selection
     .append("circle")
-    .attr("class", "circle-scaffold")
+    .attr("class", "scaffold")
     .attr("cx", 0)
     .attr("cy", 0)
     .attr("r", clockRadius)
