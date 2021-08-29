@@ -108,14 +108,28 @@ function svg() {
     .attr("width", width)
     .attr("height", height);
 
+  const shiftToCenter = `translate(${width / 2.0} ${height / 2.0})`;
+
+  const topLevelGroup = root.append("g").attr("transform", shiftToCenter);
+
   return {
     width,
     height,
-    root,
+    selection: topLevelGroup,
   };
 }
 
-function drawSVG(wholeWeeksSoFar, svg) {}
+function drawSVG(wholeWeeksSoFar, svg) {
+  const overallRadius = (0.9 * Math.min(svg.width, svg.height)) / 2.0;
+
+  const circleScaffold = svg.selection
+    .append("circle")
+    .attr("cx", 0)
+    .attr("cy", 0)
+    .attr("r", overallRadius)
+    .style("fill", "white")
+    .style("stroke", "red");
+}
 
 // draw(wholeWeeksSoFar, canvas());
 drawSVG(wholeWeeksSoFar, svg());
