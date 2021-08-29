@@ -115,6 +115,7 @@ function svg() {
   return {
     width,
     height,
+    root,
     selection: topLevelGroup,
   };
 }
@@ -140,6 +141,20 @@ function drawSVG(wholeWeeksSoFar, svg) {
 }
 
 function drawRemainder(clockRadius, yearFraction, svg) {
+  const pattern = svg.root
+    .append("defs")
+    .append("pattern")
+    .attr("id", "remainder-pattern")
+    .attr("width", "8")
+    .attr("height", "8")
+    .attr("patternUnits", "userSpaceOnUse")
+    .attr("patternTransform", "rotate(30)")
+    .append("rect")
+    .attr("width", "4")
+    .attr("height", "8")
+    .attr("transform", "translate(0,0)")
+    .attr("fill", "#88AAEE");
+
   const arcGenerator = d3.arc();
 
   arcGenerator.innerRadius(50).outerRadius(clockRadius - 35);
@@ -152,7 +167,8 @@ function drawRemainder(clockRadius, yearFraction, svg) {
   svg.selection
     .append("path")
     .attr("class", "remainder")
-    .attr("d", arcGenerator(remainderArc));
+    .attr("d", arcGenerator(remainderArc))
+    .attr("fill", "url(#remainder-pattern)");
 }
 
 function drawWeekScale(clockRadius, svg) {
