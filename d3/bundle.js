@@ -3932,8 +3932,6 @@
   }
 
   function drawSVG(wholeWeeksSoFar, svg) {
-    const yearFraction = wholeWeeksSoFar / 52.0;
-
     const margin = 100;
     const clockRadius = Math.min(svg.width - margin, svg.height - margin) / 2.0;
 
@@ -3946,7 +3944,8 @@
       .style("fill", "white")
       .style("stroke", "red");
 
-    drawRemainder(clockRadius, yearFraction, svg);
+    drawRemainder(clockRadius, wholeWeeksSoFar / 52.0, svg);
+    drawCompleted(clockRadius, (wholeWeeksSoFar - 1) / 52.0, svg);
     drawWeekScale(clockRadius, svg);
     drawQuarterlyScale(clockRadius, svg);
   }
@@ -3990,6 +3989,25 @@
       .attr("class", "remainder")
       .attr("d", arcGenerator(remainderArc))
       .attr("fill", "url(#remainder-pattern)");
+  }
+
+  function drawCompleted(clockRadius, yearFraction, svg) {
+    const arcGenerator = arc();
+
+    arcGenerator.innerRadius(50).outerRadius(clockRadius - 35);
+
+    const completedArc = {
+      startAngle: 0,
+      endAngle: yearFraction * 2.0 * Math.PI,
+    };
+
+    svg.selection
+      .append("path")
+      .attr("class", "completed")
+      .attr("d", arcGenerator(completedArc))
+      .attr("fill", "lightgray")
+      .attr("stroke-width", "4")
+      .attr("stroke", "gray");
   }
 
   function drawWeekScale(clockRadius, svg) {
