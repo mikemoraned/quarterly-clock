@@ -120,6 +120,8 @@ function svg() {
 }
 
 function drawSVG(wholeWeeksSoFar, svg) {
+  const yearFraction = wholeWeeksSoFar / 52.0;
+
   const margin = 100;
   const clockRadius = Math.min(svg.width - margin, svg.height - margin) / 2.0;
 
@@ -132,8 +134,25 @@ function drawSVG(wholeWeeksSoFar, svg) {
     .style("fill", "white")
     .style("stroke", "red");
 
+  drawRemainder(clockRadius, yearFraction, svg);
   drawWeekScale(clockRadius, svg);
   drawQuarterlyScale(clockRadius, svg);
+}
+
+function drawRemainder(clockRadius, yearFraction, svg) {
+  const arcGenerator = d3.arc();
+
+  arcGenerator.innerRadius(50).outerRadius(clockRadius - 35);
+
+  const remainderArc = {
+    startAngle: yearFraction * 2.0 * Math.PI,
+    endAngle: 0.75 * 2.0 * Math.PI,
+  };
+
+  svg.selection
+    .append("path")
+    .attr("class", "remainder")
+    .attr("d", arcGenerator(remainderArc));
 }
 
 function drawWeekScale(clockRadius, svg) {
