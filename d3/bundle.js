@@ -3946,6 +3946,7 @@
 
     drawRemainder(clockRadius, wholeWeeksSoFar / 52.0, svg);
     drawCompleted(clockRadius, (wholeWeeksSoFar - 1) / 52.0, svg);
+    drawCurrentDay(clockRadius, wholeWeeksSoFar / 52.0, svg);
     drawWeekScale(clockRadius, svg);
     drawQuarterlyScale(clockRadius, svg);
   }
@@ -4008,6 +4009,24 @@
       .attr("fill", "lightgray")
       .attr("stroke-width", "4")
       .attr("stroke", "gray");
+  }
+
+  function drawCurrentDay(clockRadius, yearFraction, svg) {
+    svg.selection
+      .append("circle")
+      .attr("class", "hands-cover")
+      .attr("x", 0)
+      .attr("y", 0)
+      .attr("r", clockRadius / 20);
+    const scale = linear().domain([0, 1]).range([0, 360]);
+    svg.selection
+      .append("line")
+      .attr("class", "day-hand")
+      .attr("x1", 0)
+      .attr("y1", 0)
+      .attr("x2", 0)
+      .attr("y2", -clockRadius)
+      .attr("transform", (d) => `rotate(${scale(yearFraction)})`);
   }
 
   function drawWeekScale(clockRadius, svg) {
