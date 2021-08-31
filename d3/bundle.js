@@ -3931,7 +3931,7 @@
     };
   }
 
-  function drawSVG(wholeWeeksSoFar, svg) {
+  function draw(wholeWeeksSoFar, svg) {
     const margin = 100;
     const clockRadius = Math.min(svg.width - margin, svg.height - margin) / 2.0;
 
@@ -3948,7 +3948,6 @@
     drawCompleted(clockRadius, (wholeWeeksSoFar - 1) / 52.0, svg);
     drawDayHand(clockRadius, wholeWeeksSoFar / 52.0, svg);
     drawWeekScale(clockRadius, svg);
-    drawQuarterlyScale(clockRadius, svg);
   }
 
   function drawRemainder(clockRadius, yearFraction, svg) {
@@ -3997,18 +3996,32 @@
 
     arcGenerator.innerRadius(50).outerRadius(clockRadius - 35);
 
-    const completedArc = {
-      startAngle: 0,
-      endAngle: yearFraction * 2.0 * Math.PI,
-    };
-
-    svg.selection
-      .append("path")
-      .attr("class", "completed")
-      .attr("d", arcGenerator(completedArc))
-      .attr("fill", "lightgray")
-      .attr("stroke-width", "4")
-      .attr("stroke", "gray");
+    const angles = [0, 0.5 * Math.PI, Math.PI, yearFraction * 2.0 * Math.PI];
+    const arcs = [
+      { label: "Q1", startAngle: angles[0], endAngle: angles[1] },
+      { label: "Q2", startAngle: angles[1], endAngle: angles[2] },
+      { label: "Q3", startAngle: angles[2], endAngle: angles[3] },
+    ];
+    const labelFontSize = 80;
+    arcs.forEach((arc) => {
+      svg.selection
+        .append("path")
+        .attr("class", "completed")
+        .attr("d", arcGenerator(arc))
+        .attr("fill", "lightgray")
+        .attr("stroke-width", "4")
+        .attr("stroke", "gray");
+      const centroid = arcGenerator.centroid(arc);
+      svg.selection
+        .append("text")
+        .attr("class", "quarterly-label")
+        .attr("style", `font-size: ${labelFontSize}px`)
+        .attr("text-anchor", "middle")
+        .attr("x", centroid[0])
+        .attr("y", centroid[1])
+        .attr("dy", "0.5em")
+        .text(arc.label);
+    });
   }
 
   function drawDayHand(clockRadius, yearFraction, svg) {
@@ -4067,44 +4080,6 @@
       .text((d) => `W${d}`);
   }
 
-  function drawQuarterlyScale(clockRadius, svg) {
-    const tickLength = 30;
-    const tickStart = clockRadius - tickLength;
-
-    const range$1 = range(1, 5);
-    const scale = linear().range([0, 360]).domain([0, 4]);
-    svg.selection
-      .selectAll(".quarterly-tick")
-      .data(range$1)
-      .enter()
-      .append("line")
-      .attr("class", "quarterly-tick")
-      .attr("x1", 0)
-      .attr("x2", 0)
-      .attr("y1", tickStart)
-      .attr("y2", tickStart + tickLength)
-      .attr("transform", (d) => `rotate(${scale(d)})`);
-
-    const labelFontSize = 40;
-    const labelYOffset = 13;
-    const labelRadius = clockRadius - tickLength - labelFontSize;
-
-    svg.selection
-      .selectAll(".quarterly-label")
-      .data(range$1)
-      .enter()
-      .append("text")
-      .attr("class", "quarterly-label")
-      .attr("text-anchor", "middle")
-      .attr("x", (d) => labelRadius * Math.sin((scale(d) * Math.PI) / 180))
-      .attr(
-        "y",
-        (d) => -labelRadius * Math.cos((scale(d) * Math.PI) / 180) + labelYOffset
-      )
-      .attr("style", `font-size: ${labelFontSize}px`)
-      .text((d) => `Q${d}`);
-  }
-  // draw(wholeWeeksSoFar, canvas());
-  drawSVG(wholeWeeksSoFar, svg());
+  draw(wholeWeeksSoFar, svg());
 
 }());
