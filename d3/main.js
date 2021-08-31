@@ -98,12 +98,15 @@ function drawCompleted(clockRadius, yearFraction, svg) {
     { label: "Q2", startAngle: angles[1], endAngle: angles[2] },
     { label: "Q3", startAngle: angles[2], endAngle: angles[3] },
   ];
-  const labelFontSize = 80;
+  const labelFontSize = 40;
   arcs.forEach((arc) => {
     svg.selection
       .append("path")
       .attr("class", "completed")
       .attr("d", arcGenerator(arc))
+      .attr("id", (d) => {
+        return "uniqueId_" + arc.label;
+      })
       .attr("fill", "lightgray")
       .attr("stroke-width", "4")
       .attr("stroke", "gray");
@@ -113,9 +116,12 @@ function drawCompleted(clockRadius, yearFraction, svg) {
       .attr("class", "quarterly-label")
       .attr("style", `font-size: ${labelFontSize}px`)
       .attr("text-anchor", "middle")
-      .attr("x", centroid[0])
-      .attr("y", centroid[1])
-      .attr("dy", "0.5em")
+      .attr("x", `${labelFontSize * 1.5}`)
+      .attr("dy", "1em")
+      .append("textPath")
+      .attr("xlink:href", function (d) {
+        return "#uniqueId_" + arc.label;
+      })
       .text(arc.label);
   });
 }
@@ -126,7 +132,7 @@ function drawDayHand(clockRadius, yearFraction, svg) {
     .attr("class", "hands-cover")
     .attr("x", 0)
     .attr("y", 0)
-    .attr("r", clockRadius / 20);
+    .attr("r", 40);
   const scale = d3.scaleLinear().domain([0, 1]).range([0, 360]);
   svg.selection
     .append("line")
@@ -136,6 +142,16 @@ function drawDayHand(clockRadius, yearFraction, svg) {
     .attr("x2", 0)
     .attr("y2", -clockRadius)
     .attr("transform", (d) => `rotate(${scale(yearFraction)})`);
+  const labelFontSize = 40;
+  svg.selection
+    .append("text")
+    .attr("class", "quarterly-label")
+    .attr("style", `font-size: ${labelFontSize}px`)
+    .attr("text-anchor", "middle")
+    .attr("x", 0)
+    .attr("y", 0)
+    .attr("dy", "0.3em")
+    .text("Q3");
 }
 
 function drawWeekScale(clockRadius, svg) {
