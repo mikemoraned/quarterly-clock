@@ -2,19 +2,14 @@
   "scripts": {
     "build": "rollup --config",
     "watch": "rollup --config --watch",
-    "serve": "python3 -m http.server",
-    "test": "jest"
+    "serve": "python3 -m http.server"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.0.4",
-    "jest": "^27.1.1",
-    "rollup": "^2.56.3",
-    "rollup-jest": "^1.1.2"
+    "jasmine": "^3.9.0",
+    "rollup": "^2.56.3"
   },
   "dependencies": {
     "d3": "^7.0.1"
-  },
-  "jest": {
-    "preset": "rollup-jest"
   }
 }
