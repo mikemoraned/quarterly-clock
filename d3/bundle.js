@@ -3905,8 +3905,12 @@
     return arc;
   }
 
-  const startOfYear = timeYear();
   const startOfDay = timeDay();
+
+  console.log("HOLA for modules");
+
+  const startOfYear = timeYear();
+  // const startOfDay = d3.timeDay();
   const wholeWeeksSoFar = sunday.count(startOfYear, startOfDay);
   console.log(startOfYear, startOfDay, wholeWeeksSoFar);
 
