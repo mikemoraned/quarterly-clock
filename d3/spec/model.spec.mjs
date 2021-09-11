@@ -1,7 +1,7 @@
-import { dummy } from "../modules/model.mjs";
+import { startOfDay } from "../modules/model.mjs";
 
 describe("Model", function () {
   it("should do a dummy thing", function () {
-    expect(dummy).toEqual(true);
+    expect(startOfDay).toEqual(true);
   });
 });
