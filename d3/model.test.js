@@ -1,3 +1,5 @@
+import { dummy } from "./model";
+
 test("dummy test", () => {
-  expect(true).toBeTruthy();
+  expect(dummy).toBeTruthy();
 });
