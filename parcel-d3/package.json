@@ -1,0 +1,15 @@
+{
+  "name": "parcel-d3",
+  "version": "0.0.1",
+  "description": "",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "Mike Moran <mike@houseofmoran.com>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "parcel": "^2.0.1"
+  }
+}
