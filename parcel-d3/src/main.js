@@ -1,6 +1,6 @@
-import { sum } from "./dates.js";
-import { startOfDay } from "./dates";
+import { modelForDate } from "./model.js";
+import { svg } from "./container";
+import { draw } from "./draw";
 
-console.log("hello sweet world");
-console.dir(sum(1, 3));
-console.dir(startOfDay);
+console.log("Quarterly Clock");
+draw(modelForDate(new Date()), svg("container"));
