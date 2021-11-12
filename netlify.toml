@@ -1,0 +1,4 @@
+[build]
+  base = "parcel-d3/"
+  publish = "dist/"
+  command = "npm run build"
