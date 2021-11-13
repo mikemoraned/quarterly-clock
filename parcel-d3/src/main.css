@@ -30,6 +30,6 @@ svg .day-hand {
   stroke: black;
   stroke-linecap: round;
 }
-svg .scaffold {
+svg .guide {
   /* display: none; */
 }
