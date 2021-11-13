@@ -31,5 +31,5 @@ svg .day-hand {
   stroke-linecap: round;
 }
 svg .guide {
-  display: none;
+  /* display: none; */
 }

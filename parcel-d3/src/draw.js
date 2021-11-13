@@ -1,18 +1,35 @@
 import * as d3 from "d3";
 
 export function draw(dataModel, svg) {
-  const margin = 100;
+  const outerMargin = 100;
 
-  const clockRadius = Math.min(svg.width - margin, svg.height - margin) / 2.0;
+  const sideLength = Math.min(
+    svg.width - outerMargin,
+    svg.height - outerMargin
+  );
+  const clockRadius = sideLength / 2.0;
 
   const guidesModel = {
     outerRadius: clockRadius,
+    info: {
+      left: {
+        x: -1 * clockRadius * 0.6,
+        y: 0,
+      },
+      right: {
+        x: clockRadius * 0.3,
+        y: 0,
+      },
+    },
   };
 
-  //   drawCompleted(dataModel, guidesModel, svg);
+  console.dir(guidesModel);
+
+  // drawCompleted(dataModel, guidesModel, svg);
   drawWeekScale(guidesModel, svg);
   drawRemainder(dataModel, guidesModel, svg);
   drawDayHand(dataModel, guidesModel, svg);
+  drawInfo(dataModel, guidesModel, svg);
   drawGuides(guidesModel, svg);
 }
 
@@ -27,6 +44,36 @@ function drawGuides(model, svg) {
     .attr("r", model.outerRadius)
     .style("fill", "none")
     .style("stroke", "red");
+
+  parentGroup
+    .append("circle")
+    .attr("class", "guide")
+    .attr("cx", model.info.left.x)
+    .attr("cy", model.info.left.y)
+    .attr("r", 5)
+    .style("fill", "red")
+    .style("stroke", "red");
+
+  parentGroup
+    .append("circle")
+    .attr("class", "guide")
+    .attr("cx", model.info.right.x)
+    .attr("cy", model.info.right.y)
+    .attr("r", 5)
+    .style("fill", "red")
+    .style("stroke", "red");
+}
+
+function drawInfo(dataModel, guidesModel, svg) {
+  const parentGroup = svg.selection.append("g").attr("id", "info");
+
+  parentGroup
+    .append("text")
+    .text(`${dataModel.currentQuarter.label}`)
+    .attr("x", guidesModel.info.right.x)
+    .attr("y", guidesModel.info.right.y)
+    .attr("style", "font: 30px Courier")
+    .attr("fill", "black");
 }
 
 function drawRemainder(dataModel, guidesModel, svg) {
