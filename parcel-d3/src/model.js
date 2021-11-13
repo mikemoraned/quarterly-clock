@@ -34,7 +34,7 @@ const QUARTERS = [
 
 export function modelForDate(date) {
   const wholeWeeksSoFar = 16; // TODO: make dynamic
-  const currentQuarterIndex = 1;
+  const currentQuarterIndex = Math.floor(wholeWeeksSoFar / WEEKS_PER_QUARTER);
   const currentQuarter = QUARTERS[currentQuarterIndex];
   return {
     elapsed: {
