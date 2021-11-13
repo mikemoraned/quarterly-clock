@@ -9,10 +9,10 @@ export function draw(dataModel, svg) {
     outerRadius: clockRadius,
   };
 
-  drawRemainder(dataModel, guidesModel, svg);
   drawCompleted(dataModel, guidesModel, svg);
-  drawDayHand(dataModel, guidesModel, svg);
   drawWeekScale(guidesModel, svg);
+  drawRemainder(dataModel, guidesModel, svg);
+  drawDayHand(dataModel, guidesModel, svg);
   drawGuides(guidesModel, svg);
 }
 
@@ -56,11 +56,11 @@ function drawRemainder(dataModel, guidesModel, svg) {
 
   const arcGenerator = d3.arc();
 
-  arcGenerator.innerRadius(50).outerRadius(dataModel.outerRadius - 35);
+  arcGenerator.innerRadius(50).outerRadius(guidesModel.outerRadius - 35);
 
   const remainderArc = {
-    startAngle: guidesModel.yearFraction * 2.0 * Math.PI,
-    endAngle: 0.75 * 2.0 * Math.PI,
+    startAngle: dataModel.yearFraction * 2.0 * Math.PI,
+    endAngle: 2.0 * Math.PI,
   };
 
   const parentGroup = svg.selection.append("g").attr("id", "remainder");
