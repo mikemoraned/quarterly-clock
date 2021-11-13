@@ -9,7 +9,7 @@ export function draw(dataModel, svg) {
     outerRadius: clockRadius,
   };
 
-  drawCompleted(dataModel, guidesModel, svg);
+  //   drawCompleted(dataModel, guidesModel, svg);
   drawWeekScale(guidesModel, svg);
   drawRemainder(dataModel, guidesModel, svg);
   drawDayHand(dataModel, guidesModel, svg);
