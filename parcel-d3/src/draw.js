@@ -48,7 +48,7 @@ function drawRemainder(dataModel, guidesModel, svg) {
 
   pattern
     .append("text")
-    .text("4")
+    .text(`${dataModel.currentQuarter.end.wholeWeeksLeft}`)
     .attr("x", 0)
     .attr("y", 30)
     .attr("style", "font: 30px Courier")
@@ -59,8 +59,8 @@ function drawRemainder(dataModel, guidesModel, svg) {
   arcGenerator.innerRadius(50).outerRadius(guidesModel.outerRadius - 35);
 
   const remainderArc = {
-    startAngle: dataModel.yearFraction * 2.0 * Math.PI,
-    endAngle: 2.0 * Math.PI,
+    startAngle: dataModel.elapsed.yearFraction * 2.0 * Math.PI,
+    endAngle: dataModel.currentQuarter.end.yearFraction * 2.0 * Math.PI,
   };
 
   const parentGroup = svg.selection.append("g").attr("id", "remainder");
@@ -83,7 +83,7 @@ function drawCompleted(dataModel, guidesModel, svg) {
     0,
     0.5 * Math.PI,
     Math.PI,
-    dataModel.yearFraction * 2.0 * Math.PI,
+    dataModel.elapsed.yearFraction * 2.0 * Math.PI,
   ];
   const arcs = [
     { label: "Q1", startAngle: angles[0], endAngle: angles[1] },
@@ -135,7 +135,10 @@ function drawDayHand(dataModel, guidesModel, svg) {
     .attr("y1", 0)
     .attr("x2", 0)
     .attr("y2", -1 * guidesModel.outerRadius)
-    .attr("transform", (d) => `rotate(${scale(dataModel.yearFraction)})`);
+    .attr(
+      "transform",
+      (d) => `rotate(${scale(dataModel.elapsed.yearFraction)})`
+    );
   const labelFontSize = 40;
   parentGroup
     .append("text")
@@ -145,7 +148,7 @@ function drawDayHand(dataModel, guidesModel, svg) {
     .attr("x", 0)
     .attr("y", 0)
     .attr("dy", "0.3em")
-    .text("Q3");
+    .text(`${dataModel.currentQuarter.label}`);
 }
 
 function drawWeekScale(guidesModel, svg) {
