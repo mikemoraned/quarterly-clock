@@ -3,4 +3,6 @@ import { svg } from "./container";
 import { draw } from "./draw";
 
 console.log("Quarterly Clock");
-draw(modelForDate(new Date()), svg("container"));
+const dataModel = modelForDate(new Date());
+console.dir(dataModel);
+draw(dataModel, svg("container"));
