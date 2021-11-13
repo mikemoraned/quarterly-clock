@@ -17,7 +17,9 @@ export function draw(dataModel, svg) {
 }
 
 function drawGuides(model, svg) {
-  svg.selection
+  const parentGroup = svg.selection.append("g").attr("id", "guides");
+
+  parentGroup
     .append("circle")
     .attr("class", "guide")
     .attr("cx", 0)
@@ -61,7 +63,9 @@ function drawRemainder(dataModel, guidesModel, svg) {
     endAngle: 0.75 * 2.0 * Math.PI,
   };
 
-  svg.selection
+  const parentGroup = svg.selection.append("g").attr("id", "remainder");
+
+  parentGroup
     .append("path")
     .attr("class", "remainder")
     .attr("d", arcGenerator(remainderArc))
@@ -69,6 +73,8 @@ function drawRemainder(dataModel, guidesModel, svg) {
 }
 
 function drawCompleted(dataModel, guidesModel, svg) {
+  const parentGroup = svg.selection.append("g").attr("id", "completed");
+
   const arcGenerator = d3.arc();
 
   arcGenerator.innerRadius(50).outerRadius(guidesModel.outerRadius - 35);
@@ -86,7 +92,7 @@ function drawCompleted(dataModel, guidesModel, svg) {
   ];
   const labelFontSize = 40;
   arcs.forEach((arc) => {
-    svg.selection
+    parentGroup
       .append("path")
       .attr("class", "completed")
       .attr("d", arcGenerator(arc))
@@ -97,7 +103,7 @@ function drawCompleted(dataModel, guidesModel, svg) {
       .attr("stroke-width", "4")
       .attr("stroke", "gray");
     const centroid = arcGenerator.centroid(arc);
-    svg.selection
+    parentGroup
       .append("text")
       .attr("class", "quarterly-label")
       .attr("style", `font-size: ${labelFontSize}px`)
@@ -113,14 +119,16 @@ function drawCompleted(dataModel, guidesModel, svg) {
 }
 
 function drawDayHand(dataModel, guidesModel, svg) {
-  svg.selection
+  const parentGroup = svg.selection.append("g").attr("id", "day-hand");
+
+  parentGroup
     .append("circle")
     .attr("class", "hands-cover")
     .attr("x", 0)
     .attr("y", 0)
     .attr("r", 40);
   const scale = d3.scaleLinear().domain([0, 1]).range([0, 360]);
-  svg.selection
+  parentGroup
     .append("line")
     .attr("class", "day-hand")
     .attr("x1", 0)
@@ -129,7 +137,7 @@ function drawDayHand(dataModel, guidesModel, svg) {
     .attr("y2", -1 * guidesModel.outerRadius)
     .attr("transform", (d) => `rotate(${scale(dataModel.yearFraction)})`);
   const labelFontSize = 40;
-  svg.selection
+  parentGroup
     .append("text")
     .attr("class", "quarterly-label")
     .attr("style", `font-size: ${labelFontSize}px`)
@@ -141,12 +149,14 @@ function drawDayHand(dataModel, guidesModel, svg) {
 }
 
 function drawWeekScale(guidesModel, svg) {
+  const parentGroup = svg.selection.append("g").attr("id", "week-scale");
+
   const tickLength = 15;
   const tickStart = guidesModel.outerRadius - tickLength;
 
   const range = d3.range(1, 53);
   const scale = d3.scaleLinear().range([0, 360]).domain([0, 52]);
-  svg.selection
+  parentGroup
     .selectAll(".week-tick")
     .data(range)
     .enter()
@@ -163,7 +173,7 @@ function drawWeekScale(guidesModel, svg) {
   const labelRadius =
     guidesModel.outerRadius + tickLength / 2.0 + labelFontSize / 2.0;
 
-  svg.selection
+  parentGroup
     .selectAll(".week-label")
     .data(range)
     .enter()
