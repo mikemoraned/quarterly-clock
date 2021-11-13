@@ -32,8 +32,8 @@ const QUARTERS = [
   },
 ];
 
-export function modelForDate(date) {
-  const wholeWeeksSoFar = 16; // TODO: make dynamic
+export function modelForDate(now) {
+  const wholeWeeksSoFar = d3.timeMonday.count(d3.timeYear(now), now);
   const currentQuarterIndex = Math.floor(wholeWeeksSoFar / WEEKS_PER_QUARTER);
   const currentQuarter = QUARTERS[currentQuarterIndex];
   return {
