@@ -33,18 +33,25 @@ const QUARTERS = [
 ];
 
 export function modelForDate(now) {
+  now = Date.parse("04 Aug 2021 00:00:00 GMT");
+
   const wholeWeeksSoFar = d3.timeMonday.count(d3.timeYear(now), now);
+  const wholeDaysSoFar = d3.timeDay.count(d3.timeYear(now), now);
+
   const currentQuarterIndex = Math.floor(wholeWeeksSoFar / WEEKS_PER_QUARTER);
   const currentQuarter = QUARTERS[currentQuarterIndex];
   return {
     elapsed: {
-      yearFraction: wholeWeeksSoFar / 52.0,
+      yearFraction: wholeDaysSoFar / 365.0,
+    },
+    startOfNextWeek: {
+      yearFraction: (wholeWeeksSoFar + 1) / 52.0,
     },
     currentQuarter: {
       label: currentQuarter.label,
       end: {
         yearFraction: currentQuarter.end.yearFraction,
-        wholeWeeksLeft: currentQuarter.end.wholeWeeks - wholeWeeksSoFar,
+        wholeWeeksLeft: currentQuarter.end.wholeWeeks - wholeWeeksSoFar - 1,
       },
     },
   };

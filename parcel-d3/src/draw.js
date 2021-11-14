@@ -108,7 +108,7 @@ function drawRemainder(dataModel, guidesModel, svg) {
   arcGenerator.innerRadius(50).outerRadius(guidesModel.outerRadius - 35);
 
   const remainderArc = {
-    startAngle: dataModel.elapsed.yearFraction * 2.0 * Math.PI,
+    startAngle: dataModel.startOfNextWeek.yearFraction * 2.0 * Math.PI,
     endAngle: dataModel.currentQuarter.end.yearFraction * 2.0 * Math.PI,
   };
 
