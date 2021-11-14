@@ -9,7 +9,7 @@ div#container {
   height: 100%;
 }
 
-svg .clock {
+svg {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
     Helvetica, Arial, "Lucida Grande", sans-serif;
 }
@@ -31,5 +31,5 @@ svg .day-hand {
   stroke-linecap: round;
 }
 svg .guide {
-  /* display: none; */
+  display: none;
 }
