@@ -12,7 +12,7 @@ export function draw(dataModel, svg) {
   const guidesModel = {
     outerRadius: clockRadius,
     remainder: {
-      fontSize: `${sideLength / 13}px`,
+      fontSize: `${sideLength / 15}px`,
       box: {
         width: 45 * ((0.5 * sideLength) / 275),
         height: 35 * ((0.5 * sideLength) / 275),
