@@ -26,6 +26,11 @@ export function draw(dataModel, svg) {
         y: 0,
       },
     },
+    weekScale: {
+      fontSize: sideLength / 45,
+      //   fontSize: 14,
+      yOffset: ((6 / 14) * sideLength) / 45,
+    },
   };
 
   console.dir(guidesModel);
@@ -159,8 +164,8 @@ function drawWeekScale(guidesModel, svg) {
     .attr("y2", tickStart + tickLength)
     .attr("transform", (d) => `rotate(${scale(d)})`);
 
-  const labelFontSize = 14;
-  const labelYOffset = 6;
+  const labelFontSize = guidesModel.weekScale.fontSize;
+  const labelYOffset = guidesModel.weekScale.yOffset;
   const labelRadius =
     guidesModel.outerRadius + tickLength / 2.0 + labelFontSize / 2.0;
 
