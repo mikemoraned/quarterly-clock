@@ -1,4 +1,12 @@
 import * as d3 from "d3";
+import {
+  add,
+  getDayOfYear,
+  getDaysInYear,
+  getQuarter,
+  getWeek,
+  startOfWeek,
+} from "date-fns";
 
 const WEEKS_PER_QUARTER = 13;
 const QUARTERS = [
@@ -33,17 +41,23 @@ const QUARTERS = [
 ];
 
 export function modelForDate(now) {
-  const wholeWeeksSoFar = d3.timeMonday.count(d3.timeYear(now), now);
-  const wholeDaysSoFar = d3.timeDay.count(d3.timeYear(now), now);
+  const elapsedInWholeDays = getDayOfYear(now);
+  const daysInYear = getDaysInYear(now);
 
-  const currentQuarterIndex = Math.floor(wholeWeeksSoFar / WEEKS_PER_QUARTER);
+  const thisDayButNextWeek = add(now, { weeks: 1 });
+  const startOfNextWeek = startOfWeek(thisDayButNextWeek);
+  const startOfNextWeekInWholeDays = getDayOfYear(startOfNextWeek);
+
+  const wholeWeeksSoFar = d3.timeMonday.count(d3.timeYear(now), now);
+
+  const currentQuarterIndex = getQuarter(now) - 1;
   const currentQuarter = QUARTERS[currentQuarterIndex];
   return {
     elapsed: {
-      yearFraction: wholeDaysSoFar / 365.0,
+      yearFraction: elapsedInWholeDays / daysInYear,
     },
     startOfNextWeek: {
-      yearFraction: (wholeWeeksSoFar + 1) / 52.0,
+      yearFraction: startOfNextWeekInWholeDays / daysInYear,
     },
     currentQuarter: {
       label: currentQuarter.label,
