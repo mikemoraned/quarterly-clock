@@ -33,8 +33,6 @@ const QUARTERS = [
 ];
 
 export function modelForDate(now) {
-  now = Date.parse("04 Aug 2021 00:00:00 GMT");
-
   const wholeWeeksSoFar = d3.timeMonday.count(d3.timeYear(now), now);
   const wholeDaysSoFar = d3.timeDay.count(d3.timeYear(now), now);
 
