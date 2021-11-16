@@ -11,6 +11,11 @@ test("start of Q1", () => {
   expect(model.currentQuarter.label).toBe("Q1");
   expect(model.currentQuarter.end.yearFraction).toBeCloseTo(90 / 365);
 
+  // the last week of the quarter (March 29, 2021	-> April 4, 2021)
+  // goes over into next quarter, so we don't count, and
+  // we also don't count current week
+  expect(model.currentQuarter.end.wholeWeeksLeft).toBe(12);
+
   // week 1 of 2021 starts on 4th Jan, so startOfNextWeek on Jan 1st
   // is actually start of week 1, which is day 4
   expect(model.startOfNextWeek.yearFraction).toBeCloseTo(4 / 365);
@@ -22,6 +27,7 @@ test("last day of Q1", () => {
   const model = modelForDate(now);
   expect(model.currentQuarter.label).toBe("Q1");
   expect(model.currentQuarter.end.yearFraction).toBeCloseTo(90 / 365);
+  expect(model.currentQuarter.end.wholeWeeksLeft).toBe(0);
 
   expect(model.startOfNextWeek.yearFraction).toBeCloseTo(95 / 365);
   expect(model.elapsed.yearFraction).toBeCloseTo(90 / 365);
@@ -32,6 +38,7 @@ test("start of Q2", () => {
   const model = modelForDate(now);
   expect(model.currentQuarter.label).toBe("Q2");
   expect(model.currentQuarter.end.yearFraction).toBeCloseTo(182 / 365);
+  expect(model.currentQuarter.end.wholeWeeksLeft).toBe(12);
 
   expect(model.startOfNextWeek.yearFraction).toBeCloseTo(95 / 365);
   expect(model.elapsed.yearFraction).toBeCloseTo(91 / 365);
@@ -42,6 +49,7 @@ test("last day of Q2", () => {
   const model = modelForDate(now);
   expect(model.currentQuarter.label).toBe("Q2");
   expect(model.currentQuarter.end.yearFraction).toBeCloseTo(182 / 365);
+  expect(model.currentQuarter.end.wholeWeeksLeft).toBe(0);
 
   expect(model.startOfNextWeek.yearFraction).toBeCloseTo(186 / 365);
   expect(model.elapsed.yearFraction).toBeCloseTo(181 / 365);
@@ -52,6 +60,7 @@ test("start of Q3", () => {
   const model = modelForDate(now);
   expect(model.currentQuarter.label).toBe("Q3");
   expect(model.currentQuarter.end.yearFraction).toBeCloseTo(274 / 365);
+  expect(model.currentQuarter.end.wholeWeeksLeft).toBe(12);
 
   expect(model.startOfNextWeek.yearFraction).toBeCloseTo(186 / 365);
   expect(model.elapsed.yearFraction).toBeCloseTo(182 / 365);
@@ -62,6 +71,7 @@ test("last day of Q3", () => {
   const model = modelForDate(now);
   expect(model.currentQuarter.label).toBe("Q3");
   expect(model.currentQuarter.end.yearFraction).toBeCloseTo(274 / 365);
+  expect(model.currentQuarter.end.wholeWeeksLeft).toBe(0);
 
   expect(model.startOfNextWeek.yearFraction).toBeCloseTo(277 / 365);
   expect(model.elapsed.yearFraction).toBeCloseTo(273 / 365);
@@ -72,6 +82,7 @@ test("start of Q4", () => {
   const model = modelForDate(now);
   expect(model.currentQuarter.label).toBe("Q4");
   expect(model.currentQuarter.end.yearFraction).toBeCloseTo(365 / 365);
+  expect(model.currentQuarter.end.wholeWeeksLeft).toBe(12);
 
   expect(model.startOfNextWeek.yearFraction).toBeCloseTo(277 / 365);
   expect(model.elapsed.yearFraction).toBeCloseTo(274 / 365);
@@ -82,6 +93,7 @@ test("last day of Q4", () => {
   const model = modelForDate(now);
   expect(model.currentQuarter.label).toBe("Q4");
   expect(model.currentQuarter.end.yearFraction).toBeCloseTo(365 / 365);
+  expect(model.currentQuarter.end.wholeWeeksLeft).toBe(0);
 
   // startOfNextWeek is in a week in following year, which is day 3 of next year:
   expect(model.startOfNextWeek.yearFraction).toBeCloseTo(3 / 365);
