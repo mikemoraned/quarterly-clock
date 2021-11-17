@@ -35,7 +35,7 @@ export function draw(dataModel, svg) {
 
   console.dir(guidesModel);
 
-  drawWeekScale(guidesModel, svg);
+  drawWeekScale(dataModel, guidesModel, svg);
   drawRemainder(dataModel, guidesModel, svg);
   drawDayHand(dataModel, guidesModel, svg);
   drawInfo(dataModel, guidesModel, svg);
@@ -144,17 +144,21 @@ function drawDayHand(dataModel, guidesModel, svg) {
     );
 }
 
-function drawWeekScale(guidesModel, svg) {
+function drawWeekScale(dataModel, guidesModel, svg) {
   const parentGroup = svg.selection.append("g").attr("id", "week-scale");
 
   const tickLength = 15;
   const tickStart = guidesModel.outerRadius - tickLength;
 
-  const range = d3.range(1, 53);
-  const scale = d3.scaleLinear().range([0, 360]).domain([0, 52]);
+  //   const range = d3.range(1, 53);
+  //   const scale = d3.scaleLinear().range([0, 360]).domain([0, 52]);
+  const scale = d3
+    .scaleTime()
+    .domain([dataModel.startOfYear, dataModel.endOfYear])
+    .range([0, 360]);
   parentGroup
     .selectAll(".week-tick")
-    .data(range)
+    .data(dataModel.weeks)
     .enter()
     .append("line")
     .attr("class", "week-tick")
@@ -162,7 +166,7 @@ function drawWeekScale(guidesModel, svg) {
     .attr("x2", 0)
     .attr("y1", tickStart)
     .attr("y2", tickStart + tickLength)
-    .attr("transform", (d) => `rotate(${scale(d)})`);
+    .attr("transform", (w) => `rotate(${scale(w.start)})`);
 
   const labelFontSize = guidesModel.weekScale.fontSize;
   const labelYOffset = guidesModel.weekScale.yOffset;
@@ -171,16 +175,17 @@ function drawWeekScale(guidesModel, svg) {
 
   parentGroup
     .selectAll(".week-label")
-    .data(range)
+    .data(dataModel.weeks)
     .enter()
     .append("text")
     .attr("class", "week-label")
     .attr("text-anchor", "middle")
-    .attr("x", (d) => labelRadius * Math.sin((scale(d) * Math.PI) / 180))
+    .attr("x", (w) => labelRadius * Math.sin((scale(w.start) * Math.PI) / 180))
     .attr(
       "y",
-      (d) => -labelRadius * Math.cos((scale(d) * Math.PI) / 180) + labelYOffset
+      (w) =>
+        -labelRadius * Math.cos((scale(w.start) * Math.PI) / 180) + labelYOffset
     )
     .attr("style", `font-size: ${labelFontSize}px`)
-    .text((d) => `${d}`);
+    .text((w) => w.label);
 }
