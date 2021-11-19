@@ -33,15 +33,6 @@ export function modelForDate(now) {
   );
   const startOfCurrentYear = startOfYear(now);
   const endOfCurrentYear = endOfYear(now);
-  // const weeksInYear = eachWeekOfInterval({
-  //   start: startOfCurrentYear,
-  //   end: endOfCurrentYear,
-  // }).map((weekStart) => {
-  //   return {
-  //     label: `${getISOWeek(weekStart)}`,
-  //     start: weekStart,
-  //   };
-  // });
   const isoStart = startOfISOWeekYear(now);
   const isoWeeks = getISOWeeksInYear(now);
   const range = [...Array(isoWeeks).keys()];
@@ -53,20 +44,25 @@ export function modelForDate(now) {
       start,
     };
   });
-  // const startOfCurrentWeekYear = startOfISOWeekYear(now);
-  // const endOfCurrentWeekYear = endOfISOWeekYear(now);
   return {
     elapsed: {
       yearFraction: elapsedInWholeDays / daysInYear,
-    },
-    startOfNextWeek: {
-      yearFraction: startOfNextWeekInWholeDays / daysInYear,
     },
     currentQuarter: {
       label: `Q${currentQuarter}`,
       end: {
         yearFraction: endOfCurrentQuarterInWholeDays / daysInYear,
-        wholeWeeksLeft: wholeWeeksLeftInCurrentQuarter,
+      },
+      wholeWeeksLeft: {
+        start: {
+          yearFraction: startOfNextWeekInWholeDays / daysInYear,
+        },
+        end: {
+          yearFraction:
+            (startOfNextWeekInWholeDays + wholeWeeksLeftInCurrentQuarter * 7) /
+            daysInYear,
+        },
+        durationInWeeks: wholeWeeksLeftInCurrentQuarter,
       },
     },
     startOfYear: startOfCurrentYear,

@@ -97,7 +97,7 @@ function drawRemainder(dataModel, guidesModel, svg) {
 
   pattern
     .append("text")
-    .text(`${dataModel.currentQuarter.end.wholeWeeksLeft}`)
+    .text(`${dataModel.currentQuarter.wholeWeeksLeft.durationInWeeks}`)
     .attr("x", 0)
     .attr("y", `${guidesModel.remainder.box.textY}`)
     .attr("style", `font-size: ${guidesModel.remainder.fontSize}`)
@@ -108,8 +108,12 @@ function drawRemainder(dataModel, guidesModel, svg) {
   arcGenerator.innerRadius(50).outerRadius(guidesModel.outerRadius - 35);
 
   const remainderArc = {
-    startAngle: dataModel.startOfNextWeek.yearFraction * 2.0 * Math.PI,
-    endAngle: dataModel.currentQuarter.end.yearFraction * 2.0 * Math.PI,
+    startAngle:
+      dataModel.currentQuarter.wholeWeeksLeft.start.yearFraction *
+      2.0 *
+      Math.PI,
+    endAngle:
+      dataModel.currentQuarter.wholeWeeksLeft.end.yearFraction * 2.0 * Math.PI,
   };
 
   const parentGroup = svg.selection.append("g").attr("id", "remainder");
