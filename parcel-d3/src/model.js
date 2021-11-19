@@ -13,6 +13,7 @@ import {
   getQuarter,
   getWeek,
   startOfISOWeekYear,
+  startOfQuarter,
   startOfWeek,
 } from "date-fns";
 import startOfYear from "date-fns/startOfYear";
@@ -26,6 +27,8 @@ export function modelForDate(now) {
   const startOfNextWeekInWholeDays = getDayOfYear(startOfNextWeek);
 
   const currentQuarter = getQuarter(now);
+  const startOfCurrentQuarter = startOfQuarter(now);
+  const startOfCurrentQuarterInWholeDays = getDayOfYear(startOfCurrentQuarter);
   const endOfCurrentQuarter = endOfQuarter(now);
   const endOfCurrentQuarterInWholeDays = getDayOfYear(endOfCurrentQuarter);
   const wholeWeeksLeftInCurrentQuarter = Math.abs(
@@ -50,6 +53,9 @@ export function modelForDate(now) {
     },
     currentQuarter: {
       label: `Q${currentQuarter}`,
+      start: {
+        yearFraction: startOfCurrentQuarterInWholeDays / daysInYear,
+      },
       end: {
         yearFraction: endOfCurrentQuarterInWholeDays / daysInYear,
       },

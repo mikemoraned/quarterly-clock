@@ -36,6 +36,7 @@ export function draw(dataModel, svg) {
   console.dir(guidesModel);
 
   drawWeekScale(dataModel, guidesModel, svg);
+  drawCurrentQuarter(dataModel, guidesModel, svg);
   drawRemainder(dataModel, guidesModel, svg);
   drawDayHand(dataModel, guidesModel, svg);
   drawInfo(dataModel, guidesModel, svg);
@@ -77,6 +78,25 @@ function drawInfo(dataModel, guidesModel, svg) {
       `font-size: ${guidesModel.info.fontSize}; dominant-baseline: middle; text-anchor: middle`
     )
     .attr("fill", "black");
+}
+
+function drawCurrentQuarter(dataModel, guidesModel, svg) {
+  const arcGenerator = d3.arc();
+
+  arcGenerator.innerRadius(50).outerRadius(guidesModel.outerRadius - 35);
+
+  const arc = {
+    startAngle: dataModel.currentQuarter.start.yearFraction * 2.0 * Math.PI,
+    endAngle: dataModel.currentQuarter.end.yearFraction * 2.0 * Math.PI,
+  };
+
+  const parentGroup = svg.selection.append("g").attr("id", "current-quarter");
+
+  parentGroup
+    .append("path")
+    .attr("class", "current-quarter")
+    .attr("d", arcGenerator(arc))
+    .attr("fill", "lightgray");
 }
 
 function drawRemainder(dataModel, guidesModel, svg) {
