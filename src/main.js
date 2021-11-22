@@ -1,8 +1,10 @@
 import { modelForDate } from "./model.js";
 import { svg } from "./container";
 import { draw } from "./draw";
+import { init } from "./sentry";
 
 console.log("Quarterly Clock");
+init({ tracesSampleRate: 1.0 });
 const now = new Date();
 // const now = Date.parse("01 Jan 2021 00:00:00 GMT");
 // const now = Date.parse("31 Mar 2021 00:00:00 GMT");
