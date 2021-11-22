@@ -1,5 +1,5 @@
 import { modelForDate } from "./model.js";
-import { svg } from "./container";
+import { createSvg } from "./container";
 import { draw } from "./draw";
 import { init } from "./sentry";
 
@@ -16,4 +16,6 @@ const now = new Date();
 // const now = Date.parse("31 Dec 2021 00:00:00 GMT");
 const dataModel = modelForDate(now);
 console.dir(dataModel);
-draw(dataModel, svg("container"));
+createSvg("container").then((svg) => {
+  draw(dataModel, svg);
+});
