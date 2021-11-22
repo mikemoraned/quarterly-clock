@@ -26,9 +26,13 @@ export function draw(dataModel, svg) {
         y: 0,
       },
     },
+    logo: {
+      fontSize: `${sideLength / 11}px`,
+      x: 0,
+      y: clockRadius * 0.4,
+    },
     weekScale: {
       fontSize: sideLength / 45,
-      //   fontSize: 14,
       yOffset: ((6 / 14) * sideLength) / 45,
     },
   };
@@ -40,6 +44,7 @@ export function draw(dataModel, svg) {
   drawRemainder(dataModel, guidesModel, svg);
   drawDayHand(dataModel, guidesModel, svg);
   drawInfo(dataModel, guidesModel, svg);
+  drawLogo(guidesModel, svg);
   drawGuides(guidesModel, svg);
 }
 
@@ -63,6 +68,15 @@ function drawGuides(model, svg) {
     .attr("r", 5)
     .style("fill", "red")
     .style("stroke", "red");
+
+  parentGroup
+    .append("circle")
+    .attr("class", "guide")
+    .attr("cx", model.logo.x)
+    .attr("cy", model.logo.y)
+    .attr("r", 5)
+    .style("fill", "red")
+    .style("stroke", "red");
 }
 
 function drawInfo(dataModel, guidesModel, svg) {
@@ -76,6 +90,23 @@ function drawInfo(dataModel, guidesModel, svg) {
     .attr(
       "style",
       `font-size: ${guidesModel.info.fontSize}; dominant-baseline: middle; text-anchor: middle`
+    )
+    .attr("fill", "black");
+}
+
+function drawLogo(guidesModel, svg) {
+  const parentGroup = svg.selection.append("g").attr("id", "logo");
+
+  parentGroup
+    .append("a")
+    .attr("href", "https://github.com/mikemoraned/quarterly-clock")
+    .append("text")
+    .text("quarterly")
+    .attr("x", guidesModel.logo.x)
+    .attr("y", guidesModel.logo.y)
+    .attr(
+      "style",
+      `font-size: ${guidesModel.logo.fontSize}; dominant-baseline: middle; text-anchor: middle`
     )
     .attr("fill", "black");
 }
