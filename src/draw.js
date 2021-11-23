@@ -91,7 +91,8 @@ function drawInfo(dataModel, guidesModel, svg) {
       "style",
       `font-size: ${guidesModel.info.fontSize}; dominant-baseline: middle; text-anchor: middle`
     )
-    .attr("fill", "black");
+    .attr("fill", "lightgray")
+    .attr("stroke", "black");
 }
 
 function drawLogo(guidesModel, svg) {
@@ -141,7 +142,9 @@ function drawLogo(guidesModel, svg) {
 function drawCurrentQuarter(dataModel, guidesModel, svg) {
   const arcGenerator = d3.arc();
 
-  arcGenerator.innerRadius(50).outerRadius(guidesModel.outerRadius - 35);
+  arcGenerator
+    .innerRadius(guidesModel.outerRadius / 6)
+    .outerRadius(guidesModel.outerRadius - guidesModel.outerRadius / 4);
 
   const arc = {
     startAngle: dataModel.currentQuarter.start.yearFraction * 2.0 * Math.PI,
@@ -154,7 +157,8 @@ function drawCurrentQuarter(dataModel, guidesModel, svg) {
     .append("path")
     .attr("class", "current-quarter")
     .attr("d", arcGenerator(arc))
-    .attr("fill", "lightgray");
+    .attr("fill", "lightgray")
+    .attr("stroke", "black");
 }
 
 function drawRemainder(dataModel, guidesModel, svg) {
@@ -183,7 +187,9 @@ function drawRemainder(dataModel, guidesModel, svg) {
 
   const arcGenerator = d3.arc();
 
-  arcGenerator.innerRadius(50).outerRadius(guidesModel.outerRadius - 35);
+  arcGenerator
+    .innerRadius(guidesModel.outerRadius / 3)
+    .outerRadius(guidesModel.outerRadius - guidesModel.outerRadius / 15);
 
   const remainderArc = {
     startAngle:
@@ -200,7 +206,8 @@ function drawRemainder(dataModel, guidesModel, svg) {
     .append("path")
     .attr("class", "remainder")
     .attr("d", arcGenerator(remainderArc))
-    .attr("fill", "url(#remainder-pattern)");
+    .attr("fill", "url(#remainder-pattern)")
+    .attr("stroke", "black");
 }
 
 function drawDayHand(dataModel, guidesModel, svg) {
@@ -211,11 +218,12 @@ function drawDayHand(dataModel, guidesModel, svg) {
     .attr("class", "hands-cover")
     .attr("x", 0)
     .attr("y", 0)
-    .attr("r", 30);
+    .attr("r", guidesModel.outerRadius / 20);
   const scale = d3.scaleLinear().domain([0, 1]).range([0, 360]);
   parentGroup
     .append("line")
     .attr("class", "day-hand")
+    .attr("stroke-width", guidesModel.outerRadius / 50)
     .attr("x1", 0)
     .attr("y1", 0)
     .attr("x2", 0)
@@ -229,11 +237,9 @@ function drawDayHand(dataModel, guidesModel, svg) {
 function drawWeekScale(dataModel, guidesModel, svg) {
   const parentGroup = svg.selection.append("g").attr("id", "week-scale");
 
-  const tickLength = 15;
+  const tickLength = guidesModel.outerRadius / 25;
   const tickStart = guidesModel.outerRadius - tickLength;
 
-  //   const range = d3.range(1, 53);
-  //   const scale = d3.scaleLinear().range([0, 360]).domain([0, 52]);
   const scale = d3
     .scaleTime()
     .domain([dataModel.startOfYear, dataModel.endOfYear])
@@ -244,6 +250,7 @@ function drawWeekScale(dataModel, guidesModel, svg) {
     .enter()
     .append("line")
     .attr("class", "week-tick")
+    .attr("stroke-width", guidesModel.outerRadius / 100)
     .attr("x1", 0)
     .attr("x2", 0)
     .attr("y1", tickStart)
