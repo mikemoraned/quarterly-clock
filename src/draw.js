@@ -27,7 +27,7 @@ export function draw(dataModel, svg) {
       },
     },
     logo: {
-      fontSize: `${sideLength / 11}px`,
+      fontSize: `${sideLength / 13}px`,
       x: 0,
       y: clockRadius * 0.4,
     },
@@ -97,11 +97,12 @@ function drawInfo(dataModel, guidesModel, svg) {
 function drawLogo(guidesModel, svg) {
   const parentGroup = svg.selection.append("g").attr("id", "logo");
 
-  parentGroup
+  const text = parentGroup
     .append("a")
     .attr("href", "https://github.com/mikemoraned/quarterly-clock")
-    .append("text")
-    .text("quarterly")
+    .append("text");
+
+  text
     .attr("x", guidesModel.logo.x)
     .attr("y", guidesModel.logo.y)
     .attr(
@@ -109,6 +110,12 @@ function drawLogo(guidesModel, svg) {
       `font-size: ${guidesModel.logo.fontSize}; dominant-baseline: middle; text-anchor: middle`
     )
     .attr("fill", "black");
+
+  text
+    .append("tspan")
+    .text("\uf017")
+    .attr("style", `font-family: "Font Awesome 5 Free"`);
+  text.append("tspan").text("uarterly");
 }
 
 function drawCurrentQuarter(dataModel, guidesModel, svg) {
