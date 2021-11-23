@@ -97,25 +97,45 @@ function drawInfo(dataModel, guidesModel, svg) {
 function drawLogo(guidesModel, svg) {
   const parentGroup = svg.selection.append("g").attr("id", "logo");
 
+  const path = {
+    startX: guidesModel.logo.x - guidesModel.outerRadius / 2.0,
+    startY: guidesModel.logo.y + guidesModel.outerRadius / 5.0,
+    radiusX: guidesModel.outerRadius,
+    radiusY: guidesModel.outerRadius,
+    endX: guidesModel.logo.x + guidesModel.outerRadius / 2.0,
+    endY: guidesModel.logo.y + guidesModel.outerRadius / 5.0,
+  };
+  parentGroup
+    .append("defs")
+    .append("path")
+    .attr(
+      "d",
+      `M ${path.startX},${path.startY} A ${path.radiusX},${path.radiusY} 0 0,1 ${path.endX},${path.endY}`
+    )
+    .attr("id", "logoPath");
+
   const text = parentGroup
     .append("a")
     .attr("href", "https://github.com/mikemoraned/quarterly-clock")
     .append("text");
 
   text
-    .attr("x", guidesModel.logo.x)
-    .attr("y", guidesModel.logo.y)
     .attr(
       "style",
       `font-size: ${guidesModel.logo.fontSize}; dominant-baseline: middle; text-anchor: middle`
     )
     .attr("fill", "black");
 
-  text
+  const textPath = text
+    .append("textPath")
+    .attr("startOffset", "50%")
+    .attr("xlink:href", "#logoPath");
+
+  textPath
     .append("tspan")
     .text("\uf017")
     .attr("style", `font-family: "Font Awesome 5 Free"`);
-  text.append("tspan").text("uarterly");
+  textPath.append("tspan").text("uarterly");
 }
 
 function drawCurrentQuarter(dataModel, guidesModel, svg) {
