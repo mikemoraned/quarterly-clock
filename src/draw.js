@@ -26,9 +26,13 @@ export function draw(dataModel, svg) {
         y: 0,
       },
     },
+    logo: {
+      fontSize: `${sideLength / 13}px`,
+      x: 0,
+      y: clockRadius * 0.4,
+    },
     weekScale: {
       fontSize: sideLength / 45,
-      //   fontSize: 14,
       yOffset: ((6 / 14) * sideLength) / 45,
     },
   };
@@ -40,6 +44,7 @@ export function draw(dataModel, svg) {
   drawRemainder(dataModel, guidesModel, svg);
   drawDayHand(dataModel, guidesModel, svg);
   drawInfo(dataModel, guidesModel, svg);
+  drawLogo(guidesModel, svg);
   drawGuides(guidesModel, svg);
 }
 
@@ -63,6 +68,15 @@ function drawGuides(model, svg) {
     .attr("r", 5)
     .style("fill", "red")
     .style("stroke", "red");
+
+  parentGroup
+    .append("circle")
+    .attr("class", "guide")
+    .attr("cx", model.logo.x)
+    .attr("cy", model.logo.y)
+    .attr("r", 5)
+    .style("fill", "red")
+    .style("stroke", "red");
 }
 
 function drawInfo(dataModel, guidesModel, svg) {
@@ -78,6 +92,50 @@ function drawInfo(dataModel, guidesModel, svg) {
       `font-size: ${guidesModel.info.fontSize}; dominant-baseline: middle; text-anchor: middle`
     )
     .attr("fill", "black");
+}
+
+function drawLogo(guidesModel, svg) {
+  const parentGroup = svg.selection.append("g").attr("id", "logo");
+
+  const path = {
+    startX: guidesModel.logo.x - guidesModel.outerRadius / 2.0,
+    startY: guidesModel.logo.y + guidesModel.outerRadius / 5.0,
+    radiusX: guidesModel.outerRadius,
+    radiusY: guidesModel.outerRadius,
+    endX: guidesModel.logo.x + guidesModel.outerRadius / 2.0,
+    endY: guidesModel.logo.y + guidesModel.outerRadius / 5.0,
+  };
+  parentGroup
+    .append("defs")
+    .append("path")
+    .attr(
+      "d",
+      `M ${path.startX},${path.startY} A ${path.radiusX},${path.radiusY} 0 0,1 ${path.endX},${path.endY}`
+    )
+    .attr("id", "logoPath");
+
+  const text = parentGroup
+    .append("a")
+    .attr("href", "https://github.com/mikemoraned/quarterly-clock")
+    .append("text");
+
+  text
+    .attr(
+      "style",
+      `font-size: ${guidesModel.logo.fontSize}; dominant-baseline: middle; text-anchor: middle`
+    )
+    .attr("fill", "black");
+
+  const textPath = text
+    .append("textPath")
+    .attr("startOffset", "50%")
+    .attr("xlink:href", "#logoPath");
+
+  textPath
+    .append("tspan")
+    .text("\uf017")
+    .attr("style", `font-family: "Font Awesome 5 Free"`);
+  textPath.append("tspan").text("uarterly");
 }
 
 function drawCurrentQuarter(dataModel, guidesModel, svg) {
