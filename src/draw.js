@@ -21,6 +21,10 @@ export function draw(dataModel, svg) {
     },
     info: {
       fontSize: `${sideLength / 5}px`,
+      left: {
+        x: -1.0 * clockRadius * 0.5,
+        y: 0,
+      },
       right: {
         x: clockRadius * 0.5,
         y: 0,
@@ -28,8 +32,14 @@ export function draw(dataModel, svg) {
     },
     logo: {
       fontSize: `${sideLength / 13}px`,
-      x: 0,
-      y: clockRadius * 0.4,
+      top: {
+        x: 0,
+        y: -1.0 * clockRadius * 0.5,
+      },
+      bottom: {
+        x: 0,
+        y: clockRadius * 0.4,
+      },
     },
     weekScale: {
       fontSize: sideLength / 45,
@@ -44,7 +54,7 @@ export function draw(dataModel, svg) {
   drawRemainder(dataModel, guidesModel, svg);
   drawDayHand(dataModel, guidesModel, svg);
   drawInfo(dataModel, guidesModel, svg);
-  drawLogo(guidesModel, svg);
+  drawLogo(dataModel, guidesModel, svg);
   drawGuides(guidesModel, svg);
 }
 
@@ -82,11 +92,20 @@ function drawGuides(model, svg) {
 function drawInfo(dataModel, guidesModel, svg) {
   const parentGroup = svg.selection.append("g").attr("id", "info");
 
+  const positionForQuarterIndex = [
+    guidesModel.info.left,
+    guidesModel.info.left,
+    guidesModel.info.right,
+    guidesModel.info.right,
+  ];
+
+  const position = positionForQuarterIndex[dataModel.currentQuarter.index];
+
   parentGroup
     .append("text")
     .text(`${dataModel.currentQuarter.label}`)
-    .attr("x", guidesModel.info.right.x)
-    .attr("y", guidesModel.info.right.y)
+    .attr("x", position.x)
+    .attr("y", position.y)
     .attr(
       "style",
       `font-size: ${guidesModel.info.fontSize}; dominant-baseline: middle; text-anchor: middle`
@@ -95,16 +114,24 @@ function drawInfo(dataModel, guidesModel, svg) {
     .attr("stroke", "black");
 }
 
-function drawLogo(guidesModel, svg) {
+function drawLogo(dataModel, guidesModel, svg) {
   const parentGroup = svg.selection.append("g").attr("id", "logo");
 
+  const positionForQuarterIndex = [
+    guidesModel.logo.bottom,
+    guidesModel.logo.top,
+    guidesModel.logo.top,
+    guidesModel.logo.bottom,
+  ];
+  const position = positionForQuarterIndex[dataModel.currentQuarter.index];
+
   const path = {
-    startX: guidesModel.logo.x - guidesModel.outerRadius / 2.0,
-    startY: guidesModel.logo.y + guidesModel.outerRadius / 5.0,
+    startX: position.x - guidesModel.outerRadius / 2.0,
+    startY: position.y + guidesModel.outerRadius / 5.0,
     radiusX: guidesModel.outerRadius,
     radiusY: guidesModel.outerRadius,
-    endX: guidesModel.logo.x + guidesModel.outerRadius / 2.0,
-    endY: guidesModel.logo.y + guidesModel.outerRadius / 5.0,
+    endX: position.x + guidesModel.outerRadius / 2.0,
+    endY: position.y + guidesModel.outerRadius / 5.0,
   };
   parentGroup
     .append("defs")

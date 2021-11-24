@@ -1,17 +1,12 @@
 import {
   add,
-  addISOWeekYears,
   differenceInWeeks,
-  eachWeekOfInterval,
-  endOfISOWeekYear,
   endOfQuarter,
   endOfYear,
   getDayOfYear,
   getDaysInYear,
-  getISOWeek,
   getISOWeeksInYear,
   getQuarter,
-  getWeek,
   startOfISOWeekYear,
   startOfQuarter,
   startOfWeek,
@@ -52,6 +47,7 @@ export function modelForDate(now) {
       yearFraction: elapsedInWholeDays / daysInYear,
     },
     currentQuarter: {
+      index: currentQuarter - 1,
       label: `Q${currentQuarter}`,
       start: {
         yearFraction: startOfCurrentQuarterInWholeDays / daysInYear,
