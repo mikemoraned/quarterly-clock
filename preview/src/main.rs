@@ -2,6 +2,7 @@ use headless_chrome::{protocol::page::ScreenshotFormat, Browser, LaunchOptionsBu
 use failure::Fallible;
 use image::io::Reader as ImageReader;
 use std::io::Cursor;
+use std::{thread, time};
 
 fn main() -> Fallible<()> {
     let browser = Browser::new(LaunchOptionsBuilder::default().build().unwrap())?;
@@ -9,14 +10,16 @@ fn main() -> Fallible<()> {
     
     let tab = browser.wait_for_initial_tab()?;
     println!("got tab");
-    
-    let viewport = tab.navigate_to("https://en.wikipedia.org/wiki/WebKit")?
-        .wait_for_element("#mw-content-text > div > table.infobox.vevent")?
-        .get_box_model()?
-        .margin_viewport();
-    println!("got viewport");
-    
-    let png_data = tab.capture_screenshot(ScreenshotFormat::PNG, Some(viewport), true)?;
+
+    tab.navigate_to("https://quarterly.houseofmoran.io/")?;
+    println!("navigated");
+    tab.wait_for_element("#container > svg")?;
+    println!("got SVG");
+    let wait_duration = time::Duration::from_millis(1000);
+    thread::sleep(wait_duration);
+    println!("waited {:?}", wait_duration);
+ 
+    let png_data = tab.capture_screenshot(ScreenshotFormat::PNG, None, true)?;
     println!("got png data");
     println!("peek: {:02X?}", &png_data[0 .. 8]);
     
