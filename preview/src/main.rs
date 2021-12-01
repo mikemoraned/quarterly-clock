@@ -1,10 +1,19 @@
+use core::time;
+use std::thread;
+
 use headless_chrome::{protocol::page::ScreenshotFormat, Browser, LaunchOptionsBuilder};
 use failure::Fallible;
-use image::io::Reader as ImageReader;
-use std::io::Cursor;
-use std::{thread, time};
+use actix_web::{get, App, HttpServer, HttpResponse, Responder};
 
-fn main() -> Fallible<()> {
+#[get("/screenshot.png")]
+async fn screenshot() -> impl Responder {
+    match grab_screenshot() {
+        Ok(png_data) => HttpResponse::Ok().content_type("image/png").body(png_data),
+        Err(_) => HttpResponse::InternalServerError().body("oops")
+    }
+}
+
+fn grab_screenshot() -> Fallible<Vec<u8>> {
     let browser = Browser::new(LaunchOptionsBuilder::default().build().unwrap())?;
     println!("created browser");
     
@@ -22,14 +31,17 @@ fn main() -> Fallible<()> {
     let png_data = tab.capture_screenshot(ScreenshotFormat::PNG, None, true)?;
     println!("got png data");
     println!("peek: {:02X?}", &png_data[0 .. 8]);
-    
-    let png_image = ImageReader::new(Cursor::new(png_data))
-        .with_guessed_format()?
-        .decode()?;
-    println!("parsed as png image");
 
-    png_image.save("screenshot.png")?;
-    println!("saved as png file");
+    Ok(png_data)
+}
 
-    Ok(())
+#[actix_web::main]
+async fn main() -> std::io::Result<()> {
+    HttpServer::new(|| {
+        App::new()
+            .service(screenshot)
+    })
+    .bind("127.0.0.1:8080")?
+    .run()
+    .await
 }
