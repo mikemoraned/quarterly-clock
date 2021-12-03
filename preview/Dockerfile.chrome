@@ -15,12 +15,6 @@ RUN apt-get update
 RUN apt-get install -y xvfb
 RUN apt-get install -y chromium
 
-RUN groupadd -r preview && useradd -r -g preview -G audio,video preview
-RUN mkdir -p /home/preview && chown -R preview:preview /home/preview
-
-# USER preview
-# WORKDIR /home/preview
-
 # to run:
 # Xvfb -ac :99 -screen 0 1280x1024x16 &
 # DISPLAY=:99 /usr/bin/chromium --headless
