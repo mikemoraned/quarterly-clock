@@ -37,6 +37,7 @@ fn grab_screenshot() -> Fallible<Vec<u8>> {
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
+    env_logger::init();
     HttpServer::new(|| {
         App::new()
             .service(screenshot)
