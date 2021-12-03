@@ -15,6 +15,5 @@ RUN apt-get update
 RUN apt-get install -y xvfb
 RUN apt-get install -y chromium
 
-# to run:
-# Xvfb -ac :99 -screen 0 1280x1024x16 &
-# DISPLAY=:99 /usr/bin/chromium --headless
+COPY start.sh start.sh
+CMD ./start.sh
