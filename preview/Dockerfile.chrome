@@ -1,15 +1,4 @@
-# FROM debian:buster-slim
 FROM debian:bullseye-slim
-ARG TARGETPLATFORM
-ARG TARGETARCH
-ARG CHROME_VERSION="96.0.4664.45-1"
-
-RUN echo $TARGETPLATFORM; echo $TARGETARCH; echo $CHROME_VERSION
-
-# RUN apt-get update && apt-get install wget -y
-# RUN wget --no-verbose -O /tmp/chrome.deb https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_${CHROME_VERSION}_${TARGETARCH}.deb \
-#   && apt install -y /tmp/chrome.deb \
-#   && rm /tmp/chrome.deb
 
 RUN apt-get update
 RUN apt-get install -y xvfb
