@@ -12,4 +12,3 @@ failure = "0.1"
 image = "0.23"
 actix-web = "3.3"
 
-
