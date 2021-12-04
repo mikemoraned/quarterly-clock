@@ -13,6 +13,11 @@ async fn screenshot() -> impl Responder {
     }
 }
 
+#[get("/")]
+async fn hello() -> impl Responder {
+    HttpResponse::Ok().body("hello!")
+}
+
 fn grab_screenshot() -> Fallible<Vec<u8>> {
     let browser = Browser::new(LaunchOptionsBuilder::default().build().unwrap())?;
     println!("created browser");
@@ -40,6 +45,7 @@ async fn main() -> std::io::Result<()> {
     env_logger::init();
     HttpServer::new(|| {
         App::new()
+            .service(hello)
             .service(screenshot)
     })
     .bind("0.0.0.0:8080")?
