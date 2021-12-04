@@ -1,11 +1,11 @@
-use headless_chrome::{protocol::page::ScreenshotFormat, Browser, LaunchOptionsBuilder};
+use headless_chrome::{protocol::page::ScreenshotFormat, Browser};
 use failure::Fallible;
 use image::io::Reader as ImageReader;
 use std::io::Cursor;
 use std::{thread, time};
 
 fn main() -> Fallible<()> {
-    let browser = Browser::new(LaunchOptionsBuilder::default().build().unwrap())?;
+    let browser = Browser::connect("ws://127.0.0.1:9222/devtools/browser/248bd3d3-8975-4962-b001-20dac904bfda".into())?;
     println!("created browser");
     
     let tab = browser.wait_for_initial_tab()?;
