@@ -5,7 +5,7 @@ use std::io::Cursor;
 use std::{thread, time};
 
 fn main() -> Fallible<()> {
-    let browser = Browser::connect("ws://127.0.0.1:9222/devtools/browser/248bd3d3-8975-4962-b001-20dac904bfda".into())?;
+    let browser = Browser::connect("ws://192.168.2.7:9222/devtools/browser/357ddcfb-e28d-48e3-a231-f2c3d172dd4a".into())?;
     println!("created browser");
     
     let tab = browser.wait_for_initial_tab()?;
