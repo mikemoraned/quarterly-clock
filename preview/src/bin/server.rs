@@ -46,7 +46,7 @@ fn grab_screenshot() -> Fallible<Vec<u8>> {
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
     log::info!("setting up logging, next message should be from log");
-    let _ = SimpleLogger::init(LevelFilter::Info, Config::default());
+    let _ = SimpleLogger::init(LevelFilter::Trace, Config::default());
     log::info!("logging setup completed");
     HttpServer::new(|| {
         App::new()

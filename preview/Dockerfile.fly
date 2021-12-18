@@ -10,9 +10,14 @@ RUN wget --no-verbose -O /tmp/chrome.deb https://dl.google.com/linux/chrome/deb/
   && apt install -y /tmp/chrome.deb \
   && rm /tmp/chrome.deb
 
-WORKDIR /app
+RUN mkdir -p /home/appuser
+WORKDIR /home/appuser
 COPY . .
 RUN cargo build --release
 
-ENV RUSTLOG=headless_chrome=trace
+RUN groupadd -g 999 appuser && useradd -r -u 999 -g appuser appuser
+RUN chown -v -R appuser:appuser /home/appuser
+USER appuser
+RUN cd /home/appuser
+
 ENTRYPOINT ["./target/release/server"]
