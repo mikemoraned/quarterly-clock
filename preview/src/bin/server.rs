@@ -4,6 +4,9 @@ use std::thread;
 use headless_chrome::{protocol::page::ScreenshotFormat, Browser, LaunchOptionsBuilder};
 use failure::Fallible;
 use actix_web::{get, App, HttpServer, HttpResponse, Responder};
+use actix_web::middleware::Logger;
+use log;
+use simplelog::*;
 
 #[get("/screenshot.png")]
 async fn screenshot() -> impl Responder {
@@ -42,9 +45,12 @@ fn grab_screenshot() -> Fallible<Vec<u8>> {
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
-    env_logger::init();
+    println!("setting up logging, next message should be from log");
+    let _ = SimpleLogger::init(LevelFilter::Info, Config::default());
+    log::info!("logging setup completed");
     HttpServer::new(|| {
         App::new()
+            .wrap(Logger::default())
             .service(hello)
             .service(screenshot)
     })
