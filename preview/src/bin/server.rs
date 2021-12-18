@@ -22,7 +22,7 @@ async fn hello() -> impl Responder {
 }
 
 fn grab_screenshot() -> Fallible<Vec<u8>> {
-    let browser = Browser::new(LaunchOptionsBuilder::default().build().unwrap())?;
+    let browser = Browser::new(LaunchOptionsBuilder::default().sandbox(false).build().unwrap())?;
     log::info!("created browser");
     
     let tab = browser.wait_for_initial_tab()?;
