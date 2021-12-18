@@ -7,8 +7,7 @@ kill_timeout = 5
 processes = []
 
 [build]
-  # image = "flyio/hellofly:latest"
-  dockerfile = "Dockerfile.fly"
+  image = "ghcr.io/mikemoraned/quarterly-clock:0.1.0-amd64"
 
 [env]
 
