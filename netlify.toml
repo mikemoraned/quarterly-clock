@@ -3,6 +3,13 @@
   command = "npm run build"
 
 [[redirects]]
+  from = "/preview.png"
+  to = "https://quarterly-preview.fly.dev/screenshot.png"
+  status = 200
+  headers = {X-From = "Netlify"}
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
