@@ -161,6 +161,14 @@ jobs:
           echo kind=${{ steps.prepare.outputs.kind }}
           echo docker_tag=${{ steps.prepare.outputs.docker_tag }}
 
+      - name: Deploy Release Build
+        if: steps.prepare.outputs.category == 'publish' && steps.prepare.outputs.kind == 'release'
+        uses: superfly/flyctl-actions@master
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+        with:
+          args: "deploy --app quarterly-preview --image ${{ steps.prepare.outputs.docker_tag }} --config ./preview/fly.toml --verbose"
+
       - name: Deploy Branch Build
         if: steps.prepare.outputs.category == 'publish' && steps.prepare.outputs.kind == 'branch-build'
         uses: superfly/flyctl-actions@master
