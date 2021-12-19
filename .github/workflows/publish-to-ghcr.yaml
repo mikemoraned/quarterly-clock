@@ -123,12 +123,20 @@ jobs:
         with:
           name: category
 
+      - name: Load Docker Tag
+        uses: actions/download-artifact@v2
+        with:
+          name: docker_tag
+
       - name: Prepare
         id: prepare
         run: |
           CATEGORY=$(cat category.txt)
           echo ::set-output name=category::${CATEGORY}
+          DOCKER_TAG=$(cat docker_tag.txt)
+          echo ::set-output name=docker_tag::${DOCKER_TAG}
 
       - name: Information
         run: |
           echo category=${{ steps.prepare.outputs.category }}
+          echo docker_tag=${{ steps.prepare.outputs.docker_tag }}
