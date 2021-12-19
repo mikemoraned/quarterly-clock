@@ -1,4 +1,4 @@
-FROM rust:1.56.1 as build
+FROM rust:1.56.1-bullseye as build
 
 # prepare base image with dependencies
 ## create shell project
@@ -22,7 +22,7 @@ COPY ./src ./src
 RUN touch src/server.rs
 RUN cargo build --release
 
-FROM rust:1.56.1
+FROM rust:1.56.1-slim-bullseye
 LABEL org.opencontainers.image.source https://github.com/mikemoraned/quarterly-clock
 
 ARG TARGETPLATFORM
