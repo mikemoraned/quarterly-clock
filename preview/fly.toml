@@ -1,7 +1,3 @@
-# fly.toml file generated for quarterly-preview on 2021-12-01T22:23:08Z
-
-app = "quarterly-preview"
-
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
