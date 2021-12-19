@@ -99,10 +99,12 @@ jobs:
           path: category.txt
 
       - name: Save Kind Locally
+        if: steps.prepare.outputs.category == 'publish'
         run: |
           echo -n ${{ steps.prepare.outputs.kind }} > kind.txt
 
       - name: Save Kind to Workflow
+        if: steps.prepare.outputs.category == 'publish'
         uses: actions/upload-artifact@v2
         with:
           name: kind
@@ -158,3 +160,11 @@ jobs:
           echo category=${{ steps.prepare.outputs.category }}
           echo kind=${{ steps.prepare.outputs.kind }}
           echo docker_tag=${{ steps.prepare.outputs.docker_tag }}
+
+      - name: Deploy Branch Build
+        if: steps.prepare.outputs.category == 'publish' && steps.prepare.outputs.kind == 'branch-build'
+        uses: superfly/flyctl-actions@master
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+        with:
+          args: "deploy --app quarterly-preview-branch-build --image ${{ steps.prepare.outputs.docker_tag }}"
