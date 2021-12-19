@@ -1,0 +1,13 @@
+FROM debian:buster-slim
+ARG TARGETPLATFORM
+ARG TARGETARCH
+ARG CHROME_VERSION="96.0.4664.45-1"
+
+RUN echo $TARGETPLATFORM; echo $TARGETARCH; echo $CHROME_VERSION
+
+RUN apt-get update && apt-get install wget -y
+RUN wget --no-verbose -O /tmp/chrome.deb https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_${CHROME_VERSION}_${TARGETARCH}.deb \
+  && apt install -y /tmp/chrome.deb \
+  && rm /tmp/chrome.deb
+
+CMD /usr/bin/google-chrome --headless --hide-scrollbars --remote-debugging-port=9222 --remote-debugging-address=0.0.0.0 --no-sandbox --disable-gpu
