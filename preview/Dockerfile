@@ -1,4 +1,28 @@
-FROM rust:1.56.1
+FROM rust:1.56.1-bullseye as build
+
+# prepare base image with dependencies
+## create shell project
+WORKDIR /usr/src/
+RUN USER=root cargo new --bin app
+WORKDIR /usr/src/app
+
+## copy dependencies
+COPY ./Cargo.lock ./Cargo.lock
+COPY ./Cargo.toml ./Cargo.toml
+
+## build and cache all dependencies
+RUN cargo build --release
+
+# build real app
+## replace src
+RUN rm src/*.rs
+COPY ./src ./src
+
+## build for release, using already compiled dependencies
+RUN touch src/server.rs
+RUN cargo build --release
+
+FROM rust:1.56.1-slim-bullseye
 LABEL org.opencontainers.image.source https://github.com/mikemoraned/quarterly-clock
 
 ARG TARGETPLATFORM
@@ -13,12 +37,11 @@ RUN wget --no-verbose -O /tmp/chrome.deb https://dl.google.com/linux/chrome/deb/
 
 RUN mkdir -p /home/appuser
 WORKDIR /home/appuser
-COPY . .
-RUN cargo build --release
+COPY --from=build /usr/src/app/target/release/server /home/appuser/server
 
 RUN groupadd -g 999 appuser && useradd -r -u 999 -g appuser appuser
 RUN chown -v -R appuser:appuser /home/appuser
 USER appuser
 RUN cd /home/appuser
 
-ENTRYPOINT ["./target/release/server"]
+ENTRYPOINT ["./server"]
