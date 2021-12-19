@@ -88,6 +88,16 @@ jobs:
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
 
+      - name: Save Category Locally
+        run: |
+          echo -n ${{ steps.prepare.outputs.category }} > category.txt
+
+      - name: Save Category to Workflow
+        uses: actions/upload-artifact@v2
+        with:
+          name: category
+          path: category.txt
+
       - name: Save Docker Tag Locally
         if: steps.prepare.outputs.category == 'publish'
         run: |
@@ -99,3 +109,25 @@ jobs:
         with:
           name: docker_tag
           path: docker_tag.txt
+
+  deploy_to_fly:
+    name: Publish Docker image to fly.io
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+
+      - name: Load Category
+        uses: actions/download-artifact@v2
+        with:
+          name: category
+
+      - name: Prepare
+        id: prepare
+        run: |
+          CATEGORY=$(cat category.txt)
+          echo ::set-output name=category::${CATEGORY}
+
+      - name: Information
+        run: |
+          echo category=${{ steps.prepare.outputs.category }}
