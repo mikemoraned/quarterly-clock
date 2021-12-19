@@ -79,3 +79,15 @@ jobs:
           labels: "KIND=${{ steps.prepare.outputs.kind }},BUILD_DATE=${{ steps.prepare.outputs.build_date }},VCS_REF=${GITHUB_SHA}"
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
+
+      - name: Save Image Information Locally
+        if: steps.prepare.outputs.category == 'publish'
+        run: |
+          echo -n ${{ steps.prepare.outputs.docker_image }} > docker_image.txt
+
+      - name: Save Image Information to Workflow
+        if: steps.prepare.outputs.category == 'publish'
+        uses: actions/upload-artifact@v2
+        with:
+          name: docker_image
+          path: docker_image.txt
