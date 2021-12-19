@@ -1,5 +1,5 @@
 name: Publish to GitHub Container Registry
-on: [push, pull_request, workflow_dispatch]
+on: [push, workflow_dispatch]
 
 jobs:
   push_to_ghcr:
@@ -73,7 +73,8 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          platforms: linux/arm64,linux/amd64
+          context: ./preview
+          platforms: linux/amd64
           tags: "${{ steps.prepare.outputs.docker_image }}:${{ steps.prepare.outputs.version }}"
           labels: "KIND=${{ steps.prepare.outputs.kind }},BUILD_DATE=${{ steps.prepare.outputs.build_date }},VCS_REF=${GITHUB_SHA}"
           cache-from: type=local,src=/tmp/.buildx-cache
