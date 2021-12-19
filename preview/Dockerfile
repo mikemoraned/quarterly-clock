@@ -1,4 +1,5 @@
 FROM rust:1.56.1
+LABEL org.opencontainers.image.source https://github.com/mikemoraned/quarterly-clock
 
 ARG TARGETPLATFORM
 ARG CHROME_VERSION="96.0.4664.45-1"
