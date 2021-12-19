@@ -98,6 +98,16 @@ jobs:
           name: category
           path: category.txt
 
+      - name: Save Kind Locally
+        run: |
+          echo -n ${{ steps.prepare.outputs.kind }} > kind.txt
+
+      - name: Save Kind to Workflow
+        uses: actions/upload-artifact@v2
+        with:
+          name: kind
+          path: kind.txt
+
       - name: Save Docker Tag Locally
         if: steps.prepare.outputs.category == 'publish'
         run: |
@@ -123,6 +133,11 @@ jobs:
         with:
           name: category
 
+      - name: Load Kind
+        uses: actions/download-artifact@v2
+        with:
+          name: kind
+
       - name: Load Docker Tag
         uses: actions/download-artifact@v2
         with:
@@ -133,10 +148,13 @@ jobs:
         run: |
           CATEGORY=$(cat category.txt)
           echo ::set-output name=category::${CATEGORY}
+          KIND=$(cat kind.txt)
+          echo ::set-output name=kind::${KIND}
           DOCKER_TAG=$(cat docker_tag.txt)
           echo ::set-output name=docker_tag::${DOCKER_TAG}
 
       - name: Information
         run: |
           echo category=${{ steps.prepare.outputs.category }}
+          echo kind=${{ steps.prepare.outputs.kind }}
           echo docker_tag=${{ steps.prepare.outputs.docker_tag }}
