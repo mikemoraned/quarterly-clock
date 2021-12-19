@@ -15,22 +15,29 @@ jobs:
           if [[ $GITHUB_REF == refs/tags/* ]]; then
             echo ::set-output name=category::publish
             echo ::set-output name=kind::release
-            echo ::set-output name=version::${GITHUB_REF#refs/tags/v}
+            VERSION=${GITHUB_REF#refs/tags/v}
+            echo ::set-output name=version::${VERSION}
           elif [[ $GITHUB_REF == refs/heads/master ]]; then
             echo ::set-output name=category::ignore
+            VERSION=unset
           elif [[ $GITHUB_REF == refs/heads/main ]]; then
             echo ::set-output name=category::ignore
+            VERSION=unset
           elif [[ $GITHUB_REF == refs/heads/* ]]; then
             echo ::set-output name=category::publish
             echo ::set-output name=kind::branch-build
             BRANCH_NAME=${GITHUB_REF#refs/heads/}
             VERSION_SAFE_BRANCH_NAME=${BRANCH_NAME/\//-}
-            echo ::set-output name=version::${VERSION_SAFE_BRANCH_NAME}-${GITHUB_RUN_NUMBER}
+            VERSION=${VERSION_SAFE_BRANCH_NAME}-${GITHUB_RUN_NUMBER}
+            echo ::set-output name=version::${VERSION}
           else
             echo ::set-output name=category::ignore
           fi
           echo ::set-output name=build_date::$(date -u +'%Y-%m-%dT%H:%M:%SZ')
-          echo ::set-output name=docker_image::ghcr.io/mikemoraned/quarterly-clock
+          DOCKER_IMAGE=ghcr.io/mikemoraned/quarterly-clock
+          echo ::set-output name=docker_image::${DOCKER_IMAGE}
+          DOCKER_TAG="${DOCKER_IMAGE}:${VERSION}"
+          echo ::set-output name=docker_tag::${DOCKER_TAG}
 
       - name: Information
         run: |
@@ -41,6 +48,7 @@ jobs:
           echo kind=${{ steps.prepare.outputs.kind }}
           echo date=${{ steps.prepare.outputs.build_date }}
           echo docker_image=${{ steps.prepare.outputs.docker_image }}
+          echo docker_tag=${{ steps.prepare.outputs.docker_tag }}
 
       - name: Login to ghcr
         if: steps.prepare.outputs.category == 'publish'
@@ -75,19 +83,19 @@ jobs:
           push: true
           context: ./preview
           platforms: linux/amd64
-          tags: "${{ steps.prepare.outputs.docker_image }}:${{ steps.prepare.outputs.version }}"
+          tags: "${{ steps.prepare.outputs.docker_tag }}"
           labels: "KIND=${{ steps.prepare.outputs.kind }},BUILD_DATE=${{ steps.prepare.outputs.build_date }},VCS_REF=${GITHUB_SHA}"
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
 
-      - name: Save Image Information Locally
+      - name: Save Docker Tag Locally
         if: steps.prepare.outputs.category == 'publish'
         run: |
-          echo -n ${{ steps.prepare.outputs.docker_image }} > docker_image.txt
+          echo -n ${{ steps.prepare.outputs.docker_tag }} > docker_tag.txt
 
-      - name: Save Image Information to Workflow
+      - name: Save Docker Tag to Workflow
         if: steps.prepare.outputs.category == 'publish'
         uses: actions/upload-artifact@v2
         with:
-          name: docker_image
-          path: docker_image.txt
+          name: docker_tag
+          path: docker_tag.txt
