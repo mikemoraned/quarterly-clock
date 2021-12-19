@@ -112,6 +112,7 @@ jobs:
 
   deploy_to_fly:
     name: Publish Docker image to fly.io
+    needs: push_to_ghcr
     runs-on: ubuntu-18.04
     steps:
       - name: Check out the repo
