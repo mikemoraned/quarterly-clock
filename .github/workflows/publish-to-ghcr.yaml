@@ -1,5 +1,5 @@
 name: Publish to GitHub Container Registry
-on: [push, pull_request, workflow_dispatch]
+on: [push, workflow_dispatch]
 
 jobs:
   push_to_ghcr:
