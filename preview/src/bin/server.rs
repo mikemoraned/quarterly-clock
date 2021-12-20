@@ -48,15 +48,18 @@ fn grab_screenshot() -> Fallible<Vec<u8>> {
 async fn main() -> std::io::Result<()> {
     std::env::set_var("RUST_BACKTRACE", "1");
     
-    log::info!("setting up logging, next message should be from log");
-    let _ = SimpleLogger::init(LevelFilter::Trace, Config::default());
-    log::info!("logging setup completed");
-
+    println!("setting up logging, next message should be from log");
+    let simple_logger = SimpleLogger::new(LevelFilter::Trace, Config::default());
+    let sentry_logger = sentry_log::SentryLogger::with_dest(simple_logger);
+    log::set_boxed_logger(Box::new(sentry_logger)).unwrap();
+    log::set_max_level(log::LevelFilter::Info);
+    
     let sentry_dsn= dotenv::var("SENTRY_DSN").unwrap();
     let _guard = sentry::init((sentry_dsn, sentry::ClientOptions {
         release: sentry::release_name!(),
         ..Default::default()
     }));
+    log::info!("logging setup completed");
 
     HttpServer::new(|| {
         App::new()
