@@ -47,7 +47,7 @@ export function draw(dataModel, svg) {
     },
   };
 
-  console.dir(guidesModel);
+  console.log("Guides Model:", JSON.stringify(guidesModel));
 
   drawWeekScale(dataModel, guidesModel, svg);
   drawCurrentQuarter(dataModel, guidesModel, svg);

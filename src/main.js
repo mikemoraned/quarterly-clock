@@ -17,7 +17,7 @@ const now = new Date();
 // const now = Date.parse("31 Dec 2021 00:00:00 GMT");
 console.log("Now:", now);
 const dataModel = modelForDate(now);
-console.dir(dataModel);
+console.log("Data Model:", JSON.stringify(dataModel));
 createSvg("container").then((svg) => {
   draw(dataModel, svg);
 });
