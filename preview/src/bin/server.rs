@@ -7,6 +7,7 @@ use actix_web::{get, App, HttpServer, HttpResponse, Responder};
 use actix_web::middleware::Logger;
 use log;
 use simplelog::*;
+use dotenv;
 
 #[get("/screenshot.png")]
 async fn screenshot() -> impl Responder {
@@ -45,12 +46,22 @@ fn grab_screenshot() -> Fallible<Vec<u8>> {
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
+    std::env::set_var("RUST_BACKTRACE", "1");
+    
     log::info!("setting up logging, next message should be from log");
     let _ = SimpleLogger::init(LevelFilter::Trace, Config::default());
     log::info!("logging setup completed");
+
+    let sentry_dsn= dotenv::var("SENTRY_DSN").unwrap();
+    let _guard = sentry::init((sentry_dsn, sentry::ClientOptions {
+        release: sentry::release_name!(),
+        ..Default::default()
+    }));
+
     HttpServer::new(|| {
         App::new()
             .wrap(Logger::default())
+            .wrap(sentry_actix::Sentry::new())
             .service(hello)
             .service(screenshot)
     })

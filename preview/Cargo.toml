@@ -12,4 +12,6 @@ headless_chrome = { version= "0.9", default-features = false }
 failure = "0.1"
 image = "0.23"
 actix-web = "3.3"
-
+sentry = "0.23.0"
+sentry-actix = "0.23.0"
+dotenv = "0.15.0"
