@@ -2247,6 +2247,7 @@ dependencies = [
  "sentry-backtrace",
  "sentry-contexts",
  "sentry-core",
+ "sentry-log",
  "sentry-panic",
  "tokio 1.15.0",
 ]
