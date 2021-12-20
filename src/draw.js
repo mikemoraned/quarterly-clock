@@ -51,7 +51,9 @@ export function draw(dataModel, svg) {
 
   drawWeekScale(dataModel, guidesModel, svg);
   drawCurrentQuarter(dataModel, guidesModel, svg);
-  drawRemainder(dataModel, guidesModel, svg);
+  if (dataModel.currentQuarter.wholeWeeksLeft.durationInWeeks != 0) {
+    drawRemainder(dataModel, guidesModel, svg);
+  }
   drawDayHand(dataModel, guidesModel, svg);
   drawInfo(dataModel, guidesModel, svg);
   drawLogo(dataModel, guidesModel, svg);
