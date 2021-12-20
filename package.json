@@ -13,15 +13,15 @@
   "author": "Mike Moran <mike@houseofmoran.com>",
   "license": "Apache-2.0",
   "devDependencies": {
-    "jest": "^27.3.1",
+    "jest": "^27.4.5",
     "parcel": "^2.0.1"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
-    "@sentry/browser": "^6.15.0",
-    "@sentry/integrations": "^6.16.0",
-    "@sentry/tracing": "^6.15.0",
-    "d3": "^7.1.1",
-    "date-fns": "^2.25.0"
+    "@sentry/browser": "^6.15.1",
+    "@sentry/integrations": "^6.16.1",
+    "@sentry/tracing": "^6.15.1",
+    "d3": "^7.2.1",
+    "date-fns": "^2.27.0"
   }
 }
