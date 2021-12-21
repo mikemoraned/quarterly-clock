@@ -6,7 +6,7 @@ use failure::Fallible;
 use actix_web::{get, App, HttpServer, HttpResponse, Responder};
 use actix_web::middleware::Logger;
 use log;
-use simplelog::*;
+use env_logger::Env;
 use dotenv;
 
 #[get("/screenshot.png")]
@@ -49,8 +49,8 @@ async fn main() -> std::io::Result<()> {
     std::env::set_var("RUST_BACKTRACE", "1");
     
     println!("setting up logging, next message should be from log");
-    let simple_logger = SimpleLogger::new(LevelFilter::Trace, Config::default());
-    let sentry_logger = sentry_log::SentryLogger::with_dest(simple_logger);
+    let env_logger = env_logger::Builder::from_env(Env::default().default_filter_or("info")).build();
+    let sentry_logger = sentry_log::SentryLogger::with_dest(env_logger);
     log::set_boxed_logger(Box::new(sentry_logger)).unwrap();
     log::set_max_level(log::LevelFilter::Info);
     
