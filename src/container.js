@@ -2,7 +2,7 @@ import * as d3 from "d3";
 
 const RENDER_DELAY = 200;
 
-export function svgUnder(containerId, callback) {
+export function renderUnder(containerId, callback) {
   window.addEventListener("load", () => {
     const container = document.getElementById(containerId);
     let delayedRender = null;

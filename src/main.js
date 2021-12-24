@@ -1,5 +1,5 @@
 import { modelForDate } from "./model.js";
-import { svgUnder } from "./container";
+import { renderUnder } from "./container";
 import { draw } from "./draw/draw";
 import { init } from "./sentry";
 import "@fortawesome/fontawesome-free/css/all.css";
@@ -18,6 +18,6 @@ const now = new Date();
 console.log("Now:", now);
 const dataModel = modelForDate(now);
 console.log("Data Model:", JSON.stringify(dataModel));
-svgUnder("container", (svg) => {
+renderUnder("container", (svg) => {
   draw(dataModel, svg);
 });
