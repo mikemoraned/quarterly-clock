@@ -1,5 +1,7 @@
 import * as d3 from "d3";
 
+const RENDER_DELAY = 200;
+
 export function svgUnder(containerId, callback) {
   window.addEventListener("load", () => {
     const container = document.getElementById(containerId);
@@ -8,12 +10,22 @@ export function svgUnder(containerId, callback) {
     const svg = addSvg(containerId, dimensions);
     callback(svg);
 
-    const resizeObserver = new ResizeObserver(() => {
+    let delayedRender = null;
+    const render = () => {
       const { width, height } = container.getBoundingClientRect();
       const dimensions = { width, height };
       removeSvg(containerId);
       const svg = addSvg(containerId, dimensions);
       callback(svg);
+      delayedRender = null;
+    };
+    const resizeObserver = new ResizeObserver(() => {
+      if (delayedRender === null) {
+        delayedRender = setTimeout(render, RENDER_DELAY);
+      } else {
+        clearTimeout(delayedRender);
+        delayedRender = setTimeout(render, RENDER_DELAY);
+      }
     });
 
     resizeObserver.observe(container);
