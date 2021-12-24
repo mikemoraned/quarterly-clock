@@ -1,13 +1,42 @@
 import * as d3 from "d3";
 
-export async function createSvg(containerId) {
-  const { width, height } = await getContainerDimensions(containerId);
+const RENDER_DELAY = 200;
+
+export function renderUnder(containerId, callback) {
+  window.addEventListener("load", () => {
+    const container = document.getElementById(containerId);
+    let delayedRender = null;
+    const render = () => {
+      const { width, height } = container.getBoundingClientRect();
+      const dimensions = { width, height };
+      removeSvg(containerId);
+      const svg = addSvg(containerId, dimensions);
+      callback(svg);
+      delayedRender = null;
+    };
+    render();
+
+    const resizeObserver = new ResizeObserver(() => {
+      if (delayedRender === null) {
+        delayedRender = setTimeout(render, RENDER_DELAY);
+      } else {
+        clearTimeout(delayedRender);
+        delayedRender = setTimeout(render, RENDER_DELAY);
+      }
+    });
+
+    resizeObserver.observe(container);
+  });
+}
+
+function addSvg(containerId, dimensions) {
+  const { width, height } = dimensions;
   console.log(`container dimensions: ${width}x${height}`);
 
   const root = d3
     .select(`#${containerId}`)
     .append("svg")
-    .attr("class", "clock")
+    .attr("id", "clock")
     .attr("width", width)
     .attr("height", height);
 
@@ -22,29 +51,6 @@ export async function createSvg(containerId) {
   };
 }
 
-const POLL_INTERVAL = 500;
-const MAX_ATTEMPTS = 4;
-
-export async function getContainerDimensions(containerId, attemptsRemaining) {
-  attemptsRemaining =
-    attemptsRemaining == undefined ? MAX_ATTEMPTS : attemptsRemaining - 1;
-  const container = document.getElementById(containerId);
-  const { width, height } = container.getBoundingClientRect();
-
-  if (width == 0 || height == 0) {
-    if (attemptsRemaining > 0) {
-      console.log(
-        `width or height not set: ${width}x${height}, will retry after ${POLL_INTERVAL} millis, attempts remaining: ${attemptsRemaining}`
-      );
-      return new Promise((resolve) => {
-        setTimeout(() => {
-          resolve(getContainerDimensions(containerId, attemptsRemaining));
-        }, POLL_INTERVAL);
-      });
-    } else {
-      throw `width or height not set: ${width}x${height}, but ran out of attempts`;
-    }
-  } else {
-    return { width, height };
-  }
+function removeSvg(containerId) {
+  d3.select(`#${containerId} > svg#clock`).remove();
 }
