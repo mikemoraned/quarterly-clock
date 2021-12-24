@@ -1,6 +1,6 @@
 import { drawCurrentQuarter, drawQuarterLabel } from "./quarter";
 import { drawWeekScale, drawDayHand } from "./year";
-import { drawLogo } from "./about";
+import { drawLogo, drawReadme } from "./about";
 import { drawRemainder } from "./remainder";
 
 export function draw(dataModel, svg) {
@@ -37,11 +37,22 @@ export function draw(dataModel, svg) {
       fontSize: `${sideLength / 13}px`,
       top: {
         x: 0,
-        y: -1.0 * clockRadius * 0.5,
+        y: -1.0 * clockRadius * 0.55,
       },
       bottom: {
         x: 0,
         y: clockRadius * 0.4,
+      },
+    },
+    readme: {
+      fontSize: `${sideLength / 30}px`,
+      top: {
+        x: 0,
+        y: -1.0 * clockRadius * 0.42,
+      },
+      bottom: {
+        x: 0,
+        y: clockRadius * 0.52,
       },
     },
     weekScale: {
@@ -60,6 +71,7 @@ export function draw(dataModel, svg) {
   drawDayHand(dataModel, guidesModel, svg);
   drawQuarterLabel(dataModel, guidesModel, svg);
   drawLogo(dataModel, guidesModel, svg);
+  drawReadme(dataModel, guidesModel, svg);
   drawGuides(guidesModel, svg);
 }
 
