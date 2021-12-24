@@ -5,19 +5,29 @@ export function svgUnder(containerId, callback) {
     const container = document.getElementById(containerId);
     const { width, height } = container.getBoundingClientRect();
     const dimensions = { width, height };
-    const svg = createSvg(containerId, dimensions);
+    const svg = addSvg(containerId, dimensions);
     callback(svg);
+
+    const resizeObserver = new ResizeObserver(() => {
+      const { width, height } = container.getBoundingClientRect();
+      const dimensions = { width, height };
+      removeSvg(containerId);
+      const svg = addSvg(containerId, dimensions);
+      callback(svg);
+    });
+
+    resizeObserver.observe(container);
   });
 }
 
-function createSvg(containerId, dimensions) {
+function addSvg(containerId, dimensions) {
   const { width, height } = dimensions;
   console.log(`container dimensions: ${width}x${height}`);
 
   const root = d3
     .select(`#${containerId}`)
     .append("svg")
-    .attr("class", "clock")
+    .attr("id", "clock")
     .attr("width", width)
     .attr("height", height);
 
@@ -30,4 +40,8 @@ function createSvg(containerId, dimensions) {
     root,
     selection: topLevelGroup,
   };
+}
+
+function removeSvg(containerId) {
+  d3.select(`#${containerId} > svg#clock`).remove();
 }
