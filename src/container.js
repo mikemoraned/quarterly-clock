@@ -1,7 +1,17 @@
 import * as d3 from "d3";
 
-export async function createSvg(containerId) {
-  const { width, height } = await getContainerDimensions(containerId);
+export function svgUnder(containerId, callback) {
+  window.addEventListener("load", () => {
+    const container = document.getElementById(containerId);
+    const { width, height } = container.getBoundingClientRect();
+    const dimensions = { width, height };
+    const svg = createSvg(containerId, dimensions);
+    callback(svg);
+  });
+}
+
+function createSvg(containerId, dimensions) {
+  const { width, height } = dimensions;
   console.log(`container dimensions: ${width}x${height}`);
 
   const root = d3
@@ -20,31 +30,4 @@ export async function createSvg(containerId) {
     root,
     selection: topLevelGroup,
   };
-}
-
-const POLL_INTERVAL = 500;
-const MAX_ATTEMPTS = 4;
-
-export async function getContainerDimensions(containerId, attemptsRemaining) {
-  attemptsRemaining =
-    attemptsRemaining == undefined ? MAX_ATTEMPTS : attemptsRemaining - 1;
-  const container = document.getElementById(containerId);
-  const { width, height } = container.getBoundingClientRect();
-
-  if (width == 0 || height == 0) {
-    if (attemptsRemaining > 0) {
-      console.log(
-        `width or height not set: ${width}x${height}, will retry after ${POLL_INTERVAL} millis, attempts remaining: ${attemptsRemaining}`
-      );
-      return new Promise((resolve) => {
-        setTimeout(() => {
-          resolve(getContainerDimensions(containerId, attemptsRemaining));
-        }, POLL_INTERVAL);
-      });
-    } else {
-      throw `width or height not set: ${width}x${height}, but ran out of attempts`;
-    }
-  } else {
-    return { width, height };
-  }
 }
