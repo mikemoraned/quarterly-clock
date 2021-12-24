@@ -82,7 +82,10 @@ export function drawReadme(dataModel, guidesModel, svg) {
 
   const text = parentGroup
     .append("a")
-    .attr("href", "https://github.com/mikemoraned/quarterly-clock/README.md")
+    .attr(
+      "href",
+      "https://github.com/mikemoraned/quarterly-clock/blob/main/README.md"
+    )
     .append("text");
 
   text
