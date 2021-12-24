@@ -1,6 +1,6 @@
 import { modelForDate } from "./model.js";
 import { createSvg } from "./container";
-import { draw } from "./draw";
+import { draw } from "./draw/draw";
 import { init } from "./sentry";
 import "@fortawesome/fontawesome-free/css/all.css";
 
