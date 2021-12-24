@@ -5,11 +5,6 @@ const RENDER_DELAY = 200;
 export function svgUnder(containerId, callback) {
   window.addEventListener("load", () => {
     const container = document.getElementById(containerId);
-    const { width, height } = container.getBoundingClientRect();
-    const dimensions = { width, height };
-    const svg = addSvg(containerId, dimensions);
-    callback(svg);
-
     let delayedRender = null;
     const render = () => {
       const { width, height } = container.getBoundingClientRect();
@@ -19,6 +14,8 @@ export function svgUnder(containerId, callback) {
       callback(svg);
       delayedRender = null;
     };
+    render();
+
     const resizeObserver = new ResizeObserver(() => {
       if (delayedRender === null) {
         delayedRender = setTimeout(render, RENDER_DELAY);
