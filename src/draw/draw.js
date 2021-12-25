@@ -1,7 +1,24 @@
-import { drawCurrentQuarter, drawQuarterLabel } from "./quarter";
+import {
+  drawCurrentQuarter,
+  drawAllQuarterContext,
+  drawQuarterLabel,
+} from "./quarter";
 import { drawWeekScale, drawDayHand } from "./year";
 import { drawLogo, drawReadme } from "./about";
 import { drawRemainder } from "./remainder";
+
+// color blind safe colors from Bang Wong in and https://www.nature.com/articles/nmeth.1618
+// and https://davidmathlogic.com/colorblind
+const BANG_WONG_PALETTE = {
+  black: "rgb(0, 0, 0)",
+  orange: "rgb(230, 159, 0)",
+  "sky-blue": "rgb(86, 180, 233)",
+  "bluish-green": "rgb(0, 158, 115)",
+  yellow: "rgb(240, 228, 66)",
+  blue: "rgb(0, 114, 178)",
+  vermillion: "rgb(213, 94, 0)",
+  "reddish-purple": "rgb(204, 121, 167)",
+};
 
 export function draw(dataModel, svg) {
   const outerMargin = 100;
@@ -22,14 +39,33 @@ export function draw(dataModel, svg) {
         textY: 30 * ((0.5 * sideLength) / 275),
       },
     },
+    colors: {
+      quarters: [
+        {
+          color: BANG_WONG_PALETTE["yellow"],
+        },
+        {
+          color: BANG_WONG_PALETTE["orange"],
+        },
+        {
+          color: BANG_WONG_PALETTE["sky-blue"],
+        },
+        {
+          color: BANG_WONG_PALETTE["bluish-green"],
+        },
+      ],
+      remainder: {
+        color: BANG_WONG_PALETTE["vermillion"],
+      },
+    },
     info: {
       fontSize: `${sideLength / 5}px`,
       left: {
-        x: -1.0 * clockRadius * 0.5,
+        x: -1.0 * clockRadius * 0.62,
         y: 0,
       },
       right: {
-        x: clockRadius * 0.5,
+        x: clockRadius * 0.62,
         y: 0,
       },
     },
@@ -37,7 +73,7 @@ export function draw(dataModel, svg) {
       fontSize: `${sideLength / 13}px`,
       top: {
         x: 0,
-        y: -1.0 * clockRadius * 0.55,
+        y: -1.0 * clockRadius * 0.6,
       },
       bottom: {
         x: 0,
@@ -48,7 +84,7 @@ export function draw(dataModel, svg) {
       fontSize: `${sideLength / 30}px`,
       top: {
         x: 0,
-        y: -1.0 * clockRadius * 0.42,
+        y: -1.0 * clockRadius * 0.47,
       },
       bottom: {
         x: 0,
@@ -64,6 +100,7 @@ export function draw(dataModel, svg) {
   console.log("Guides Model:", JSON.stringify(guidesModel));
 
   drawWeekScale(dataModel, guidesModel, svg);
+  drawAllQuarterContext(dataModel, guidesModel, svg);
   drawCurrentQuarter(dataModel, guidesModel, svg);
   if (dataModel.currentQuarter.wholeWeeksLeft.durationInWeeks != 0) {
     drawRemainder(dataModel, guidesModel, svg);

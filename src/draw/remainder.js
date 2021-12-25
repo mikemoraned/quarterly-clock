@@ -14,7 +14,8 @@ export function drawRemainder(dataModel, guidesModel, svg) {
     .append("rect")
     .attr("width", `${guidesModel.remainder.box.width}`)
     .attr("height", `${guidesModel.remainder.box.height}`)
-    .attr("fill", "#88AAEE");
+    .attr("opacity", "0.8")
+    .attr("fill", guidesModel.colors.remainder.color);
 
   pattern
     .append("text")
