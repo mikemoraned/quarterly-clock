@@ -6,14 +6,14 @@ import "@fortawesome/fontawesome-free/css/all.css";
 
 console.log("Quarterly Clock");
 init({ tracesSampleRate: 1.0 });
-const now = new Date();
+// const now = new Date();
 // const now = Date.parse("01 Jan 2022 00:00:00 GMT");
 // const now = Date.parse("31 Mar 2022 00:00:00 GMT");
 // const now = Date.parse("01 Apr 2022 00:00:00 GMT");
 // const now = Date.parse("30 Jun 2022 00:00:00 GMT");
 // const now = Date.parse("01 Jul 2022 00:00:00 GMT");
 // const now = Date.parse("30 Sep 2022 00:00:00 GMT");
-// const now = Date.parse("01 Oct 2022 00:00:00 GMT");
+const now = Date.parse("01 Oct 2022 00:00:00 GMT");
 // const now = Date.parse("31 Dec 2022 00:00:00 GMT");
 console.log("Now:", now);
 const dataModel = modelForDate(now);
