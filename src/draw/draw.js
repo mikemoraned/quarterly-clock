@@ -9,7 +9,7 @@ import { drawRemainder } from "./remainder";
 
 // color blind safe colors from Bang Wong in and https://www.nature.com/articles/nmeth.1618
 // and https://davidmathlogic.com/colorblind
-BANG_WONG_PALETTE = {
+const BANG_WONG_PALETTE = {
   black: "rgb(0, 0, 0)",
   orange: "rgb(230, 159, 0)",
   "sky-blue": "rgb(86, 180, 233)",
@@ -54,6 +54,9 @@ export function draw(dataModel, svg) {
           color: BANG_WONG_PALETTE["bluish-green"],
         },
       ],
+      remainder: {
+        color: BANG_WONG_PALETTE["vermillion"],
+      },
     },
     info: {
       fontSize: `${sideLength / 5}px`,
