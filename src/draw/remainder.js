@@ -49,3 +49,29 @@ export function drawRemainder(dataModel, guidesModel, svg) {
     .attr("fill", "url(#remainder-pattern)")
     .attr("stroke", "black");
 }
+
+export function drawRemainderLabel(dataModel, guidesModel, svg) {
+  const parentGroup = svg.selection.append("g").attr("id", "remainder-label");
+
+  const positionForQuarterIndex = [
+    guidesModel.remainderLabel.left,
+    guidesModel.remainderLabel.left,
+    guidesModel.remainderLabel.right,
+    guidesModel.remainderLabel.right,
+  ];
+
+  const position = positionForQuarterIndex[dataModel.currentQuarter.index];
+
+  const remaining = dataModel.currentQuarter.wholeWeeksLeft.durationInWeeks;
+  parentGroup
+    .append("text")
+    .text(`${remaining} week${remaining === 1 ? "" : "s"} left`)
+    .attr("x", position.x)
+    .attr("y", position.y)
+    .attr(
+      "style",
+      `font-size: ${guidesModel.remainderLabel.fontSize}; dominant-baseline: hanging; text-anchor: left`
+    )
+    .attr("fill", guidesModel.colors.remainder.color)
+    .attr("stroke", "black");
+}

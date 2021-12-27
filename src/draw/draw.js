@@ -5,7 +5,7 @@ import {
 } from "./quarter";
 import { drawWeekScale, drawDayHand } from "./year";
 import { drawLogo, drawReadme } from "./about";
-import { drawRemainder } from "./remainder";
+import { drawRemainder, drawRemainderLabel } from "./remainder";
 
 // color blind safe colors from Bang Wong in and https://www.nature.com/articles/nmeth.1618
 // and https://davidmathlogic.com/colorblind
@@ -58,15 +58,26 @@ export function draw(dataModel, svg) {
         color: BANG_WONG_PALETTE["vermillion"],
       },
     },
-    info: {
+    quarterLabel: {
       fontSize: `${sideLength / 5}px`,
       left: {
-        x: -1.0 * clockRadius * 0.62,
+        x: -1.0 * clockRadius * 0.9,
         y: 0,
       },
       right: {
-        x: clockRadius * 0.62,
+        x: clockRadius * 0.35,
         y: 0,
+      },
+    },
+    remainderLabel: {
+      fontSize: `${sideLength / 22}px`,
+      left: {
+        x: -1.0 * clockRadius * 0.87,
+        y: clockRadius * 0.03,
+      },
+      right: {
+        x: clockRadius * 0.38,
+        y: clockRadius * 0.03,
       },
     },
     logo: {
@@ -105,6 +116,7 @@ export function draw(dataModel, svg) {
   if (dataModel.currentQuarter.wholeWeeksLeft.durationInWeeks != 0) {
     drawRemainder(dataModel, guidesModel, svg);
   }
+  drawRemainderLabel(dataModel, guidesModel, svg);
   drawDayHand(dataModel, guidesModel, svg);
   drawQuarterLabel(dataModel, guidesModel, svg);
   drawLogo(dataModel, guidesModel, svg);
@@ -127,8 +139,35 @@ function drawGuides(model, svg) {
   parentGroup
     .append("circle")
     .attr("class", "guide")
-    .attr("cx", model.info.right.x)
-    .attr("cy", model.info.right.y)
+    .attr("cx", model.quarterLabel.left.x)
+    .attr("cy", model.quarterLabel.left.y)
+    .attr("r", 5)
+    .style("fill", "red")
+    .style("stroke", "red");
+
+  parentGroup
+    .append("circle")
+    .attr("class", "guide")
+    .attr("cx", model.quarterLabel.right.x)
+    .attr("cy", model.quarterLabel.right.y)
+    .attr("r", 5)
+    .style("fill", "red")
+    .style("stroke", "red");
+
+  parentGroup
+    .append("circle")
+    .attr("class", "guide")
+    .attr("cx", model.remainderLabel.left.x)
+    .attr("cy", model.remainderLabel.left.y)
+    .attr("r", 5)
+    .style("fill", "red")
+    .style("stroke", "red");
+
+  parentGroup
+    .append("circle")
+    .attr("class", "guide")
+    .attr("cx", model.remainderLabel.right.x)
+    .attr("cy", model.remainderLabel.right.y)
     .attr("r", 5)
     .style("fill", "red")
     .style("stroke", "red");

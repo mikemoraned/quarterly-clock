@@ -70,10 +70,10 @@ export function drawQuarterLabel(dataModel, guidesModel, svg) {
   const parentGroup = svg.selection.append("g").attr("id", "info");
 
   const positionForQuarterIndex = [
-    guidesModel.info.left,
-    guidesModel.info.left,
-    guidesModel.info.right,
-    guidesModel.info.right,
+    guidesModel.quarterLabel.left,
+    guidesModel.quarterLabel.left,
+    guidesModel.quarterLabel.right,
+    guidesModel.quarterLabel.right,
   ];
 
   const position = positionForQuarterIndex[dataModel.currentQuarter.index];
@@ -85,7 +85,7 @@ export function drawQuarterLabel(dataModel, guidesModel, svg) {
     .attr("y", position.y)
     .attr(
       "style",
-      `font-size: ${guidesModel.info.fontSize}; dominant-baseline: middle; text-anchor: middle`
+      `font-size: ${guidesModel.quarterLabel.fontSize}; dominant-baseline: text-bottom; text-anchor: left`
     )
     .attr(
       "fill",
