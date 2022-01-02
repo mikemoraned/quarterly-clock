@@ -30,7 +30,13 @@ ARG CHROME_VERSION="96.0.4664.45-1"
 
 RUN echo $TARGETPLATFORM; echo $CHROME_VERSION
 
-RUN apt-get update && apt-get install wget -y
+# install extra fonts
+RUN apt-get update && apt-get install software-properties-common -y
+RUN apt-add-repository contrib && apt-get update
+RUN apt-get install ttf-mscorefonts-installer fontconfig -y && fc-cache -f
+
+# install chrome
+RUN apt-get install wget -y
 RUN wget --no-verbose -O /tmp/chrome.deb https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_${CHROME_VERSION}_amd64.deb \
   && apt install -y /tmp/chrome.deb \
   && rm /tmp/chrome.deb
