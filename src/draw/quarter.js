@@ -22,7 +22,7 @@ export function drawCurrentQuarter(dataModel, guidesModel, svg) {
       "fill",
       guidesModel.colors.quarters[dataModel.currentQuarter.index].color
     )
-    .attr("stroke", "black");
+    .attr("stroke", "none");
 }
 
 export function drawAllQuarterContext(dataModel, guidesModel, svg) {
@@ -62,7 +62,7 @@ export function drawAllQuarterContext(dataModel, guidesModel, svg) {
       .append("path")
       .attr("d", arcGenerator(arc))
       .attr("fill", arc.color)
-      .attr("stroke", "white");
+      .attr("stroke", "none");
   });
 }
 
@@ -91,5 +91,5 @@ export function drawQuarterLabel(dataModel, guidesModel, svg) {
       "fill",
       guidesModel.colors.quarters[dataModel.currentQuarter.index].color
     )
-    .attr("stroke", "black");
+    .attr("stroke", "none");
 }
