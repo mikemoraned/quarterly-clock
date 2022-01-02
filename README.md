@@ -1,6 +1,6 @@
 # Quarterly
 
-![preview](https://quarterly.houseofmoran.io/preview.png)
+![preview](https://quarterly.houseofmoran.io/preview.png?cache_bust=1)
 
 "What Quarter is it?", and "How long do we have left?", [visualised as a clock](https://quarterly.houseofmoran.io/).
 
