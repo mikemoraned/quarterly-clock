@@ -6,7 +6,14 @@ export function renderUnder(containerId, callback) {
   window.addEventListener("load", () => {
     const container = document.getElementById(containerId);
     const { width, height } = container.getBoundingClientRect();
-    const dimensions = { width, height };
+    // add an allowance so that we don't set the full size of the SVG to
+    // the same size as the div, which then could cause the parent to change size
+    // again
+    const borderAllowance = 5;
+    const dimensions = {
+      width: width - borderAllowance,
+      height: height - borderAllowance,
+    };
     const svg = addSvg(containerId, dimensions);
     callback(svg);
 
