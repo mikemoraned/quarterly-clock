@@ -5,24 +5,24 @@ const RENDER_DELAY = 200;
 export function renderUnder(containerId, callback) {
   window.addEventListener("load", () => {
     const container = document.getElementById(containerId);
-    let delayedRender = null;
-    const render = () => {
+    const { width, height } = container.getBoundingClientRect();
+    // add an allowance so that we don't set the full size of the SVG to
+    // the same size as the div, which then could cause the parent to change size
+    // again
+    const borderAllowance = 5;
+    const dimensions = {
+      width: width - borderAllowance,
+      height: height - borderAllowance,
+    };
+    const svg = addSvg(containerId, dimensions);
+    callback(svg);
+
+    const resizeObserver = new ResizeObserver(() => {
       const { width, height } = container.getBoundingClientRect();
       const dimensions = { width, height };
       removeSvg(containerId);
       const svg = addSvg(containerId, dimensions);
       callback(svg);
-      delayedRender = null;
-    };
-    render();
-
-    const resizeObserver = new ResizeObserver(() => {
-      if (delayedRender === null) {
-        delayedRender = setTimeout(render, RENDER_DELAY);
-      } else {
-        clearTimeout(delayedRender);
-        delayedRender = setTimeout(render, RENDER_DELAY);
-      }
     });
 
     resizeObserver.observe(container);
