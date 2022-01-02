@@ -5,27 +5,20 @@ const RENDER_DELAY = 200;
 export function renderUnder(containerId, callback) {
   window.addEventListener("load", () => {
     const container = document.getElementById(containerId);
-    let delayedRender = null;
-    const render = () => {
+    const { width, height } = container.getBoundingClientRect();
+    const dimensions = { width, height };
+    const svg = addSvg(containerId, dimensions);
+    callback(svg);
+
+    const resizeObserver = new ResizeObserver(() => {
       const { width, height } = container.getBoundingClientRect();
       const dimensions = { width, height };
       removeSvg(containerId);
       const svg = addSvg(containerId, dimensions);
       callback(svg);
-      delayedRender = null;
-    };
-    render();
-
-    const resizeObserver = new ResizeObserver(() => {
-      if (delayedRender === null) {
-        delayedRender = setTimeout(render, RENDER_DELAY);
-      } else {
-        clearTimeout(delayedRender);
-        delayedRender = setTimeout(render, RENDER_DELAY);
-      }
     });
 
-    // resizeObserver.observe(container);
+    resizeObserver.observe(container);
   });
 }
 
