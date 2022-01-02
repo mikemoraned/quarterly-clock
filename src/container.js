@@ -25,7 +25,7 @@ export function renderUnder(containerId, callback) {
       }
     });
 
-    resizeObserver.observe(container);
+    // resizeObserver.observe(container);
   });
 }
 
