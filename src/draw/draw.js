@@ -45,7 +45,7 @@ export function draw(dataModel, svg) {
           color: BANG_WONG_PALETTE["yellow"],
         },
         {
-          color: BANG_WONG_PALETTE["orange"],
+          color: BANG_WONG_PALETTE["reddish-purple"],
         },
         {
           color: BANG_WONG_PALETTE["sky-blue"],
