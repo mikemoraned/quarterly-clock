@@ -47,7 +47,7 @@ export function drawRemainder(dataModel, guidesModel, svg) {
     .attr("class", "remainder")
     .attr("d", arcGenerator(remainderArc))
     .attr("fill", "url(#remainder-pattern)")
-    .attr("stroke", "black");
+    .attr("stroke", "none");
 }
 
 export function drawRemainderLabel(dataModel, guidesModel, svg) {
@@ -73,5 +73,5 @@ export function drawRemainderLabel(dataModel, guidesModel, svg) {
       `font-size: ${guidesModel.remainderLabel.fontSize}; dominant-baseline: hanging; text-anchor: left`
     )
     .attr("fill", guidesModel.colors.remainder.color)
-    .attr("stroke", "black");
+    .attr("stroke", "none");
 }
