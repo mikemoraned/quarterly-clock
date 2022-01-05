@@ -6,20 +6,13 @@ export function renderUnder(containerId, callback) {
   window.addEventListener("load", () => {
     const container = document.getElementById(containerId);
     const { width, height } = container.getBoundingClientRect();
-    // add an allowance so that we don't set the full size of the SVG to
-    // the same size as the div, which then could cause the parent to change size
-    // again
-    const borderAllowance = 5;
-    const dimensions = {
-      width: width - borderAllowance,
-      height: height - borderAllowance,
-    };
+    const dimensions = applyBorderAllowance({ width, height });
     const svg = addSvg(containerId, dimensions);
     callback(svg);
 
     const resizeObserver = new ResizeObserver(() => {
       const { width, height } = container.getBoundingClientRect();
-      const dimensions = { width, height };
+      const dimensions = applyBorderAllowance({ width, height });
       removeSvg(containerId);
       const svg = addSvg(containerId, dimensions);
       callback(svg);
@@ -27,6 +20,17 @@ export function renderUnder(containerId, callback) {
 
     resizeObserver.observe(container);
   });
+}
+
+const BORDER_ALLOWANCE = 5;
+function applyBorderAllowance({ width, height }) {
+  // add an allowance so that we don't set the full size of the SVG to
+  // the same size as the div, which then could cause the parent to change size
+  // again
+  return {
+    width: width - BORDER_ALLOWANCE,
+    height: height - BORDER_ALLOWANCE,
+  };
 }
 
 function addSvg(containerId, dimensions) {
