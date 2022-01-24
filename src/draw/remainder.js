@@ -64,16 +64,26 @@ export function drawRemainderWithWeekendGaps(dataModel, guidesModel, svg) {
     .append("rect")
     .attr("width", `${guidesModel.remainder.box.width}`)
     .attr("height", `${guidesModel.remainder.box.height}`)
-    .attr("opacity", "0.8")
+    .attr("opacity", "0.5")
     .attr("fill", guidesModel.colors.remainder.color);
 
-  pattern
+  const extraPattern = svg.root
+    .append("defs")
+    .append("pattern")
+    .attr("id", "remainder-pattern-extra")
+    .attr("width", `${guidesModel.remainder.box.width}`)
+    .attr("height", `${guidesModel.remainder.box.height}`)
+    .attr("patternUnits", "userSpaceOnUse")
+    .attr("patternTransform", "rotate(20)");
+
+  extraPattern
     .append("text")
     .text(`${dataModel.currentQuarter.wholeWeeksLeft.durationInWeeks}`)
     .attr("x", 0)
     .attr("y", `${guidesModel.remainder.box.textY}`)
     .attr("style", `font-size: ${guidesModel.remainder.fontSize}`)
-    .attr("fill", "white");
+    .attr("opacity", "0.8")
+    .attr("fill", guidesModel.colors.remainder.color);
 
   const arcGenerator = d3.arc();
 
@@ -129,6 +139,13 @@ export function drawRemainderWithWeekendGaps(dataModel, guidesModel, svg) {
     .attr("d", arcGenerator(remainderArc))
     .attr("fill", "url(#remainder-pattern)")
     .attr("clip-path", "url(#remainder-clip)")
+    .attr("stroke", "none");
+
+  parentGroup
+    .append("path")
+    .attr("class", "remainder")
+    .attr("d", arcGenerator(remainderArc))
+    .attr("fill", "url(#remainder-pattern-extra)")
     .attr("stroke", "none");
 }
 
