@@ -90,40 +90,28 @@ export function drawRemainderWithWeekendGaps(dataModel, guidesModel, svg) {
       dataModel.currentQuarter.wholeWeeksLeft.end.yearFraction * 2.0 * Math.PI,
   };
 
-  const remainderArcs = [
-    {
-      startAngle:
-        dataModel.currentQuarter.wholeWeeksLeft.start.yearFraction *
-        2.0 *
-        Math.PI,
-      endAngle:
-        (dataModel.currentQuarter.wholeWeeksLeft.start.yearFraction + 0.09) *
-        2.0 *
-        Math.PI,
-    },
-    {
-      startAngle:
-        (dataModel.currentQuarter.wholeWeeksLeft.start.yearFraction + 0.11) *
-        2.0 *
-        Math.PI,
-      endAngle:
-        dataModel.currentQuarter.wholeWeeksLeft.end.yearFraction *
-        2.0 *
-        Math.PI,
-    },
-  ];
+  const yearFractionExtent =
+    dataModel.currentQuarter.wholeWeeksLeft.end.yearFraction -
+    dataModel.currentQuarter.wholeWeeksLeft.start.yearFraction;
+  const fakeGapSize = 0.002;
+  const numChunks = 10;
+  const chunkSize = (yearFractionExtent - numChunks * fakeGapSize) / numChunks;
+  const remainderArcs = [];
+  for (let index = 0; index < numChunks; index++) {
+    const chunkStartYearFraction =
+      dataModel.currentQuarter.wholeWeeksLeft.start.yearFraction +
+      index * (chunkSize + fakeGapSize);
+    const chunkEndYearFraction =
+      dataModel.currentQuarter.wholeWeeksLeft.start.yearFraction +
+      (index + 1) * (chunkSize + fakeGapSize) -
+      fakeGapSize;
+    remainderArcs.push({
+      startAngle: chunkStartYearFraction * 2.0 * Math.PI,
+      endAngle: chunkEndYearFraction * 2.0 * Math.PI,
+    });
+  }
 
   const parentGroup = svg.selection.append("g").attr("id", "remainder");
-
-  // parentGroup
-  //   .selectAll()
-  //   .data(remainderArcs)
-  //   .enter()
-  //   .append("path")
-  //   .attr("class", "remainder")
-  //   .attr("d", (arc) => arcGenerator(arc))
-  //   .attr("fill", "url(#remainder-pattern)")
-  //   .attr("stroke", "none");
 
   parentGroup
     .append("clipPath")
