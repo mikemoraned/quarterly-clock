@@ -50,6 +50,100 @@ export function drawRemainder(dataModel, guidesModel, svg) {
     .attr("stroke", "none");
 }
 
+export function drawRemainderWithWeekendGaps(dataModel, guidesModel, svg) {
+  const pattern = svg.root
+    .append("defs")
+    .append("pattern")
+    .attr("id", "remainder-pattern")
+    .attr("width", `${guidesModel.remainder.box.width}`)
+    .attr("height", `${guidesModel.remainder.box.height}`)
+    .attr("patternUnits", "userSpaceOnUse")
+    .attr("patternTransform", "rotate(20)");
+
+  pattern
+    .append("rect")
+    .attr("width", `${guidesModel.remainder.box.width}`)
+    .attr("height", `${guidesModel.remainder.box.height}`)
+    .attr("opacity", "0.8")
+    .attr("fill", guidesModel.colors.remainder.color);
+
+  pattern
+    .append("text")
+    .text(`${dataModel.currentQuarter.wholeWeeksLeft.durationInWeeks}`)
+    .attr("x", 0)
+    .attr("y", `${guidesModel.remainder.box.textY}`)
+    .attr("style", `font-size: ${guidesModel.remainder.fontSize}`)
+    .attr("fill", "white");
+
+  const arcGenerator = d3.arc();
+
+  arcGenerator
+    .innerRadius(guidesModel.outerRadius / 3)
+    .outerRadius(guidesModel.outerRadius - guidesModel.outerRadius / 15);
+
+  const remainderArc = {
+    startAngle:
+      dataModel.currentQuarter.wholeWeeksLeft.start.yearFraction *
+      2.0 *
+      Math.PI,
+    endAngle:
+      dataModel.currentQuarter.wholeWeeksLeft.end.yearFraction * 2.0 * Math.PI,
+  };
+
+  const remainderArcs = [
+    {
+      startAngle:
+        dataModel.currentQuarter.wholeWeeksLeft.start.yearFraction *
+        2.0 *
+        Math.PI,
+      endAngle:
+        (dataModel.currentQuarter.wholeWeeksLeft.start.yearFraction + 0.09) *
+        2.0 *
+        Math.PI,
+    },
+    {
+      startAngle:
+        (dataModel.currentQuarter.wholeWeeksLeft.start.yearFraction + 0.11) *
+        2.0 *
+        Math.PI,
+      endAngle:
+        dataModel.currentQuarter.wholeWeeksLeft.end.yearFraction *
+        2.0 *
+        Math.PI,
+    },
+  ];
+
+  const parentGroup = svg.selection.append("g").attr("id", "remainder");
+
+  // parentGroup
+  //   .selectAll()
+  //   .data(remainderArcs)
+  //   .enter()
+  //   .append("path")
+  //   .attr("class", "remainder")
+  //   .attr("d", (arc) => arcGenerator(arc))
+  //   .attr("fill", "url(#remainder-pattern)")
+  //   .attr("stroke", "none");
+
+  parentGroup
+    .append("clipPath")
+    .attr("id", "remainder-clip")
+    .selectAll()
+    .data(remainderArcs)
+    .enter()
+    .append("path")
+    .attr("d", (arc) => arcGenerator(arc))
+    .attr("stroke", "none");
+
+  parentGroup
+    .append("path")
+    .attr("class", "remainder")
+    .attr("d", arcGenerator(remainderArc))
+    .attr("fill", "url(#remainder-pattern)")
+    .attr("clip-path", "url(#remainder-clip)")
+    .attr("stroke", "none");
+}
+
 export function drawRemainderLabel(dataModel, guidesModel, svg) {
   const parentGroup = svg.selection.append("g").attr("id", "remainder-label");
 

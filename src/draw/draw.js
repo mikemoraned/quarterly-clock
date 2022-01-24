@@ -5,7 +5,7 @@ import {
 } from "./quarter";
 import { drawWeekScale, drawDayHand } from "./year";
 import { drawLogo, drawReadme } from "./about";
-import { drawRemainder, drawRemainderLabel } from "./remainder";
+import { drawRemainderWithWeekendGaps, drawRemainderLabel } from "./remainder";
 
 // color blind safe colors from Bang Wong in and https://www.nature.com/articles/nmeth.1618
 // and https://davidmathlogic.com/colorblind
@@ -120,7 +120,7 @@ export function draw(dataModel, svg) {
   drawAllQuarterContext(dataModel, guidesModel, svg);
   drawCurrentQuarter(dataModel, guidesModel, svg);
   if (dataModel.currentQuarter.wholeWeeksLeft.durationInWeeks != 0) {
-    drawRemainder(dataModel, guidesModel, svg);
+    drawRemainderWithWeekendGaps(dataModel, guidesModel, svg);
   }
   drawRemainderLabel(dataModel, guidesModel, svg);
   drawDayHand(dataModel, guidesModel, svg);
