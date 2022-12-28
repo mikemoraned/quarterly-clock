@@ -4,7 +4,7 @@ exports[`drawRemainder last day of Q1 1`] = `
 "<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
     <g transform=\\"translate(500 500)\\">
         <g id=\\"remainder\\">
-            <path class=\\"remainder\\" d=\\"M419.52948054571414,19.874983095421403L149.83195733775506,7.098208248364787Z\\" fill=\\"url(#remainder-pattern)\\" stroke=\\"none\\"></path>
+            <path class=\\"remainder\\" d=\\"M419.529,19.875L149.832,7.098Z\\" fill=\\"url(#remainder-pattern)\\" stroke=\\"none\\"></path>
         </g>
     </g>
     <defs>
@@ -22,7 +22,7 @@ exports[`drawRemainder last day of Q2 1`] = `
 "<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
     <g transform=\\"translate(500 500)\\">
         <g id=\\"remainder\\">
-            <path class=\\"remainder\\" d=\\"M-18.06933786190277,419.6111283429366L-6.453334950679561,149.86111726533449Z\\" fill=\\"url(#remainder-pattern)\\" stroke=\\"none\\"></path>
+            <path class=\\"remainder\\" d=\\"M-18.069,419.611L-6.453,149.861Z\\" fill=\\"url(#remainder-pattern)\\" stroke=\\"none\\"></path>
         </g>
     </g>
     <defs>
@@ -40,7 +40,7 @@ exports[`drawRemainder last day of Q3 1`] = `
 "<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
     <g transform=\\"translate(500 500)\\">
         <g id=\\"remainder\\">
-            <path class=\\"remainder\\" d=\\"M-419.68500472066705,-16.263357974713102L-149.88750168595251,-5.808342133826108Z\\" fill=\\"url(#remainder-pattern)\\" stroke=\\"none\\"></path>
+            <path class=\\"remainder\\" d=\\"M-419.685,-16.263L-149.888,-5.808Z\\" fill=\\"url(#remainder-pattern)\\" stroke=\\"none\\"></path>
         </g>
     </g>
     <defs>
@@ -58,7 +58,7 @@ exports[`drawRemainder last day of Q4 1`] = `
 "<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
     <g transform=\\"translate(500 500)\\">
         <g id=\\"remainder\\">
-            <path class=\\"remainder\\" d=\\"M14.457076881553256,-419.751108310676L5.163241743411877,-149.91111011095572Z\\" fill=\\"url(#remainder-pattern)\\" stroke=\\"none\\"></path>
+            <path class=\\"remainder\\" d=\\"M14.457,-419.751L5.163,-149.911Z\\" fill=\\"url(#remainder-pattern)\\" stroke=\\"none\\"></path>
         </g>
     </g>
     <defs>
@@ -76,7 +76,7 @@ exports[`drawRemainder start of Q1 1`] = `
 "<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
     <g transform=\\"translate(500 500)\\">
         <g id=\\"remainder\\">
-            <path class=\\"remainder\\" d=\\"M21.680260233766585,-419.4400628411599A420,420,0,0,1,418.8764887054253,-30.699954557192548L149.59874596622333,-10.964269484711624A150,150,0,0,0,7.742950083488066,-149.8000224432714Z\\" fill=\\"url(#remainder-pattern)\\" stroke=\\"none\\"></path>
+            <path class=\\"remainder\\" d=\\"M21.68,-419.44A420,420,0,0,1,418.876,-30.7L149.599,-10.964A150,150,0,0,0,7.743,-149.8Z\\" fill=\\"url(#remainder-pattern)\\" stroke=\\"none\\"></path>
         </g>
     </g>
     <defs>
@@ -94,7 +94,7 @@ exports[`drawRemainder start of Q2 1`] = `
 "<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
     <g transform=\\"translate(500 500)\\">
         <g id=\\"remainder\\">
-            <path class=\\"remainder\\" d=\\"M419.52948054571414,19.874983095421403A420,420,0,0,1,32.50232127805444,418.74049136850635L11.607971885019444,149.55017548875227A150,150,0,0,0,149.83195733775506,7.098208248364787Z\\" fill=\\"url(#remainder-pattern)\\" stroke=\\"none\\"></path>
+            <path class=\\"remainder\\" d=\\"M419.529,19.875A420,420,0,0,1,32.502,418.74L11.608,149.55A150,150,0,0,0,149.832,7.098Z\\" fill=\\"url(#remainder-pattern)\\" stroke=\\"none\\"></path>
         </g>
     </g>
     <defs>
@@ -112,7 +112,7 @@ exports[`drawRemainder start of Q3 1`] = `
 "<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
     <g transform=\\"translate(500 500)\\">
         <g id=\\"remainder\\">
-            <path class=\\"remainder\\" d=\\"M-18.06933786190277,419.6111283429366A420,420,0,0,1,-418.59673873675143,34.304086038777584L-149.4988352631255,12.251459299563422A150,150,0,0,0,-6.453334950679561,149.86111726533449Z\\" fill=\\"url(#remainder-pattern)\\" stroke=\\"none\\"></path>
+            <path class=\\"remainder\\" d=\\"M-18.069,419.611A420,420,0,0,1,-418.597,34.304L-149.499,12.251A150,150,0,0,0,-6.453,149.861Z\\" fill=\\"url(#remainder-pattern)\\" stroke=\\"none\\"></path>
         </g>
     </g>
     <defs>
@@ -130,7 +130,7 @@ exports[`drawRemainder start of Q4 1`] = `
 "<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
     <g transform=\\"translate(500 500)\\">
         <g id=\\"remainder\\">
-            <path class=\\"remainder\\" d=\\"M-419.68500472066705,-16.263357974713102A420,420,0,0,1,-36.10521546972759,-418.4452334725353L-12.894719810616996,-149.44472624019116A150,150,0,0,0,-149.88750168595251,-5.808342133826108Z\\" fill=\\"url(#remainder-pattern)\\" stroke=\\"none\\"></path>
+            <path class=\\"remainder\\" d=\\"M-419.685,-16.263A420,420,0,0,1,-36.105,-418.445L-12.895,-149.445A150,150,0,0,0,-149.888,-5.808Z\\" fill=\\"url(#remainder-pattern)\\" stroke=\\"none\\"></path>
         </g>
     </g>
     <defs>
