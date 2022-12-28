@@ -1,0 +1,385 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`drawLogo last day of Q1 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"logo\\">
+            <defs>
+                <path d=\\"M -225,270 A 450,450 0 0,1 225,270\\" id=\\"logoPath\\"></path>
+            </defs>
+            <a href=\\"https://github.com/mikemoraned/quarterly-clock\\">
+                <text style=\\"font-size: 69.23076923076923px; dominant-baseline: middle; text-anchor: middle\\" fill=\\"black\\">
+                    <textPath startOffset=\\"50%\\" href=\\"#logoPath\\">
+                        <tspan style=\\"font-family: &quot;Font Awesome 5 Free&quot;\\">
+                            
+                        </tspan>
+                        <tspan>
+                            uarterly
+                        </tspan>
+                    </textPath>
+                </text>
+            </a>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawLogo last day of Q2 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"logo\\">
+            <defs>
+                <path d=\\"M -225,-180 A 450,450 0 0,1 225,-180\\" id=\\"logoPath\\"></path>
+            </defs>
+            <a href=\\"https://github.com/mikemoraned/quarterly-clock\\">
+                <text style=\\"font-size: 69.23076923076923px; dominant-baseline: middle; text-anchor: middle\\" fill=\\"black\\">
+                    <textPath startOffset=\\"50%\\" href=\\"#logoPath\\">
+                        <tspan style=\\"font-family: &quot;Font Awesome 5 Free&quot;\\">
+                            
+                        </tspan>
+                        <tspan>
+                            uarterly
+                        </tspan>
+                    </textPath>
+                </text>
+            </a>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawLogo last day of Q3 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"logo\\">
+            <defs>
+                <path d=\\"M -225,-180 A 450,450 0 0,1 225,-180\\" id=\\"logoPath\\"></path>
+            </defs>
+            <a href=\\"https://github.com/mikemoraned/quarterly-clock\\">
+                <text style=\\"font-size: 69.23076923076923px; dominant-baseline: middle; text-anchor: middle\\" fill=\\"black\\">
+                    <textPath startOffset=\\"50%\\" href=\\"#logoPath\\">
+                        <tspan style=\\"font-family: &quot;Font Awesome 5 Free&quot;\\">
+                            
+                        </tspan>
+                        <tspan>
+                            uarterly
+                        </tspan>
+                    </textPath>
+                </text>
+            </a>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawLogo last day of Q4 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"logo\\">
+            <defs>
+                <path d=\\"M -225,270 A 450,450 0 0,1 225,270\\" id=\\"logoPath\\"></path>
+            </defs>
+            <a href=\\"https://github.com/mikemoraned/quarterly-clock\\">
+                <text style=\\"font-size: 69.23076923076923px; dominant-baseline: middle; text-anchor: middle\\" fill=\\"black\\">
+                    <textPath startOffset=\\"50%\\" href=\\"#logoPath\\">
+                        <tspan style=\\"font-family: &quot;Font Awesome 5 Free&quot;\\">
+                            
+                        </tspan>
+                        <tspan>
+                            uarterly
+                        </tspan>
+                    </textPath>
+                </text>
+            </a>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawLogo start of Q1 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"logo\\">
+            <defs>
+                <path d=\\"M -225,270 A 450,450 0 0,1 225,270\\" id=\\"logoPath\\"></path>
+            </defs>
+            <a href=\\"https://github.com/mikemoraned/quarterly-clock\\">
+                <text style=\\"font-size: 69.23076923076923px; dominant-baseline: middle; text-anchor: middle\\" fill=\\"black\\">
+                    <textPath startOffset=\\"50%\\" href=\\"#logoPath\\">
+                        <tspan style=\\"font-family: &quot;Font Awesome 5 Free&quot;\\">
+                            
+                        </tspan>
+                        <tspan>
+                            uarterly
+                        </tspan>
+                    </textPath>
+                </text>
+            </a>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawLogo start of Q2 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"logo\\">
+            <defs>
+                <path d=\\"M -225,-180 A 450,450 0 0,1 225,-180\\" id=\\"logoPath\\"></path>
+            </defs>
+            <a href=\\"https://github.com/mikemoraned/quarterly-clock\\">
+                <text style=\\"font-size: 69.23076923076923px; dominant-baseline: middle; text-anchor: middle\\" fill=\\"black\\">
+                    <textPath startOffset=\\"50%\\" href=\\"#logoPath\\">
+                        <tspan style=\\"font-family: &quot;Font Awesome 5 Free&quot;\\">
+                            
+                        </tspan>
+                        <tspan>
+                            uarterly
+                        </tspan>
+                    </textPath>
+                </text>
+            </a>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawLogo start of Q3 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"logo\\">
+            <defs>
+                <path d=\\"M -225,-180 A 450,450 0 0,1 225,-180\\" id=\\"logoPath\\"></path>
+            </defs>
+            <a href=\\"https://github.com/mikemoraned/quarterly-clock\\">
+                <text style=\\"font-size: 69.23076923076923px; dominant-baseline: middle; text-anchor: middle\\" fill=\\"black\\">
+                    <textPath startOffset=\\"50%\\" href=\\"#logoPath\\">
+                        <tspan style=\\"font-family: &quot;Font Awesome 5 Free&quot;\\">
+                            
+                        </tspan>
+                        <tspan>
+                            uarterly
+                        </tspan>
+                    </textPath>
+                </text>
+            </a>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawLogo start of Q4 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"logo\\">
+            <defs>
+                <path d=\\"M -225,270 A 450,450 0 0,1 225,270\\" id=\\"logoPath\\"></path>
+            </defs>
+            <a href=\\"https://github.com/mikemoraned/quarterly-clock\\">
+                <text style=\\"font-size: 69.23076923076923px; dominant-baseline: middle; text-anchor: middle\\" fill=\\"black\\">
+                    <textPath startOffset=\\"50%\\" href=\\"#logoPath\\">
+                        <tspan style=\\"font-family: &quot;Font Awesome 5 Free&quot;\\">
+                            
+                        </tspan>
+                        <tspan>
+                            uarterly
+                        </tspan>
+                    </textPath>
+                </text>
+            </a>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawReadme last day of Q1 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"readme\\">
+            <defs>
+                <path d=\\"M -225,324 A 450,450 0 0,1 225,324\\" id=\\"readmePath\\"></path>
+            </defs>
+            <a href=\\"https://github.com/mikemoraned/quarterly-clock/blob/main/README.md\\">
+                <text style=\\"font-size: 30px; dominant-baseline: middle; text-anchor: middle\\" fill=\\"black\\">
+                    <textPath startOffset=\\"50%\\" href=\\"#readmePath\\">
+                        <tspan style=\\"font-family: &quot;Font Awesome 5 Brands&quot;\\">
+                            
+                        </tspan>
+                        <tspan>
+                            Readme
+                        </tspan>
+                    </textPath>
+                </text>
+            </a>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawReadme last day of Q2 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"readme\\">
+            <defs>
+                <path d=\\"M -225,-121.5 A 450,450 0 0,1 225,-121.5\\" id=\\"readmePath\\"></path>
+            </defs>
+            <a href=\\"https://github.com/mikemoraned/quarterly-clock/blob/main/README.md\\">
+                <text style=\\"font-size: 30px; dominant-baseline: middle; text-anchor: middle\\" fill=\\"black\\">
+                    <textPath startOffset=\\"50%\\" href=\\"#readmePath\\">
+                        <tspan style=\\"font-family: &quot;Font Awesome 5 Brands&quot;\\">
+                            
+                        </tspan>
+                        <tspan>
+                            Readme
+                        </tspan>
+                    </textPath>
+                </text>
+            </a>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawReadme last day of Q3 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"readme\\">
+            <defs>
+                <path d=\\"M -225,-121.5 A 450,450 0 0,1 225,-121.5\\" id=\\"readmePath\\"></path>
+            </defs>
+            <a href=\\"https://github.com/mikemoraned/quarterly-clock/blob/main/README.md\\">
+                <text style=\\"font-size: 30px; dominant-baseline: middle; text-anchor: middle\\" fill=\\"black\\">
+                    <textPath startOffset=\\"50%\\" href=\\"#readmePath\\">
+                        <tspan style=\\"font-family: &quot;Font Awesome 5 Brands&quot;\\">
+                            
+                        </tspan>
+                        <tspan>
+                            Readme
+                        </tspan>
+                    </textPath>
+                </text>
+            </a>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawReadme last day of Q4 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"readme\\">
+            <defs>
+                <path d=\\"M -225,324 A 450,450 0 0,1 225,324\\" id=\\"readmePath\\"></path>
+            </defs>
+            <a href=\\"https://github.com/mikemoraned/quarterly-clock/blob/main/README.md\\">
+                <text style=\\"font-size: 30px; dominant-baseline: middle; text-anchor: middle\\" fill=\\"black\\">
+                    <textPath startOffset=\\"50%\\" href=\\"#readmePath\\">
+                        <tspan style=\\"font-family: &quot;Font Awesome 5 Brands&quot;\\">
+                            
+                        </tspan>
+                        <tspan>
+                            Readme
+                        </tspan>
+                    </textPath>
+                </text>
+            </a>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawReadme start of Q1 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"readme\\">
+            <defs>
+                <path d=\\"M -225,324 A 450,450 0 0,1 225,324\\" id=\\"readmePath\\"></path>
+            </defs>
+            <a href=\\"https://github.com/mikemoraned/quarterly-clock/blob/main/README.md\\">
+                <text style=\\"font-size: 30px; dominant-baseline: middle; text-anchor: middle\\" fill=\\"black\\">
+                    <textPath startOffset=\\"50%\\" href=\\"#readmePath\\">
+                        <tspan style=\\"font-family: &quot;Font Awesome 5 Brands&quot;\\">
+                            
+                        </tspan>
+                        <tspan>
+                            Readme
+                        </tspan>
+                    </textPath>
+                </text>
+            </a>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawReadme start of Q2 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"readme\\">
+            <defs>
+                <path d=\\"M -225,-121.5 A 450,450 0 0,1 225,-121.5\\" id=\\"readmePath\\"></path>
+            </defs>
+            <a href=\\"https://github.com/mikemoraned/quarterly-clock/blob/main/README.md\\">
+                <text style=\\"font-size: 30px; dominant-baseline: middle; text-anchor: middle\\" fill=\\"black\\">
+                    <textPath startOffset=\\"50%\\" href=\\"#readmePath\\">
+                        <tspan style=\\"font-family: &quot;Font Awesome 5 Brands&quot;\\">
+                            
+                        </tspan>
+                        <tspan>
+                            Readme
+                        </tspan>
+                    </textPath>
+                </text>
+            </a>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawReadme start of Q3 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"readme\\">
+            <defs>
+                <path d=\\"M -225,-121.5 A 450,450 0 0,1 225,-121.5\\" id=\\"readmePath\\"></path>
+            </defs>
+            <a href=\\"https://github.com/mikemoraned/quarterly-clock/blob/main/README.md\\">
+                <text style=\\"font-size: 30px; dominant-baseline: middle; text-anchor: middle\\" fill=\\"black\\">
+                    <textPath startOffset=\\"50%\\" href=\\"#readmePath\\">
+                        <tspan style=\\"font-family: &quot;Font Awesome 5 Brands&quot;\\">
+                            
+                        </tspan>
+                        <tspan>
+                            Readme
+                        </tspan>
+                    </textPath>
+                </text>
+            </a>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawReadme start of Q4 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"readme\\">
+            <defs>
+                <path d=\\"M -225,324 A 450,450 0 0,1 225,324\\" id=\\"readmePath\\"></path>
+            </defs>
+            <a href=\\"https://github.com/mikemoraned/quarterly-clock/blob/main/README.md\\">
+                <text style=\\"font-size: 30px; dominant-baseline: middle; text-anchor: middle\\" fill=\\"black\\">
+                    <textPath startOffset=\\"50%\\" href=\\"#readmePath\\">
+                        <tspan style=\\"font-family: &quot;Font Awesome 5 Brands&quot;\\">
+                            
+                        </tspan>
+                        <tspan>
+                            Readme
+                        </tspan>
+                    </textPath>
+                </text>
+            </a>
+        </g>
+    </g>
+</svg>"
+`;
