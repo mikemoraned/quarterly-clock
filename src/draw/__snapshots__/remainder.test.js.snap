@@ -1,0 +1,241 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`drawRemainder last day of Q1 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"remainder\\">
+            <path class=\\"remainder\\" d=\\"M419.52948054571414,19.874983095421403L149.83195733775506,7.098208248364787Z\\" fill=\\"url(#remainder-pattern)\\" stroke=\\"none\\"></path>
+        </g>
+    </g>
+    <defs>
+        <pattern id=\\"remainder-pattern\\" width=\\"73.63636363636364\\" height=\\"57.27272727272727\\" patternUnits=\\"userSpaceOnUse\\" patternTransform=\\"rotate(20)\\">
+            <rect width=\\"73.63636363636364\\" height=\\"57.27272727272727\\" opacity=\\"0.8\\" fill=\\"rgb(213, 94, 0)\\"></rect>
+            <text x=\\"0\\" y=\\"49.09090909090909\\" style=\\"font-size: 60px\\" fill=\\"white\\">
+                0
+            </text>
+        </pattern>
+    </defs>
+</svg>"
+`;
+
+exports[`drawRemainder last day of Q2 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"remainder\\">
+            <path class=\\"remainder\\" d=\\"M-18.06933786190277,419.6111283429366L-6.453334950679561,149.86111726533449Z\\" fill=\\"url(#remainder-pattern)\\" stroke=\\"none\\"></path>
+        </g>
+    </g>
+    <defs>
+        <pattern id=\\"remainder-pattern\\" width=\\"73.63636363636364\\" height=\\"57.27272727272727\\" patternUnits=\\"userSpaceOnUse\\" patternTransform=\\"rotate(20)\\">
+            <rect width=\\"73.63636363636364\\" height=\\"57.27272727272727\\" opacity=\\"0.8\\" fill=\\"rgb(213, 94, 0)\\"></rect>
+            <text x=\\"0\\" y=\\"49.09090909090909\\" style=\\"font-size: 60px\\" fill=\\"white\\">
+                0
+            </text>
+        </pattern>
+    </defs>
+</svg>"
+`;
+
+exports[`drawRemainder last day of Q3 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"remainder\\">
+            <path class=\\"remainder\\" d=\\"M-419.68500472066705,-16.263357974713102L-149.88750168595251,-5.808342133826108Z\\" fill=\\"url(#remainder-pattern)\\" stroke=\\"none\\"></path>
+        </g>
+    </g>
+    <defs>
+        <pattern id=\\"remainder-pattern\\" width=\\"73.63636363636364\\" height=\\"57.27272727272727\\" patternUnits=\\"userSpaceOnUse\\" patternTransform=\\"rotate(20)\\">
+            <rect width=\\"73.63636363636364\\" height=\\"57.27272727272727\\" opacity=\\"0.8\\" fill=\\"rgb(213, 94, 0)\\"></rect>
+            <text x=\\"0\\" y=\\"49.09090909090909\\" style=\\"font-size: 60px\\" fill=\\"white\\">
+                0
+            </text>
+        </pattern>
+    </defs>
+</svg>"
+`;
+
+exports[`drawRemainder last day of Q4 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"remainder\\">
+            <path class=\\"remainder\\" d=\\"M14.457076881553256,-419.751108310676L5.163241743411877,-149.91111011095572Z\\" fill=\\"url(#remainder-pattern)\\" stroke=\\"none\\"></path>
+        </g>
+    </g>
+    <defs>
+        <pattern id=\\"remainder-pattern\\" width=\\"73.63636363636364\\" height=\\"57.27272727272727\\" patternUnits=\\"userSpaceOnUse\\" patternTransform=\\"rotate(20)\\">
+            <rect width=\\"73.63636363636364\\" height=\\"57.27272727272727\\" opacity=\\"0.8\\" fill=\\"rgb(213, 94, 0)\\"></rect>
+            <text x=\\"0\\" y=\\"49.09090909090909\\" style=\\"font-size: 60px\\" fill=\\"white\\">
+                0
+            </text>
+        </pattern>
+    </defs>
+</svg>"
+`;
+
+exports[`drawRemainder start of Q1 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"remainder\\">
+            <path class=\\"remainder\\" d=\\"M21.680260233766585,-419.4400628411599A420,420,0,0,1,418.8764887054253,-30.699954557192548L149.59874596622333,-10.964269484711624A150,150,0,0,0,7.742950083488066,-149.8000224432714Z\\" fill=\\"url(#remainder-pattern)\\" stroke=\\"none\\"></path>
+        </g>
+    </g>
+    <defs>
+        <pattern id=\\"remainder-pattern\\" width=\\"73.63636363636364\\" height=\\"57.27272727272727\\" patternUnits=\\"userSpaceOnUse\\" patternTransform=\\"rotate(20)\\">
+            <rect width=\\"73.63636363636364\\" height=\\"57.27272727272727\\" opacity=\\"0.8\\" fill=\\"rgb(213, 94, 0)\\"></rect>
+            <text x=\\"0\\" y=\\"49.09090909090909\\" style=\\"font-size: 60px\\" fill=\\"white\\">
+                12
+            </text>
+        </pattern>
+    </defs>
+</svg>"
+`;
+
+exports[`drawRemainder start of Q2 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"remainder\\">
+            <path class=\\"remainder\\" d=\\"M419.52948054571414,19.874983095421403A420,420,0,0,1,32.50232127805444,418.74049136850635L11.607971885019444,149.55017548875227A150,150,0,0,0,149.83195733775506,7.098208248364787Z\\" fill=\\"url(#remainder-pattern)\\" stroke=\\"none\\"></path>
+        </g>
+    </g>
+    <defs>
+        <pattern id=\\"remainder-pattern\\" width=\\"73.63636363636364\\" height=\\"57.27272727272727\\" patternUnits=\\"userSpaceOnUse\\" patternTransform=\\"rotate(20)\\">
+            <rect width=\\"73.63636363636364\\" height=\\"57.27272727272727\\" opacity=\\"0.8\\" fill=\\"rgb(213, 94, 0)\\"></rect>
+            <text x=\\"0\\" y=\\"49.09090909090909\\" style=\\"font-size: 60px\\" fill=\\"white\\">
+                12
+            </text>
+        </pattern>
+    </defs>
+</svg>"
+`;
+
+exports[`drawRemainder start of Q3 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"remainder\\">
+            <path class=\\"remainder\\" d=\\"M-18.06933786190277,419.6111283429366A420,420,0,0,1,-418.59673873675143,34.304086038777584L-149.4988352631255,12.251459299563422A150,150,0,0,0,-6.453334950679561,149.86111726533449Z\\" fill=\\"url(#remainder-pattern)\\" stroke=\\"none\\"></path>
+        </g>
+    </g>
+    <defs>
+        <pattern id=\\"remainder-pattern\\" width=\\"73.63636363636364\\" height=\\"57.27272727272727\\" patternUnits=\\"userSpaceOnUse\\" patternTransform=\\"rotate(20)\\">
+            <rect width=\\"73.63636363636364\\" height=\\"57.27272727272727\\" opacity=\\"0.8\\" fill=\\"rgb(213, 94, 0)\\"></rect>
+            <text x=\\"0\\" y=\\"49.09090909090909\\" style=\\"font-size: 60px\\" fill=\\"white\\">
+                12
+            </text>
+        </pattern>
+    </defs>
+</svg>"
+`;
+
+exports[`drawRemainder start of Q4 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"remainder\\">
+            <path class=\\"remainder\\" d=\\"M-419.68500472066705,-16.263357974713102A420,420,0,0,1,-36.10521546972759,-418.4452334725353L-12.894719810616996,-149.44472624019116A150,150,0,0,0,-149.88750168595251,-5.808342133826108Z\\" fill=\\"url(#remainder-pattern)\\" stroke=\\"none\\"></path>
+        </g>
+    </g>
+    <defs>
+        <pattern id=\\"remainder-pattern\\" width=\\"73.63636363636364\\" height=\\"57.27272727272727\\" patternUnits=\\"userSpaceOnUse\\" patternTransform=\\"rotate(20)\\">
+            <rect width=\\"73.63636363636364\\" height=\\"57.27272727272727\\" opacity=\\"0.8\\" fill=\\"rgb(213, 94, 0)\\"></rect>
+            <text x=\\"0\\" y=\\"49.09090909090909\\" style=\\"font-size: 60px\\" fill=\\"white\\">
+                12
+            </text>
+        </pattern>
+    </defs>
+</svg>"
+`;
+
+exports[`drawRemainderLabel last day of Q1 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"remainder-label\\">
+            <text x=\\"-391.5\\" y=\\"13.5\\" style=\\"font-size: 40.90909090909091px; dominant-baseline: hanging; text-anchor: left\\" fill=\\"rgb(213, 94, 0)\\" stroke=\\"none\\">
+                0 weeks left
+            </text>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawRemainderLabel last day of Q2 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"remainder-label\\">
+            <text x=\\"-391.5\\" y=\\"13.5\\" style=\\"font-size: 40.90909090909091px; dominant-baseline: hanging; text-anchor: left\\" fill=\\"rgb(213, 94, 0)\\" stroke=\\"none\\">
+                0 weeks left
+            </text>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawRemainderLabel last day of Q3 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"remainder-label\\">
+            <text x=\\"171\\" y=\\"13.5\\" style=\\"font-size: 40.90909090909091px; dominant-baseline: hanging; text-anchor: left\\" fill=\\"rgb(213, 94, 0)\\" stroke=\\"none\\">
+                0 weeks left
+            </text>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawRemainderLabel last day of Q4 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"remainder-label\\">
+            <text x=\\"171\\" y=\\"13.5\\" style=\\"font-size: 40.90909090909091px; dominant-baseline: hanging; text-anchor: left\\" fill=\\"rgb(213, 94, 0)\\" stroke=\\"none\\">
+                0 weeks left
+            </text>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawRemainderLabel start of Q1 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"remainder-label\\">
+            <text x=\\"-391.5\\" y=\\"13.5\\" style=\\"font-size: 40.90909090909091px; dominant-baseline: hanging; text-anchor: left\\" fill=\\"rgb(213, 94, 0)\\" stroke=\\"none\\">
+                12 weeks left
+            </text>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawRemainderLabel start of Q2 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"remainder-label\\">
+            <text x=\\"-391.5\\" y=\\"13.5\\" style=\\"font-size: 40.90909090909091px; dominant-baseline: hanging; text-anchor: left\\" fill=\\"rgb(213, 94, 0)\\" stroke=\\"none\\">
+                12 weeks left
+            </text>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawRemainderLabel start of Q3 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"remainder-label\\">
+            <text x=\\"171\\" y=\\"13.5\\" style=\\"font-size: 40.90909090909091px; dominant-baseline: hanging; text-anchor: left\\" fill=\\"rgb(213, 94, 0)\\" stroke=\\"none\\">
+                12 weeks left
+            </text>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawRemainderLabel start of Q4 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"remainder-label\\">
+            <text x=\\"171\\" y=\\"13.5\\" style=\\"font-size: 40.90909090909091px; dominant-baseline: hanging; text-anchor: left\\" fill=\\"rgb(213, 94, 0)\\" stroke=\\"none\\">
+                12 weeks left
+            </text>
+        </g>
+    </g>
+</svg>"
+`;

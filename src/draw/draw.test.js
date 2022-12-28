@@ -1,24 +1,7 @@
 import { modelForDate } from "../model.js";
 import { addSvgRoot } from "./root.js";
 import { draw } from "./draw.js";
-import { JSDOM } from "jsdom";
-import xmlFormat from "xml-formatter";
-
-function createParentNode() {
-  const jsdom = new JSDOM();
-  const document = jsdom.window.document;
-  const parentNode = document.createElement("div");
-  return parentNode;
-}
-
-function takeSnapshot(node) {
-  const content = node.innerHTML;
-  const formatted = xmlFormat(content);
-
-  return formatted;
-}
-
-const DIMENSIONS = { width: 1000, height: 1000 };
+import { createParentNode, takeSnapshot, DIMENSIONS } from "./test_setup.js";
 
 function render(model) {
   const parentNode = createParentNode();

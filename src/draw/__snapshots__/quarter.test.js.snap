@@ -1,0 +1,281 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`drawAllQuarterContext last day of Q1 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"all-quarters\\">
+            <path d=\\"M8.266365894244634e-15,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,4.592425496802574e-15,-75Z\\" fill=\\"rgb(240, 228, 66)\\" stroke=\\"none\\"></path>
+            <path d=\\"M135,0A135,135,0,0,1,8.266365894244634e-15,135L4.592425496802574e-15,75A75,75,0,0,0,75,0Z\\" fill=\\"rgb(204, 121, 167)\\" stroke=\\"none\\"></path>
+            <path d=\\"M8.266365894244634e-15,135A135,135,0,0,1,-135,1.6532731788489267e-14L-75,9.184850993605149e-15A75,75,0,0,0,4.592425496802574e-15,75Z\\" fill=\\"rgb(86, 180, 233)\\" stroke=\\"none\\"></path>
+            <path d=\\"M-135,1.6532731788489267e-14A135,135,0,0,1,-2.4799097682733902e-14,-135L-1.3777276490407723e-14,-75A75,75,0,0,0,-75,9.184850993605149e-15Z\\" fill=\\"rgb(0, 158, 115)\\" stroke=\\"none\\"></path>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawAllQuarterContext last day of Q2 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"all-quarters\\">
+            <path d=\\"M8.266365894244634e-15,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,4.592425496802574e-15,-75Z\\" fill=\\"rgb(240, 228, 66)\\" stroke=\\"none\\"></path>
+            <path d=\\"M135,0A135,135,0,0,1,8.266365894244634e-15,135L4.592425496802574e-15,75A75,75,0,0,0,75,0Z\\" fill=\\"rgb(204, 121, 167)\\" stroke=\\"none\\"></path>
+            <path d=\\"M8.266365894244634e-15,135A135,135,0,0,1,-135,1.6532731788489267e-14L-75,9.184850993605149e-15A75,75,0,0,0,4.592425496802574e-15,75Z\\" fill=\\"rgb(86, 180, 233)\\" stroke=\\"none\\"></path>
+            <path d=\\"M-135,1.6532731788489267e-14A135,135,0,0,1,-2.4799097682733902e-14,-135L-1.3777276490407723e-14,-75A75,75,0,0,0,-75,9.184850993605149e-15Z\\" fill=\\"rgb(0, 158, 115)\\" stroke=\\"none\\"></path>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawAllQuarterContext last day of Q3 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"all-quarters\\">
+            <path d=\\"M8.266365894244634e-15,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,4.592425496802574e-15,-75Z\\" fill=\\"rgb(240, 228, 66)\\" stroke=\\"none\\"></path>
+            <path d=\\"M135,0A135,135,0,0,1,8.266365894244634e-15,135L4.592425496802574e-15,75A75,75,0,0,0,75,0Z\\" fill=\\"rgb(204, 121, 167)\\" stroke=\\"none\\"></path>
+            <path d=\\"M8.266365894244634e-15,135A135,135,0,0,1,-135,1.6532731788489267e-14L-75,9.184850993605149e-15A75,75,0,0,0,4.592425496802574e-15,75Z\\" fill=\\"rgb(86, 180, 233)\\" stroke=\\"none\\"></path>
+            <path d=\\"M-135,1.6532731788489267e-14A135,135,0,0,1,-2.4799097682733902e-14,-135L-1.3777276490407723e-14,-75A75,75,0,0,0,-75,9.184850993605149e-15Z\\" fill=\\"rgb(0, 158, 115)\\" stroke=\\"none\\"></path>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawAllQuarterContext last day of Q4 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"all-quarters\\">
+            <path d=\\"M8.266365894244634e-15,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,4.592425496802574e-15,-75Z\\" fill=\\"rgb(240, 228, 66)\\" stroke=\\"none\\"></path>
+            <path d=\\"M135,0A135,135,0,0,1,8.266365894244634e-15,135L4.592425496802574e-15,75A75,75,0,0,0,75,0Z\\" fill=\\"rgb(204, 121, 167)\\" stroke=\\"none\\"></path>
+            <path d=\\"M8.266365894244634e-15,135A135,135,0,0,1,-135,1.6532731788489267e-14L-75,9.184850993605149e-15A75,75,0,0,0,4.592425496802574e-15,75Z\\" fill=\\"rgb(86, 180, 233)\\" stroke=\\"none\\"></path>
+            <path d=\\"M-135,1.6532731788489267e-14A135,135,0,0,1,-2.4799097682733902e-14,-135L-1.3777276490407723e-14,-75A75,75,0,0,0,-75,9.184850993605149e-15Z\\" fill=\\"rgb(0, 158, 115)\\" stroke=\\"none\\"></path>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawAllQuarterContext start of Q1 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"all-quarters\\">
+            <path d=\\"M8.266365894244634e-15,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,4.592425496802574e-15,-75Z\\" fill=\\"rgb(240, 228, 66)\\" stroke=\\"none\\"></path>
+            <path d=\\"M135,0A135,135,0,0,1,8.266365894244634e-15,135L4.592425496802574e-15,75A75,75,0,0,0,75,0Z\\" fill=\\"rgb(204, 121, 167)\\" stroke=\\"none\\"></path>
+            <path d=\\"M8.266365894244634e-15,135A135,135,0,0,1,-135,1.6532731788489267e-14L-75,9.184850993605149e-15A75,75,0,0,0,4.592425496802574e-15,75Z\\" fill=\\"rgb(86, 180, 233)\\" stroke=\\"none\\"></path>
+            <path d=\\"M-135,1.6532731788489267e-14A135,135,0,0,1,-2.4799097682733902e-14,-135L-1.3777276490407723e-14,-75A75,75,0,0,0,-75,9.184850993605149e-15Z\\" fill=\\"rgb(0, 158, 115)\\" stroke=\\"none\\"></path>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawAllQuarterContext start of Q2 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"all-quarters\\">
+            <path d=\\"M8.266365894244634e-15,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,4.592425496802574e-15,-75Z\\" fill=\\"rgb(240, 228, 66)\\" stroke=\\"none\\"></path>
+            <path d=\\"M135,0A135,135,0,0,1,8.266365894244634e-15,135L4.592425496802574e-15,75A75,75,0,0,0,75,0Z\\" fill=\\"rgb(204, 121, 167)\\" stroke=\\"none\\"></path>
+            <path d=\\"M8.266365894244634e-15,135A135,135,0,0,1,-135,1.6532731788489267e-14L-75,9.184850993605149e-15A75,75,0,0,0,4.592425496802574e-15,75Z\\" fill=\\"rgb(86, 180, 233)\\" stroke=\\"none\\"></path>
+            <path d=\\"M-135,1.6532731788489267e-14A135,135,0,0,1,-2.4799097682733902e-14,-135L-1.3777276490407723e-14,-75A75,75,0,0,0,-75,9.184850993605149e-15Z\\" fill=\\"rgb(0, 158, 115)\\" stroke=\\"none\\"></path>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawAllQuarterContext start of Q3 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"all-quarters\\">
+            <path d=\\"M8.266365894244634e-15,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,4.592425496802574e-15,-75Z\\" fill=\\"rgb(240, 228, 66)\\" stroke=\\"none\\"></path>
+            <path d=\\"M135,0A135,135,0,0,1,8.266365894244634e-15,135L4.592425496802574e-15,75A75,75,0,0,0,75,0Z\\" fill=\\"rgb(204, 121, 167)\\" stroke=\\"none\\"></path>
+            <path d=\\"M8.266365894244634e-15,135A135,135,0,0,1,-135,1.6532731788489267e-14L-75,9.184850993605149e-15A75,75,0,0,0,4.592425496802574e-15,75Z\\" fill=\\"rgb(86, 180, 233)\\" stroke=\\"none\\"></path>
+            <path d=\\"M-135,1.6532731788489267e-14A135,135,0,0,1,-2.4799097682733902e-14,-135L-1.3777276490407723e-14,-75A75,75,0,0,0,-75,9.184850993605149e-15Z\\" fill=\\"rgb(0, 158, 115)\\" stroke=\\"none\\"></path>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawAllQuarterContext start of Q4 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"all-quarters\\">
+            <path d=\\"M8.266365894244634e-15,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,4.592425496802574e-15,-75Z\\" fill=\\"rgb(240, 228, 66)\\" stroke=\\"none\\"></path>
+            <path d=\\"M135,0A135,135,0,0,1,8.266365894244634e-15,135L4.592425496802574e-15,75A75,75,0,0,0,75,0Z\\" fill=\\"rgb(204, 121, 167)\\" stroke=\\"none\\"></path>
+            <path d=\\"M8.266365894244634e-15,135A135,135,0,0,1,-135,1.6532731788489267e-14L-75,9.184850993605149e-15A75,75,0,0,0,4.592425496802574e-15,75Z\\" fill=\\"rgb(86, 180, 233)\\" stroke=\\"none\\"></path>
+            <path d=\\"M-135,1.6532731788489267e-14A135,135,0,0,1,-2.4799097682733902e-14,-135L-1.3777276490407723e-14,-75A75,75,0,0,0,-75,9.184850993605149e-15Z\\" fill=\\"rgb(0, 158, 115)\\" stroke=\\"none\\"></path>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawCurrentQuarter last day of Q1 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"current-quarter\\">
+            <path class=\\"current-quarter\\" d=\\"M5.809507702594197,-337.4499957330767A337.5,337.5,0,0,1,337.4218694182132,-7.261682884724991L74.98263764849182,-1.6137073077166646A75,75,0,0,0,1.2910017116875994,-74.98888794068372Z\\" fill=\\"rgb(240, 228, 66)\\" stroke=\\"none\\"></path>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawCurrentQuarter last day of Q2 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"current-quarter\\">
+            <path class=\\"current-quarter\\" d=\\"M337.4968746609642,-1.4524441749824266A337.5,337.5,0,0,1,8.713723576657394,337.38749387229757L1.9363830170349765,74.97499863828834A75,75,0,0,0,74.99930548021426,-0.322765372218317Z\\" fill=\\"rgb(204, 121, 167)\\" stroke=\\"none\\"></path>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawCurrentQuarter last day of Q3 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"current-quarter\\">
+            <path class=\\"current-quarter\\" d=\\"M2.904861449932415,337.48749870173964A337.5,337.5,0,0,1,-337.47187229597404,4.357224925315464L-74.99374939910534,0.9682722056256586A75,75,0,0,0,0.6455247666516478,74.99722193371991Z\\" fill=\\"rgb(86, 180, 233)\\" stroke=\\"none\\"></path>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawCurrentQuarter last day of Q4 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"current-quarter\\">
+            <path class=\\"current-quarter\\" d=\\"M-337.4968746609642,-1.4524441749823105A337.5,337.5,0,0,1,-6.199774420683475e-14,-337.5L-1.3777276490407723e-14,-75A75,75,0,0,0,-74.99930548021426,-0.3227653722182912Z\\" fill=\\"rgb(0, 158, 115)\\" stroke=\\"none\\"></path>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawCurrentQuarter start of Q1 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"current-quarter\\">
+            <path class=\\"current-quarter\\" d=\\"M5.809507702594197,-337.4499957330767A337.5,337.5,0,0,1,337.4218694182132,-7.261682884724991L74.98263764849182,-1.6137073077166646A75,75,0,0,0,1.2910017116875994,-74.98888794068372Z\\" fill=\\"rgb(240, 228, 66)\\" stroke=\\"none\\"></path>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawCurrentQuarter start of Q2 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"current-quarter\\">
+            <path class=\\"current-quarter\\" d=\\"M337.4968746609642,-1.4524441749824266A337.5,337.5,0,0,1,8.713723576657394,337.38749387229757L1.9363830170349765,74.97499863828834A75,75,0,0,0,74.99930548021426,-0.322765372218317Z\\" fill=\\"rgb(204, 121, 167)\\" stroke=\\"none\\"></path>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawCurrentQuarter start of Q3 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"current-quarter\\">
+            <path class=\\"current-quarter\\" d=\\"M2.904861449932415,337.48749870173964A337.5,337.5,0,0,1,-337.47187229597404,4.357224925315464L-74.99374939910534,0.9682722056256586A75,75,0,0,0,0.6455247666516478,74.99722193371991Z\\" fill=\\"rgb(86, 180, 233)\\" stroke=\\"none\\"></path>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawCurrentQuarter start of Q4 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"current-quarter\\">
+            <path class=\\"current-quarter\\" d=\\"M-337.4968746609642,-1.4524441749823105A337.5,337.5,0,0,1,-6.199774420683475e-14,-337.5L-1.3777276490407723e-14,-75A75,75,0,0,0,-74.99930548021426,-0.3227653722182912Z\\" fill=\\"rgb(0, 158, 115)\\" stroke=\\"none\\"></path>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawQuarterLabel last day of Q1 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"info\\">
+            <text x=\\"-405\\" y=\\"0\\" style=\\"font-size: 180px; dominant-baseline: text-bottom; text-anchor: left\\" fill=\\"rgb(240, 228, 66)\\" stroke=\\"none\\">
+                Q1
+            </text>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawQuarterLabel last day of Q2 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"info\\">
+            <text x=\\"-405\\" y=\\"0\\" style=\\"font-size: 180px; dominant-baseline: text-bottom; text-anchor: left\\" fill=\\"rgb(204, 121, 167)\\" stroke=\\"none\\">
+                Q2
+            </text>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawQuarterLabel last day of Q3 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"info\\">
+            <text x=\\"157.5\\" y=\\"0\\" style=\\"font-size: 180px; dominant-baseline: text-bottom; text-anchor: left\\" fill=\\"rgb(86, 180, 233)\\" stroke=\\"none\\">
+                Q3
+            </text>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawQuarterLabel last day of Q4 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"info\\">
+            <text x=\\"157.5\\" y=\\"0\\" style=\\"font-size: 180px; dominant-baseline: text-bottom; text-anchor: left\\" fill=\\"rgb(0, 158, 115)\\" stroke=\\"none\\">
+                Q4
+            </text>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawQuarterLabel start of Q1 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"info\\">
+            <text x=\\"-405\\" y=\\"0\\" style=\\"font-size: 180px; dominant-baseline: text-bottom; text-anchor: left\\" fill=\\"rgb(240, 228, 66)\\" stroke=\\"none\\">
+                Q1
+            </text>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawQuarterLabel start of Q2 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"info\\">
+            <text x=\\"-405\\" y=\\"0\\" style=\\"font-size: 180px; dominant-baseline: text-bottom; text-anchor: left\\" fill=\\"rgb(204, 121, 167)\\" stroke=\\"none\\">
+                Q2
+            </text>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawQuarterLabel start of Q3 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"info\\">
+            <text x=\\"157.5\\" y=\\"0\\" style=\\"font-size: 180px; dominant-baseline: text-bottom; text-anchor: left\\" fill=\\"rgb(86, 180, 233)\\" stroke=\\"none\\">
+                Q3
+            </text>
+        </g>
+    </g>
+</svg>"
+`;
+
+exports[`drawQuarterLabel start of Q4 1`] = `
+"<svg id=\\"clock\\" width=\\"1000\\" height=\\"1000\\">
+    <g transform=\\"translate(500 500)\\">
+        <g id=\\"info\\">
+            <text x=\\"157.5\\" y=\\"0\\" style=\\"font-size: 180px; dominant-baseline: text-bottom; text-anchor: left\\" fill=\\"rgb(0, 158, 115)\\" stroke=\\"none\\">
+                Q4
+            </text>
+        </g>
+    </g>
+</svg>"
+`;
