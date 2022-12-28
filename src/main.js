@@ -1,11 +1,11 @@
 import { modelForDate } from "./model.js";
 import { renderUnder } from "./container";
 import { draw } from "./draw/draw";
-import { init } from "./sentry";
+// import { init } from "./sentry";
 import "@fortawesome/fontawesome-free/css/all.css";
 
 console.log("Quarterly Clock");
-init({ tracesSampleRate: 1.0 });
+// init({ tracesSampleRate: 1.0 });
 const now = new Date();
 // const now = Date.parse("01 Jan 2022 00:00:00 GMT");
 // const now = Date.parse("01 Feb 2022 00:00:00 GMT");
