@@ -14,7 +14,7 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "jest": "^27.5.1",
-    "parcel": "^2.0.1"
+    "parcel": "^2.8.2"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
