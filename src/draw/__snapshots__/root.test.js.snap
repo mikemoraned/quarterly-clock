@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`addSvgRoot landscape 1`] = `
+"<svg id=\\"clock\\" width=\\"10000\\" height=\\"50\\">
+    <g transform=\\"translate(5000 25)\\"></g>
+</svg>"
+`;
+
+exports[`addSvgRoot large square 1`] = `
+"<svg id=\\"clock\\" width=\\"10000\\" height=\\"10000\\">
+    <g transform=\\"translate(5000 5000)\\"></g>
+</svg>"
+`;
+
+exports[`addSvgRoot portrait 1`] = `
+"<svg id=\\"clock\\" width=\\"50\\" height=\\"10000\\">
+    <g transform=\\"translate(25 5000)\\"></g>
+</svg>"
+`;
+
+exports[`addSvgRoot small square 1`] = `
+"<svg id=\\"clock\\" width=\\"50\\" height=\\"50\\">
+    <g transform=\\"translate(25 25)\\"></g>
+</svg>"
+`;
