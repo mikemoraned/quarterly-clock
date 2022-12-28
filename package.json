@@ -18,9 +18,9 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
-    "@sentry/browser": "^6.15.1",
-    "@sentry/integrations": "^6.16.1",
-    "@sentry/tracing": "^6.15.1",
+    "@sentry/browser": "^6.19.7",
+    "@sentry/integrations": "^6.19.7",
+    "@sentry/tracing": "^6.19.7",
     "d3": "^7.2.1",
     "date-fns": "^2.27.0",
     "jsdom": "^20.0.3",
