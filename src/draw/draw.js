@@ -20,7 +20,7 @@ const BANG_WONG_PALETTE = {
   "reddish-purple": "rgb(204, 121, 167)",
 };
 
-export function draw(dataModel, svg) {
+export function createGuidesModel(svg) {
   const outerMargin = 100;
 
   const sideLength = Math.min(
@@ -107,6 +107,12 @@ export function draw(dataModel, svg) {
       yOffset: ((6 / 14) * sideLength) / 45,
     },
   };
+
+  return guidesModel;
+}
+
+export function draw(dataModel, svg) {
+  const guidesModel = createGuidesModel(svg);
 
   console.log("Guides Model:", JSON.stringify(guidesModel));
 
