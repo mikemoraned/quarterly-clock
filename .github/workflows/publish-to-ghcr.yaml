@@ -7,6 +7,7 @@ jobs:
     runs-on: ubuntu-24.04
 
     permissions:
+      contents: read
       packages: write
 
     steps:
@@ -60,7 +61,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
-          password: ${{ secrets.GHCR_TOKEN }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up QEMU
         if: steps.prepare.outputs.category == 'publish'
