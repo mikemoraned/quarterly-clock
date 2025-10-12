@@ -1,25 +1,19 @@
-use headless_chrome::protocol::cdp::Page;
 use headless_chrome::Browser;
 use image::ImageReader;
+use preview::grab::grab_screenshot;
 use std::io::Cursor;
-use std::{thread, time};
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let browser = Browser::connect("ws://0.0.0.0:9222/devtools/browser/5f3073e9-d8d9-48ec-bfdd-4b556947ac52".into())?;
-    println!("created browser");
+    std::env::set_var("RUST_BACKTRACE", "1");
     
-    let tab = browser.new_tab()?;
-    println!("got tab");
+    println!("setting up logging, next message should be from log");
+    env_logger::init();
+    log::info!("logging setup completed");
 
-    tab.navigate_to("https://quarterly.houseofmoran.io/")?;
-    println!("navigated");
-    tab.wait_for_element("#container > svg")?;
-    println!("got SVG");
-    let wait_duration = time::Duration::from_millis(1000);
-    thread::sleep(wait_duration);
-    println!("waited {:?}", wait_duration);
-
-    let png_data = tab.capture_screenshot(Page::CaptureScreenshotFormatOption::Png, None, None, true)?;
+    let browser = Browser::connect("ws://0.0.0.0:9222/devtools/browser/5f3073e9-d8d9-48ec-bfdd-4b556947ac52".into())?;
+    log::info!("created browser");
+    
+    let png_data = grab_screenshot(&browser)?;
     println!("got png data");
     println!("peek: {:02X?}", &png_data[0 .. 8]);
     
