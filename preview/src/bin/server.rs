@@ -1,12 +1,11 @@
 use core::time;
 use std::thread;
 
-use headless_chrome::{protocol::page::ScreenshotFormat, Browser, LaunchOptionsBuilder};
-use failure::Fallible;
+use headless_chrome::protocol::cdp::Page;
+use headless_chrome::{Browser, LaunchOptionsBuilder};
 use actix_web::{get, App, HttpServer, HttpResponse, Responder};
 use actix_web::middleware::Logger;
 use log;
-use env_logger::Env;
 
 #[get("/screenshot.png")]
 async fn screenshot() -> impl Responder {
@@ -21,11 +20,11 @@ async fn hello() -> impl Responder {
     HttpResponse::Ok().body("hello!")
 }
 
-fn grab_screenshot() -> Fallible<Vec<u8>> {
+fn grab_screenshot() -> Result<Vec<u8>, Box<dyn std::error::Error>> {
     let browser = Browser::new(LaunchOptionsBuilder::default().sandbox(false).build().unwrap())?;
     log::info!("created browser");
     
-    let tab = browser.wait_for_initial_tab()?;
+    let tab = browser.new_tab()?;
     log::info!("got tab");
 
     tab.navigate_to("https://quarterly.houseofmoran.io/")?;
@@ -36,7 +35,7 @@ fn grab_screenshot() -> Fallible<Vec<u8>> {
     thread::sleep(wait_duration);
     log::info!("waited {:?}", wait_duration);
  
-    let png_data = tab.capture_screenshot(ScreenshotFormat::PNG, None, true)?;
+    let png_data = tab.capture_screenshot(Page::CaptureScreenshotFormatOption::Png, None, None, true)?;
     log::info!("got png data");
     log::info!("peek: {:02X?}", &png_data[0 .. 8]);
 

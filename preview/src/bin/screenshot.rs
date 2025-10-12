@@ -1,14 +1,14 @@
-use headless_chrome::{protocol::page::ScreenshotFormat, Browser};
-use failure::Fallible;
-use image::io::Reader as ImageReader;
+use headless_chrome::protocol::cdp::Page;
+use headless_chrome::Browser;
+use image::ImageReader;
 use std::io::Cursor;
 use std::{thread, time};
 
-fn main() -> Fallible<()> {
-    let browser = Browser::connect("ws://192.168.2.7:9222/devtools/browser/357ddcfb-e28d-48e3-a231-f2c3d172dd4a".into())?;
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let browser = Browser::connect("ws://0.0.0.0:9222/devtools/browser/5f3073e9-d8d9-48ec-bfdd-4b556947ac52".into())?;
     println!("created browser");
     
-    let tab = browser.wait_for_initial_tab()?;
+    let tab = browser.new_tab()?;
     println!("got tab");
 
     tab.navigate_to("https://quarterly.houseofmoran.io/")?;
@@ -18,8 +18,8 @@ fn main() -> Fallible<()> {
     let wait_duration = time::Duration::from_millis(1000);
     thread::sleep(wait_duration);
     println!("waited {:?}", wait_duration);
- 
-    let png_data = tab.capture_screenshot(ScreenshotFormat::PNG, None, true)?;
+
+    let png_data = tab.capture_screenshot(Page::CaptureScreenshotFormatOption::Png, None, None, true)?;
     println!("got png data");
     println!("peek: {:02X?}", &png_data[0 .. 8]);
     
