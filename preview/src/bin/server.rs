@@ -3,7 +3,6 @@ use std::time::Duration;
 use headless_chrome::{Browser, LaunchOptionsBuilder};
 use actix_web::{get, App, HttpServer, HttpResponse, Responder};
 use actix_web::middleware::Logger;
-use log;
 
 #[get("/screenshot.png")]
 async fn screenshot() -> impl Responder {
