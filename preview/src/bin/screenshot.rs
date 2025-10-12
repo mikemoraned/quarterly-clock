@@ -1,25 +1,19 @@
-use headless_chrome::{protocol::page::ScreenshotFormat, Browser};
-use failure::Fallible;
-use image::io::Reader as ImageReader;
+use headless_chrome::{Browser, LaunchOptionsBuilder};
+use image::ImageReader;
+use preview::grab::grab_screenshot;
 use std::io::Cursor;
-use std::{thread, time};
 
-fn main() -> Fallible<()> {
-    let browser = Browser::connect("ws://192.168.2.7:9222/devtools/browser/357ddcfb-e28d-48e3-a231-f2c3d172dd4a".into())?;
-    println!("created browser");
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+    std::env::set_var("RUST_BACKTRACE", "1");
     
-    let tab = browser.wait_for_initial_tab()?;
-    println!("got tab");
+    println!("setting up logging, next message should be from log");
+    env_logger::init();
+    log::info!("logging setup completed");
 
-    tab.navigate_to("https://quarterly.houseofmoran.io/")?;
-    println!("navigated");
-    tab.wait_for_element("#container > svg")?;
-    println!("got SVG");
-    let wait_duration = time::Duration::from_millis(1000);
-    thread::sleep(wait_duration);
-    println!("waited {:?}", wait_duration);
- 
-    let png_data = tab.capture_screenshot(ScreenshotFormat::PNG, None, true)?;
+    let browser = Browser::new(LaunchOptionsBuilder::default().sandbox(false).build().unwrap())?;
+    log::info!("created browser");
+    
+    let png_data = grab_screenshot(&browser)?;
     println!("got png data");
     println!("peek: {:02X?}", &png_data[0 .. 8]);
     

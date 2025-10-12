@@ -1,18 +1,13 @@
 [package]
 name = "preview"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 log = "0.4"
-env_logger = "0.9.0"
-headless_chrome = { version= "0.9", default-features = false }
-failure = "0.1"
-image = "0.23"
-actix-web = "3.3"
-sentry = { version="0.23.0", features=["backtrace", "contexts", "panic", "transport", "log", "reqwest", "native-tls"] }
-sentry-actix = "0.23.0"
-sentry-log = "0.23.0"
-dotenv = "0.15.0"
+env_logger = "0.11"
+headless_chrome = "1.0.18"
+image = "0.25"
+actix-web = "4.11"

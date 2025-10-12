@@ -4,7 +4,12 @@ on: [push, workflow_dispatch]
 jobs:
   push_to_ghcr:
     name: Push Docker image to ghcr
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-24.04
+
+    permissions:
+      contents: read
+      packages: write
+
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
@@ -13,31 +18,31 @@ jobs:
         id: prepare
         run: |
           if [[ $GITHUB_REF == refs/tags/* ]]; then
-            echo ::set-output name=category::publish
-            echo ::set-output name=kind::release
+            echo "category=publish" >> $GITHUB_OUTPUT
+            echo "kind=release" >> $GITHUB_OUTPUT
             VERSION=${GITHUB_REF#refs/tags/v}
-            echo ::set-output name=version::${VERSION}
+            echo "version=${VERSION}" >> $GITHUB_OUTPUT
           elif [[ $GITHUB_REF == refs/heads/master ]]; then
-            echo ::set-output name=category::ignore
+            echo "category=ignore" >> $GITHUB_OUTPUT
             VERSION=unset
           elif [[ $GITHUB_REF == refs/heads/main ]]; then
-            echo ::set-output name=category::ignore
+            echo "category=ignore" >> $GITHUB_OUTPUT
             VERSION=unset
           elif [[ $GITHUB_REF == refs/heads/* ]]; then
-            echo ::set-output name=category::publish
-            echo ::set-output name=kind::branch-build
+            echo "category=publish" >> $GITHUB_OUTPUT
+            echo "kind=branch-build" >> $GITHUB_OUTPUT
             BRANCH_NAME=${GITHUB_REF#refs/heads/}
             VERSION_SAFE_BRANCH_NAME=${BRANCH_NAME/\//-}
             VERSION=${VERSION_SAFE_BRANCH_NAME}-${GITHUB_RUN_NUMBER}
-            echo ::set-output name=version::${VERSION}
+            echo "version=${VERSION}" >> $GITHUB_OUTPUT
           else
-            echo ::set-output name=category::ignore
+            echo "category=ignore" >> $GITHUB_OUTPUT
           fi
-          echo ::set-output name=build_date::$(date -u +'%Y-%m-%dT%H:%M:%SZ')
+          echo "build_date=$(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> $GITHUB_OUTPUT
           DOCKER_IMAGE=ghcr.io/mikemoraned/quarterly-clock
-          echo ::set-output name=docker_image::${DOCKER_IMAGE}
+          echo "docker_image=${DOCKER_IMAGE}" >> $GITHUB_OUTPUT
           DOCKER_TAG="${DOCKER_IMAGE}:${VERSION}"
-          echo ::set-output name=docker_tag::${DOCKER_TAG}
+          echo "docker_tag=${DOCKER_TAG}" >> $GITHUB_OUTPUT
 
       - name: Information
         run: |
@@ -52,23 +57,23 @@ jobs:
 
       - name: Login to ghcr
         if: steps.prepare.outputs.category == 'publish'
-        uses: docker/login-action@v1
+        uses: docker/login-action@v3
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
-          password: ${{ secrets.GHCR_TOKEN }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up QEMU
         if: steps.prepare.outputs.category == 'publish'
-        uses: docker/setup-qemu-action@v1
+        uses: docker/setup-qemu-action@v3
 
       - name: Setup Buildx
         if: steps.prepare.outputs.category == 'publish'
-        uses: docker/setup-buildx-action@v1
+        uses: docker/setup-buildx-action@v3
 
       - name: Cache Docker layers
         if: steps.prepare.outputs.category == 'publish'
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: /tmp/.buildx-cache
           key: ${{ runner.os }}-buildx-${{ github.sha }}
@@ -78,7 +83,7 @@ jobs:
       - name: Build and Push
         if: steps.prepare.outputs.category == 'publish'
         id: docker_build
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v6
         with:
           push: true
           context: ./preview
@@ -93,7 +98,7 @@ jobs:
           echo -n ${{ steps.prepare.outputs.category }} > category.txt
 
       - name: Save Category to Workflow
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: category
           path: category.txt
@@ -105,7 +110,7 @@ jobs:
 
       - name: Save Kind to Workflow
         if: steps.prepare.outputs.category == 'publish'
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: kind
           path: kind.txt
@@ -117,7 +122,7 @@ jobs:
 
       - name: Save Docker Tag to Workflow
         if: steps.prepare.outputs.category == 'publish'
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: docker_tag
           path: docker_tag.txt
@@ -125,23 +130,23 @@ jobs:
   deploy_to_fly:
     name: Publish Docker image to fly.io
     needs: push_to_ghcr
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-24.04
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
 
       - name: Load Category
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: category
 
       - name: Load Kind
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: kind
 
       - name: Load Docker Tag
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: docker_tag
 
@@ -149,11 +154,11 @@ jobs:
         id: prepare
         run: |
           CATEGORY=$(cat category.txt)
-          echo ::set-output name=category::${CATEGORY}
+          echo "category=${CATEGORY}" >> $GITHUB_OUTPUT
           KIND=$(cat kind.txt)
-          echo ::set-output name=kind::${KIND}
+          echo "kind=${KIND}" >> $GITHUB_OUTPUT
           DOCKER_TAG=$(cat docker_tag.txt)
-          echo ::set-output name=docker_tag::${DOCKER_TAG}
+          echo "docker_tag=${DOCKER_TAG}" >> $GITHUB_OUTPUT
 
       - name: Information
         run: |
