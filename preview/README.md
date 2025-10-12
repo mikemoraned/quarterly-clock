@@ -35,3 +35,11 @@ Run it locally:
 Because a `RUST_LOG` `ARG` is defined, you can also enable more verbose logging e.g.
 
     docker run --platform linux/amd64 -e RUST_LOG=trace -p 8080:8080 -it quarterly-clock-preview
+
+# Running / testing on fly.io
+
+This is largely controlled by the `publish-to-ghcr` github workflow which builds the app, publishes to GHCR, and then deploys it to fly.io. It follow the pattern that:
+* main app is deployed to https://fly.io/apps/quarterly-preview (https://quarterly-preview.fly.dev) whenever a release is made
+    * a release is made by going to https://github.com/mikemoraned/quarterly-clock/releases/new and tagging a new release as `vSOMETHING` e.g. `v0.2.0`
+* branches are deployed to https://fly.io/apps/quarterly-preview-branch-build (https://quarterly-preview-branch-build.fly.dev) whenever a new PR is created
+    * this is last-writer wins i.e. multiple simultaneous PR's not supported
