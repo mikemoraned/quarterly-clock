@@ -1,4 +1,4 @@
-use headless_chrome::Browser;
+use headless_chrome::{Browser, LaunchOptionsBuilder};
 use image::ImageReader;
 use preview::grab::grab_screenshot;
 use std::io::Cursor;
@@ -10,7 +10,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     env_logger::init();
     log::info!("logging setup completed");
 
-    let browser = Browser::connect("ws://0.0.0.0:9222/devtools/browser/5f3073e9-d8d9-48ec-bfdd-4b556947ac52".into())?;
+    let browser = Browser::new(LaunchOptionsBuilder::default().sandbox(false).build().unwrap())?;
     log::info!("created browser");
     
     let png_data = grab_screenshot(&browser)?;
