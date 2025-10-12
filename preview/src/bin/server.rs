@@ -7,7 +7,10 @@ use log;
 async fn screenshot() -> impl Responder {
     match grab_screenshot() {
         Ok(png_data) => HttpResponse::Ok().content_type("image/png").body(png_data),
-        Err(_) => HttpResponse::InternalServerError().body("oops")
+        Err(e) => {
+            log::error!("failed to grab screenshot: {}", e);
+            HttpResponse::InternalServerError().body("oops")
+        }
     }
 }
 
