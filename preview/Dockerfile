@@ -1,4 +1,4 @@
-FROM rust:1.57.0-bullseye as build
+FROM rust:1.90.0-bookworm AS build
 
 # prepare base image with dependencies
 ## create shell project
@@ -19,35 +19,45 @@ RUN rm src/*.rs
 COPY ./src ./src
 
 ## build for release, using already compiled dependencies
-RUN touch src/server.rs
+RUN touch src/bin/server.rs
 RUN cargo build --release
 
-FROM rust:1.57.0-slim-bullseye
-LABEL org.opencontainers.image.source https://github.com/mikemoraned/quarterly-clock
+FROM debian:bookworm-slim
+LABEL org.opencontainers.image.source=https://github.com/mikemoraned/quarterly-clock
 
-ARG TARGETPLATFORM
-ARG CHROME_VERSION="96.0.4664.45-1"
+# Update system
+RUN apt update && apt upgrade -y
 
-RUN echo $TARGETPLATFORM; echo $CHROME_VERSION
+# Install Required Packages
+RUN apt install software-properties-common apt-transport-https ca-certificates curl -y
 
-# install extra fonts
-RUN apt-get update && apt-get install software-properties-common -y
-RUN apt-add-repository contrib && apt-get update
-RUN apt-get install ttf-mscorefonts-installer fontconfig -y && fc-cache -f
+# Import Google Chrome APT Repository
+## Import the Google Chrome GPG Key
+RUN curl -fSsL https://dl.google.com/linux/linux_signing_key.pub | gpg --dearmor | tee /usr/share/keyrings/google-chrome.gpg >> /dev/null
+## Add the Google Chrome Repository
+RUN echo deb [arch=amd64 signed-by=/usr/share/keyrings/google-chrome.gpg] http://dl.google.com/linux/chrome/deb/ stable main | tee /etc/apt/sources.list.d/google-chrome.list
+## Update the APT Package List
+RUN apt update
 
-# install chrome
-RUN apt-get install wget -y
-RUN wget --no-verbose -O /tmp/chrome.deb https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_${CHROME_VERSION}_amd64.deb \
-  && apt install -y /tmp/chrome.deb \
-  && rm /tmp/chrome.deb
+# Install the Stable Version of Google Chrome
+RUN apt install google-chrome-stable -y
 
-RUN mkdir -p /home/appuser
-WORKDIR /home/appuser
-COPY --from=build /usr/src/app/target/release/server /home/appuser/server
+# Copy across binary from build and run it as non-root user
+ARG APP_USER=appuser
+ARG APP_UID=1500
+ARG APP_GID=1500
 
-RUN groupadd -g 999 appuser && useradd -r -u 999 -g appuser appuser
-RUN chown -v -R appuser:appuser /home/appuser
-USER appuser
-RUN cd /home/appuser
+RUN groupadd -g ${APP_GID} ${APP_USER} && useradd -r -u ${APP_UID} -g ${APP_USER} ${APP_USER}
+RUN mkdir -p /home/${APP_USER}
+RUN chown -R appuser:appuser /home/appuser
+WORKDIR /home/${APP_USER}
+COPY --from=build --chown=${APP_UID}:${APP_GID} /usr/src/app/target/release/server /home/${APP_USER}/server
+
+USER ${APP_USER}
+RUN cd /home/${APP_USER}
+
+EXPOSE 8080
+ARG RUST_LOG=info
+ENV RUST_LOG=$RUST_LOG
 
 ENTRYPOINT ["./server"]
