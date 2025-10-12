@@ -1,3 +1,5 @@
+use std::time::Duration;
+
 use headless_chrome::{Browser, LaunchOptionsBuilder};
 use actix_web::{get, App, HttpServer, HttpResponse, Responder};
 use actix_web::middleware::Logger;
@@ -20,7 +22,12 @@ async fn hello() -> impl Responder {
 }
 
 fn grab_screenshot() -> Result<Vec<u8>, Box<dyn std::error::Error>> {
-    let browser = Browser::new(LaunchOptionsBuilder::default().sandbox(false).build().unwrap())?;
+    let browser = Browser::new(
+        LaunchOptionsBuilder::default()
+        .idle_browser_timeout(Duration::from_secs(5 * 60))
+        .sandbox(false)
+        .build().unwrap()
+    )?;
     log::info!("created browser");
     
     let png_data = preview::grab::grab_screenshot(&browser)?;
