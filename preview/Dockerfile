@@ -39,6 +39,11 @@ RUN echo deb [arch=amd64 signed-by=/usr/share/keyrings/google-chrome.gpg] http:/
 ## Update the APT Package List
 RUN apt update
 
+# install extra fonts
+RUN apt install fonts-texgyre -y
+RUN apt install fontconfig -y
+RUN fc-cache -f -v
+
 # Install the Stable Version of Google Chrome
 RUN apt install google-chrome-stable -y
 
@@ -59,5 +64,7 @@ RUN cd /home/${APP_USER}
 EXPOSE 8080
 ARG RUST_LOG=info
 ENV RUST_LOG=$RUST_LOG
+ARG APP_URL=https://quarterly.houseofmoran.io/
+ENV APP_URL=$APP_URL
 
 ENTRYPOINT ["./server"]
