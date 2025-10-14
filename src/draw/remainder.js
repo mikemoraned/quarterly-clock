@@ -50,26 +50,12 @@ export function drawRemainder(dataModel, guidesModel, svg) {
       dataModel.currentQuarter.wholeWeeksLeft.end.yearFraction * 2.0 * Math.PI,
   };
 
-  const yearFractionExtent =
-    dataModel.currentQuarter.wholeWeeksLeft.end.yearFraction -
-    dataModel.currentQuarter.wholeWeeksLeft.start.yearFraction;
-  const fakeGapSize = 0.002;
-  const numChunks = dataModel.currentQuarter.wholeWeeksLeft.durationInWeeks;
-  const chunkSize = (yearFractionExtent - numChunks * fakeGapSize) / numChunks;
-  const remainderArcs = [];
-  for (let index = 0; index < numChunks; index++) {
-    const chunkStartYearFraction =
-      dataModel.currentQuarter.wholeWeeksLeft.start.yearFraction +
-      index * (chunkSize + fakeGapSize);
-    const chunkEndYearFraction =
-      dataModel.currentQuarter.wholeWeeksLeft.start.yearFraction +
-      (index + 1) * (chunkSize + fakeGapSize) -
-      fakeGapSize;
-    remainderArcs.push({
-      startAngle: chunkStartYearFraction * 2.0 * Math.PI,
-      endAngle: chunkEndYearFraction * 2.0 * Math.PI,
-    });
-  }
+  const remainderArcs = dataModel.currentQuarter.availableDays.map((u) => {
+    return {
+      startAngle: u.start.yearFraction * 2.0 * Math.PI,
+      endAngle: u.end.yearFraction * 2.0 * Math.PI,
+    };
+  });
 
   const parentGroup = svg.selection.append("g").attr("id", "remainder");
 
