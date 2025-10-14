@@ -5,6 +5,7 @@ import "@fortawesome/fontawesome-free/css/all.css";
 
 console.log("Quarterly Clock");
 const now = new Date();
+//const now = Date.parse("11 Dec 2021 00:00:00 GMT");
 // const now = Date.parse("01 Jan 2022 00:00:00 GMT");
 // const now = Date.parse("01 Feb 2022 00:00:00 GMT");
 // const now = Date.parse("31 Mar 2022 00:00:00 GMT");

@@ -155,3 +155,22 @@ test("last day of Q4", () => {
   );
   expect(model.elapsed.yearFraction).toBeCloseTo(365 / 365);
 });
+
+test("last two weeks of Q4, available days", () => {
+  const now = Date.parse("11 Dec 2021 00:00:00 GMT");
+  const model = modelForDate(now);
+
+  expect(model.currentQuarter.availableDays.length).toBe(10);
+
+  expect(model.currentQuarter.availableDays[0].day).toBe(347);
+  expect(model.currentQuarter.availableDays[1].day).toBe(348);
+  expect(model.currentQuarter.availableDays[2].day).toBe(349);
+  expect(model.currentQuarter.availableDays[3].day).toBe(350);
+  expect(model.currentQuarter.availableDays[4].day).toBe(351);
+
+  expect(model.currentQuarter.availableDays[5].day).toBe(354);
+  expect(model.currentQuarter.availableDays[6].day).toBe(355);
+  expect(model.currentQuarter.availableDays[7].day).toBe(356);
+  expect(model.currentQuarter.availableDays[8].day).toBe(357);
+  expect(model.currentQuarter.availableDays[9].day).toBe(358);
+})

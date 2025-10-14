@@ -10,6 +10,8 @@ import {
   startOfISOWeekYear,
   startOfQuarter,
   startOfWeek,
+  eachDayOfInterval,
+  eachWeekendOfInterval
 } from "date-fns";
 import startOfYear from "date-fns/startOfYear";
 
@@ -42,6 +44,17 @@ export function modelForDate(now) {
       start,
     };
   });
+
+  // find all weekends in the current quarter that are still ahead
+  const remainingInterval = {
+    start: startOfNextWeek,
+    end: add(startOfNextWeek, { weeks: wholeWeeksLeftInCurrentQuarter }),
+  };
+  const weekends = eachWeekendOfInterval(remainingInterval);
+  const allDays = eachDayOfInterval(remainingInterval);
+  const nonWeekendDays = allDays.filter((d) => {
+    return !weekends.find((w) => w.getTime() === d.getTime());
+  });
   return {
     elapsed: {
       yearFraction: elapsedInWholeDays / daysInYear,
@@ -66,6 +79,11 @@ export function modelForDate(now) {
         },
         durationInWeeks: wholeWeeksLeftInCurrentQuarter,
       },
+      availableDays: nonWeekendDays.map((date) => ({
+        day: getDayOfYear(date),
+        start: { yearFraction: getDayOfYear(date) / daysInYear },
+        end: { yearFraction: getDayOfYear(add(date, { days: 1 })) / daysInYear },
+      })),
     },
     startOfYear: startOfCurrentYear,
     endOfYear: endOfCurrentYear,
