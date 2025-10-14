@@ -54,7 +54,7 @@ export function drawRemainder(dataModel, guidesModel, svg) {
     dataModel.currentQuarter.wholeWeeksLeft.end.yearFraction -
     dataModel.currentQuarter.wholeWeeksLeft.start.yearFraction;
   const fakeGapSize = 0.002;
-  const numChunks = 10;
+  const numChunks = dataModel.currentQuarter.wholeWeeksLeft.durationInWeeks;
   const chunkSize = (yearFractionExtent - numChunks * fakeGapSize) / numChunks;
   const remainderArcs = [];
   for (let index = 0; index < numChunks; index++) {
