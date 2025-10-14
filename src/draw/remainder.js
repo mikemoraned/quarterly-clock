@@ -14,8 +14,8 @@ export function drawRemainder(dataModel, guidesModel, svg) {
     .append("rect")
     .attr("width", `${guidesModel.remainder.box.width}`)
     .attr("height", `${guidesModel.remainder.box.height}`)
-    .attr("opacity", "0.5")
-    .attr("fill", guidesModel.colors.remainder.color);
+    .attr("opacity", "0.8")
+    .attr("fill", guidesModel.colors.remainder.bg.color);
 
   const extraPattern = svg.root
     .append("defs")
@@ -32,8 +32,8 @@ export function drawRemainder(dataModel, guidesModel, svg) {
     .attr("x", 0)
     .attr("y", `${guidesModel.remainder.box.textY}`)
     .attr("style", `font-size: ${guidesModel.remainder.fontSize}`)
-    .attr("opacity", "0.8")
-    .attr("fill", guidesModel.colors.remainder.color);
+    .attr("opacity", "0.9")
+    .attr("fill", guidesModel.colors.remainder.weekNumber.color);
 
   const arcGenerator = d3.arc();
 

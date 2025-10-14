@@ -55,7 +55,12 @@ export function createGuidesModel(svg) {
         },
       ],
       remainder: {
-        color: BANG_WONG_PALETTE["vermillion"],
+        bg: {
+          color: BANG_WONG_PALETTE["vermillion"],
+        },
+        weekNumber: {
+          color: "black",
+        },
       },
     },
     quarterLabel: {
