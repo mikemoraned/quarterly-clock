@@ -96,6 +96,7 @@ export function drawRemainder(dataModel, guidesModel, svg) {
     .attr("class", "remainder")
     .attr("d", arcGenerator(remainderArc))
     .attr("fill", "url(#remainder-pattern-extra)")
+    .attr("clip-path", "url(#remainder-clip)")
     .attr("stroke", "none");
 }
 
