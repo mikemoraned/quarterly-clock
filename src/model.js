@@ -80,6 +80,7 @@ export function modelForDate(now) {
         durationInWeeks: wholeWeeksLeftInCurrentQuarter,
       },
       availableDays: nonWeekendDays.map((date) => ({
+        day: getDayOfYear(date),
         start: { yearFraction: getDayOfYear(date) / daysInYear },
         end: { yearFraction: getDayOfYear(add(date, { days: 1 })) / daysInYear },
       })),
