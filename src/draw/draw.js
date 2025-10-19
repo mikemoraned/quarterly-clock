@@ -6,7 +6,7 @@ import {
 import { drawWeekScale, drawDayHand } from "./year";
 import { drawLogo, drawReadme } from "./about";
 import { drawRemainder, drawRemainderLabel } from "./remainder";
-import { defaultFontSizeFormat } from "./standard";
+import { defaultFontSizeFormat, defaultPositionRounding as dpr } from "./standard";
 
 // color blind safe colors from Bang Wong in and https://www.nature.com/articles/nmeth.1618
 // and https://davidmathlogic.com/colorblind
@@ -144,15 +144,15 @@ function drawGuides(model, svg) {
     .attr("class", "guide")
     .attr("cx", 0)
     .attr("cy", 0)
-    .attr("r", model.outerRadius)
+    .attr("r", dpr(model.outerRadius))
     .style("fill", "none")
     .style("stroke", "red");
 
   parentGroup
     .append("circle")
     .attr("class", "guide")
-    .attr("cx", model.quarterLabel.left.x)
-    .attr("cy", model.quarterLabel.left.y)
+    .attr("cx", dpr(model.quarterLabel.left.x))
+    .attr("cy", dpr(model.quarterLabel.left.y))
     .attr("r", 5)
     .style("fill", "red")
     .style("stroke", "red");
@@ -160,8 +160,8 @@ function drawGuides(model, svg) {
   parentGroup
     .append("circle")
     .attr("class", "guide")
-    .attr("cx", model.quarterLabel.right.x)
-    .attr("cy", model.quarterLabel.right.y)
+    .attr("cx", dpr(model.quarterLabel.right.x))
+    .attr("cy", dpr(model.quarterLabel.right.y))
     .attr("r", 5)
     .style("fill", "red")
     .style("stroke", "red");
@@ -169,8 +169,8 @@ function drawGuides(model, svg) {
   parentGroup
     .append("circle")
     .attr("class", "guide")
-    .attr("cx", model.remainderLabel.left.x)
-    .attr("cy", model.remainderLabel.left.y)
+    .attr("cx", dpr(model.remainderLabel.left.x))
+    .attr("cy", dpr(model.remainderLabel.left.y))
     .attr("r", 5)
     .style("fill", "red")
     .style("stroke", "red");
@@ -178,8 +178,8 @@ function drawGuides(model, svg) {
   parentGroup
     .append("circle")
     .attr("class", "guide")
-    .attr("cx", model.remainderLabel.right.x)
-    .attr("cy", model.remainderLabel.right.y)
+    .attr("cx", dpr(model.remainderLabel.right.x))
+    .attr("cy", dpr(model.remainderLabel.right.y))
     .attr("r", 5)
     .style("fill", "red")
     .style("stroke", "red");
@@ -187,8 +187,17 @@ function drawGuides(model, svg) {
   parentGroup
     .append("circle")
     .attr("class", "guide")
-    .attr("cx", model.logo.x)
-    .attr("cy", model.logo.y)
+    .attr("cx", dpr(model.logo.top.x))
+    .attr("cy", dpr(model.logo.top.y))
+    .attr("r", 5)
+    .style("fill", "red")
+    .style("stroke", "red");
+
+  parentGroup
+    .append("circle")
+    .attr("class", "guide")
+    .attr("cx", dpr(model.logo.bottom.x))
+    .attr("cy", dpr(model.logo.bottom.y))
     .attr("r", 5)
     .style("fill", "red")
     .style("stroke", "red");

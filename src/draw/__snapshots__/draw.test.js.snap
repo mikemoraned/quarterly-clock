@@ -276,7 +276,8 @@ exports[`last day of Q1 1`] = `
             <circle class="guide" cx="157.5" cy="0" r="5" style="fill: red; stroke: red;"></circle>
             <circle class="guide" cx="-391.5" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
             <circle class="guide" cx="171" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" r="5" style="fill: red; stroke: red;"></circle>
+            <circle class="guide" cx="0" cy="-270" r="5" style="fill: red; stroke: red;"></circle>
+            <circle class="guide" cx="0" cy="180" r="5" style="fill: red; stroke: red;"></circle>
         </g>
     </g>
 </svg>"
@@ -558,7 +559,8 @@ exports[`last day of Q2 1`] = `
             <circle class="guide" cx="157.5" cy="0" r="5" style="fill: red; stroke: red;"></circle>
             <circle class="guide" cx="-391.5" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
             <circle class="guide" cx="171" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" r="5" style="fill: red; stroke: red;"></circle>
+            <circle class="guide" cx="0" cy="-270" r="5" style="fill: red; stroke: red;"></circle>
+            <circle class="guide" cx="0" cy="180" r="5" style="fill: red; stroke: red;"></circle>
         </g>
     </g>
 </svg>"
@@ -840,7 +842,8 @@ exports[`last day of Q3 1`] = `
             <circle class="guide" cx="157.5" cy="0" r="5" style="fill: red; stroke: red;"></circle>
             <circle class="guide" cx="-391.5" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
             <circle class="guide" cx="171" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" r="5" style="fill: red; stroke: red;"></circle>
+            <circle class="guide" cx="0" cy="-270" r="5" style="fill: red; stroke: red;"></circle>
+            <circle class="guide" cx="0" cy="180" r="5" style="fill: red; stroke: red;"></circle>
         </g>
     </g>
 </svg>"
@@ -1122,7 +1125,8 @@ exports[`last day of Q4 1`] = `
             <circle class="guide" cx="157.5" cy="0" r="5" style="fill: red; stroke: red;"></circle>
             <circle class="guide" cx="-391.5" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
             <circle class="guide" cx="171" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" r="5" style="fill: red; stroke: red;"></circle>
+            <circle class="guide" cx="0" cy="-270" r="5" style="fill: red; stroke: red;"></circle>
+            <circle class="guide" cx="0" cy="180" r="5" style="fill: red; stroke: red;"></circle>
         </g>
     </g>
 </svg>"
@@ -1474,7 +1478,8 @@ exports[`start of Q1 1`] = `
             <circle class="guide" cx="157.5" cy="0" r="5" style="fill: red; stroke: red;"></circle>
             <circle class="guide" cx="-391.5" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
             <circle class="guide" cx="171" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" r="5" style="fill: red; stroke: red;"></circle>
+            <circle class="guide" cx="0" cy="-270" r="5" style="fill: red; stroke: red;"></circle>
+            <circle class="guide" cx="0" cy="180" r="5" style="fill: red; stroke: red;"></circle>
         </g>
     </g>
     <defs>
@@ -1834,7 +1839,8 @@ exports[`start of Q2 1`] = `
             <circle class="guide" cx="157.5" cy="0" r="5" style="fill: red; stroke: red;"></circle>
             <circle class="guide" cx="-391.5" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
             <circle class="guide" cx="171" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" r="5" style="fill: red; stroke: red;"></circle>
+            <circle class="guide" cx="0" cy="-270" r="5" style="fill: red; stroke: red;"></circle>
+            <circle class="guide" cx="0" cy="180" r="5" style="fill: red; stroke: red;"></circle>
         </g>
     </g>
     <defs>
@@ -2194,7 +2200,8 @@ exports[`start of Q3 1`] = `
             <circle class="guide" cx="157.5" cy="0" r="5" style="fill: red; stroke: red;"></circle>
             <circle class="guide" cx="-391.5" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
             <circle class="guide" cx="171" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" r="5" style="fill: red; stroke: red;"></circle>
+            <circle class="guide" cx="0" cy="-270" r="5" style="fill: red; stroke: red;"></circle>
+            <circle class="guide" cx="0" cy="180" r="5" style="fill: red; stroke: red;"></circle>
         </g>
     </g>
     <defs>
@@ -2554,7 +2561,8 @@ exports[`start of Q4 1`] = `
             <circle class="guide" cx="157.5" cy="0" r="5" style="fill: red; stroke: red;"></circle>
             <circle class="guide" cx="-391.5" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
             <circle class="guide" cx="171" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" r="5" style="fill: red; stroke: red;"></circle>
+            <circle class="guide" cx="0" cy="-270" r="5" style="fill: red; stroke: red;"></circle>
+            <circle class="guide" cx="0" cy="180" r="5" style="fill: red; stroke: red;"></circle>
         </g>
     </g>
     <defs>

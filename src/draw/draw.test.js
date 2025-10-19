@@ -16,6 +16,7 @@ function render(model) {
 test("start of Q1", () => {
   const now = Date.parse("01 Jan 2021 00:00:00 GMT");
   const model = modelForDate(now);
+  console.log("Model:", JSON.stringify(model));
 
   const parentNode = render(model);
 
