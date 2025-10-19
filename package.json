@@ -8,7 +8,8 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "update-snapshot": "node --experimental-vm-modules node_modules/jest/bin/jest.js --updateSnapshot"
   },
   "author": "Mike Moran <mike@houseofmoran.com>",
   "license": "Apache-2.0",
