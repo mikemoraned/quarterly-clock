@@ -41,7 +41,7 @@ export function drawWeekScale(dataModel, guidesModel, svg) {
       (w) =>
         -labelRadius * Math.cos((scale(w.start) * Math.PI) / 180) + labelYOffset
     )
-    .attr("style", `font-size: ${labelFontSize}px`)
+    .attr("style", `font-size: ${labelFontSize.toFixed(2)}px`)
     .text((w) => w.label);
 }
 

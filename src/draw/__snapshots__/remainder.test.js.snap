@@ -16,7 +16,7 @@ exports[`drawRemainder > last day of Q1 1`] = `
     </defs>
     <defs>
         <pattern id="remainder-pattern-extra" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <text x="0" y="49.0909090909" style="font-size: 60px" opacity="0.9" fill="black">
+            <text x="0" y="49.0909090909" style="font-size: 60.00px" opacity="0.9" fill="black">
                 0
             </text>
         </pattern>
@@ -40,7 +40,7 @@ exports[`drawRemainder > last day of Q2 1`] = `
     </defs>
     <defs>
         <pattern id="remainder-pattern-extra" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <text x="0" y="49.0909090909" style="font-size: 60px" opacity="0.9" fill="black">
+            <text x="0" y="49.0909090909" style="font-size: 60.00px" opacity="0.9" fill="black">
                 0
             </text>
         </pattern>
@@ -64,7 +64,7 @@ exports[`drawRemainder > last day of Q3 1`] = `
     </defs>
     <defs>
         <pattern id="remainder-pattern-extra" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <text x="0" y="49.0909090909" style="font-size: 60px" opacity="0.9" fill="black">
+            <text x="0" y="49.0909090909" style="font-size: 60.00px" opacity="0.9" fill="black">
                 0
             </text>
         </pattern>
@@ -88,7 +88,7 @@ exports[`drawRemainder > last day of Q4 1`] = `
     </defs>
     <defs>
         <pattern id="remainder-pattern-extra" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <text x="0" y="49.0909090909" style="font-size: 60px" opacity="0.9" fill="black">
+            <text x="0" y="49.0909090909" style="font-size: 60.00px" opacity="0.9" fill="black">
                 0
             </text>
         </pattern>
@@ -173,7 +173,7 @@ exports[`drawRemainder > start of Q1 1`] = `
     </defs>
     <defs>
         <pattern id="remainder-pattern-extra" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <text x="0" y="49.0909090909" style="font-size: 60px" opacity="0.9" fill="black">
+            <text x="0" y="49.0909090909" style="font-size: 60.00px" opacity="0.9" fill="black">
                 12
             </text>
         </pattern>
@@ -258,7 +258,7 @@ exports[`drawRemainder > start of Q2 1`] = `
     </defs>
     <defs>
         <pattern id="remainder-pattern-extra" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <text x="0" y="49.0909090909" style="font-size: 60px" opacity="0.9" fill="black">
+            <text x="0" y="49.0909090909" style="font-size: 60.00px" opacity="0.9" fill="black">
                 12
             </text>
         </pattern>
@@ -343,7 +343,7 @@ exports[`drawRemainder > start of Q3 1`] = `
     </defs>
     <defs>
         <pattern id="remainder-pattern-extra" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <text x="0" y="49.0909090909" style="font-size: 60px" opacity="0.9" fill="black">
+            <text x="0" y="49.0909090909" style="font-size: 60.00px" opacity="0.9" fill="black">
                 12
             </text>
         </pattern>
@@ -428,7 +428,7 @@ exports[`drawRemainder > start of Q4 1`] = `
     </defs>
     <defs>
         <pattern id="remainder-pattern-extra" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <text x="0" y="49.0909090909" style="font-size: 60px" opacity="0.9" fill="black">
+            <text x="0" y="49.0909090909" style="font-size: 60.00px" opacity="0.9" fill="black">
                 12
             </text>
         </pattern>
@@ -440,7 +440,7 @@ exports[`drawRemainderLabel > last day of Q1 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="remainder-label">
-            <text x="-391.5" y="13.5" style="font-size: 40.9090909090px; dominant-baseline: hanging; text-anchor: left" stroke="none">
+            <text x="-391.5" y="13.5" style="font-size: 40.91px; dominant-baseline: hanging; text-anchor: left" stroke="none">
                 0 weeks left
             </text>
         </g>
@@ -452,7 +452,7 @@ exports[`drawRemainderLabel > last day of Q2 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="remainder-label">
-            <text x="-391.5" y="13.5" style="font-size: 40.9090909090px; dominant-baseline: hanging; text-anchor: left" stroke="none">
+            <text x="-391.5" y="13.5" style="font-size: 40.91px; dominant-baseline: hanging; text-anchor: left" stroke="none">
                 0 weeks left
             </text>
         </g>
@@ -464,7 +464,7 @@ exports[`drawRemainderLabel > last day of Q3 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="remainder-label">
-            <text x="171" y="13.5" style="font-size: 40.9090909090px; dominant-baseline: hanging; text-anchor: left" stroke="none">
+            <text x="171" y="13.5" style="font-size: 40.91px; dominant-baseline: hanging; text-anchor: left" stroke="none">
                 0 weeks left
             </text>
         </g>
@@ -476,7 +476,7 @@ exports[`drawRemainderLabel > last day of Q4 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="remainder-label">
-            <text x="171" y="13.5" style="font-size: 40.9090909090px; dominant-baseline: hanging; text-anchor: left" stroke="none">
+            <text x="171" y="13.5" style="font-size: 40.91px; dominant-baseline: hanging; text-anchor: left" stroke="none">
                 0 weeks left
             </text>
         </g>
@@ -488,7 +488,7 @@ exports[`drawRemainderLabel > start of Q1 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="remainder-label">
-            <text x="-391.5" y="13.5" style="font-size: 40.9090909090px; dominant-baseline: hanging; text-anchor: left" stroke="none">
+            <text x="-391.5" y="13.5" style="font-size: 40.91px; dominant-baseline: hanging; text-anchor: left" stroke="none">
                 12 weeks left
             </text>
         </g>
@@ -500,7 +500,7 @@ exports[`drawRemainderLabel > start of Q2 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="remainder-label">
-            <text x="-391.5" y="13.5" style="font-size: 40.9090909090px; dominant-baseline: hanging; text-anchor: left" stroke="none">
+            <text x="-391.5" y="13.5" style="font-size: 40.91px; dominant-baseline: hanging; text-anchor: left" stroke="none">
                 12 weeks left
             </text>
         </g>
@@ -512,7 +512,7 @@ exports[`drawRemainderLabel > start of Q3 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="remainder-label">
-            <text x="171" y="13.5" style="font-size: 40.9090909090px; dominant-baseline: hanging; text-anchor: left" stroke="none">
+            <text x="171" y="13.5" style="font-size: 40.91px; dominant-baseline: hanging; text-anchor: left" stroke="none">
                 12 weeks left
             </text>
         </g>
@@ -524,7 +524,7 @@ exports[`drawRemainderLabel > start of Q4 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="remainder-label">
-            <text x="171" y="13.5" style="font-size: 40.9090909090px; dominant-baseline: hanging; text-anchor: left" stroke="none">
+            <text x="171" y="13.5" style="font-size: 40.91px; dominant-baseline: hanging; text-anchor: left" stroke="none">
                 12 weeks left
             </text>
         </g>

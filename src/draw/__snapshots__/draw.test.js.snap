@@ -56,160 +56,160 @@ exports[`last day of Q1 1`] = `
             <line class="week-tick" stroke-width="4.5" x1="0" x2="0" y1="432" y2="450" transform="rotate(341.2602739834)"></line>
             <line class="week-tick" stroke-width="4.5" x1="0" x2="0" y1="432" y2="450" transform="rotate(348.1643835726)"></line>
             <line class="week-tick" stroke-width="4.5" x1="0" x2="0" y1="432" y2="450" transform="rotate(355.0684931619)"></line>
-            <text class="week-label" text-anchor="middle" x="24.2096239284" y="-459.8033082678" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="24.2096239284" y="-459.8033082678" style="font-size: 20.00px">
                 1
             </text>
-            <text class="week-label" text-anchor="middle" x="80.3364846236" y="-453.4968014967" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="80.3364846236" y="-453.4968014967" style="font-size: 20.00px">
                 2
             </text>
-            <text class="week-label" text-anchor="middle" x="135.2982610251" y="-440.4891247658" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="135.2982610251" y="-440.4891247658" style="font-size: 20.00px">
                 3
             </text>
-            <text class="week-label" text-anchor="middle" x="188.2978669432" y="-420.9689226234" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="188.2978669432" y="-420.9689226234" style="font-size: 20.00px">
                 4
             </text>
-            <text class="week-label" text-anchor="middle" x="238.5666726734" y="-395.2192878764" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="238.5666726734" y="-395.2192878764" style="font-size: 20.00px">
                 5
             </text>
-            <text class="week-label" text-anchor="middle" x="285.3756520917" y="-363.6136560212" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="285.3756520917" y="-363.6136560212" style="font-size: 20.00px">
                 6
             </text>
-            <text class="week-label" text-anchor="middle" x="328.0459553954" y="-326.6103894746" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="328.0459553954" y="-326.6103894746" style="font-size: 20.00px">
                 7
             </text>
-            <text class="week-label" text-anchor="middle" x="365.9587541605" y="-284.7461301482" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="365.9587541605" y="-284.7461301482" style="font-size: 20.00px">
                 8
             </text>
-            <text class="week-label" text-anchor="middle" x="398.5642159343" y="-238.6280167690" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="398.5642159343" y="-238.6280167690" style="font-size: 20.00px">
                 9
             </text>
-            <text class="week-label" text-anchor="middle" x="425.3894782115" y="-188.9248798166" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="425.3894782115" y="-188.9248798166" style="font-size: 20.00px">
                 10
             </text>
-            <text class="week-label" text-anchor="middle" x="446.0455061482" y="-136.3575417726" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="446.0455061482" y="-136.3575417726" style="font-size: 20.00px">
                 11
             </text>
-            <text class="week-label" text-anchor="middle" x="460.2327345613" y="-81.6883633527" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="460.2327345613" y="-81.6883633527" style="font-size: 20.00px">
                 12
             </text>
-            <text class="week-label" text-anchor="middle" x="467.7207032896" y="-26.0456728996" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="467.7207032896" y="-26.0456728996" style="font-size: 20.00px">
                 13
             </text>
-            <text class="week-label" text-anchor="middle" x="468.4903847456" y="30.4291366140" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="468.4903847456" y="30.4291366140" style="font-size: 20.00px">
                 14
             </text>
-            <text class="week-label" text-anchor="middle" x="462.4657585898" y="86.5869535127" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="462.4657585898" y="86.5869535127" style="font-size: 20.00px">
                 15
             </text>
-            <text class="week-label" text-anchor="middle" x="449.7341972950" y="141.6133459634" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="449.7341972950" y="141.6133459634" style="font-size: 20.00px">
                 16
             </text>
-            <text class="week-label" text-anchor="middle" x="430.4803410301" y="194.7102906785" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="430.4803410301" y="194.7102906785" style="font-size: 20.00px">
                 17
             </text>
-            <text class="week-label" text-anchor="middle" x="404.9834199062" y="245.1077462924" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="404.9834199062" y="245.1077462924" style="font-size: 20.00px">
                 18
             </text>
-            <text class="week-label" text-anchor="middle" x="373.6132044265" y="292.0748209288" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="373.6132044265" y="292.0748209288" style="font-size: 20.00px">
                 19
             </text>
-            <text class="week-label" text-anchor="middle" x="336.8246428688" y="334.9303720006" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="336.8246428688" y="334.9303720006" style="font-size: 20.00px">
                 20
             </text>
-            <text class="week-label" text-anchor="middle" x="295.1512633739" y="373.0528845177" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="295.1512633739" y="373.0528845177" style="font-size: 20.00px">
                 21
             </text>
-            <text class="week-label" text-anchor="middle" x="249.1974364233" y="405.8894846424" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="249.1974364233" y="405.8894846424" style="font-size: 20.00px">
                 22
             </text>
-            <text class="week-label" text-anchor="middle" x="199.6296099239" y="432.9639577724" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="199.6296099239" y="432.9639577724" style="font-size: 20.00px">
                 23
             </text>
-            <text class="week-label" text-anchor="middle" x="147.1666440098" y="453.8836548698" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="147.1666440098" y="453.8836548698" style="font-size: 20.00px">
                 24
             </text>
-            <text class="week-label" text-anchor="middle" x="92.5693857343" y="468.3451868751" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="92.5693857343" y="468.3451868751" style="font-size: 20.00px">
                 25
             </text>
-            <text class="week-label" text-anchor="middle" x="36.6296348429" y="476.1388246238" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="36.6296348429" y="476.1388246238" style="font-size: 20.00px">
                 26
             </text>
-            <text class="week-label" text-anchor="middle" x="-19.8413393455" y="477.1515404551" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-19.8413393455" y="477.1515404551" style="font-size: 20.00px">
                 27
             </text>
-            <text class="week-label" text-anchor="middle" x="-76.0245634171" y="471.3686474019" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-76.0245634171" y="471.3686474019" style="font-size: 20.00px">
                 28
             </text>
-            <text class="week-label" text-anchor="middle" x="-131.1052370699" y="458.8740121891" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-131.1052370699" y="458.8740121891" style="font-size: 20.00px">
                 29
             </text>
-            <text class="week-label" text-anchor="middle" x="-184.2845498002" y="439.8488389524" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-184.2845498002" y="439.8488389524" style="font-size: 20.00px">
                 30
             </text>
-            <text class="week-label" text-anchor="middle" x="-234.7912656955" y="414.5690413144" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-234.7912656955" y="414.5690413144" style="font-size: 20.00px">
                 31
             </text>
-            <text class="week-label" text-anchor="middle" x="-281.8929083265" y="383.4012409332" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-281.8929083265" y="383.4012409332" style="font-size: 20.00px">
                 32
             </text>
-            <text class="week-label" text-anchor="middle" x="-324.9063835264" y="346.7974505504" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-324.9063835264" y="346.7974505504" style="font-size: 20.00px">
                 33
             </text>
-            <text class="week-label" text-anchor="middle" x="-363.2078860015" y="305.2885186526" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-363.2078860015" y="305.2885186526" style="font-size: 20.00px">
                 34
             </text>
-            <text class="week-label" text-anchor="middle" x="-396.2419461024" y="259.4764308111" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-396.2419461024" y="259.4764308111" style="font-size: 20.00px">
                 35
             </text>
-            <text class="week-label" text-anchor="middle" x="-423.5294855528" y="210.0255793535" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-423.5294855528" y="210.0255793535" style="font-size: 20.00px">
                 36
             </text>
-            <text class="week-label" text-anchor="middle" x="-444.6747653087" y="157.6531279769" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-444.6747653087" y="157.6531279769" style="font-size: 20.00px">
                 37
             </text>
-            <text class="week-label" text-anchor="middle" x="-459.3711247856" y="103.1186110424" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-459.3711247856" y="103.1186110424" style="font-size: 20.00px">
                 38
             </text>
-            <text class="week-label" text-anchor="middle" x="-467.4054292206" y="47.2129183860" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-467.4054292206" y="47.2129183860" style="font-size: 20.00px">
                 39
             </text>
-            <text class="week-label" text-anchor="middle" x="-468.6611606711" y="-9.2531746050" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-468.6611606711" y="-9.2531746050" style="font-size: 20.00px">
                 40
             </text>
-            <text class="week-label" text-anchor="middle" x="-463.1201078225" y="-65.4607653065" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-463.1201078225" y="-65.4607653065" style="font-size: 20.00px">
                 41
             </text>
-            <text class="week-label" text-anchor="middle" x="-450.8626300991" y="-120.5947000383" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-450.8626300991" y="-120.5947000383" style="font-size: 20.00px">
                 42
             </text>
-            <text class="week-label" text-anchor="middle" x="-432.0664922468" y="-173.8553958748" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-432.0664922468" y="-173.8553958748" style="font-size: 20.00px">
                 43
             </text>
-            <text class="week-label" text-anchor="middle" x="-406.8370303294" y="-224.7623039935" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-406.8370303294" y="-224.7623039935" style="font-size: 20.00px">
                 44
             </text>
-            <text class="week-label" text-anchor="middle" x="-375.8383503062" y="-271.9754203487" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-375.8383503062" y="-271.9754203487" style="font-size: 20.00px">
                 45
             </text>
-            <text class="week-label" text-anchor="middle" x="-339.3890539045" y="-315.1198905734" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-339.3890539045" y="-315.1198905734" style="font-size: 20.00px">
                 46
             </text>
-            <text class="week-label" text-anchor="middle" x="-298.0177490532" y="-353.5700096115" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-298.0177490532" y="-353.5700096115" style="font-size: 20.00px">
                 47
             </text>
-            <text class="week-label" text-anchor="middle" x="-252.3244253798" y="-386.7681524936" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-252.3244253798" y="-386.7681524936" style="font-size: 20.00px">
                 48
             </text>
-            <text class="week-label" text-anchor="middle" x="-202.9717528279" y="-414.2328613239" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-202.9717528279" y="-414.2328613239" style="font-size: 20.00px">
                 49
             </text>
-            <text class="week-label" text-anchor="middle" x="-150.6754712498" y="-435.5658276497" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-150.6754712498" y="-435.5658276497" style="font-size: 20.00px">
                 50
             </text>
-            <text class="week-label" text-anchor="middle" x="-96.1940103499" y="-450.4576689515" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-96.1940103499" y="-450.4576689515" style="font-size: 20.00px">
                 51
             </text>
-            <text class="week-label" text-anchor="middle" x="-40.3174905160" y="-458.6924154808" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-40.3174905160" y="-458.6924154808" style="font-size: 20.00px">
                 52
             </text>
         </g>
@@ -223,7 +223,7 @@ exports[`last day of Q1 1`] = `
             <path class="current-quarter" d="M5.8095077025,-337.4499957330A337.5,337.5,0,0,1,337.4218694182,-7.2616828847L74.9826376484,-1.6137073077A75,75,0,0,0,1.2910017116,-74.9888879406Z" fill="rgb(240, 228, 66)" stroke="none"></path>
         </g>
         <g id="remainder-label">
-            <text x="-391.5" y="13.5" style="font-size: 40.9090909090px; dominant-baseline: hanging; text-anchor: left" stroke="none">
+            <text x="-391.5" y="13.5" style="font-size: 40.91px; dominant-baseline: hanging; text-anchor: left" stroke="none">
                 0 weeks left
             </text>
         </g>
@@ -232,7 +232,7 @@ exports[`last day of Q1 1`] = `
             <line class="day-hand" stroke-width="9" x1="0" y1="0" x2="0" y2="-450" transform="rotate(88.7671232876)"></line>
         </g>
         <g id="info">
-            <text x="-405" y="0" style="font-size: 180px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(240, 228, 66)" stroke="none">
+            <text x="-405" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(240, 228, 66)" stroke="none">
                 Q1
             </text>
         </g>
@@ -241,7 +241,7 @@ exports[`last day of Q1 1`] = `
                 <path d="M -225,270 A 450,450 0 0,1 225,270" id="logoPath"></path>
             </defs>
             <a href="https://github.com/mikemoraned/quarterly-clock">
-                <text style="font-size: 69.2307692307px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 69.23px; dominant-baseline: middle; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#logoPath">
                         <tspan style="font-family: &quot;Font Awesome 5 Free&quot;">
                             
@@ -258,7 +258,7 @@ exports[`last day of Q1 1`] = `
                 <path d="M -225,324 A 450,450 0 0,1 225,324" id="readmePath"></path>
             </defs>
             <a href="https://github.com/mikemoraned/quarterly-clock/blob/main/README.md">
-                <text style="font-size: 30px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 30.00px; dominant-baseline: middle; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#readmePath">
                         <tspan style="font-family: &quot;Font Awesome 5 Brands&quot;">
                             
@@ -338,160 +338,160 @@ exports[`last day of Q2 1`] = `
             <line class="week-tick" stroke-width="4.5" x1="0" x2="0" y1="432" y2="450" transform="rotate(341.2602739834)"></line>
             <line class="week-tick" stroke-width="4.5" x1="0" x2="0" y1="432" y2="450" transform="rotate(348.1643835726)"></line>
             <line class="week-tick" stroke-width="4.5" x1="0" x2="0" y1="432" y2="450" transform="rotate(355.0684931619)"></line>
-            <text class="week-label" text-anchor="middle" x="24.2096239284" y="-459.8033082678" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="24.2096239284" y="-459.8033082678" style="font-size: 20.00px">
                 1
             </text>
-            <text class="week-label" text-anchor="middle" x="80.3364846236" y="-453.4968014967" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="80.3364846236" y="-453.4968014967" style="font-size: 20.00px">
                 2
             </text>
-            <text class="week-label" text-anchor="middle" x="135.2982610251" y="-440.4891247658" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="135.2982610251" y="-440.4891247658" style="font-size: 20.00px">
                 3
             </text>
-            <text class="week-label" text-anchor="middle" x="188.2978669432" y="-420.9689226234" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="188.2978669432" y="-420.9689226234" style="font-size: 20.00px">
                 4
             </text>
-            <text class="week-label" text-anchor="middle" x="238.5666726734" y="-395.2192878764" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="238.5666726734" y="-395.2192878764" style="font-size: 20.00px">
                 5
             </text>
-            <text class="week-label" text-anchor="middle" x="285.3756520917" y="-363.6136560212" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="285.3756520917" y="-363.6136560212" style="font-size: 20.00px">
                 6
             </text>
-            <text class="week-label" text-anchor="middle" x="328.0459553954" y="-326.6103894746" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="328.0459553954" y="-326.6103894746" style="font-size: 20.00px">
                 7
             </text>
-            <text class="week-label" text-anchor="middle" x="365.9587541605" y="-284.7461301482" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="365.9587541605" y="-284.7461301482" style="font-size: 20.00px">
                 8
             </text>
-            <text class="week-label" text-anchor="middle" x="398.5642159343" y="-238.6280167690" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="398.5642159343" y="-238.6280167690" style="font-size: 20.00px">
                 9
             </text>
-            <text class="week-label" text-anchor="middle" x="425.3894782115" y="-188.9248798166" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="425.3894782115" y="-188.9248798166" style="font-size: 20.00px">
                 10
             </text>
-            <text class="week-label" text-anchor="middle" x="446.0455061482" y="-136.3575417726" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="446.0455061482" y="-136.3575417726" style="font-size: 20.00px">
                 11
             </text>
-            <text class="week-label" text-anchor="middle" x="460.2327345613" y="-81.6883633527" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="460.2327345613" y="-81.6883633527" style="font-size: 20.00px">
                 12
             </text>
-            <text class="week-label" text-anchor="middle" x="467.7207032896" y="-26.0456728996" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="467.7207032896" y="-26.0456728996" style="font-size: 20.00px">
                 13
             </text>
-            <text class="week-label" text-anchor="middle" x="468.4903847456" y="30.4291366140" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="468.4903847456" y="30.4291366140" style="font-size: 20.00px">
                 14
             </text>
-            <text class="week-label" text-anchor="middle" x="462.4657585898" y="86.5869535127" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="462.4657585898" y="86.5869535127" style="font-size: 20.00px">
                 15
             </text>
-            <text class="week-label" text-anchor="middle" x="449.7341972950" y="141.6133459634" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="449.7341972950" y="141.6133459634" style="font-size: 20.00px">
                 16
             </text>
-            <text class="week-label" text-anchor="middle" x="430.4803410301" y="194.7102906785" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="430.4803410301" y="194.7102906785" style="font-size: 20.00px">
                 17
             </text>
-            <text class="week-label" text-anchor="middle" x="404.9834199062" y="245.1077462924" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="404.9834199062" y="245.1077462924" style="font-size: 20.00px">
                 18
             </text>
-            <text class="week-label" text-anchor="middle" x="373.6132044265" y="292.0748209288" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="373.6132044265" y="292.0748209288" style="font-size: 20.00px">
                 19
             </text>
-            <text class="week-label" text-anchor="middle" x="336.8246428688" y="334.9303720006" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="336.8246428688" y="334.9303720006" style="font-size: 20.00px">
                 20
             </text>
-            <text class="week-label" text-anchor="middle" x="295.1512633739" y="373.0528845177" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="295.1512633739" y="373.0528845177" style="font-size: 20.00px">
                 21
             </text>
-            <text class="week-label" text-anchor="middle" x="249.1974364233" y="405.8894846424" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="249.1974364233" y="405.8894846424" style="font-size: 20.00px">
                 22
             </text>
-            <text class="week-label" text-anchor="middle" x="199.6296099239" y="432.9639577724" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="199.6296099239" y="432.9639577724" style="font-size: 20.00px">
                 23
             </text>
-            <text class="week-label" text-anchor="middle" x="147.1666440098" y="453.8836548698" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="147.1666440098" y="453.8836548698" style="font-size: 20.00px">
                 24
             </text>
-            <text class="week-label" text-anchor="middle" x="92.5693857343" y="468.3451868751" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="92.5693857343" y="468.3451868751" style="font-size: 20.00px">
                 25
             </text>
-            <text class="week-label" text-anchor="middle" x="36.6296348429" y="476.1388246238" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="36.6296348429" y="476.1388246238" style="font-size: 20.00px">
                 26
             </text>
-            <text class="week-label" text-anchor="middle" x="-19.8413393455" y="477.1515404551" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-19.8413393455" y="477.1515404551" style="font-size: 20.00px">
                 27
             </text>
-            <text class="week-label" text-anchor="middle" x="-76.0245634171" y="471.3686474019" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-76.0245634171" y="471.3686474019" style="font-size: 20.00px">
                 28
             </text>
-            <text class="week-label" text-anchor="middle" x="-131.1052370699" y="458.8740121891" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-131.1052370699" y="458.8740121891" style="font-size: 20.00px">
                 29
             </text>
-            <text class="week-label" text-anchor="middle" x="-184.2845498002" y="439.8488389524" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-184.2845498002" y="439.8488389524" style="font-size: 20.00px">
                 30
             </text>
-            <text class="week-label" text-anchor="middle" x="-234.7912656955" y="414.5690413144" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-234.7912656955" y="414.5690413144" style="font-size: 20.00px">
                 31
             </text>
-            <text class="week-label" text-anchor="middle" x="-281.8929083265" y="383.4012409332" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-281.8929083265" y="383.4012409332" style="font-size: 20.00px">
                 32
             </text>
-            <text class="week-label" text-anchor="middle" x="-324.9063835264" y="346.7974505504" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-324.9063835264" y="346.7974505504" style="font-size: 20.00px">
                 33
             </text>
-            <text class="week-label" text-anchor="middle" x="-363.2078860015" y="305.2885186526" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-363.2078860015" y="305.2885186526" style="font-size: 20.00px">
                 34
             </text>
-            <text class="week-label" text-anchor="middle" x="-396.2419461024" y="259.4764308111" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-396.2419461024" y="259.4764308111" style="font-size: 20.00px">
                 35
             </text>
-            <text class="week-label" text-anchor="middle" x="-423.5294855528" y="210.0255793535" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-423.5294855528" y="210.0255793535" style="font-size: 20.00px">
                 36
             </text>
-            <text class="week-label" text-anchor="middle" x="-444.6747653087" y="157.6531279769" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-444.6747653087" y="157.6531279769" style="font-size: 20.00px">
                 37
             </text>
-            <text class="week-label" text-anchor="middle" x="-459.3711247856" y="103.1186110424" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-459.3711247856" y="103.1186110424" style="font-size: 20.00px">
                 38
             </text>
-            <text class="week-label" text-anchor="middle" x="-467.4054292206" y="47.2129183860" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-467.4054292206" y="47.2129183860" style="font-size: 20.00px">
                 39
             </text>
-            <text class="week-label" text-anchor="middle" x="-468.6611606711" y="-9.2531746050" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-468.6611606711" y="-9.2531746050" style="font-size: 20.00px">
                 40
             </text>
-            <text class="week-label" text-anchor="middle" x="-463.1201078225" y="-65.4607653065" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-463.1201078225" y="-65.4607653065" style="font-size: 20.00px">
                 41
             </text>
-            <text class="week-label" text-anchor="middle" x="-450.8626300991" y="-120.5947000383" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-450.8626300991" y="-120.5947000383" style="font-size: 20.00px">
                 42
             </text>
-            <text class="week-label" text-anchor="middle" x="-432.0664922468" y="-173.8553958748" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-432.0664922468" y="-173.8553958748" style="font-size: 20.00px">
                 43
             </text>
-            <text class="week-label" text-anchor="middle" x="-406.8370303294" y="-224.7623039935" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-406.8370303294" y="-224.7623039935" style="font-size: 20.00px">
                 44
             </text>
-            <text class="week-label" text-anchor="middle" x="-375.8383503062" y="-271.9754203487" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-375.8383503062" y="-271.9754203487" style="font-size: 20.00px">
                 45
             </text>
-            <text class="week-label" text-anchor="middle" x="-339.3890539045" y="-315.1198905734" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-339.3890539045" y="-315.1198905734" style="font-size: 20.00px">
                 46
             </text>
-            <text class="week-label" text-anchor="middle" x="-298.0177490532" y="-353.5700096115" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-298.0177490532" y="-353.5700096115" style="font-size: 20.00px">
                 47
             </text>
-            <text class="week-label" text-anchor="middle" x="-252.3244253798" y="-386.7681524936" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-252.3244253798" y="-386.7681524936" style="font-size: 20.00px">
                 48
             </text>
-            <text class="week-label" text-anchor="middle" x="-202.9717528279" y="-414.2328613239" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-202.9717528279" y="-414.2328613239" style="font-size: 20.00px">
                 49
             </text>
-            <text class="week-label" text-anchor="middle" x="-150.6754712498" y="-435.5658276497" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-150.6754712498" y="-435.5658276497" style="font-size: 20.00px">
                 50
             </text>
-            <text class="week-label" text-anchor="middle" x="-96.1940103499" y="-450.4576689515" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-96.1940103499" y="-450.4576689515" style="font-size: 20.00px">
                 51
             </text>
-            <text class="week-label" text-anchor="middle" x="-40.3174905160" y="-458.6924154808" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-40.3174905160" y="-458.6924154808" style="font-size: 20.00px">
                 52
             </text>
         </g>
@@ -505,7 +505,7 @@ exports[`last day of Q2 1`] = `
             <path class="current-quarter" d="M337.4968746609,-1.4524441749A337.5,337.5,0,0,1,8.7137235766,337.3874938722L1.9363830170,74.9749986382A75,75,0,0,0,74.9993054802,-0.3227653722Z" fill="rgb(204, 121, 167)" stroke="none"></path>
         </g>
         <g id="remainder-label">
-            <text x="-391.5" y="13.5" style="font-size: 40.9090909090px; dominant-baseline: hanging; text-anchor: left" stroke="none">
+            <text x="-391.5" y="13.5" style="font-size: 40.91px; dominant-baseline: hanging; text-anchor: left" stroke="none">
                 0 weeks left
             </text>
         </g>
@@ -514,7 +514,7 @@ exports[`last day of Q2 1`] = `
             <line class="day-hand" stroke-width="9" x1="0" y1="0" x2="0" y2="-450" transform="rotate(178.5205479452)"></line>
         </g>
         <g id="info">
-            <text x="-405" y="0" style="font-size: 180px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(204, 121, 167)" stroke="none">
+            <text x="-405" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(204, 121, 167)" stroke="none">
                 Q2
             </text>
         </g>
@@ -523,7 +523,7 @@ exports[`last day of Q2 1`] = `
                 <path d="M -225,-180 A 450,450 0 0,1 225,-180" id="logoPath"></path>
             </defs>
             <a href="https://github.com/mikemoraned/quarterly-clock">
-                <text style="font-size: 69.2307692307px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 69.23px; dominant-baseline: middle; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#logoPath">
                         <tspan style="font-family: &quot;Font Awesome 5 Free&quot;">
                             
@@ -540,7 +540,7 @@ exports[`last day of Q2 1`] = `
                 <path d="M -225,-121.5 A 450,450 0 0,1 225,-121.5" id="readmePath"></path>
             </defs>
             <a href="https://github.com/mikemoraned/quarterly-clock/blob/main/README.md">
-                <text style="font-size: 30px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 30.00px; dominant-baseline: middle; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#readmePath">
                         <tspan style="font-family: &quot;Font Awesome 5 Brands&quot;">
                             
@@ -620,160 +620,160 @@ exports[`last day of Q3 1`] = `
             <line class="week-tick" stroke-width="4.5" x1="0" x2="0" y1="432" y2="450" transform="rotate(341.2602739834)"></line>
             <line class="week-tick" stroke-width="4.5" x1="0" x2="0" y1="432" y2="450" transform="rotate(348.1643835726)"></line>
             <line class="week-tick" stroke-width="4.5" x1="0" x2="0" y1="432" y2="450" transform="rotate(355.0684931619)"></line>
-            <text class="week-label" text-anchor="middle" x="24.2096239284" y="-459.8033082678" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="24.2096239284" y="-459.8033082678" style="font-size: 20.00px">
                 1
             </text>
-            <text class="week-label" text-anchor="middle" x="80.3364846236" y="-453.4968014967" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="80.3364846236" y="-453.4968014967" style="font-size: 20.00px">
                 2
             </text>
-            <text class="week-label" text-anchor="middle" x="135.2982610251" y="-440.4891247658" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="135.2982610251" y="-440.4891247658" style="font-size: 20.00px">
                 3
             </text>
-            <text class="week-label" text-anchor="middle" x="188.2978669432" y="-420.9689226234" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="188.2978669432" y="-420.9689226234" style="font-size: 20.00px">
                 4
             </text>
-            <text class="week-label" text-anchor="middle" x="238.5666726734" y="-395.2192878764" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="238.5666726734" y="-395.2192878764" style="font-size: 20.00px">
                 5
             </text>
-            <text class="week-label" text-anchor="middle" x="285.3756520917" y="-363.6136560212" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="285.3756520917" y="-363.6136560212" style="font-size: 20.00px">
                 6
             </text>
-            <text class="week-label" text-anchor="middle" x="328.0459553954" y="-326.6103894746" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="328.0459553954" y="-326.6103894746" style="font-size: 20.00px">
                 7
             </text>
-            <text class="week-label" text-anchor="middle" x="365.9587541605" y="-284.7461301482" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="365.9587541605" y="-284.7461301482" style="font-size: 20.00px">
                 8
             </text>
-            <text class="week-label" text-anchor="middle" x="398.5642159343" y="-238.6280167690" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="398.5642159343" y="-238.6280167690" style="font-size: 20.00px">
                 9
             </text>
-            <text class="week-label" text-anchor="middle" x="425.3894782115" y="-188.9248798166" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="425.3894782115" y="-188.9248798166" style="font-size: 20.00px">
                 10
             </text>
-            <text class="week-label" text-anchor="middle" x="446.0455061482" y="-136.3575417726" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="446.0455061482" y="-136.3575417726" style="font-size: 20.00px">
                 11
             </text>
-            <text class="week-label" text-anchor="middle" x="460.2327345613" y="-81.6883633527" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="460.2327345613" y="-81.6883633527" style="font-size: 20.00px">
                 12
             </text>
-            <text class="week-label" text-anchor="middle" x="467.7207032896" y="-26.0456728996" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="467.7207032896" y="-26.0456728996" style="font-size: 20.00px">
                 13
             </text>
-            <text class="week-label" text-anchor="middle" x="468.4903847456" y="30.4291366140" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="468.4903847456" y="30.4291366140" style="font-size: 20.00px">
                 14
             </text>
-            <text class="week-label" text-anchor="middle" x="462.4657585898" y="86.5869535127" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="462.4657585898" y="86.5869535127" style="font-size: 20.00px">
                 15
             </text>
-            <text class="week-label" text-anchor="middle" x="449.7341972950" y="141.6133459634" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="449.7341972950" y="141.6133459634" style="font-size: 20.00px">
                 16
             </text>
-            <text class="week-label" text-anchor="middle" x="430.4803410301" y="194.7102906785" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="430.4803410301" y="194.7102906785" style="font-size: 20.00px">
                 17
             </text>
-            <text class="week-label" text-anchor="middle" x="404.9834199062" y="245.1077462924" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="404.9834199062" y="245.1077462924" style="font-size: 20.00px">
                 18
             </text>
-            <text class="week-label" text-anchor="middle" x="373.6132044265" y="292.0748209288" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="373.6132044265" y="292.0748209288" style="font-size: 20.00px">
                 19
             </text>
-            <text class="week-label" text-anchor="middle" x="336.8246428688" y="334.9303720006" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="336.8246428688" y="334.9303720006" style="font-size: 20.00px">
                 20
             </text>
-            <text class="week-label" text-anchor="middle" x="295.1512633739" y="373.0528845177" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="295.1512633739" y="373.0528845177" style="font-size: 20.00px">
                 21
             </text>
-            <text class="week-label" text-anchor="middle" x="249.1974364233" y="405.8894846424" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="249.1974364233" y="405.8894846424" style="font-size: 20.00px">
                 22
             </text>
-            <text class="week-label" text-anchor="middle" x="199.6296099239" y="432.9639577724" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="199.6296099239" y="432.9639577724" style="font-size: 20.00px">
                 23
             </text>
-            <text class="week-label" text-anchor="middle" x="147.1666440098" y="453.8836548698" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="147.1666440098" y="453.8836548698" style="font-size: 20.00px">
                 24
             </text>
-            <text class="week-label" text-anchor="middle" x="92.5693857343" y="468.3451868751" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="92.5693857343" y="468.3451868751" style="font-size: 20.00px">
                 25
             </text>
-            <text class="week-label" text-anchor="middle" x="36.6296348429" y="476.1388246238" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="36.6296348429" y="476.1388246238" style="font-size: 20.00px">
                 26
             </text>
-            <text class="week-label" text-anchor="middle" x="-19.8413393455" y="477.1515404551" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-19.8413393455" y="477.1515404551" style="font-size: 20.00px">
                 27
             </text>
-            <text class="week-label" text-anchor="middle" x="-76.0245634171" y="471.3686474019" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-76.0245634171" y="471.3686474019" style="font-size: 20.00px">
                 28
             </text>
-            <text class="week-label" text-anchor="middle" x="-131.1052370699" y="458.8740121891" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-131.1052370699" y="458.8740121891" style="font-size: 20.00px">
                 29
             </text>
-            <text class="week-label" text-anchor="middle" x="-184.2845498002" y="439.8488389524" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-184.2845498002" y="439.8488389524" style="font-size: 20.00px">
                 30
             </text>
-            <text class="week-label" text-anchor="middle" x="-234.7912656955" y="414.5690413144" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-234.7912656955" y="414.5690413144" style="font-size: 20.00px">
                 31
             </text>
-            <text class="week-label" text-anchor="middle" x="-281.8929083265" y="383.4012409332" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-281.8929083265" y="383.4012409332" style="font-size: 20.00px">
                 32
             </text>
-            <text class="week-label" text-anchor="middle" x="-324.9063835264" y="346.7974505504" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-324.9063835264" y="346.7974505504" style="font-size: 20.00px">
                 33
             </text>
-            <text class="week-label" text-anchor="middle" x="-363.2078860015" y="305.2885186526" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-363.2078860015" y="305.2885186526" style="font-size: 20.00px">
                 34
             </text>
-            <text class="week-label" text-anchor="middle" x="-396.2419461024" y="259.4764308111" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-396.2419461024" y="259.4764308111" style="font-size: 20.00px">
                 35
             </text>
-            <text class="week-label" text-anchor="middle" x="-423.5294855528" y="210.0255793535" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-423.5294855528" y="210.0255793535" style="font-size: 20.00px">
                 36
             </text>
-            <text class="week-label" text-anchor="middle" x="-444.6747653087" y="157.6531279769" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-444.6747653087" y="157.6531279769" style="font-size: 20.00px">
                 37
             </text>
-            <text class="week-label" text-anchor="middle" x="-459.3711247856" y="103.1186110424" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-459.3711247856" y="103.1186110424" style="font-size: 20.00px">
                 38
             </text>
-            <text class="week-label" text-anchor="middle" x="-467.4054292206" y="47.2129183860" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-467.4054292206" y="47.2129183860" style="font-size: 20.00px">
                 39
             </text>
-            <text class="week-label" text-anchor="middle" x="-468.6611606711" y="-9.2531746050" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-468.6611606711" y="-9.2531746050" style="font-size: 20.00px">
                 40
             </text>
-            <text class="week-label" text-anchor="middle" x="-463.1201078225" y="-65.4607653065" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-463.1201078225" y="-65.4607653065" style="font-size: 20.00px">
                 41
             </text>
-            <text class="week-label" text-anchor="middle" x="-450.8626300991" y="-120.5947000383" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-450.8626300991" y="-120.5947000383" style="font-size: 20.00px">
                 42
             </text>
-            <text class="week-label" text-anchor="middle" x="-432.0664922468" y="-173.8553958748" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-432.0664922468" y="-173.8553958748" style="font-size: 20.00px">
                 43
             </text>
-            <text class="week-label" text-anchor="middle" x="-406.8370303294" y="-224.7623039935" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-406.8370303294" y="-224.7623039935" style="font-size: 20.00px">
                 44
             </text>
-            <text class="week-label" text-anchor="middle" x="-375.8383503062" y="-271.9754203487" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-375.8383503062" y="-271.9754203487" style="font-size: 20.00px">
                 45
             </text>
-            <text class="week-label" text-anchor="middle" x="-339.3890539045" y="-315.1198905734" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-339.3890539045" y="-315.1198905734" style="font-size: 20.00px">
                 46
             </text>
-            <text class="week-label" text-anchor="middle" x="-298.0177490532" y="-353.5700096115" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-298.0177490532" y="-353.5700096115" style="font-size: 20.00px">
                 47
             </text>
-            <text class="week-label" text-anchor="middle" x="-252.3244253798" y="-386.7681524936" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-252.3244253798" y="-386.7681524936" style="font-size: 20.00px">
                 48
             </text>
-            <text class="week-label" text-anchor="middle" x="-202.9717528279" y="-414.2328613239" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-202.9717528279" y="-414.2328613239" style="font-size: 20.00px">
                 49
             </text>
-            <text class="week-label" text-anchor="middle" x="-150.6754712498" y="-435.5658276497" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-150.6754712498" y="-435.5658276497" style="font-size: 20.00px">
                 50
             </text>
-            <text class="week-label" text-anchor="middle" x="-96.1940103499" y="-450.4576689515" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-96.1940103499" y="-450.4576689515" style="font-size: 20.00px">
                 51
             </text>
-            <text class="week-label" text-anchor="middle" x="-40.3174905160" y="-458.6924154808" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-40.3174905160" y="-458.6924154808" style="font-size: 20.00px">
                 52
             </text>
         </g>
@@ -787,7 +787,7 @@ exports[`last day of Q3 1`] = `
             <path class="current-quarter" d="M2.9048614499,337.4874987017A337.5,337.5,0,0,1,-337.4718722959,4.3572249253L-74.9937493991,0.9682722056A75,75,0,0,0,0.6455247666,74.9972219337Z" fill="rgb(86, 180, 233)" stroke="none"></path>
         </g>
         <g id="remainder-label">
-            <text x="171" y="13.5" style="font-size: 40.9090909090px; dominant-baseline: hanging; text-anchor: left" stroke="none">
+            <text x="171" y="13.5" style="font-size: 40.91px; dominant-baseline: hanging; text-anchor: left" stroke="none">
                 0 weeks left
             </text>
         </g>
@@ -796,7 +796,7 @@ exports[`last day of Q3 1`] = `
             <line class="day-hand" stroke-width="9" x1="0" y1="0" x2="0" y2="-450" transform="rotate(269.2602739726)"></line>
         </g>
         <g id="info">
-            <text x="157.5" y="0" style="font-size: 180px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(86, 180, 233)" stroke="none">
+            <text x="157.5" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(86, 180, 233)" stroke="none">
                 Q3
             </text>
         </g>
@@ -805,7 +805,7 @@ exports[`last day of Q3 1`] = `
                 <path d="M -225,-180 A 450,450 0 0,1 225,-180" id="logoPath"></path>
             </defs>
             <a href="https://github.com/mikemoraned/quarterly-clock">
-                <text style="font-size: 69.2307692307px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 69.23px; dominant-baseline: middle; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#logoPath">
                         <tspan style="font-family: &quot;Font Awesome 5 Free&quot;">
                             
@@ -822,7 +822,7 @@ exports[`last day of Q3 1`] = `
                 <path d="M -225,-121.5 A 450,450 0 0,1 225,-121.5" id="readmePath"></path>
             </defs>
             <a href="https://github.com/mikemoraned/quarterly-clock/blob/main/README.md">
-                <text style="font-size: 30px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 30.00px; dominant-baseline: middle; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#readmePath">
                         <tspan style="font-family: &quot;Font Awesome 5 Brands&quot;">
                             
@@ -902,160 +902,160 @@ exports[`last day of Q4 1`] = `
             <line class="week-tick" stroke-width="4.5" x1="0" x2="0" y1="432" y2="450" transform="rotate(341.2602739834)"></line>
             <line class="week-tick" stroke-width="4.5" x1="0" x2="0" y1="432" y2="450" transform="rotate(348.1643835726)"></line>
             <line class="week-tick" stroke-width="4.5" x1="0" x2="0" y1="432" y2="450" transform="rotate(355.0684931619)"></line>
-            <text class="week-label" text-anchor="middle" x="24.2096239284" y="-459.8033082678" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="24.2096239284" y="-459.8033082678" style="font-size: 20.00px">
                 1
             </text>
-            <text class="week-label" text-anchor="middle" x="80.3364846236" y="-453.4968014967" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="80.3364846236" y="-453.4968014967" style="font-size: 20.00px">
                 2
             </text>
-            <text class="week-label" text-anchor="middle" x="135.2982610251" y="-440.4891247658" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="135.2982610251" y="-440.4891247658" style="font-size: 20.00px">
                 3
             </text>
-            <text class="week-label" text-anchor="middle" x="188.2978669432" y="-420.9689226234" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="188.2978669432" y="-420.9689226234" style="font-size: 20.00px">
                 4
             </text>
-            <text class="week-label" text-anchor="middle" x="238.5666726734" y="-395.2192878764" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="238.5666726734" y="-395.2192878764" style="font-size: 20.00px">
                 5
             </text>
-            <text class="week-label" text-anchor="middle" x="285.3756520917" y="-363.6136560212" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="285.3756520917" y="-363.6136560212" style="font-size: 20.00px">
                 6
             </text>
-            <text class="week-label" text-anchor="middle" x="328.0459553954" y="-326.6103894746" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="328.0459553954" y="-326.6103894746" style="font-size: 20.00px">
                 7
             </text>
-            <text class="week-label" text-anchor="middle" x="365.9587541605" y="-284.7461301482" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="365.9587541605" y="-284.7461301482" style="font-size: 20.00px">
                 8
             </text>
-            <text class="week-label" text-anchor="middle" x="398.5642159343" y="-238.6280167690" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="398.5642159343" y="-238.6280167690" style="font-size: 20.00px">
                 9
             </text>
-            <text class="week-label" text-anchor="middle" x="425.3894782115" y="-188.9248798166" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="425.3894782115" y="-188.9248798166" style="font-size: 20.00px">
                 10
             </text>
-            <text class="week-label" text-anchor="middle" x="446.0455061482" y="-136.3575417726" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="446.0455061482" y="-136.3575417726" style="font-size: 20.00px">
                 11
             </text>
-            <text class="week-label" text-anchor="middle" x="460.2327345613" y="-81.6883633527" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="460.2327345613" y="-81.6883633527" style="font-size: 20.00px">
                 12
             </text>
-            <text class="week-label" text-anchor="middle" x="467.7207032896" y="-26.0456728996" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="467.7207032896" y="-26.0456728996" style="font-size: 20.00px">
                 13
             </text>
-            <text class="week-label" text-anchor="middle" x="468.4903847456" y="30.4291366140" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="468.4903847456" y="30.4291366140" style="font-size: 20.00px">
                 14
             </text>
-            <text class="week-label" text-anchor="middle" x="462.4657585898" y="86.5869535127" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="462.4657585898" y="86.5869535127" style="font-size: 20.00px">
                 15
             </text>
-            <text class="week-label" text-anchor="middle" x="449.7341972950" y="141.6133459634" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="449.7341972950" y="141.6133459634" style="font-size: 20.00px">
                 16
             </text>
-            <text class="week-label" text-anchor="middle" x="430.4803410301" y="194.7102906785" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="430.4803410301" y="194.7102906785" style="font-size: 20.00px">
                 17
             </text>
-            <text class="week-label" text-anchor="middle" x="404.9834199062" y="245.1077462924" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="404.9834199062" y="245.1077462924" style="font-size: 20.00px">
                 18
             </text>
-            <text class="week-label" text-anchor="middle" x="373.6132044265" y="292.0748209288" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="373.6132044265" y="292.0748209288" style="font-size: 20.00px">
                 19
             </text>
-            <text class="week-label" text-anchor="middle" x="336.8246428688" y="334.9303720006" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="336.8246428688" y="334.9303720006" style="font-size: 20.00px">
                 20
             </text>
-            <text class="week-label" text-anchor="middle" x="295.1512633739" y="373.0528845177" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="295.1512633739" y="373.0528845177" style="font-size: 20.00px">
                 21
             </text>
-            <text class="week-label" text-anchor="middle" x="249.1974364233" y="405.8894846424" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="249.1974364233" y="405.8894846424" style="font-size: 20.00px">
                 22
             </text>
-            <text class="week-label" text-anchor="middle" x="199.6296099239" y="432.9639577724" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="199.6296099239" y="432.9639577724" style="font-size: 20.00px">
                 23
             </text>
-            <text class="week-label" text-anchor="middle" x="147.1666440098" y="453.8836548698" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="147.1666440098" y="453.8836548698" style="font-size: 20.00px">
                 24
             </text>
-            <text class="week-label" text-anchor="middle" x="92.5693857343" y="468.3451868751" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="92.5693857343" y="468.3451868751" style="font-size: 20.00px">
                 25
             </text>
-            <text class="week-label" text-anchor="middle" x="36.6296348429" y="476.1388246238" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="36.6296348429" y="476.1388246238" style="font-size: 20.00px">
                 26
             </text>
-            <text class="week-label" text-anchor="middle" x="-19.8413393455" y="477.1515404551" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-19.8413393455" y="477.1515404551" style="font-size: 20.00px">
                 27
             </text>
-            <text class="week-label" text-anchor="middle" x="-76.0245634171" y="471.3686474019" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-76.0245634171" y="471.3686474019" style="font-size: 20.00px">
                 28
             </text>
-            <text class="week-label" text-anchor="middle" x="-131.1052370699" y="458.8740121891" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-131.1052370699" y="458.8740121891" style="font-size: 20.00px">
                 29
             </text>
-            <text class="week-label" text-anchor="middle" x="-184.2845498002" y="439.8488389524" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-184.2845498002" y="439.8488389524" style="font-size: 20.00px">
                 30
             </text>
-            <text class="week-label" text-anchor="middle" x="-234.7912656955" y="414.5690413144" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-234.7912656955" y="414.5690413144" style="font-size: 20.00px">
                 31
             </text>
-            <text class="week-label" text-anchor="middle" x="-281.8929083265" y="383.4012409332" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-281.8929083265" y="383.4012409332" style="font-size: 20.00px">
                 32
             </text>
-            <text class="week-label" text-anchor="middle" x="-324.9063835264" y="346.7974505504" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-324.9063835264" y="346.7974505504" style="font-size: 20.00px">
                 33
             </text>
-            <text class="week-label" text-anchor="middle" x="-363.2078860015" y="305.2885186526" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-363.2078860015" y="305.2885186526" style="font-size: 20.00px">
                 34
             </text>
-            <text class="week-label" text-anchor="middle" x="-396.2419461024" y="259.4764308111" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-396.2419461024" y="259.4764308111" style="font-size: 20.00px">
                 35
             </text>
-            <text class="week-label" text-anchor="middle" x="-423.5294855528" y="210.0255793535" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-423.5294855528" y="210.0255793535" style="font-size: 20.00px">
                 36
             </text>
-            <text class="week-label" text-anchor="middle" x="-444.6747653087" y="157.6531279769" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-444.6747653087" y="157.6531279769" style="font-size: 20.00px">
                 37
             </text>
-            <text class="week-label" text-anchor="middle" x="-459.3711247856" y="103.1186110424" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-459.3711247856" y="103.1186110424" style="font-size: 20.00px">
                 38
             </text>
-            <text class="week-label" text-anchor="middle" x="-467.4054292206" y="47.2129183860" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-467.4054292206" y="47.2129183860" style="font-size: 20.00px">
                 39
             </text>
-            <text class="week-label" text-anchor="middle" x="-468.6611606711" y="-9.2531746050" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-468.6611606711" y="-9.2531746050" style="font-size: 20.00px">
                 40
             </text>
-            <text class="week-label" text-anchor="middle" x="-463.1201078225" y="-65.4607653065" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-463.1201078225" y="-65.4607653065" style="font-size: 20.00px">
                 41
             </text>
-            <text class="week-label" text-anchor="middle" x="-450.8626300991" y="-120.5947000383" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-450.8626300991" y="-120.5947000383" style="font-size: 20.00px">
                 42
             </text>
-            <text class="week-label" text-anchor="middle" x="-432.0664922468" y="-173.8553958748" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-432.0664922468" y="-173.8553958748" style="font-size: 20.00px">
                 43
             </text>
-            <text class="week-label" text-anchor="middle" x="-406.8370303294" y="-224.7623039935" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-406.8370303294" y="-224.7623039935" style="font-size: 20.00px">
                 44
             </text>
-            <text class="week-label" text-anchor="middle" x="-375.8383503062" y="-271.9754203487" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-375.8383503062" y="-271.9754203487" style="font-size: 20.00px">
                 45
             </text>
-            <text class="week-label" text-anchor="middle" x="-339.3890539045" y="-315.1198905734" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-339.3890539045" y="-315.1198905734" style="font-size: 20.00px">
                 46
             </text>
-            <text class="week-label" text-anchor="middle" x="-298.0177490532" y="-353.5700096115" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-298.0177490532" y="-353.5700096115" style="font-size: 20.00px">
                 47
             </text>
-            <text class="week-label" text-anchor="middle" x="-252.3244253798" y="-386.7681524936" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-252.3244253798" y="-386.7681524936" style="font-size: 20.00px">
                 48
             </text>
-            <text class="week-label" text-anchor="middle" x="-202.9717528279" y="-414.2328613239" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-202.9717528279" y="-414.2328613239" style="font-size: 20.00px">
                 49
             </text>
-            <text class="week-label" text-anchor="middle" x="-150.6754712498" y="-435.5658276497" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-150.6754712498" y="-435.5658276497" style="font-size: 20.00px">
                 50
             </text>
-            <text class="week-label" text-anchor="middle" x="-96.1940103499" y="-450.4576689515" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-96.1940103499" y="-450.4576689515" style="font-size: 20.00px">
                 51
             </text>
-            <text class="week-label" text-anchor="middle" x="-40.3174905160" y="-458.6924154808" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-40.3174905160" y="-458.6924154808" style="font-size: 20.00px">
                 52
             </text>
         </g>
@@ -1069,7 +1069,7 @@ exports[`last day of Q4 1`] = `
             <path class="current-quarter" d="M-337.4968746609,-1.4524441749A337.5,337.5,0,0,1,-6.1997744206e-14,-337.5L-1.3777276490e-14,-75A75,75,0,0,0,-74.9993054802,-0.3227653722Z" fill="rgb(0, 158, 115)" stroke="none"></path>
         </g>
         <g id="remainder-label">
-            <text x="171" y="13.5" style="font-size: 40.9090909090px; dominant-baseline: hanging; text-anchor: left" stroke="none">
+            <text x="171" y="13.5" style="font-size: 40.91px; dominant-baseline: hanging; text-anchor: left" stroke="none">
                 0 weeks left
             </text>
         </g>
@@ -1078,7 +1078,7 @@ exports[`last day of Q4 1`] = `
             <line class="day-hand" stroke-width="9" x1="0" y1="0" x2="0" y2="-450" transform="rotate(360)"></line>
         </g>
         <g id="info">
-            <text x="157.5" y="0" style="font-size: 180px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(0, 158, 115)" stroke="none">
+            <text x="157.5" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(0, 158, 115)" stroke="none">
                 Q4
             </text>
         </g>
@@ -1087,7 +1087,7 @@ exports[`last day of Q4 1`] = `
                 <path d="M -225,270 A 450,450 0 0,1 225,270" id="logoPath"></path>
             </defs>
             <a href="https://github.com/mikemoraned/quarterly-clock">
-                <text style="font-size: 69.2307692307px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 69.23px; dominant-baseline: middle; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#logoPath">
                         <tspan style="font-family: &quot;Font Awesome 5 Free&quot;">
                             
@@ -1104,7 +1104,7 @@ exports[`last day of Q4 1`] = `
                 <path d="M -225,324 A 450,450 0 0,1 225,324" id="readmePath"></path>
             </defs>
             <a href="https://github.com/mikemoraned/quarterly-clock/blob/main/README.md">
-                <text style="font-size: 30px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 30.00px; dominant-baseline: middle; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#readmePath">
                         <tspan style="font-family: &quot;Font Awesome 5 Brands&quot;">
                             
@@ -1185,163 +1185,163 @@ exports[`start of Q1 1`] = `
             <line class="week-tick" stroke-width="4.5" x1="0" x2="0" y1="432" y2="450" transform="rotate(-17.7534246580)"></line>
             <line class="week-tick" stroke-width="4.5" x1="0" x2="0" y1="432" y2="450" transform="rotate(-10.8493150688)"></line>
             <line class="week-tick" stroke-width="4.5" x1="0" x2="0" y1="432" y2="450" transform="rotate(-3.9452054795)"></line>
-            <text class="week-label" text-anchor="middle" x="-24.2096240217" y="-459.8033082630" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-24.2096240217" y="-459.8033082630" style="font-size: 20.00px">
                 1
             </text>
-            <text class="week-label" text-anchor="middle" x="32.2683380780" y="-459.3171846237" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="32.2683380780" y="-459.3171846237" style="font-size: 20.00px">
                 2
             </text>
-            <text class="week-label" text-anchor="middle" x="88.2783268274" y="-452.0454805977" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="88.2783268274" y="-452.0454805977" style="font-size: 20.00px">
                 3
             </text>
-            <text class="week-label" text-anchor="middle" x="143.0080542791" y="-438.0936544732" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="143.0080542791" y="-438.0936544732" style="font-size: 20.00px">
                 4
             </text>
-            <text class="week-label" text-anchor="middle" x="195.6637995460" y="-417.6640433771" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="195.6637995460" y="-417.6640433771" style="font-size: 20.00px">
                 5
             </text>
-            <text class="week-label" text-anchor="middle" x="245.4819197818" y="-391.0529288697" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="245.4819197818" y="-391.0529288697" style="font-size: 20.00px">
                 6
             </text>
-            <text class="week-label" text-anchor="middle" x="291.7399249534" y="-358.6462401050" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="291.7399249534" y="-358.6462401050" style="font-size: 20.00px">
                 7
             </text>
-            <text class="week-label" text-anchor="middle" x="333.7669557927" y="-320.9139568720" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="333.7669557927" y="-320.9139568720" style="font-size: 20.00px">
                 8
             </text>
-            <text class="week-label" text-anchor="middle" x="370.9535129700" y="-278.4032936867" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="370.9535129700" y="-278.4032936867" style="font-size: 20.00px">
                 9
             </text>
-            <text class="week-label" text-anchor="middle" x="402.7602963913" y="-231.7307637838" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="402.7602963913" y="-231.7307637838" style="font-size: 20.00px">
                 10
             </text>
-            <text class="week-label" text-anchor="middle" x="428.7260264279" y="-181.5732380991" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="428.7260264279" y="-181.5732380991" style="font-size: 20.00px">
                 11
             </text>
-            <text class="week-label" text-anchor="middle" x="448.4741336498" y="-128.6581289118" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="448.4741336498" y="-128.6581289118" style="font-size: 20.00px">
                 12
             </text>
-            <text class="week-label" text-anchor="middle" x="461.7182200439" y="-73.7528405077" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="461.7182200439" y="-73.7528405077" style="font-size: 20.00px">
                 13
             </text>
-            <text class="week-label" text-anchor="middle" x="468.2472819117" y="-17.9895010483" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="468.2472819117" y="-17.9895010483" style="font-size: 20.00px">
                 14
             </text>
-            <text class="week-label" text-anchor="middle" x="468.0447283323" y="38.4901899139" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="468.0447283323" y="38.4901899139" style="font-size: 20.00px">
                 15
             </text>
-            <text class="week-label" text-anchor="middle" x="461.0543302979" y="94.5359823917" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="461.0543302979" y="94.5359823917" style="font-size: 20.00px">
                 16
             </text>
-            <text class="week-label" text-anchor="middle" x="447.3774664409" y="149.3350691924" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="447.3774664409" y="149.3350691924" style="font-size: 20.00px">
                 17
             </text>
-            <text class="week-label" text-anchor="middle" x="427.2124862329" y="202.0927235409" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="427.2124862329" y="202.0927235409" style="font-size: 20.00px">
                 18
             </text>
-            <text class="week-label" text-anchor="middle" x="400.8518334101" y="252.0438246489" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="400.8518334101" y="252.0438246489" style="font-size: 20.00px">
                 19
             </text>
-            <text class="week-label" text-anchor="middle" x="368.6778047922" y="298.4639539210" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="368.6778047922" y="298.4639539210" style="font-size: 20.00px">
                 20
             </text>
-            <text class="week-label" text-anchor="middle" x="331.1570060015" y="340.6799008754" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="331.1570060015" y="340.6799008754" style="font-size: 20.00px">
                 21
             </text>
-            <text class="week-label" text-anchor="middle" x="288.8335844893" y="378.0794264159" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="288.8335844893" y="378.0794264159" style="font-size: 20.00px">
                 22
             </text>
-            <text class="week-label" text-anchor="middle" x="242.3213380075" y="410.1201418631" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="242.3213380075" y="410.1201418631" style="font-size: 20.00px">
                 23
             </text>
-            <text class="week-label" text-anchor="middle" x="192.2948129729" y="436.3373749763" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="192.2948129729" y="436.3373749763" style="font-size: 20.00px">
                 24
             </text>
-            <text class="week-label" text-anchor="middle" x="139.4795218206" y="456.3509088881" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="139.4795218206" y="456.3509088881" style="font-size: 20.00px">
                 25
             </text>
-            <text class="week-label" text-anchor="middle" x="84.6414212197" y="469.8704962204" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="84.6414212197" y="469.8704962204" style="font-size: 20.00px">
                 26
             </text>
-            <text class="week-label" text-anchor="middle" x="28.5758037451" y="476.7000684134" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="28.5758037451" y="476.7000684134" style="font-size: 20.00px">
                 27
             </text>
-            <text class="week-label" text-anchor="middle" x="-27.9042358973" y="476.7405792199" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-27.9042358973" y="476.7405792199" style="font-size: 20.00px">
                 28
             </text>
-            <text class="week-label" text-anchor="middle" x="-83.9795928217" y="469.9914411299" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-83.9795928217" y="469.9914411299" style="font-size: 20.00px">
                 29
             </text>
-            <text class="week-label" text-anchor="middle" x="-138.8370310750" y="456.5505338902" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-138.8370310750" y="456.5505338902" style="font-size: 20.00px">
                 30
             </text>
-            <text class="week-label" text-anchor="middle" x="-191.6809776373" y="436.6127849985" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-191.6809776373" y="436.6127849985" style="font-size: 20.00px">
                 31
             </text>
-            <text class="week-label" text-anchor="middle" x="-241.7450602626" y="410.4673427564" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-241.7450602626" y="410.4673427564" style="font-size: 20.00px">
                 32
             </text>
-            <text class="week-label" text-anchor="middle" x="-288.3032218348" y="378.4933828802" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-288.3032218348" y="378.4933828802" style="font-size: 20.00px">
                 33
             </text>
-            <text class="week-label" text-anchor="middle" x="-330.6802500510" y="341.1546094843" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-330.6802500510" y="341.1546094843" style="font-size: 20.00px">
                 34
             </text>
-            <text class="week-label" text-anchor="middle" x="-368.2615697252" y="298.9925301867" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-368.2615697252" y="298.9925301867" style="font-size: 20.00px">
                 35
             </text>
-            <text class="week-label" text-anchor="middle" x="-400.5021556986" y="252.6186028650" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-400.5021556986" y="252.6186028650" style="font-size: 20.00px">
                 36
             </text>
-            <text class="week-label" text-anchor="middle" x="-426.9344370972" y="202.7053679547" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-426.9344370972" y="202.7053679547" style="font-size: 20.00px">
                 37
             </text>
-            <text class="week-label" text-anchor="middle" x="-447.1750783039" y="149.9766948944" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-447.1750783039" y="149.9766948944" style="font-size: 20.00px">
                 38
             </text>
-            <text class="week-label" text-anchor="middle" x="-460.9305383046" y="95.1972841700" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-460.9305383046" y="95.1972841700" style="font-size: 20.00px">
                 39
             </text>
-            <text class="week-label" text-anchor="middle" x="-468.0013277830" y="39.1615772029" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-468.0013277830" y="39.1615772029" style="font-size: 20.00px">
                 40
             </text>
-            <text class="week-label" text-anchor="middle" x="-468.2849022252" y="-17.3177650796" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-468.2849022252" y="-17.3177650796" style="font-size: 20.00px">
                 41
             </text>
-            <text class="week-label" text-anchor="middle" x="-461.7771490772" y="-73.4216479053" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-461.7771490772" y="-73.4216479053" style="font-size: 20.00px">
                 42
             </text>
-            <text class="week-label" text-anchor="middle" x="-448.5724473875" y="-128.3364216227" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-448.5724473875" y="-128.3364216227" style="font-size: 20.00px">
                 43
             </text>
-            <text class="week-label" text-anchor="middle" x="-428.7260264658" y="-181.5732380137" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-428.7260264658" y="-181.5732380137" style="font-size: 20.00px">
                 44
             </text>
-            <text class="week-label" text-anchor="middle" x="-402.7602964392" y="-231.7307637036" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-402.7602964392" y="-231.7307637036" style="font-size: 20.00px">
                 45
             </text>
-            <text class="week-label" text-anchor="middle" x="-370.9535130272" y="-278.4032936128" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-370.9535130272" y="-278.4032936128" style="font-size: 20.00px">
                 46
             </text>
-            <text class="week-label" text-anchor="middle" x="-333.7669558584" y="-320.9139568055" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-333.7669558584" y="-320.9139568055" style="font-size: 20.00px">
                 47
             </text>
-            <text class="week-label" text-anchor="middle" x="-291.7399250265" y="-358.6462400469" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-291.7399250265" y="-358.6462400469" style="font-size: 20.00px">
                 48
             </text>
-            <text class="week-label" text-anchor="middle" x="-245.4819198614" y="-391.0529288207" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-245.4819198614" y="-391.0529288207" style="font-size: 20.00px">
                 49
             </text>
-            <text class="week-label" text-anchor="middle" x="-195.6637996309" y="-417.6640433381" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-195.6637996309" y="-417.6640433381" style="font-size: 20.00px">
                 50
             </text>
-            <text class="week-label" text-anchor="middle" x="-143.0080543681" y="-438.0936544447" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-143.0080543681" y="-438.0936544447" style="font-size: 20.00px">
                 51
             </text>
-            <text class="week-label" text-anchor="middle" x="-88.2783269192" y="-452.0454805801" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-88.2783269192" y="-452.0454805801" style="font-size: 20.00px">
                 52
             </text>
-            <text class="week-label" text-anchor="middle" x="-32.2683381713" y="-459.3171846172" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-32.2683381713" y="-459.3171846172" style="font-size: 20.00px">
                 53
             </text>
         </g>
@@ -1421,7 +1421,7 @@ exports[`start of Q1 1`] = `
             <path class="remainder" d="M21.6802602337,-419.4400628411A420,420,0,0,1,418.8764887054,-30.6999545571L149.5987459662,-10.9642694847A150,150,0,0,0,7.7429500834,-149.8000224432Z" fill="url(#remainder-pattern-extra)" clip-path="url(#remainder-clip)" stroke="none"></path>
         </g>
         <g id="remainder-label">
-            <text x="-391.5" y="13.5" style="font-size: 40.9090909090px; dominant-baseline: hanging; text-anchor: left" stroke="none">
+            <text x="-391.5" y="13.5" style="font-size: 40.91px; dominant-baseline: hanging; text-anchor: left" stroke="none">
                 12 weeks left
             </text>
         </g>
@@ -1430,7 +1430,7 @@ exports[`start of Q1 1`] = `
             <line class="day-hand" stroke-width="9" x1="0" y1="0" x2="0" y2="-450" transform="rotate(0.9863013698)"></line>
         </g>
         <g id="info">
-            <text x="-405" y="0" style="font-size: 180px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(240, 228, 66)" stroke="none">
+            <text x="-405" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(240, 228, 66)" stroke="none">
                 Q1
             </text>
         </g>
@@ -1439,7 +1439,7 @@ exports[`start of Q1 1`] = `
                 <path d="M -225,270 A 450,450 0 0,1 225,270" id="logoPath"></path>
             </defs>
             <a href="https://github.com/mikemoraned/quarterly-clock">
-                <text style="font-size: 69.2307692307px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 69.23px; dominant-baseline: middle; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#logoPath">
                         <tspan style="font-family: &quot;Font Awesome 5 Free&quot;">
                             
@@ -1456,7 +1456,7 @@ exports[`start of Q1 1`] = `
                 <path d="M -225,324 A 450,450 0 0,1 225,324" id="readmePath"></path>
             </defs>
             <a href="https://github.com/mikemoraned/quarterly-clock/blob/main/README.md">
-                <text style="font-size: 30px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 30.00px; dominant-baseline: middle; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#readmePath">
                         <tspan style="font-family: &quot;Font Awesome 5 Brands&quot;">
                             
@@ -1484,7 +1484,7 @@ exports[`start of Q1 1`] = `
     </defs>
     <defs>
         <pattern id="remainder-pattern-extra" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <text x="0" y="49.0909090909" style="font-size: 60px" opacity="0.9" fill="black">
+            <text x="0" y="49.0909090909" style="font-size: 60.00px" opacity="0.9" fill="black">
                 12
             </text>
         </pattern>
@@ -1548,160 +1548,160 @@ exports[`start of Q2 1`] = `
             <line class="week-tick" stroke-width="4.5" x1="0" x2="0" y1="432" y2="450" transform="rotate(341.2602739834)"></line>
             <line class="week-tick" stroke-width="4.5" x1="0" x2="0" y1="432" y2="450" transform="rotate(348.1643835726)"></line>
             <line class="week-tick" stroke-width="4.5" x1="0" x2="0" y1="432" y2="450" transform="rotate(355.0684931619)"></line>
-            <text class="week-label" text-anchor="middle" x="24.2096239284" y="-459.8033082678" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="24.2096239284" y="-459.8033082678" style="font-size: 20.00px">
                 1
             </text>
-            <text class="week-label" text-anchor="middle" x="80.3364846236" y="-453.4968014967" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="80.3364846236" y="-453.4968014967" style="font-size: 20.00px">
                 2
             </text>
-            <text class="week-label" text-anchor="middle" x="135.2982610251" y="-440.4891247658" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="135.2982610251" y="-440.4891247658" style="font-size: 20.00px">
                 3
             </text>
-            <text class="week-label" text-anchor="middle" x="188.2978669432" y="-420.9689226234" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="188.2978669432" y="-420.9689226234" style="font-size: 20.00px">
                 4
             </text>
-            <text class="week-label" text-anchor="middle" x="238.5666726734" y="-395.2192878764" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="238.5666726734" y="-395.2192878764" style="font-size: 20.00px">
                 5
             </text>
-            <text class="week-label" text-anchor="middle" x="285.3756520917" y="-363.6136560212" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="285.3756520917" y="-363.6136560212" style="font-size: 20.00px">
                 6
             </text>
-            <text class="week-label" text-anchor="middle" x="328.0459553954" y="-326.6103894746" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="328.0459553954" y="-326.6103894746" style="font-size: 20.00px">
                 7
             </text>
-            <text class="week-label" text-anchor="middle" x="365.9587541605" y="-284.7461301482" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="365.9587541605" y="-284.7461301482" style="font-size: 20.00px">
                 8
             </text>
-            <text class="week-label" text-anchor="middle" x="398.5642159343" y="-238.6280167690" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="398.5642159343" y="-238.6280167690" style="font-size: 20.00px">
                 9
             </text>
-            <text class="week-label" text-anchor="middle" x="425.3894782115" y="-188.9248798166" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="425.3894782115" y="-188.9248798166" style="font-size: 20.00px">
                 10
             </text>
-            <text class="week-label" text-anchor="middle" x="446.0455061482" y="-136.3575417726" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="446.0455061482" y="-136.3575417726" style="font-size: 20.00px">
                 11
             </text>
-            <text class="week-label" text-anchor="middle" x="460.2327345613" y="-81.6883633527" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="460.2327345613" y="-81.6883633527" style="font-size: 20.00px">
                 12
             </text>
-            <text class="week-label" text-anchor="middle" x="467.7207032896" y="-26.0456728996" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="467.7207032896" y="-26.0456728996" style="font-size: 20.00px">
                 13
             </text>
-            <text class="week-label" text-anchor="middle" x="468.4903847456" y="30.4291366140" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="468.4903847456" y="30.4291366140" style="font-size: 20.00px">
                 14
             </text>
-            <text class="week-label" text-anchor="middle" x="462.4657585898" y="86.5869535127" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="462.4657585898" y="86.5869535127" style="font-size: 20.00px">
                 15
             </text>
-            <text class="week-label" text-anchor="middle" x="449.7341972950" y="141.6133459634" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="449.7341972950" y="141.6133459634" style="font-size: 20.00px">
                 16
             </text>
-            <text class="week-label" text-anchor="middle" x="430.4803410301" y="194.7102906785" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="430.4803410301" y="194.7102906785" style="font-size: 20.00px">
                 17
             </text>
-            <text class="week-label" text-anchor="middle" x="404.9834199062" y="245.1077462924" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="404.9834199062" y="245.1077462924" style="font-size: 20.00px">
                 18
             </text>
-            <text class="week-label" text-anchor="middle" x="373.6132044265" y="292.0748209288" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="373.6132044265" y="292.0748209288" style="font-size: 20.00px">
                 19
             </text>
-            <text class="week-label" text-anchor="middle" x="336.8246428688" y="334.9303720006" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="336.8246428688" y="334.9303720006" style="font-size: 20.00px">
                 20
             </text>
-            <text class="week-label" text-anchor="middle" x="295.1512633739" y="373.0528845177" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="295.1512633739" y="373.0528845177" style="font-size: 20.00px">
                 21
             </text>
-            <text class="week-label" text-anchor="middle" x="249.1974364233" y="405.8894846424" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="249.1974364233" y="405.8894846424" style="font-size: 20.00px">
                 22
             </text>
-            <text class="week-label" text-anchor="middle" x="199.6296099239" y="432.9639577724" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="199.6296099239" y="432.9639577724" style="font-size: 20.00px">
                 23
             </text>
-            <text class="week-label" text-anchor="middle" x="147.1666440098" y="453.8836548698" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="147.1666440098" y="453.8836548698" style="font-size: 20.00px">
                 24
             </text>
-            <text class="week-label" text-anchor="middle" x="92.5693857343" y="468.3451868751" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="92.5693857343" y="468.3451868751" style="font-size: 20.00px">
                 25
             </text>
-            <text class="week-label" text-anchor="middle" x="36.6296348429" y="476.1388246238" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="36.6296348429" y="476.1388246238" style="font-size: 20.00px">
                 26
             </text>
-            <text class="week-label" text-anchor="middle" x="-19.8413393455" y="477.1515404551" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-19.8413393455" y="477.1515404551" style="font-size: 20.00px">
                 27
             </text>
-            <text class="week-label" text-anchor="middle" x="-76.0245634171" y="471.3686474019" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-76.0245634171" y="471.3686474019" style="font-size: 20.00px">
                 28
             </text>
-            <text class="week-label" text-anchor="middle" x="-131.1052370699" y="458.8740121891" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-131.1052370699" y="458.8740121891" style="font-size: 20.00px">
                 29
             </text>
-            <text class="week-label" text-anchor="middle" x="-184.2845498002" y="439.8488389524" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-184.2845498002" y="439.8488389524" style="font-size: 20.00px">
                 30
             </text>
-            <text class="week-label" text-anchor="middle" x="-234.7912656955" y="414.5690413144" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-234.7912656955" y="414.5690413144" style="font-size: 20.00px">
                 31
             </text>
-            <text class="week-label" text-anchor="middle" x="-281.8929083265" y="383.4012409332" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-281.8929083265" y="383.4012409332" style="font-size: 20.00px">
                 32
             </text>
-            <text class="week-label" text-anchor="middle" x="-324.9063835264" y="346.7974505504" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-324.9063835264" y="346.7974505504" style="font-size: 20.00px">
                 33
             </text>
-            <text class="week-label" text-anchor="middle" x="-363.2078860015" y="305.2885186526" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-363.2078860015" y="305.2885186526" style="font-size: 20.00px">
                 34
             </text>
-            <text class="week-label" text-anchor="middle" x="-396.2419461024" y="259.4764308111" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-396.2419461024" y="259.4764308111" style="font-size: 20.00px">
                 35
             </text>
-            <text class="week-label" text-anchor="middle" x="-423.5294855528" y="210.0255793535" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-423.5294855528" y="210.0255793535" style="font-size: 20.00px">
                 36
             </text>
-            <text class="week-label" text-anchor="middle" x="-444.6747653087" y="157.6531279769" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-444.6747653087" y="157.6531279769" style="font-size: 20.00px">
                 37
             </text>
-            <text class="week-label" text-anchor="middle" x="-459.3711247856" y="103.1186110424" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-459.3711247856" y="103.1186110424" style="font-size: 20.00px">
                 38
             </text>
-            <text class="week-label" text-anchor="middle" x="-467.4054292206" y="47.2129183860" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-467.4054292206" y="47.2129183860" style="font-size: 20.00px">
                 39
             </text>
-            <text class="week-label" text-anchor="middle" x="-468.6611606711" y="-9.2531746050" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-468.6611606711" y="-9.2531746050" style="font-size: 20.00px">
                 40
             </text>
-            <text class="week-label" text-anchor="middle" x="-463.1201078225" y="-65.4607653065" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-463.1201078225" y="-65.4607653065" style="font-size: 20.00px">
                 41
             </text>
-            <text class="week-label" text-anchor="middle" x="-450.8626300991" y="-120.5947000383" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-450.8626300991" y="-120.5947000383" style="font-size: 20.00px">
                 42
             </text>
-            <text class="week-label" text-anchor="middle" x="-432.0664922468" y="-173.8553958748" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-432.0664922468" y="-173.8553958748" style="font-size: 20.00px">
                 43
             </text>
-            <text class="week-label" text-anchor="middle" x="-406.8370303294" y="-224.7623039935" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-406.8370303294" y="-224.7623039935" style="font-size: 20.00px">
                 44
             </text>
-            <text class="week-label" text-anchor="middle" x="-375.8383503062" y="-271.9754203487" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-375.8383503062" y="-271.9754203487" style="font-size: 20.00px">
                 45
             </text>
-            <text class="week-label" text-anchor="middle" x="-339.3890539045" y="-315.1198905734" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-339.3890539045" y="-315.1198905734" style="font-size: 20.00px">
                 46
             </text>
-            <text class="week-label" text-anchor="middle" x="-298.0177490532" y="-353.5700096115" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-298.0177490532" y="-353.5700096115" style="font-size: 20.00px">
                 47
             </text>
-            <text class="week-label" text-anchor="middle" x="-252.3244253798" y="-386.7681524936" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-252.3244253798" y="-386.7681524936" style="font-size: 20.00px">
                 48
             </text>
-            <text class="week-label" text-anchor="middle" x="-202.9717528279" y="-414.2328613239" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-202.9717528279" y="-414.2328613239" style="font-size: 20.00px">
                 49
             </text>
-            <text class="week-label" text-anchor="middle" x="-150.6754712498" y="-435.5658276497" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-150.6754712498" y="-435.5658276497" style="font-size: 20.00px">
                 50
             </text>
-            <text class="week-label" text-anchor="middle" x="-96.1940103499" y="-450.4576689515" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-96.1940103499" y="-450.4576689515" style="font-size: 20.00px">
                 51
             </text>
-            <text class="week-label" text-anchor="middle" x="-40.3174905160" y="-458.6924154808" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-40.3174905160" y="-458.6924154808" style="font-size: 20.00px">
                 52
             </text>
         </g>
@@ -1781,7 +1781,7 @@ exports[`start of Q2 1`] = `
             <path class="remainder" d="M419.5294805457,19.8749830954A420,420,0,0,1,32.5023212780,418.7404913685L11.6079718850,149.5501754887A150,150,0,0,0,149.8319573377,7.0982082483Z" fill="url(#remainder-pattern-extra)" clip-path="url(#remainder-clip)" stroke="none"></path>
         </g>
         <g id="remainder-label">
-            <text x="-391.5" y="13.5" style="font-size: 40.9090909090px; dominant-baseline: hanging; text-anchor: left" stroke="none">
+            <text x="-391.5" y="13.5" style="font-size: 40.91px; dominant-baseline: hanging; text-anchor: left" stroke="none">
                 12 weeks left
             </text>
         </g>
@@ -1790,7 +1790,7 @@ exports[`start of Q2 1`] = `
             <line class="day-hand" stroke-width="9" x1="0" y1="0" x2="0" y2="-450" transform="rotate(89.7534246575)"></line>
         </g>
         <g id="info">
-            <text x="-405" y="0" style="font-size: 180px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(204, 121, 167)" stroke="none">
+            <text x="-405" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(204, 121, 167)" stroke="none">
                 Q2
             </text>
         </g>
@@ -1799,7 +1799,7 @@ exports[`start of Q2 1`] = `
                 <path d="M -225,-180 A 450,450 0 0,1 225,-180" id="logoPath"></path>
             </defs>
             <a href="https://github.com/mikemoraned/quarterly-clock">
-                <text style="font-size: 69.2307692307px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 69.23px; dominant-baseline: middle; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#logoPath">
                         <tspan style="font-family: &quot;Font Awesome 5 Free&quot;">
                             
@@ -1816,7 +1816,7 @@ exports[`start of Q2 1`] = `
                 <path d="M -225,-121.5 A 450,450 0 0,1 225,-121.5" id="readmePath"></path>
             </defs>
             <a href="https://github.com/mikemoraned/quarterly-clock/blob/main/README.md">
-                <text style="font-size: 30px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 30.00px; dominant-baseline: middle; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#readmePath">
                         <tspan style="font-family: &quot;Font Awesome 5 Brands&quot;">
                             
@@ -1844,7 +1844,7 @@ exports[`start of Q2 1`] = `
     </defs>
     <defs>
         <pattern id="remainder-pattern-extra" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <text x="0" y="49.0909090909" style="font-size: 60px" opacity="0.9" fill="black">
+            <text x="0" y="49.0909090909" style="font-size: 60.00px" opacity="0.9" fill="black">
                 12
             </text>
         </pattern>
@@ -1908,160 +1908,160 @@ exports[`start of Q3 1`] = `
             <line class="week-tick" stroke-width="4.5" x1="0" x2="0" y1="432" y2="450" transform="rotate(341.2602739834)"></line>
             <line class="week-tick" stroke-width="4.5" x1="0" x2="0" y1="432" y2="450" transform="rotate(348.1643835726)"></line>
             <line class="week-tick" stroke-width="4.5" x1="0" x2="0" y1="432" y2="450" transform="rotate(355.0684931619)"></line>
-            <text class="week-label" text-anchor="middle" x="24.2096239284" y="-459.8033082678" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="24.2096239284" y="-459.8033082678" style="font-size: 20.00px">
                 1
             </text>
-            <text class="week-label" text-anchor="middle" x="80.3364846236" y="-453.4968014967" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="80.3364846236" y="-453.4968014967" style="font-size: 20.00px">
                 2
             </text>
-            <text class="week-label" text-anchor="middle" x="135.2982610251" y="-440.4891247658" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="135.2982610251" y="-440.4891247658" style="font-size: 20.00px">
                 3
             </text>
-            <text class="week-label" text-anchor="middle" x="188.2978669432" y="-420.9689226234" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="188.2978669432" y="-420.9689226234" style="font-size: 20.00px">
                 4
             </text>
-            <text class="week-label" text-anchor="middle" x="238.5666726734" y="-395.2192878764" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="238.5666726734" y="-395.2192878764" style="font-size: 20.00px">
                 5
             </text>
-            <text class="week-label" text-anchor="middle" x="285.3756520917" y="-363.6136560212" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="285.3756520917" y="-363.6136560212" style="font-size: 20.00px">
                 6
             </text>
-            <text class="week-label" text-anchor="middle" x="328.0459553954" y="-326.6103894746" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="328.0459553954" y="-326.6103894746" style="font-size: 20.00px">
                 7
             </text>
-            <text class="week-label" text-anchor="middle" x="365.9587541605" y="-284.7461301482" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="365.9587541605" y="-284.7461301482" style="font-size: 20.00px">
                 8
             </text>
-            <text class="week-label" text-anchor="middle" x="398.5642159343" y="-238.6280167690" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="398.5642159343" y="-238.6280167690" style="font-size: 20.00px">
                 9
             </text>
-            <text class="week-label" text-anchor="middle" x="425.3894782115" y="-188.9248798166" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="425.3894782115" y="-188.9248798166" style="font-size: 20.00px">
                 10
             </text>
-            <text class="week-label" text-anchor="middle" x="446.0455061482" y="-136.3575417726" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="446.0455061482" y="-136.3575417726" style="font-size: 20.00px">
                 11
             </text>
-            <text class="week-label" text-anchor="middle" x="460.2327345613" y="-81.6883633527" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="460.2327345613" y="-81.6883633527" style="font-size: 20.00px">
                 12
             </text>
-            <text class="week-label" text-anchor="middle" x="467.7207032896" y="-26.0456728996" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="467.7207032896" y="-26.0456728996" style="font-size: 20.00px">
                 13
             </text>
-            <text class="week-label" text-anchor="middle" x="468.4903847456" y="30.4291366140" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="468.4903847456" y="30.4291366140" style="font-size: 20.00px">
                 14
             </text>
-            <text class="week-label" text-anchor="middle" x="462.4657585898" y="86.5869535127" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="462.4657585898" y="86.5869535127" style="font-size: 20.00px">
                 15
             </text>
-            <text class="week-label" text-anchor="middle" x="449.7341972950" y="141.6133459634" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="449.7341972950" y="141.6133459634" style="font-size: 20.00px">
                 16
             </text>
-            <text class="week-label" text-anchor="middle" x="430.4803410301" y="194.7102906785" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="430.4803410301" y="194.7102906785" style="font-size: 20.00px">
                 17
             </text>
-            <text class="week-label" text-anchor="middle" x="404.9834199062" y="245.1077462924" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="404.9834199062" y="245.1077462924" style="font-size: 20.00px">
                 18
             </text>
-            <text class="week-label" text-anchor="middle" x="373.6132044265" y="292.0748209288" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="373.6132044265" y="292.0748209288" style="font-size: 20.00px">
                 19
             </text>
-            <text class="week-label" text-anchor="middle" x="336.8246428688" y="334.9303720006" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="336.8246428688" y="334.9303720006" style="font-size: 20.00px">
                 20
             </text>
-            <text class="week-label" text-anchor="middle" x="295.1512633739" y="373.0528845177" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="295.1512633739" y="373.0528845177" style="font-size: 20.00px">
                 21
             </text>
-            <text class="week-label" text-anchor="middle" x="249.1974364233" y="405.8894846424" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="249.1974364233" y="405.8894846424" style="font-size: 20.00px">
                 22
             </text>
-            <text class="week-label" text-anchor="middle" x="199.6296099239" y="432.9639577724" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="199.6296099239" y="432.9639577724" style="font-size: 20.00px">
                 23
             </text>
-            <text class="week-label" text-anchor="middle" x="147.1666440098" y="453.8836548698" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="147.1666440098" y="453.8836548698" style="font-size: 20.00px">
                 24
             </text>
-            <text class="week-label" text-anchor="middle" x="92.5693857343" y="468.3451868751" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="92.5693857343" y="468.3451868751" style="font-size: 20.00px">
                 25
             </text>
-            <text class="week-label" text-anchor="middle" x="36.6296348429" y="476.1388246238" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="36.6296348429" y="476.1388246238" style="font-size: 20.00px">
                 26
             </text>
-            <text class="week-label" text-anchor="middle" x="-19.8413393455" y="477.1515404551" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-19.8413393455" y="477.1515404551" style="font-size: 20.00px">
                 27
             </text>
-            <text class="week-label" text-anchor="middle" x="-76.0245634171" y="471.3686474019" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-76.0245634171" y="471.3686474019" style="font-size: 20.00px">
                 28
             </text>
-            <text class="week-label" text-anchor="middle" x="-131.1052370699" y="458.8740121891" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-131.1052370699" y="458.8740121891" style="font-size: 20.00px">
                 29
             </text>
-            <text class="week-label" text-anchor="middle" x="-184.2845498002" y="439.8488389524" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-184.2845498002" y="439.8488389524" style="font-size: 20.00px">
                 30
             </text>
-            <text class="week-label" text-anchor="middle" x="-234.7912656955" y="414.5690413144" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-234.7912656955" y="414.5690413144" style="font-size: 20.00px">
                 31
             </text>
-            <text class="week-label" text-anchor="middle" x="-281.8929083265" y="383.4012409332" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-281.8929083265" y="383.4012409332" style="font-size: 20.00px">
                 32
             </text>
-            <text class="week-label" text-anchor="middle" x="-324.9063835264" y="346.7974505504" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-324.9063835264" y="346.7974505504" style="font-size: 20.00px">
                 33
             </text>
-            <text class="week-label" text-anchor="middle" x="-363.2078860015" y="305.2885186526" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-363.2078860015" y="305.2885186526" style="font-size: 20.00px">
                 34
             </text>
-            <text class="week-label" text-anchor="middle" x="-396.2419461024" y="259.4764308111" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-396.2419461024" y="259.4764308111" style="font-size: 20.00px">
                 35
             </text>
-            <text class="week-label" text-anchor="middle" x="-423.5294855528" y="210.0255793535" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-423.5294855528" y="210.0255793535" style="font-size: 20.00px">
                 36
             </text>
-            <text class="week-label" text-anchor="middle" x="-444.6747653087" y="157.6531279769" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-444.6747653087" y="157.6531279769" style="font-size: 20.00px">
                 37
             </text>
-            <text class="week-label" text-anchor="middle" x="-459.3711247856" y="103.1186110424" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-459.3711247856" y="103.1186110424" style="font-size: 20.00px">
                 38
             </text>
-            <text class="week-label" text-anchor="middle" x="-467.4054292206" y="47.2129183860" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-467.4054292206" y="47.2129183860" style="font-size: 20.00px">
                 39
             </text>
-            <text class="week-label" text-anchor="middle" x="-468.6611606711" y="-9.2531746050" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-468.6611606711" y="-9.2531746050" style="font-size: 20.00px">
                 40
             </text>
-            <text class="week-label" text-anchor="middle" x="-463.1201078225" y="-65.4607653065" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-463.1201078225" y="-65.4607653065" style="font-size: 20.00px">
                 41
             </text>
-            <text class="week-label" text-anchor="middle" x="-450.8626300991" y="-120.5947000383" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-450.8626300991" y="-120.5947000383" style="font-size: 20.00px">
                 42
             </text>
-            <text class="week-label" text-anchor="middle" x="-432.0664922468" y="-173.8553958748" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-432.0664922468" y="-173.8553958748" style="font-size: 20.00px">
                 43
             </text>
-            <text class="week-label" text-anchor="middle" x="-406.8370303294" y="-224.7623039935" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-406.8370303294" y="-224.7623039935" style="font-size: 20.00px">
                 44
             </text>
-            <text class="week-label" text-anchor="middle" x="-375.8383503062" y="-271.9754203487" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-375.8383503062" y="-271.9754203487" style="font-size: 20.00px">
                 45
             </text>
-            <text class="week-label" text-anchor="middle" x="-339.3890539045" y="-315.1198905734" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-339.3890539045" y="-315.1198905734" style="font-size: 20.00px">
                 46
             </text>
-            <text class="week-label" text-anchor="middle" x="-298.0177490532" y="-353.5700096115" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-298.0177490532" y="-353.5700096115" style="font-size: 20.00px">
                 47
             </text>
-            <text class="week-label" text-anchor="middle" x="-252.3244253798" y="-386.7681524936" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-252.3244253798" y="-386.7681524936" style="font-size: 20.00px">
                 48
             </text>
-            <text class="week-label" text-anchor="middle" x="-202.9717528279" y="-414.2328613239" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-202.9717528279" y="-414.2328613239" style="font-size: 20.00px">
                 49
             </text>
-            <text class="week-label" text-anchor="middle" x="-150.6754712498" y="-435.5658276497" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-150.6754712498" y="-435.5658276497" style="font-size: 20.00px">
                 50
             </text>
-            <text class="week-label" text-anchor="middle" x="-96.1940103499" y="-450.4576689515" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-96.1940103499" y="-450.4576689515" style="font-size: 20.00px">
                 51
             </text>
-            <text class="week-label" text-anchor="middle" x="-40.3174905160" y="-458.6924154808" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-40.3174905160" y="-458.6924154808" style="font-size: 20.00px">
                 52
             </text>
         </g>
@@ -2141,7 +2141,7 @@ exports[`start of Q3 1`] = `
             <path class="remainder" d="M-18.0693378619,419.6111283429A420,420,0,0,1,-418.5967387367,34.3040860387L-149.4988352631,12.2514592995A150,150,0,0,0,-6.4533349506,149.8611172653Z" fill="url(#remainder-pattern-extra)" clip-path="url(#remainder-clip)" stroke="none"></path>
         </g>
         <g id="remainder-label">
-            <text x="171" y="13.5" style="font-size: 40.9090909090px; dominant-baseline: hanging; text-anchor: left" stroke="none">
+            <text x="171" y="13.5" style="font-size: 40.91px; dominant-baseline: hanging; text-anchor: left" stroke="none">
                 12 weeks left
             </text>
         </g>
@@ -2150,7 +2150,7 @@ exports[`start of Q3 1`] = `
             <line class="day-hand" stroke-width="9" x1="0" y1="0" x2="0" y2="-450" transform="rotate(179.5068493150)"></line>
         </g>
         <g id="info">
-            <text x="157.5" y="0" style="font-size: 180px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(86, 180, 233)" stroke="none">
+            <text x="157.5" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(86, 180, 233)" stroke="none">
                 Q3
             </text>
         </g>
@@ -2159,7 +2159,7 @@ exports[`start of Q3 1`] = `
                 <path d="M -225,-180 A 450,450 0 0,1 225,-180" id="logoPath"></path>
             </defs>
             <a href="https://github.com/mikemoraned/quarterly-clock">
-                <text style="font-size: 69.2307692307px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 69.23px; dominant-baseline: middle; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#logoPath">
                         <tspan style="font-family: &quot;Font Awesome 5 Free&quot;">
                             
@@ -2176,7 +2176,7 @@ exports[`start of Q3 1`] = `
                 <path d="M -225,-121.5 A 450,450 0 0,1 225,-121.5" id="readmePath"></path>
             </defs>
             <a href="https://github.com/mikemoraned/quarterly-clock/blob/main/README.md">
-                <text style="font-size: 30px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 30.00px; dominant-baseline: middle; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#readmePath">
                         <tspan style="font-family: &quot;Font Awesome 5 Brands&quot;">
                             
@@ -2204,7 +2204,7 @@ exports[`start of Q3 1`] = `
     </defs>
     <defs>
         <pattern id="remainder-pattern-extra" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <text x="0" y="49.0909090909" style="font-size: 60px" opacity="0.9" fill="black">
+            <text x="0" y="49.0909090909" style="font-size: 60.00px" opacity="0.9" fill="black">
                 12
             </text>
         </pattern>
@@ -2268,160 +2268,160 @@ exports[`start of Q4 1`] = `
             <line class="week-tick" stroke-width="4.5" x1="0" x2="0" y1="432" y2="450" transform="rotate(341.2602739834)"></line>
             <line class="week-tick" stroke-width="4.5" x1="0" x2="0" y1="432" y2="450" transform="rotate(348.1643835726)"></line>
             <line class="week-tick" stroke-width="4.5" x1="0" x2="0" y1="432" y2="450" transform="rotate(355.0684931619)"></line>
-            <text class="week-label" text-anchor="middle" x="24.2096239284" y="-459.8033082678" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="24.2096239284" y="-459.8033082678" style="font-size: 20.00px">
                 1
             </text>
-            <text class="week-label" text-anchor="middle" x="80.3364846236" y="-453.4968014967" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="80.3364846236" y="-453.4968014967" style="font-size: 20.00px">
                 2
             </text>
-            <text class="week-label" text-anchor="middle" x="135.2982610251" y="-440.4891247658" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="135.2982610251" y="-440.4891247658" style="font-size: 20.00px">
                 3
             </text>
-            <text class="week-label" text-anchor="middle" x="188.2978669432" y="-420.9689226234" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="188.2978669432" y="-420.9689226234" style="font-size: 20.00px">
                 4
             </text>
-            <text class="week-label" text-anchor="middle" x="238.5666726734" y="-395.2192878764" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="238.5666726734" y="-395.2192878764" style="font-size: 20.00px">
                 5
             </text>
-            <text class="week-label" text-anchor="middle" x="285.3756520917" y="-363.6136560212" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="285.3756520917" y="-363.6136560212" style="font-size: 20.00px">
                 6
             </text>
-            <text class="week-label" text-anchor="middle" x="328.0459553954" y="-326.6103894746" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="328.0459553954" y="-326.6103894746" style="font-size: 20.00px">
                 7
             </text>
-            <text class="week-label" text-anchor="middle" x="365.9587541605" y="-284.7461301482" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="365.9587541605" y="-284.7461301482" style="font-size: 20.00px">
                 8
             </text>
-            <text class="week-label" text-anchor="middle" x="398.5642159343" y="-238.6280167690" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="398.5642159343" y="-238.6280167690" style="font-size: 20.00px">
                 9
             </text>
-            <text class="week-label" text-anchor="middle" x="425.3894782115" y="-188.9248798166" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="425.3894782115" y="-188.9248798166" style="font-size: 20.00px">
                 10
             </text>
-            <text class="week-label" text-anchor="middle" x="446.0455061482" y="-136.3575417726" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="446.0455061482" y="-136.3575417726" style="font-size: 20.00px">
                 11
             </text>
-            <text class="week-label" text-anchor="middle" x="460.2327345613" y="-81.6883633527" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="460.2327345613" y="-81.6883633527" style="font-size: 20.00px">
                 12
             </text>
-            <text class="week-label" text-anchor="middle" x="467.7207032896" y="-26.0456728996" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="467.7207032896" y="-26.0456728996" style="font-size: 20.00px">
                 13
             </text>
-            <text class="week-label" text-anchor="middle" x="468.4903847456" y="30.4291366140" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="468.4903847456" y="30.4291366140" style="font-size: 20.00px">
                 14
             </text>
-            <text class="week-label" text-anchor="middle" x="462.4657585898" y="86.5869535127" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="462.4657585898" y="86.5869535127" style="font-size: 20.00px">
                 15
             </text>
-            <text class="week-label" text-anchor="middle" x="449.7341972950" y="141.6133459634" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="449.7341972950" y="141.6133459634" style="font-size: 20.00px">
                 16
             </text>
-            <text class="week-label" text-anchor="middle" x="430.4803410301" y="194.7102906785" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="430.4803410301" y="194.7102906785" style="font-size: 20.00px">
                 17
             </text>
-            <text class="week-label" text-anchor="middle" x="404.9834199062" y="245.1077462924" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="404.9834199062" y="245.1077462924" style="font-size: 20.00px">
                 18
             </text>
-            <text class="week-label" text-anchor="middle" x="373.6132044265" y="292.0748209288" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="373.6132044265" y="292.0748209288" style="font-size: 20.00px">
                 19
             </text>
-            <text class="week-label" text-anchor="middle" x="336.8246428688" y="334.9303720006" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="336.8246428688" y="334.9303720006" style="font-size: 20.00px">
                 20
             </text>
-            <text class="week-label" text-anchor="middle" x="295.1512633739" y="373.0528845177" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="295.1512633739" y="373.0528845177" style="font-size: 20.00px">
                 21
             </text>
-            <text class="week-label" text-anchor="middle" x="249.1974364233" y="405.8894846424" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="249.1974364233" y="405.8894846424" style="font-size: 20.00px">
                 22
             </text>
-            <text class="week-label" text-anchor="middle" x="199.6296099239" y="432.9639577724" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="199.6296099239" y="432.9639577724" style="font-size: 20.00px">
                 23
             </text>
-            <text class="week-label" text-anchor="middle" x="147.1666440098" y="453.8836548698" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="147.1666440098" y="453.8836548698" style="font-size: 20.00px">
                 24
             </text>
-            <text class="week-label" text-anchor="middle" x="92.5693857343" y="468.3451868751" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="92.5693857343" y="468.3451868751" style="font-size: 20.00px">
                 25
             </text>
-            <text class="week-label" text-anchor="middle" x="36.6296348429" y="476.1388246238" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="36.6296348429" y="476.1388246238" style="font-size: 20.00px">
                 26
             </text>
-            <text class="week-label" text-anchor="middle" x="-19.8413393455" y="477.1515404551" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-19.8413393455" y="477.1515404551" style="font-size: 20.00px">
                 27
             </text>
-            <text class="week-label" text-anchor="middle" x="-76.0245634171" y="471.3686474019" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-76.0245634171" y="471.3686474019" style="font-size: 20.00px">
                 28
             </text>
-            <text class="week-label" text-anchor="middle" x="-131.1052370699" y="458.8740121891" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-131.1052370699" y="458.8740121891" style="font-size: 20.00px">
                 29
             </text>
-            <text class="week-label" text-anchor="middle" x="-184.2845498002" y="439.8488389524" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-184.2845498002" y="439.8488389524" style="font-size: 20.00px">
                 30
             </text>
-            <text class="week-label" text-anchor="middle" x="-234.7912656955" y="414.5690413144" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-234.7912656955" y="414.5690413144" style="font-size: 20.00px">
                 31
             </text>
-            <text class="week-label" text-anchor="middle" x="-281.8929083265" y="383.4012409332" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-281.8929083265" y="383.4012409332" style="font-size: 20.00px">
                 32
             </text>
-            <text class="week-label" text-anchor="middle" x="-324.9063835264" y="346.7974505504" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-324.9063835264" y="346.7974505504" style="font-size: 20.00px">
                 33
             </text>
-            <text class="week-label" text-anchor="middle" x="-363.2078860015" y="305.2885186526" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-363.2078860015" y="305.2885186526" style="font-size: 20.00px">
                 34
             </text>
-            <text class="week-label" text-anchor="middle" x="-396.2419461024" y="259.4764308111" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-396.2419461024" y="259.4764308111" style="font-size: 20.00px">
                 35
             </text>
-            <text class="week-label" text-anchor="middle" x="-423.5294855528" y="210.0255793535" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-423.5294855528" y="210.0255793535" style="font-size: 20.00px">
                 36
             </text>
-            <text class="week-label" text-anchor="middle" x="-444.6747653087" y="157.6531279769" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-444.6747653087" y="157.6531279769" style="font-size: 20.00px">
                 37
             </text>
-            <text class="week-label" text-anchor="middle" x="-459.3711247856" y="103.1186110424" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-459.3711247856" y="103.1186110424" style="font-size: 20.00px">
                 38
             </text>
-            <text class="week-label" text-anchor="middle" x="-467.4054292206" y="47.2129183860" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-467.4054292206" y="47.2129183860" style="font-size: 20.00px">
                 39
             </text>
-            <text class="week-label" text-anchor="middle" x="-468.6611606711" y="-9.2531746050" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-468.6611606711" y="-9.2531746050" style="font-size: 20.00px">
                 40
             </text>
-            <text class="week-label" text-anchor="middle" x="-463.1201078225" y="-65.4607653065" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-463.1201078225" y="-65.4607653065" style="font-size: 20.00px">
                 41
             </text>
-            <text class="week-label" text-anchor="middle" x="-450.8626300991" y="-120.5947000383" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-450.8626300991" y="-120.5947000383" style="font-size: 20.00px">
                 42
             </text>
-            <text class="week-label" text-anchor="middle" x="-432.0664922468" y="-173.8553958748" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-432.0664922468" y="-173.8553958748" style="font-size: 20.00px">
                 43
             </text>
-            <text class="week-label" text-anchor="middle" x="-406.8370303294" y="-224.7623039935" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-406.8370303294" y="-224.7623039935" style="font-size: 20.00px">
                 44
             </text>
-            <text class="week-label" text-anchor="middle" x="-375.8383503062" y="-271.9754203487" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-375.8383503062" y="-271.9754203487" style="font-size: 20.00px">
                 45
             </text>
-            <text class="week-label" text-anchor="middle" x="-339.3890539045" y="-315.1198905734" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-339.3890539045" y="-315.1198905734" style="font-size: 20.00px">
                 46
             </text>
-            <text class="week-label" text-anchor="middle" x="-298.0177490532" y="-353.5700096115" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-298.0177490532" y="-353.5700096115" style="font-size: 20.00px">
                 47
             </text>
-            <text class="week-label" text-anchor="middle" x="-252.3244253798" y="-386.7681524936" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-252.3244253798" y="-386.7681524936" style="font-size: 20.00px">
                 48
             </text>
-            <text class="week-label" text-anchor="middle" x="-202.9717528279" y="-414.2328613239" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-202.9717528279" y="-414.2328613239" style="font-size: 20.00px">
                 49
             </text>
-            <text class="week-label" text-anchor="middle" x="-150.6754712498" y="-435.5658276497" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-150.6754712498" y="-435.5658276497" style="font-size: 20.00px">
                 50
             </text>
-            <text class="week-label" text-anchor="middle" x="-96.1940103499" y="-450.4576689515" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-96.1940103499" y="-450.4576689515" style="font-size: 20.00px">
                 51
             </text>
-            <text class="week-label" text-anchor="middle" x="-40.3174905160" y="-458.6924154808" style="font-size: 20px">
+            <text class="week-label" text-anchor="middle" x="-40.3174905160" y="-458.6924154808" style="font-size: 20.00px">
                 52
             </text>
         </g>
@@ -2501,7 +2501,7 @@ exports[`start of Q4 1`] = `
             <path class="remainder" d="M-419.6850047206,-16.2633579747A420,420,0,0,1,-36.1052154697,-418.4452334725L-12.8947198106,-149.4447262401A150,150,0,0,0,-149.8875016859,-5.8083421338Z" fill="url(#remainder-pattern-extra)" clip-path="url(#remainder-clip)" stroke="none"></path>
         </g>
         <g id="remainder-label">
-            <text x="171" y="13.5" style="font-size: 40.9090909090px; dominant-baseline: hanging; text-anchor: left" stroke="none">
+            <text x="171" y="13.5" style="font-size: 40.91px; dominant-baseline: hanging; text-anchor: left" stroke="none">
                 12 weeks left
             </text>
         </g>
@@ -2510,7 +2510,7 @@ exports[`start of Q4 1`] = `
             <line class="day-hand" stroke-width="9" x1="0" y1="0" x2="0" y2="-450" transform="rotate(270.2465753424)"></line>
         </g>
         <g id="info">
-            <text x="157.5" y="0" style="font-size: 180px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(0, 158, 115)" stroke="none">
+            <text x="157.5" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(0, 158, 115)" stroke="none">
                 Q4
             </text>
         </g>
@@ -2519,7 +2519,7 @@ exports[`start of Q4 1`] = `
                 <path d="M -225,270 A 450,450 0 0,1 225,270" id="logoPath"></path>
             </defs>
             <a href="https://github.com/mikemoraned/quarterly-clock">
-                <text style="font-size: 69.2307692307px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 69.23px; dominant-baseline: middle; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#logoPath">
                         <tspan style="font-family: &quot;Font Awesome 5 Free&quot;">
                             
@@ -2536,7 +2536,7 @@ exports[`start of Q4 1`] = `
                 <path d="M -225,324 A 450,450 0 0,1 225,324" id="readmePath"></path>
             </defs>
             <a href="https://github.com/mikemoraned/quarterly-clock/blob/main/README.md">
-                <text style="font-size: 30px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 30.00px; dominant-baseline: middle; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#readmePath">
                         <tspan style="font-family: &quot;Font Awesome 5 Brands&quot;">
                             
@@ -2564,7 +2564,7 @@ exports[`start of Q4 1`] = `
     </defs>
     <defs>
         <pattern id="remainder-pattern-extra" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <text x="0" y="49.0909090909" style="font-size: 60px" opacity="0.9" fill="black">
+            <text x="0" y="49.0909090909" style="font-size: 60.00px" opacity="0.9" fill="black">
                 12
             </text>
         </pattern>

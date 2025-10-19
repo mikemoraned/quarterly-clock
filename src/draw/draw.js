@@ -32,7 +32,7 @@ export function createGuidesModel(svg) {
   const guidesModel = {
     outerRadius: clockRadius,
     remainder: {
-      fontSize: `${sideLength / 15}px`,
+      fontSize: `${(sideLength / 15).toFixed(2)}px`,
       box: {
         width: 45 * ((0.5 * sideLength) / 275),
         height: 35 * ((0.5 * sideLength) / 275),
@@ -64,7 +64,7 @@ export function createGuidesModel(svg) {
       },
     },
     quarterLabel: {
-      fontSize: `${sideLength / 5}px`,
+      fontSize: `${(sideLength / 5).toFixed(2)}px`,
       left: {
         x: -1.0 * clockRadius * 0.9,
         y: 0,
@@ -75,7 +75,7 @@ export function createGuidesModel(svg) {
       },
     },
     remainderLabel: {
-      fontSize: `${sideLength / 22}px`,
+      fontSize: `${(sideLength / 22).toFixed(2)}px`,
       left: {
         x: -1.0 * clockRadius * 0.87,
         y: clockRadius * 0.03,
@@ -86,7 +86,7 @@ export function createGuidesModel(svg) {
       },
     },
     logo: {
-      fontSize: `${sideLength / 13}px`,
+      fontSize: `${(sideLength / 13).toFixed(2)}px`,
       top: {
         x: 0,
         y: -1.0 * clockRadius * 0.6,
@@ -97,7 +97,7 @@ export function createGuidesModel(svg) {
       },
     },
     readme: {
-      fontSize: `${sideLength / 30}px`,
+      fontSize: `${(sideLength / 30).toFixed(2)}px`,
       top: {
         x: 0,
         y: -1.0 * clockRadius * 0.47,
