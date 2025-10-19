@@ -6,6 +6,7 @@ import {
 import { drawWeekScale, drawDayHand } from "./year";
 import { drawLogo, drawReadme } from "./about";
 import { drawRemainder, drawRemainderLabel } from "./remainder";
+import { defaultFontSizeFormat } from "./standard";
 
 // color blind safe colors from Bang Wong in and https://www.nature.com/articles/nmeth.1618
 // and https://davidmathlogic.com/colorblind
@@ -32,7 +33,7 @@ export function createGuidesModel(svg) {
   const guidesModel = {
     outerRadius: clockRadius,
     remainder: {
-      fontSize: `${(sideLength / 15).toFixed(2)}px`,
+      fontSize: defaultFontSizeFormat(sideLength / 15),
       box: {
         width: 45 * ((0.5 * sideLength) / 275),
         height: 35 * ((0.5 * sideLength) / 275),
@@ -64,7 +65,7 @@ export function createGuidesModel(svg) {
       },
     },
     quarterLabel: {
-      fontSize: `${(sideLength / 5).toFixed(2)}px`,
+      fontSize: defaultFontSizeFormat(sideLength / 5),
       left: {
         x: -1.0 * clockRadius * 0.9,
         y: 0,
@@ -75,7 +76,7 @@ export function createGuidesModel(svg) {
       },
     },
     remainderLabel: {
-      fontSize: `${(sideLength / 22).toFixed(2)}px`,
+      fontSize: defaultFontSizeFormat(sideLength / 22),
       left: {
         x: -1.0 * clockRadius * 0.87,
         y: clockRadius * 0.03,
@@ -86,7 +87,7 @@ export function createGuidesModel(svg) {
       },
     },
     logo: {
-      fontSize: `${(sideLength / 13).toFixed(2)}px`,
+      fontSize: defaultFontSizeFormat(sideLength / 13),
       top: {
         x: 0,
         y: -1.0 * clockRadius * 0.6,
@@ -97,7 +98,7 @@ export function createGuidesModel(svg) {
       },
     },
     readme: {
-      fontSize: `${(sideLength / 30).toFixed(2)}px`,
+      fontSize: defaultFontSizeFormat(sideLength / 30),
       top: {
         x: 0,
         y: -1.0 * clockRadius * 0.47,

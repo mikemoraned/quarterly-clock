@@ -1,4 +1,5 @@
 import * as d3 from "d3";
+import { defaultFontSizeFormat } from "./standard";
 
 export function drawWeekScale(dataModel, guidesModel, svg) {
   const parentGroup = svg.selection.append("g").attr("id", "week-scale");
@@ -41,7 +42,7 @@ export function drawWeekScale(dataModel, guidesModel, svg) {
       (w) =>
         -labelRadius * Math.cos((scale(w.start) * Math.PI) / 180) + labelYOffset
     )
-    .attr("style", `font-size: ${labelFontSize.toFixed(2)}px`)
+    .attr("style", `font-size: ${defaultFontSizeFormat(labelFontSize)}`)
     .text((w) => w.label);
 }
 
