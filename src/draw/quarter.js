@@ -4,8 +4,6 @@ import { defaultArcGenerator } from "./standard";
 export function drawCurrentQuarter(dataModel, guidesModel, svg) {
   const arcGenerator = defaultArcGenerator();
 
-  console.log("D3 version:", d3.version);
-
   arcGenerator
     .innerRadius(guidesModel.outerRadius / 6)
     .outerRadius(guidesModel.outerRadius - guidesModel.outerRadius / 4);
