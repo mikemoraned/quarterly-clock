@@ -1,12 +1,15 @@
 import * as d3 from "d3";
-import { defaultPositionRounding as dpr } from "./standard";
+import { defaultPositionRounding as dpr, defaultArcGenerator } from "./standard";
 
 export function drawCurrentQuarter(dataModel, guidesModel, svg) {
   const arcGenerator = d3.arc();
 
+  console.log("D3 version:", d3.version);
+
   arcGenerator
     .innerRadius(guidesModel.outerRadius / 6)
-    .outerRadius(guidesModel.outerRadius - guidesModel.outerRadius / 4);
+    .outerRadius(guidesModel.outerRadius - guidesModel.outerRadius / 4)
+    .digits(2);
 
   const arc = {
     startAngle: dataModel.currentQuarter.start.yearFraction * 2.0 * Math.PI,
