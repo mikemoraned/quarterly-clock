@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`drawRemainder last day of Q1 1`] = `
+exports[`drawRemainder > last day of Q1 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="remainder">
@@ -24,7 +24,7 @@ exports[`drawRemainder last day of Q1 1`] = `
 </svg>"
 `;
 
-exports[`drawRemainder last day of Q2 1`] = `
+exports[`drawRemainder > last day of Q2 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="remainder">
@@ -48,7 +48,7 @@ exports[`drawRemainder last day of Q2 1`] = `
 </svg>"
 `;
 
-exports[`drawRemainder last day of Q3 1`] = `
+exports[`drawRemainder > last day of Q3 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="remainder">
@@ -72,7 +72,7 @@ exports[`drawRemainder last day of Q3 1`] = `
 </svg>"
 `;
 
-exports[`drawRemainder last day of Q4 1`] = `
+exports[`drawRemainder > last day of Q4 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="remainder">
@@ -96,7 +96,7 @@ exports[`drawRemainder last day of Q4 1`] = `
 </svg>"
 `;
 
-exports[`drawRemainder start of Q1 1`] = `
+exports[`drawRemainder > start of Q1 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="remainder">
@@ -181,7 +181,7 @@ exports[`drawRemainder start of Q1 1`] = `
 </svg>"
 `;
 
-exports[`drawRemainder start of Q2 1`] = `
+exports[`drawRemainder > start of Q2 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="remainder">
@@ -266,7 +266,7 @@ exports[`drawRemainder start of Q2 1`] = `
 </svg>"
 `;
 
-exports[`drawRemainder start of Q3 1`] = `
+exports[`drawRemainder > start of Q3 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="remainder">
@@ -351,7 +351,7 @@ exports[`drawRemainder start of Q3 1`] = `
 </svg>"
 `;
 
-exports[`drawRemainder start of Q4 1`] = `
+exports[`drawRemainder > start of Q4 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="remainder">
@@ -436,7 +436,7 @@ exports[`drawRemainder start of Q4 1`] = `
 </svg>"
 `;
 
-exports[`drawRemainderLabel last day of Q1 1`] = `
+exports[`drawRemainderLabel > last day of Q1 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="remainder-label">
@@ -448,7 +448,7 @@ exports[`drawRemainderLabel last day of Q1 1`] = `
 </svg>"
 `;
 
-exports[`drawRemainderLabel last day of Q2 1`] = `
+exports[`drawRemainderLabel > last day of Q2 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="remainder-label">
@@ -460,7 +460,7 @@ exports[`drawRemainderLabel last day of Q2 1`] = `
 </svg>"
 `;
 
-exports[`drawRemainderLabel last day of Q3 1`] = `
+exports[`drawRemainderLabel > last day of Q3 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="remainder-label">
@@ -472,7 +472,7 @@ exports[`drawRemainderLabel last day of Q3 1`] = `
 </svg>"
 `;
 
-exports[`drawRemainderLabel last day of Q4 1`] = `
+exports[`drawRemainderLabel > last day of Q4 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="remainder-label">
@@ -484,7 +484,7 @@ exports[`drawRemainderLabel last day of Q4 1`] = `
 </svg>"
 `;
 
-exports[`drawRemainderLabel start of Q1 1`] = `
+exports[`drawRemainderLabel > start of Q1 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="remainder-label">
@@ -496,7 +496,7 @@ exports[`drawRemainderLabel start of Q1 1`] = `
 </svg>"
 `;
 
-exports[`drawRemainderLabel start of Q2 1`] = `
+exports[`drawRemainderLabel > start of Q2 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="remainder-label">
@@ -508,7 +508,7 @@ exports[`drawRemainderLabel start of Q2 1`] = `
 </svg>"
 `;
 
-exports[`drawRemainderLabel start of Q3 1`] = `
+exports[`drawRemainderLabel > start of Q3 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="remainder-label">
@@ -520,7 +520,7 @@ exports[`drawRemainderLabel start of Q3 1`] = `
 </svg>"
 `;
 
-exports[`drawRemainderLabel start of Q4 1`] = `
+exports[`drawRemainderLabel > start of Q4 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="remainder-label">
