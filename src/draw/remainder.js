@@ -1,5 +1,5 @@
 import * as d3 from "d3";
-import { defaultArcGenerator } from "./standard.js";
+import { defaultArcGenerator, defaultPositionRounding as dpr } from "./standard.js";
 
 export function drawRemainder(dataModel, guidesModel, svg) {
   const pattern = svg.root
@@ -31,7 +31,7 @@ export function drawRemainder(dataModel, guidesModel, svg) {
     .append("text")
     .text(`${dataModel.currentQuarter.wholeWeeksLeft.durationInWeeks}`)
     .attr("x", 0)
-    .attr("y", `${guidesModel.remainder.box.textY}`)
+    .attr("y", `${dpr(guidesModel.remainder.box.textY)}`)
     .attr("style", `font-size: ${guidesModel.remainder.fontSize}`)
     .attr("opacity", "0.9")
     .attr("fill", guidesModel.colors.remainder.weekNumber.color);
@@ -103,8 +103,8 @@ export function drawRemainderLabel(dataModel, guidesModel, svg) {
   parentGroup
     .append("text")
     .text(`${remaining} week${remaining === 1 ? "" : "s"} left`)
-    .attr("x", position.x)
-    .attr("y", position.y)
+    .attr("x", dpr(position.x))
+    .attr("y", dpr(position.y))
     .attr(
       "style",
       `font-size: ${guidesModel.remainderLabel.fontSize}; dominant-baseline: hanging; text-anchor: left`

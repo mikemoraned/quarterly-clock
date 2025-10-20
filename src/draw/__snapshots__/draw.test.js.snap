@@ -1489,7 +1489,7 @@ exports[`start of Q1 1`] = `
     </defs>
     <defs>
         <pattern id="remainder-pattern-extra" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <text x="0" y="49.0909090909" style="font-size: 60.00px" opacity="0.9" fill="black">
+            <text x="0" y="49.09" style="font-size: 60.00px" opacity="0.9" fill="black">
                 12
             </text>
         </pattern>
@@ -1850,7 +1850,7 @@ exports[`start of Q2 1`] = `
     </defs>
     <defs>
         <pattern id="remainder-pattern-extra" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <text x="0" y="49.0909090909" style="font-size: 60.00px" opacity="0.9" fill="black">
+            <text x="0" y="49.09" style="font-size: 60.00px" opacity="0.9" fill="black">
                 12
             </text>
         </pattern>
@@ -2211,7 +2211,7 @@ exports[`start of Q3 1`] = `
     </defs>
     <defs>
         <pattern id="remainder-pattern-extra" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <text x="0" y="49.0909090909" style="font-size: 60.00px" opacity="0.9" fill="black">
+            <text x="0" y="49.09" style="font-size: 60.00px" opacity="0.9" fill="black">
                 12
             </text>
         </pattern>
@@ -2572,7 +2572,7 @@ exports[`start of Q4 1`] = `
     </defs>
     <defs>
         <pattern id="remainder-pattern-extra" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <text x="0" y="49.0909090909" style="font-size: 60.00px" opacity="0.9" fill="black">
+            <text x="0" y="49.09" style="font-size: 60.00px" opacity="0.9" fill="black">
                 12
             </text>
         </pattern>
