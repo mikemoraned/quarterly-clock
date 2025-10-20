@@ -11,5 +11,5 @@ export function defaultFontSizeFormat(value) {
 }
 
 export function defaultArcGenerator() {
-    return d3.arc().digits(2);
+    return d3.arc().digits(3);
 }

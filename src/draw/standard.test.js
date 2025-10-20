@@ -1,5 +1,5 @@
 import { defaultFontSizeFormat, defaultPositionRounding } from "./standard";
-
+import { describe, test, expect } from 'vitest';
 
 test("defaultFontSizeFormat", () => {
   expect(defaultFontSizeFormat(16)).toBe("16.00px");

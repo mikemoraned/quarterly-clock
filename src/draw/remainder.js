@@ -1,4 +1,5 @@
 import * as d3 from "d3";
+import { defaultArcGenerator } from "./standard.js";
 
 export function drawRemainder(dataModel, guidesModel, svg) {
   const pattern = svg.root
@@ -35,7 +36,7 @@ export function drawRemainder(dataModel, guidesModel, svg) {
     .attr("opacity", "0.9")
     .attr("fill", guidesModel.colors.remainder.weekNumber.color);
 
-  const arcGenerator = d3.arc();
+  const arcGenerator = defaultArcGenerator();
 
   arcGenerator
     .innerRadius(guidesModel.outerRadius / 3)
