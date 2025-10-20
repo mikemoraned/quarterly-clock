@@ -6,15 +6,15 @@ export function drawRemainder(dataModel, guidesModel, svg) {
     .append("defs")
     .append("pattern")
     .attr("id", "remainder-pattern")
-    .attr("width", `${guidesModel.remainder.box.width}`)
-    .attr("height", `${guidesModel.remainder.box.height}`)
+    .attr("width", `${dpr(guidesModel.remainder.box.width)}`)
+    .attr("height", `${dpr(guidesModel.remainder.box.height)}`)
     .attr("patternUnits", "userSpaceOnUse")
     .attr("patternTransform", "rotate(20)");
 
   pattern
     .append("rect")
-    .attr("width", `${guidesModel.remainder.box.width}`)
-    .attr("height", `${guidesModel.remainder.box.height}`)
+    .attr("width", `${dpr(guidesModel.remainder.box.width)}`)
+    .attr("height", `${dpr(guidesModel.remainder.box.height)}`)
     .attr("opacity", "0.8")
     .attr("fill", guidesModel.colors.remainder.bg.color);
 
@@ -22,8 +22,8 @@ export function drawRemainder(dataModel, guidesModel, svg) {
     .append("defs")
     .append("pattern")
     .attr("id", "remainder-pattern-extra")
-    .attr("width", `${guidesModel.remainder.box.width}`)
-    .attr("height", `${guidesModel.remainder.box.height}`)
+    .attr("width", `${dpr(guidesModel.remainder.box.width)}`)
+    .attr("height", `${dpr(guidesModel.remainder.box.height)}`)
     .attr("patternUnits", "userSpaceOnUse")
     .attr("patternTransform", "rotate(20)");
 

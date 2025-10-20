@@ -10,12 +10,12 @@ exports[`drawRemainder > last day of Q1 1`] = `
         </g>
     </g>
     <defs>
-        <pattern id="remainder-pattern" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <rect width="73.6363636363" height="57.2727272727" opacity="0.8" fill="rgb(213, 94, 0)"></rect>
+        <pattern id="remainder-pattern" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+            <rect width="73.64" height="57.27" opacity="0.8" fill="rgb(213, 94, 0)"></rect>
         </pattern>
     </defs>
     <defs>
-        <pattern id="remainder-pattern-extra" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+        <pattern id="remainder-pattern-extra" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
             <text x="0" y="49.09" style="font-size: 60.00px" opacity="0.9" fill="black">
                 0
             </text>
@@ -34,12 +34,12 @@ exports[`drawRemainder > last day of Q2 1`] = `
         </g>
     </g>
     <defs>
-        <pattern id="remainder-pattern" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <rect width="73.6363636363" height="57.2727272727" opacity="0.8" fill="rgb(213, 94, 0)"></rect>
+        <pattern id="remainder-pattern" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+            <rect width="73.64" height="57.27" opacity="0.8" fill="rgb(213, 94, 0)"></rect>
         </pattern>
     </defs>
     <defs>
-        <pattern id="remainder-pattern-extra" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+        <pattern id="remainder-pattern-extra" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
             <text x="0" y="49.09" style="font-size: 60.00px" opacity="0.9" fill="black">
                 0
             </text>
@@ -58,12 +58,12 @@ exports[`drawRemainder > last day of Q3 1`] = `
         </g>
     </g>
     <defs>
-        <pattern id="remainder-pattern" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <rect width="73.6363636363" height="57.2727272727" opacity="0.8" fill="rgb(213, 94, 0)"></rect>
+        <pattern id="remainder-pattern" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+            <rect width="73.64" height="57.27" opacity="0.8" fill="rgb(213, 94, 0)"></rect>
         </pattern>
     </defs>
     <defs>
-        <pattern id="remainder-pattern-extra" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+        <pattern id="remainder-pattern-extra" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
             <text x="0" y="49.09" style="font-size: 60.00px" opacity="0.9" fill="black">
                 0
             </text>
@@ -82,12 +82,12 @@ exports[`drawRemainder > last day of Q4 1`] = `
         </g>
     </g>
     <defs>
-        <pattern id="remainder-pattern" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <rect width="73.6363636363" height="57.2727272727" opacity="0.8" fill="rgb(213, 94, 0)"></rect>
+        <pattern id="remainder-pattern" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+            <rect width="73.64" height="57.27" opacity="0.8" fill="rgb(213, 94, 0)"></rect>
         </pattern>
     </defs>
     <defs>
-        <pattern id="remainder-pattern-extra" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+        <pattern id="remainder-pattern-extra" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
             <text x="0" y="49.09" style="font-size: 60.00px" opacity="0.9" fill="black">
                 0
             </text>
@@ -167,12 +167,12 @@ exports[`drawRemainder > start of Q1 1`] = `
         </g>
     </g>
     <defs>
-        <pattern id="remainder-pattern" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <rect width="73.6363636363" height="57.2727272727" opacity="0.8" fill="rgb(213, 94, 0)"></rect>
+        <pattern id="remainder-pattern" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+            <rect width="73.64" height="57.27" opacity="0.8" fill="rgb(213, 94, 0)"></rect>
         </pattern>
     </defs>
     <defs>
-        <pattern id="remainder-pattern-extra" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+        <pattern id="remainder-pattern-extra" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
             <text x="0" y="49.09" style="font-size: 60.00px" opacity="0.9" fill="black">
                 12
             </text>
@@ -252,12 +252,12 @@ exports[`drawRemainder > start of Q2 1`] = `
         </g>
     </g>
     <defs>
-        <pattern id="remainder-pattern" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <rect width="73.6363636363" height="57.2727272727" opacity="0.8" fill="rgb(213, 94, 0)"></rect>
+        <pattern id="remainder-pattern" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+            <rect width="73.64" height="57.27" opacity="0.8" fill="rgb(213, 94, 0)"></rect>
         </pattern>
     </defs>
     <defs>
-        <pattern id="remainder-pattern-extra" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+        <pattern id="remainder-pattern-extra" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
             <text x="0" y="49.09" style="font-size: 60.00px" opacity="0.9" fill="black">
                 12
             </text>
@@ -337,12 +337,12 @@ exports[`drawRemainder > start of Q3 1`] = `
         </g>
     </g>
     <defs>
-        <pattern id="remainder-pattern" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <rect width="73.6363636363" height="57.2727272727" opacity="0.8" fill="rgb(213, 94, 0)"></rect>
+        <pattern id="remainder-pattern" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+            <rect width="73.64" height="57.27" opacity="0.8" fill="rgb(213, 94, 0)"></rect>
         </pattern>
     </defs>
     <defs>
-        <pattern id="remainder-pattern-extra" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+        <pattern id="remainder-pattern-extra" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
             <text x="0" y="49.09" style="font-size: 60.00px" opacity="0.9" fill="black">
                 12
             </text>
@@ -422,12 +422,12 @@ exports[`drawRemainder > start of Q4 1`] = `
         </g>
     </g>
     <defs>
-        <pattern id="remainder-pattern" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <rect width="73.6363636363" height="57.2727272727" opacity="0.8" fill="rgb(213, 94, 0)"></rect>
+        <pattern id="remainder-pattern" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+            <rect width="73.64" height="57.27" opacity="0.8" fill="rgb(213, 94, 0)"></rect>
         </pattern>
     </defs>
     <defs>
-        <pattern id="remainder-pattern-extra" width="73.6363636363" height="57.2727272727" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+        <pattern id="remainder-pattern-extra" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
             <text x="0" y="49.09" style="font-size: 60.00px" opacity="0.9" fill="black">
                 12
             </text>
