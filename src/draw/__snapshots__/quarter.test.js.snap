@@ -4,10 +4,10 @@ exports[`drawAllQuarterContext > last day of Q1 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="all-quarters">
-            <path d="M8.2663658942e-15,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,4.5924254968e-15,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
-            <path d="M135,0A135,135,0,0,1,8.2663658942e-15,135L4.5924254968e-15,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
-            <path d="M8.2663658942e-15,135A135,135,0,0,1,-135,1.6532731788e-14L-75,9.1848509936e-15A75,75,0,0,0,4.5924254968e-15,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
-            <path d="M-135,1.6532731788e-14A135,135,0,0,1,-2.4799097682e-14,-135L-1.3777276490e-14,-75A75,75,0,0,0,-75,9.1848509936e-15Z" fill="rgb(0, 158, 115)" stroke="none"></path>
+            <path d="M0,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,0,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
+            <path d="M135,0A135,135,0,0,1,0,135L0,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
+            <path d="M0,135A135,135,0,0,1,-135,0L-75,0A75,75,0,0,0,0,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
+            <path d="M-135,0A135,135,0,0,1,0,-135L0,-75A75,75,0,0,0,-75,0Z" fill="rgb(0, 158, 115)" stroke="none"></path>
         </g>
     </g>
 </svg>"
@@ -17,10 +17,10 @@ exports[`drawAllQuarterContext > last day of Q2 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="all-quarters">
-            <path d="M8.2663658942e-15,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,4.5924254968e-15,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
-            <path d="M135,0A135,135,0,0,1,8.2663658942e-15,135L4.5924254968e-15,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
-            <path d="M8.2663658942e-15,135A135,135,0,0,1,-135,1.6532731788e-14L-75,9.1848509936e-15A75,75,0,0,0,4.5924254968e-15,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
-            <path d="M-135,1.6532731788e-14A135,135,0,0,1,-2.4799097682e-14,-135L-1.3777276490e-14,-75A75,75,0,0,0,-75,9.1848509936e-15Z" fill="rgb(0, 158, 115)" stroke="none"></path>
+            <path d="M0,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,0,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
+            <path d="M135,0A135,135,0,0,1,0,135L0,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
+            <path d="M0,135A135,135,0,0,1,-135,0L-75,0A75,75,0,0,0,0,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
+            <path d="M-135,0A135,135,0,0,1,0,-135L0,-75A75,75,0,0,0,-75,0Z" fill="rgb(0, 158, 115)" stroke="none"></path>
         </g>
     </g>
 </svg>"
@@ -30,10 +30,10 @@ exports[`drawAllQuarterContext > last day of Q3 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="all-quarters">
-            <path d="M8.2663658942e-15,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,4.5924254968e-15,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
-            <path d="M135,0A135,135,0,0,1,8.2663658942e-15,135L4.5924254968e-15,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
-            <path d="M8.2663658942e-15,135A135,135,0,0,1,-135,1.6532731788e-14L-75,9.1848509936e-15A75,75,0,0,0,4.5924254968e-15,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
-            <path d="M-135,1.6532731788e-14A135,135,0,0,1,-2.4799097682e-14,-135L-1.3777276490e-14,-75A75,75,0,0,0,-75,9.1848509936e-15Z" fill="rgb(0, 158, 115)" stroke="none"></path>
+            <path d="M0,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,0,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
+            <path d="M135,0A135,135,0,0,1,0,135L0,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
+            <path d="M0,135A135,135,0,0,1,-135,0L-75,0A75,75,0,0,0,0,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
+            <path d="M-135,0A135,135,0,0,1,0,-135L0,-75A75,75,0,0,0,-75,0Z" fill="rgb(0, 158, 115)" stroke="none"></path>
         </g>
     </g>
 </svg>"
@@ -43,10 +43,10 @@ exports[`drawAllQuarterContext > last day of Q4 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="all-quarters">
-            <path d="M8.2663658942e-15,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,4.5924254968e-15,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
-            <path d="M135,0A135,135,0,0,1,8.2663658942e-15,135L4.5924254968e-15,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
-            <path d="M8.2663658942e-15,135A135,135,0,0,1,-135,1.6532731788e-14L-75,9.1848509936e-15A75,75,0,0,0,4.5924254968e-15,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
-            <path d="M-135,1.6532731788e-14A135,135,0,0,1,-2.4799097682e-14,-135L-1.3777276490e-14,-75A75,75,0,0,0,-75,9.1848509936e-15Z" fill="rgb(0, 158, 115)" stroke="none"></path>
+            <path d="M0,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,0,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
+            <path d="M135,0A135,135,0,0,1,0,135L0,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
+            <path d="M0,135A135,135,0,0,1,-135,0L-75,0A75,75,0,0,0,0,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
+            <path d="M-135,0A135,135,0,0,1,0,-135L0,-75A75,75,0,0,0,-75,0Z" fill="rgb(0, 158, 115)" stroke="none"></path>
         </g>
     </g>
 </svg>"
@@ -56,10 +56,10 @@ exports[`drawAllQuarterContext > start of Q1 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="all-quarters">
-            <path d="M8.2663658942e-15,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,4.5924254968e-15,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
-            <path d="M135,0A135,135,0,0,1,8.2663658942e-15,135L4.5924254968e-15,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
-            <path d="M8.2663658942e-15,135A135,135,0,0,1,-135,1.6532731788e-14L-75,9.1848509936e-15A75,75,0,0,0,4.5924254968e-15,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
-            <path d="M-135,1.6532731788e-14A135,135,0,0,1,-2.4799097682e-14,-135L-1.3777276490e-14,-75A75,75,0,0,0,-75,9.1848509936e-15Z" fill="rgb(0, 158, 115)" stroke="none"></path>
+            <path d="M0,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,0,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
+            <path d="M135,0A135,135,0,0,1,0,135L0,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
+            <path d="M0,135A135,135,0,0,1,-135,0L-75,0A75,75,0,0,0,0,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
+            <path d="M-135,0A135,135,0,0,1,0,-135L0,-75A75,75,0,0,0,-75,0Z" fill="rgb(0, 158, 115)" stroke="none"></path>
         </g>
     </g>
 </svg>"
@@ -69,10 +69,10 @@ exports[`drawAllQuarterContext > start of Q2 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="all-quarters">
-            <path d="M8.2663658942e-15,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,4.5924254968e-15,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
-            <path d="M135,0A135,135,0,0,1,8.2663658942e-15,135L4.5924254968e-15,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
-            <path d="M8.2663658942e-15,135A135,135,0,0,1,-135,1.6532731788e-14L-75,9.1848509936e-15A75,75,0,0,0,4.5924254968e-15,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
-            <path d="M-135,1.6532731788e-14A135,135,0,0,1,-2.4799097682e-14,-135L-1.3777276490e-14,-75A75,75,0,0,0,-75,9.1848509936e-15Z" fill="rgb(0, 158, 115)" stroke="none"></path>
+            <path d="M0,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,0,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
+            <path d="M135,0A135,135,0,0,1,0,135L0,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
+            <path d="M0,135A135,135,0,0,1,-135,0L-75,0A75,75,0,0,0,0,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
+            <path d="M-135,0A135,135,0,0,1,0,-135L0,-75A75,75,0,0,0,-75,0Z" fill="rgb(0, 158, 115)" stroke="none"></path>
         </g>
     </g>
 </svg>"
@@ -82,10 +82,10 @@ exports[`drawAllQuarterContext > start of Q3 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="all-quarters">
-            <path d="M8.2663658942e-15,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,4.5924254968e-15,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
-            <path d="M135,0A135,135,0,0,1,8.2663658942e-15,135L4.5924254968e-15,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
-            <path d="M8.2663658942e-15,135A135,135,0,0,1,-135,1.6532731788e-14L-75,9.1848509936e-15A75,75,0,0,0,4.5924254968e-15,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
-            <path d="M-135,1.6532731788e-14A135,135,0,0,1,-2.4799097682e-14,-135L-1.3777276490e-14,-75A75,75,0,0,0,-75,9.1848509936e-15Z" fill="rgb(0, 158, 115)" stroke="none"></path>
+            <path d="M0,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,0,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
+            <path d="M135,0A135,135,0,0,1,0,135L0,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
+            <path d="M0,135A135,135,0,0,1,-135,0L-75,0A75,75,0,0,0,0,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
+            <path d="M-135,0A135,135,0,0,1,0,-135L0,-75A75,75,0,0,0,-75,0Z" fill="rgb(0, 158, 115)" stroke="none"></path>
         </g>
     </g>
 </svg>"
@@ -95,10 +95,10 @@ exports[`drawAllQuarterContext > start of Q4 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="all-quarters">
-            <path d="M8.2663658942e-15,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,4.5924254968e-15,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
-            <path d="M135,0A135,135,0,0,1,8.2663658942e-15,135L4.5924254968e-15,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
-            <path d="M8.2663658942e-15,135A135,135,0,0,1,-135,1.6532731788e-14L-75,9.1848509936e-15A75,75,0,0,0,4.5924254968e-15,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
-            <path d="M-135,1.6532731788e-14A135,135,0,0,1,-2.4799097682e-14,-135L-1.3777276490e-14,-75A75,75,0,0,0,-75,9.1848509936e-15Z" fill="rgb(0, 158, 115)" stroke="none"></path>
+            <path d="M0,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,0,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
+            <path d="M135,0A135,135,0,0,1,0,135L0,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
+            <path d="M0,135A135,135,0,0,1,-135,0L-75,0A75,75,0,0,0,0,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
+            <path d="M-135,0A135,135,0,0,1,0,-135L0,-75A75,75,0,0,0,-75,0Z" fill="rgb(0, 158, 115)" stroke="none"></path>
         </g>
     </g>
 </svg>"
@@ -108,7 +108,7 @@ exports[`drawCurrentQuarter > last day of Q1 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="current-quarter">
-            <path class="current-quarter" d="M5.8095077025,-337.4499957330A337.5,337.5,0,0,1,337.4218694182,-7.2616828847L74.9826376484,-1.6137073077A75,75,0,0,0,1.2910017116,-74.9888879406Z" fill="rgb(240, 228, 66)" stroke="none"></path>
+            <path class="current-quarter" d="M5.81,-337.45A337.5,337.5,0,0,1,337.422,-7.262L74.983,-1.614A75,75,0,0,0,1.291,-74.989Z" fill="rgb(240, 228, 66)" stroke="none"></path>
         </g>
     </g>
 </svg>"
@@ -118,7 +118,7 @@ exports[`drawCurrentQuarter > last day of Q2 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="current-quarter">
-            <path class="current-quarter" d="M337.4968746609,-1.4524441749A337.5,337.5,0,0,1,8.7137235766,337.3874938722L1.9363830170,74.9749986382A75,75,0,0,0,74.9993054802,-0.3227653722Z" fill="rgb(204, 121, 167)" stroke="none"></path>
+            <path class="current-quarter" d="M337.497,-1.452A337.5,337.5,0,0,1,8.714,337.387L1.936,74.975A75,75,0,0,0,74.999,-0.323Z" fill="rgb(204, 121, 167)" stroke="none"></path>
         </g>
     </g>
 </svg>"
@@ -128,7 +128,7 @@ exports[`drawCurrentQuarter > last day of Q3 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="current-quarter">
-            <path class="current-quarter" d="M2.9048614499,337.4874987017A337.5,337.5,0,0,1,-337.4718722959,4.3572249253L-74.9937493991,0.9682722056A75,75,0,0,0,0.6455247666,74.9972219337Z" fill="rgb(86, 180, 233)" stroke="none"></path>
+            <path class="current-quarter" d="M2.905,337.487A337.5,337.5,0,0,1,-337.472,4.357L-74.994,0.968A75,75,0,0,0,0.646,74.997Z" fill="rgb(86, 180, 233)" stroke="none"></path>
         </g>
     </g>
 </svg>"
@@ -138,7 +138,7 @@ exports[`drawCurrentQuarter > last day of Q4 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="current-quarter">
-            <path class="current-quarter" d="M-337.4968746609,-1.4524441749A337.5,337.5,0,0,1,-6.1997744206e-14,-337.5L-1.3777276490e-14,-75A75,75,0,0,0,-74.9993054802,-0.3227653722Z" fill="rgb(0, 158, 115)" stroke="none"></path>
+            <path class="current-quarter" d="M-337.497,-1.452A337.5,337.5,0,0,1,0,-337.5L0,-75A75,75,0,0,0,-74.999,-0.323Z" fill="rgb(0, 158, 115)" stroke="none"></path>
         </g>
     </g>
 </svg>"
@@ -148,7 +148,7 @@ exports[`drawCurrentQuarter > start of Q1 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="current-quarter">
-            <path class="current-quarter" d="M5.8095077025,-337.4499957330A337.5,337.5,0,0,1,337.4218694182,-7.2616828847L74.9826376484,-1.6137073077A75,75,0,0,0,1.2910017116,-74.9888879406Z" fill="rgb(240, 228, 66)" stroke="none"></path>
+            <path class="current-quarter" d="M5.81,-337.45A337.5,337.5,0,0,1,337.422,-7.262L74.983,-1.614A75,75,0,0,0,1.291,-74.989Z" fill="rgb(240, 228, 66)" stroke="none"></path>
         </g>
     </g>
 </svg>"
@@ -158,7 +158,7 @@ exports[`drawCurrentQuarter > start of Q2 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="current-quarter">
-            <path class="current-quarter" d="M337.4968746609,-1.4524441749A337.5,337.5,0,0,1,8.7137235766,337.3874938722L1.9363830170,74.9749986382A75,75,0,0,0,74.9993054802,-0.3227653722Z" fill="rgb(204, 121, 167)" stroke="none"></path>
+            <path class="current-quarter" d="M337.497,-1.452A337.5,337.5,0,0,1,8.714,337.387L1.936,74.975A75,75,0,0,0,74.999,-0.323Z" fill="rgb(204, 121, 167)" stroke="none"></path>
         </g>
     </g>
 </svg>"
@@ -168,7 +168,7 @@ exports[`drawCurrentQuarter > start of Q3 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="current-quarter">
-            <path class="current-quarter" d="M2.9048614499,337.4874987017A337.5,337.5,0,0,1,-337.4718722959,4.3572249253L-74.9937493991,0.9682722056A75,75,0,0,0,0.6455247666,74.9972219337Z" fill="rgb(86, 180, 233)" stroke="none"></path>
+            <path class="current-quarter" d="M2.905,337.487A337.5,337.5,0,0,1,-337.472,4.357L-74.994,0.968A75,75,0,0,0,0.646,74.997Z" fill="rgb(86, 180, 233)" stroke="none"></path>
         </g>
     </g>
 </svg>"
@@ -178,7 +178,7 @@ exports[`drawCurrentQuarter > start of Q4 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="current-quarter">
-            <path class="current-quarter" d="M-337.4968746609,-1.4524441749A337.5,337.5,0,0,1,-6.1997744206e-14,-337.5L-1.3777276490e-14,-75A75,75,0,0,0,-74.9993054802,-0.3227653722Z" fill="rgb(0, 158, 115)" stroke="none"></path>
+            <path class="current-quarter" d="M-337.497,-1.452A337.5,337.5,0,0,1,0,-337.5L0,-75A75,75,0,0,0,-74.999,-0.323Z" fill="rgb(0, 158, 115)" stroke="none"></path>
         </g>
     </g>
 </svg>"
@@ -188,7 +188,7 @@ exports[`drawQuarterLabel > last day of Q1 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="info">
-            <text x="-405" y="0" style="font-size: 180px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(240, 228, 66)" stroke="none">
+            <text x="-405" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(240, 228, 66)" stroke="none">
                 Q1
             </text>
         </g>
@@ -200,7 +200,7 @@ exports[`drawQuarterLabel > last day of Q2 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="info">
-            <text x="-405" y="0" style="font-size: 180px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(204, 121, 167)" stroke="none">
+            <text x="-405" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(204, 121, 167)" stroke="none">
                 Q2
             </text>
         </g>
@@ -212,7 +212,7 @@ exports[`drawQuarterLabel > last day of Q3 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="info">
-            <text x="157.5" y="0" style="font-size: 180px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(86, 180, 233)" stroke="none">
+            <text x="157.5" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(86, 180, 233)" stroke="none">
                 Q3
             </text>
         </g>
@@ -224,7 +224,7 @@ exports[`drawQuarterLabel > last day of Q4 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="info">
-            <text x="157.5" y="0" style="font-size: 180px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(0, 158, 115)" stroke="none">
+            <text x="157.5" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(0, 158, 115)" stroke="none">
                 Q4
             </text>
         </g>
@@ -236,7 +236,7 @@ exports[`drawQuarterLabel > start of Q1 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="info">
-            <text x="-405" y="0" style="font-size: 180px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(240, 228, 66)" stroke="none">
+            <text x="-405" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(240, 228, 66)" stroke="none">
                 Q1
             </text>
         </g>
@@ -248,7 +248,7 @@ exports[`drawQuarterLabel > start of Q2 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="info">
-            <text x="-405" y="0" style="font-size: 180px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(204, 121, 167)" stroke="none">
+            <text x="-405" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(204, 121, 167)" stroke="none">
                 Q2
             </text>
         </g>
@@ -260,7 +260,7 @@ exports[`drawQuarterLabel > start of Q3 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="info">
-            <text x="157.5" y="0" style="font-size: 180px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(86, 180, 233)" stroke="none">
+            <text x="157.5" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(86, 180, 233)" stroke="none">
                 Q3
             </text>
         </g>
@@ -272,7 +272,7 @@ exports[`drawQuarterLabel > start of Q4 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="info">
-            <text x="157.5" y="0" style="font-size: 180px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(0, 158, 115)" stroke="none">
+            <text x="157.5" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(0, 158, 115)" stroke="none">
                 Q4
             </text>
         </g>

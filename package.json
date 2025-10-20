@@ -1,6 +1,6 @@
 {
   "name": "parcel-d3",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",

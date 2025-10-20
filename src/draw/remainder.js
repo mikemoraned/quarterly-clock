@@ -1,19 +1,20 @@
 import * as d3 from "d3";
+import { defaultArcGenerator, defaultPositionRounding as dpr } from "./standard.js";
 
 export function drawRemainder(dataModel, guidesModel, svg) {
   const pattern = svg.root
     .append("defs")
     .append("pattern")
     .attr("id", "remainder-pattern")
-    .attr("width", `${guidesModel.remainder.box.width}`)
-    .attr("height", `${guidesModel.remainder.box.height}`)
+    .attr("width", `${dpr(guidesModel.remainder.box.width)}`)
+    .attr("height", `${dpr(guidesModel.remainder.box.height)}`)
     .attr("patternUnits", "userSpaceOnUse")
     .attr("patternTransform", "rotate(20)");
 
   pattern
     .append("rect")
-    .attr("width", `${guidesModel.remainder.box.width}`)
-    .attr("height", `${guidesModel.remainder.box.height}`)
+    .attr("width", `${dpr(guidesModel.remainder.box.width)}`)
+    .attr("height", `${dpr(guidesModel.remainder.box.height)}`)
     .attr("opacity", "0.8")
     .attr("fill", guidesModel.colors.remainder.bg.color);
 
@@ -21,8 +22,8 @@ export function drawRemainder(dataModel, guidesModel, svg) {
     .append("defs")
     .append("pattern")
     .attr("id", "remainder-pattern-extra")
-    .attr("width", `${guidesModel.remainder.box.width}`)
-    .attr("height", `${guidesModel.remainder.box.height}`)
+    .attr("width", `${dpr(guidesModel.remainder.box.width)}`)
+    .attr("height", `${dpr(guidesModel.remainder.box.height)}`)
     .attr("patternUnits", "userSpaceOnUse")
     .attr("patternTransform", "rotate(20)");
 
@@ -30,12 +31,12 @@ export function drawRemainder(dataModel, guidesModel, svg) {
     .append("text")
     .text(`${dataModel.currentQuarter.wholeWeeksLeft.durationInWeeks}`)
     .attr("x", 0)
-    .attr("y", `${guidesModel.remainder.box.textY}`)
+    .attr("y", `${dpr(guidesModel.remainder.box.textY)}`)
     .attr("style", `font-size: ${guidesModel.remainder.fontSize}`)
     .attr("opacity", "0.9")
     .attr("fill", guidesModel.colors.remainder.weekNumber.color);
 
-  const arcGenerator = d3.arc();
+  const arcGenerator = defaultArcGenerator();
 
   arcGenerator
     .innerRadius(guidesModel.outerRadius / 3)
@@ -102,8 +103,8 @@ export function drawRemainderLabel(dataModel, guidesModel, svg) {
   parentGroup
     .append("text")
     .text(`${remaining} week${remaining === 1 ? "" : "s"} left`)
-    .attr("x", position.x)
-    .attr("y", position.y)
+    .attr("x", dpr(position.x))
+    .attr("y", dpr(position.y))
     .attr(
       "style",
       `font-size: ${guidesModel.remainderLabel.fontSize}; dominant-baseline: hanging; text-anchor: left`

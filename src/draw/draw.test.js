@@ -2,7 +2,7 @@ import { modelForDate } from "../model.js";
 import { addSvgRoot } from "./root.js";
 import { draw } from "./draw.js";
 import { createParentNode, takeSnapshot, DIMENSIONS } from "./test_setup.js";
-import { describe, test, expect } from 'vitest';
+import { test, expect } from 'vitest';
 
 function render(model) {
   const parentNode = createParentNode();
@@ -16,6 +16,7 @@ function render(model) {
 test("start of Q1", () => {
   const now = Date.parse("01 Jan 2021 00:00:00 GMT");
   const model = modelForDate(now);
+  console.log("Model:", JSON.stringify(model));
 
   const parentNode = render(model);
 

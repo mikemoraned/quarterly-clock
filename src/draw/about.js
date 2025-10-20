@@ -1,4 +1,5 @@
 import * as d3 from "d3";
+import { defaultPositionRounding as dpr } from "./standard";
 
 export function drawLogo(dataModel, guidesModel, svg) {
   const parentGroup = svg.selection.append("g").attr("id", "logo");
@@ -24,7 +25,7 @@ export function drawLogo(dataModel, guidesModel, svg) {
     .append("path")
     .attr(
       "d",
-      `M ${path.startX},${path.startY} A ${path.radiusX},${path.radiusY} 0 0,1 ${path.endX},${path.endY}`
+      `M ${dpr(path.startX)},${dpr(path.startY)} A ${dpr(path.radiusX)},${dpr(path.radiusY)} 0 0,1 ${dpr(path.endX)},${dpr(path.endY)}`
     )
     .attr("id", "logoPath");
 
@@ -76,7 +77,7 @@ export function drawReadme(dataModel, guidesModel, svg) {
     .append("path")
     .attr(
       "d",
-      `M ${path.startX},${path.startY} A ${path.radiusX},${path.radiusY} 0 0,1 ${path.endX},${path.endY}`
+      `M ${dpr(path.startX)},${dpr(path.startY)} A ${dpr(path.radiusX)},${dpr(path.radiusY)} 0 0,1 ${dpr(path.endX)},${dpr(path.endY)}`
     )
     .attr("id", "readmePath");
 

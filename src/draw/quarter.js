@@ -1,7 +1,8 @@
 import * as d3 from "d3";
+import { defaultArcGenerator } from "./standard";
 
 export function drawCurrentQuarter(dataModel, guidesModel, svg) {
-  const arcGenerator = d3.arc();
+  const arcGenerator = defaultArcGenerator();
 
   arcGenerator
     .innerRadius(guidesModel.outerRadius / 6)
@@ -26,7 +27,7 @@ export function drawCurrentQuarter(dataModel, guidesModel, svg) {
 }
 
 export function drawAllQuarterContext(dataModel, guidesModel, svg) {
-  const arcGenerator = d3.arc();
+  const arcGenerator = defaultArcGenerator();
 
   arcGenerator
     .innerRadius(guidesModel.outerRadius / 6)
