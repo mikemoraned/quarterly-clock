@@ -3,6 +3,7 @@ import { createGuidesModel } from "./draw.js";
 import { drawRemainder, drawRemainderLabel } from "./remainder.js";
 import { addSvgRoot } from "./root.js";
 import { createParentNode, takeSnapshot, DIMENSIONS } from "./test_setup.js";
+import { describe, test, expect } from 'vitest';
 
 describe("drawRemainder", () => {
   function render(model) {

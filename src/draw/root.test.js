@@ -3,6 +3,7 @@ import { createGuidesModel } from "./draw.js";
 import { drawLogo, drawReadme } from "./about.js";
 import { addSvgRoot } from "./root.js";
 import { createParentNode, takeSnapshot } from "./test_setup.js";
+import { describe, test, expect } from 'vitest';
 
 const SMALL = 50;
 const LARGE = 10000;

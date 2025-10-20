@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`drawAllQuarterContext last day of Q1 1`] = `
+exports[`drawAllQuarterContext > last day of Q1 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="all-quarters">
@@ -13,7 +13,7 @@ exports[`drawAllQuarterContext last day of Q1 1`] = `
 </svg>"
 `;
 
-exports[`drawAllQuarterContext last day of Q2 1`] = `
+exports[`drawAllQuarterContext > last day of Q2 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="all-quarters">
@@ -26,7 +26,7 @@ exports[`drawAllQuarterContext last day of Q2 1`] = `
 </svg>"
 `;
 
-exports[`drawAllQuarterContext last day of Q3 1`] = `
+exports[`drawAllQuarterContext > last day of Q3 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="all-quarters">
@@ -39,7 +39,7 @@ exports[`drawAllQuarterContext last day of Q3 1`] = `
 </svg>"
 `;
 
-exports[`drawAllQuarterContext last day of Q4 1`] = `
+exports[`drawAllQuarterContext > last day of Q4 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="all-quarters">
@@ -52,7 +52,7 @@ exports[`drawAllQuarterContext last day of Q4 1`] = `
 </svg>"
 `;
 
-exports[`drawAllQuarterContext start of Q1 1`] = `
+exports[`drawAllQuarterContext > start of Q1 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="all-quarters">
@@ -65,7 +65,7 @@ exports[`drawAllQuarterContext start of Q1 1`] = `
 </svg>"
 `;
 
-exports[`drawAllQuarterContext start of Q2 1`] = `
+exports[`drawAllQuarterContext > start of Q2 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="all-quarters">
@@ -78,7 +78,7 @@ exports[`drawAllQuarterContext start of Q2 1`] = `
 </svg>"
 `;
 
-exports[`drawAllQuarterContext start of Q3 1`] = `
+exports[`drawAllQuarterContext > start of Q3 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="all-quarters">
@@ -91,7 +91,7 @@ exports[`drawAllQuarterContext start of Q3 1`] = `
 </svg>"
 `;
 
-exports[`drawAllQuarterContext start of Q4 1`] = `
+exports[`drawAllQuarterContext > start of Q4 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="all-quarters">
@@ -104,7 +104,7 @@ exports[`drawAllQuarterContext start of Q4 1`] = `
 </svg>"
 `;
 
-exports[`drawCurrentQuarter last day of Q1 1`] = `
+exports[`drawCurrentQuarter > last day of Q1 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="current-quarter">
@@ -114,7 +114,7 @@ exports[`drawCurrentQuarter last day of Q1 1`] = `
 </svg>"
 `;
 
-exports[`drawCurrentQuarter last day of Q2 1`] = `
+exports[`drawCurrentQuarter > last day of Q2 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="current-quarter">
@@ -124,7 +124,7 @@ exports[`drawCurrentQuarter last day of Q2 1`] = `
 </svg>"
 `;
 
-exports[`drawCurrentQuarter last day of Q3 1`] = `
+exports[`drawCurrentQuarter > last day of Q3 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="current-quarter">
@@ -134,7 +134,7 @@ exports[`drawCurrentQuarter last day of Q3 1`] = `
 </svg>"
 `;
 
-exports[`drawCurrentQuarter last day of Q4 1`] = `
+exports[`drawCurrentQuarter > last day of Q4 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="current-quarter">
@@ -144,7 +144,7 @@ exports[`drawCurrentQuarter last day of Q4 1`] = `
 </svg>"
 `;
 
-exports[`drawCurrentQuarter start of Q1 1`] = `
+exports[`drawCurrentQuarter > start of Q1 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="current-quarter">
@@ -154,7 +154,7 @@ exports[`drawCurrentQuarter start of Q1 1`] = `
 </svg>"
 `;
 
-exports[`drawCurrentQuarter start of Q2 1`] = `
+exports[`drawCurrentQuarter > start of Q2 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="current-quarter">
@@ -164,7 +164,7 @@ exports[`drawCurrentQuarter start of Q2 1`] = `
 </svg>"
 `;
 
-exports[`drawCurrentQuarter start of Q3 1`] = `
+exports[`drawCurrentQuarter > start of Q3 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="current-quarter">
@@ -174,7 +174,7 @@ exports[`drawCurrentQuarter start of Q3 1`] = `
 </svg>"
 `;
 
-exports[`drawCurrentQuarter start of Q4 1`] = `
+exports[`drawCurrentQuarter > start of Q4 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="current-quarter">
@@ -184,7 +184,7 @@ exports[`drawCurrentQuarter start of Q4 1`] = `
 </svg>"
 `;
 
-exports[`drawQuarterLabel last day of Q1 1`] = `
+exports[`drawQuarterLabel > last day of Q1 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="info">
@@ -196,7 +196,7 @@ exports[`drawQuarterLabel last day of Q1 1`] = `
 </svg>"
 `;
 
-exports[`drawQuarterLabel last day of Q2 1`] = `
+exports[`drawQuarterLabel > last day of Q2 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="info">
@@ -208,7 +208,7 @@ exports[`drawQuarterLabel last day of Q2 1`] = `
 </svg>"
 `;
 
-exports[`drawQuarterLabel last day of Q3 1`] = `
+exports[`drawQuarterLabel > last day of Q3 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="info">
@@ -220,7 +220,7 @@ exports[`drawQuarterLabel last day of Q3 1`] = `
 </svg>"
 `;
 
-exports[`drawQuarterLabel last day of Q4 1`] = `
+exports[`drawQuarterLabel > last day of Q4 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="info">
@@ -232,7 +232,7 @@ exports[`drawQuarterLabel last day of Q4 1`] = `
 </svg>"
 `;
 
-exports[`drawQuarterLabel start of Q1 1`] = `
+exports[`drawQuarterLabel > start of Q1 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="info">
@@ -244,7 +244,7 @@ exports[`drawQuarterLabel start of Q1 1`] = `
 </svg>"
 `;
 
-exports[`drawQuarterLabel start of Q2 1`] = `
+exports[`drawQuarterLabel > start of Q2 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="info">
@@ -256,7 +256,7 @@ exports[`drawQuarterLabel start of Q2 1`] = `
 </svg>"
 `;
 
-exports[`drawQuarterLabel start of Q3 1`] = `
+exports[`drawQuarterLabel > start of Q3 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="info">
@@ -268,7 +268,7 @@ exports[`drawQuarterLabel start of Q3 1`] = `
 </svg>"
 `;
 
-exports[`drawQuarterLabel start of Q4 1`] = `
+exports[`drawQuarterLabel > start of Q4 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="info">

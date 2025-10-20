@@ -7,6 +7,7 @@ import {
 } from "./quarter.js";
 import { addSvgRoot } from "./root.js";
 import { createParentNode, takeSnapshot, DIMENSIONS } from "./test_setup.js";
+import { describe, test, expect } from 'vitest';
 
 describe("drawCurrentQuarter", () => {
   function render(model) {

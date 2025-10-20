@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`drawLogo last day of Q1 1`] = `
+exports[`drawLogo > last day of Q1 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="logo">
@@ -24,7 +24,7 @@ exports[`drawLogo last day of Q1 1`] = `
 </svg>"
 `;
 
-exports[`drawLogo last day of Q2 1`] = `
+exports[`drawLogo > last day of Q2 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="logo">
@@ -48,7 +48,7 @@ exports[`drawLogo last day of Q2 1`] = `
 </svg>"
 `;
 
-exports[`drawLogo last day of Q3 1`] = `
+exports[`drawLogo > last day of Q3 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="logo">
@@ -72,7 +72,7 @@ exports[`drawLogo last day of Q3 1`] = `
 </svg>"
 `;
 
-exports[`drawLogo last day of Q4 1`] = `
+exports[`drawLogo > last day of Q4 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="logo">
@@ -96,7 +96,7 @@ exports[`drawLogo last day of Q4 1`] = `
 </svg>"
 `;
 
-exports[`drawLogo start of Q1 1`] = `
+exports[`drawLogo > start of Q1 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="logo">
@@ -120,7 +120,7 @@ exports[`drawLogo start of Q1 1`] = `
 </svg>"
 `;
 
-exports[`drawLogo start of Q2 1`] = `
+exports[`drawLogo > start of Q2 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="logo">
@@ -144,7 +144,7 @@ exports[`drawLogo start of Q2 1`] = `
 </svg>"
 `;
 
-exports[`drawLogo start of Q3 1`] = `
+exports[`drawLogo > start of Q3 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="logo">
@@ -168,7 +168,7 @@ exports[`drawLogo start of Q3 1`] = `
 </svg>"
 `;
 
-exports[`drawLogo start of Q4 1`] = `
+exports[`drawLogo > start of Q4 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="logo">
@@ -192,7 +192,7 @@ exports[`drawLogo start of Q4 1`] = `
 </svg>"
 `;
 
-exports[`drawReadme last day of Q1 1`] = `
+exports[`drawReadme > last day of Q1 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="readme">
@@ -216,7 +216,7 @@ exports[`drawReadme last day of Q1 1`] = `
 </svg>"
 `;
 
-exports[`drawReadme last day of Q2 1`] = `
+exports[`drawReadme > last day of Q2 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="readme">
@@ -240,7 +240,7 @@ exports[`drawReadme last day of Q2 1`] = `
 </svg>"
 `;
 
-exports[`drawReadme last day of Q3 1`] = `
+exports[`drawReadme > last day of Q3 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="readme">
@@ -264,7 +264,7 @@ exports[`drawReadme last day of Q3 1`] = `
 </svg>"
 `;
 
-exports[`drawReadme last day of Q4 1`] = `
+exports[`drawReadme > last day of Q4 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="readme">
@@ -288,7 +288,7 @@ exports[`drawReadme last day of Q4 1`] = `
 </svg>"
 `;
 
-exports[`drawReadme start of Q1 1`] = `
+exports[`drawReadme > start of Q1 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="readme">
@@ -312,7 +312,7 @@ exports[`drawReadme start of Q1 1`] = `
 </svg>"
 `;
 
-exports[`drawReadme start of Q2 1`] = `
+exports[`drawReadme > start of Q2 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="readme">
@@ -336,7 +336,7 @@ exports[`drawReadme start of Q2 1`] = `
 </svg>"
 `;
 
-exports[`drawReadme start of Q3 1`] = `
+exports[`drawReadme > start of Q3 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="readme">
@@ -360,7 +360,7 @@ exports[`drawReadme start of Q3 1`] = `
 </svg>"
 `;
 
-exports[`drawReadme start of Q4 1`] = `
+exports[`drawReadme > start of Q4 1`] = `
 "<svg id="clock" width="1000" height="1000">
     <g transform="translate(500 500)">
         <g id="readme">
