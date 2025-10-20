@@ -8,15 +8,12 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "update-snapshot": "node --experimental-vm-modules node_modules/jest/bin/jest.js --updateSnapshot",
-    "vitest": "vitest",
-    "vitest-update-snapshot": "vitest --update"
+    "test": "vitest",
+    "update-snapshot": "vitest --update"
   },
   "author": "Mike Moran <mike@houseofmoran.com>",
   "license": "Apache-2.0",
   "devDependencies": {
-    "jest": "^30.2.0",
     "parcel": "^2.16.0",
     "vitest": "^3.2.4"
   },
