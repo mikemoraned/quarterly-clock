@@ -2,7 +2,7 @@ import { modelForDate } from "../model.js";
 import { addSvgRoot } from "./root.js";
 import { draw } from "./draw.js";
 import { createParentNode, takeSnapshot, DIMENSIONS } from "./test_setup.js";
-import { describe, test, expect } from 'vitest';
+import { test, expect } from 'vitest';
 
 function render(model) {
   const parentNode = createParentNode();

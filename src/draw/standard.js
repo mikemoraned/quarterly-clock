@@ -5,6 +5,11 @@ export function defaultPositionRounding(value) {
     return parseFloat(rounded);
 }
 
+export function defaultRotationRounding(value) {
+    const rounded = value.toFixed(2);
+    return parseFloat(rounded);
+}
+
 export function defaultFontSizeFormat(value) {
     const rounded = value.toFixed(2);
     return `${rounded}px`;

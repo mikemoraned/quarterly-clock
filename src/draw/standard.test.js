@@ -1,4 +1,4 @@
-import { defaultFontSizeFormat, defaultPositionRounding, defaultArcGenerator } from "./standard";
+import { defaultFontSizeFormat, defaultPositionRounding, defaultArcGenerator, defaultRotationRounding } from "./standard";
 import { describe, test, expect } from 'vitest';
 
 test("defaultFontSizeFormat", () => {
@@ -10,6 +10,12 @@ test("defaultPositionRounding", () => {
   expect(defaultPositionRounding(12)).toBe(12.0);
   expect(defaultPositionRounding(12.345)).toBe(12.35);
 });
+
+test("defaultRotationRounding", () => {
+  expect(defaultRotationRounding(12)).toBe(12.0);
+  expect(defaultRotationRounding(12.345)).toBe(12.35);
+});
+
 
 test("defaultArcGenerator", () => {
   const arcGenerator = defaultArcGenerator();

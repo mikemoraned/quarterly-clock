@@ -1,5 +1,5 @@
 import * as d3 from "d3";
-import { defaultFontSizeFormat } from "./standard";
+import { defaultFontSizeFormat, defaultPositionRounding as dpr, defaultRotationRounding as drr } from "./standard";
 
 export function drawWeekScale(dataModel, guidesModel, svg) {
   const parentGroup = svg.selection.append("g").attr("id", "week-scale");
@@ -20,9 +20,9 @@ export function drawWeekScale(dataModel, guidesModel, svg) {
     .attr("stroke-width", guidesModel.outerRadius / 100)
     .attr("x1", 0)
     .attr("x2", 0)
-    .attr("y1", tickStart)
-    .attr("y2", tickStart + tickLength)
-    .attr("transform", (w) => `rotate(${scale(w.start)})`);
+    .attr("y1", dpr(tickStart))
+    .attr("y2", dpr(tickStart + tickLength))
+    .attr("transform", (w) => `rotate(${drr(scale(w.start))})`);
 
   const labelFontSize = guidesModel.weekScale.fontSize;
   const labelYOffset = guidesModel.weekScale.yOffset;
@@ -36,11 +36,11 @@ export function drawWeekScale(dataModel, guidesModel, svg) {
     .append("text")
     .attr("class", "week-label")
     .attr("text-anchor", "middle")
-    .attr("x", (w) => labelRadius * Math.sin((scale(w.start) * Math.PI) / 180))
+    .attr("x", (w) => dpr(labelRadius * Math.sin((scale(w.start) * Math.PI) / 180)))
     .attr(
       "y",
       (w) =>
-        -labelRadius * Math.cos((scale(w.start) * Math.PI) / 180) + labelYOffset
+        dpr(-labelRadius * Math.cos((scale(w.start) * Math.PI) / 180) + labelYOffset)
     )
     .attr("style", `font-size: ${defaultFontSizeFormat(labelFontSize)}`)
     .text((w) => w.label);
@@ -54,18 +54,18 @@ export function drawDayHand(dataModel, guidesModel, svg) {
     .attr("class", "hands-cover")
     .attr("x", 0)
     .attr("y", 0)
-    .attr("r", guidesModel.outerRadius / 20);
+    .attr("r", drr(guidesModel.outerRadius / 20));
   const scale = d3.scaleLinear().domain([0, 1]).range([0, 360]);
   parentGroup
     .append("line")
     .attr("class", "day-hand")
-    .attr("stroke-width", guidesModel.outerRadius / 50)
+    .attr("stroke-width", dpr(guidesModel.outerRadius / 50))
     .attr("x1", 0)
     .attr("y1", 0)
     .attr("x2", 0)
-    .attr("y2", -1 * guidesModel.outerRadius)
+    .attr("y2", dpr(-1 * guidesModel.outerRadius))
     .attr(
       "transform",
-      (d) => `rotate(${scale(dataModel.elapsed.yearFraction)})`
+      (d) => `rotate(${drr(scale(dataModel.elapsed.yearFraction))})`
     );
 }
