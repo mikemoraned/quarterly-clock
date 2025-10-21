@@ -9,6 +9,7 @@ pub fn grab_screenshot(browser: &Browser, url: &str) -> Result<Vec<u8>, Box<dyn 
     let tab = browser.new_tab()?;
     info!("got tab");
 
+    info!("navigating to {}", url);
     tab.navigate_to(url)?;
     info!("navigated");
     tab.wait_for_element("#container > svg")?;

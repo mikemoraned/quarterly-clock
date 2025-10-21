@@ -1,10 +1,15 @@
-use axum::{http::{header, HeaderMap, StatusCode}, response::{IntoResponse, Response}, routing::get, Router};
+use axum::{extract::State, http::{header, HeaderMap, StatusCode}, response::{IntoResponse, Response}, routing::get, Router};
 use bytes::Bytes;
 use headless_chrome::{Browser, LaunchOptionsBuilder};
 use tower_http::{trace::TraceLayer};
 use tower::ServiceBuilder;
 use tracing::{error, info};
 use std::time::Duration;
+
+#[derive(Clone)]
+struct AppState {
+    url: String,
+}
 
 #[derive(Debug)]
 enum AppError {
@@ -27,8 +32,8 @@ async fn health() -> impl IntoResponse {
     (StatusCode::OK, "healthy")
 }
 
-async fn screenshot() -> Result<Png, AppError> {
-    match grab_screenshot() {
+async fn screenshot(State(state): State<AppState>) -> Result<Png, AppError> {
+    match grab_screenshot(&state.url) {
         Ok(png) => Ok(png),
         Err(e) => {
             error!("failed to grab screenshot: {}", e);
@@ -51,7 +56,7 @@ impl IntoResponse for Png {
     }
 }
 
-fn grab_screenshot() -> Result<Png, Box<dyn std::error::Error>> {
+fn grab_screenshot(url: &str) -> Result<Png, Box<dyn std::error::Error>> {
     let browser = Browser::new(
         LaunchOptionsBuilder::default()
         .idle_browser_timeout(Duration::from_secs(5 * 60))
@@ -60,7 +65,7 @@ fn grab_screenshot() -> Result<Png, Box<dyn std::error::Error>> {
     )?;
     info!("created browser");
 
-    let png_data = preview::grab::grab_screenshot(&browser, "https://quarterly.houseofmoran.io/")?;
+    let png_data = preview::grab::grab_screenshot(&browser, url)?;
     info!("got png data");
     info!("peek: {:02X?}", &png_data[0 .. 8]);
 
@@ -82,7 +87,10 @@ async fn main() -> std::io::Result<()> {
         .layer(
             ServiceBuilder::new()
                 .layer(TraceLayer::new_for_http())
-        );
+        )
+        .with_state(AppState {
+            url: "https://quarterly.houseofmoran.io/".to_string(),
+        });
 
     let listener = tokio::net::TcpListener::bind("0.0.0.0:8080").await.unwrap();
     axum::serve(listener, app).await
