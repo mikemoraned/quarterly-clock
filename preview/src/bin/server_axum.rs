@@ -1,12 +1,72 @@
-use axum::{http::StatusCode, response::IntoResponse, routing::get, Router};
+use axum::{http::{header, HeaderMap, StatusCode}, response::{IntoResponse, Response}, routing::get, Router};
+use bytes::Bytes;
+use headless_chrome::{Browser, LaunchOptionsBuilder};
 use tower_http::{trace::TraceLayer};
 use tower::ServiceBuilder;
 use tracing::info;
+use std::time::Duration;
+
+#[derive(Debug)]
+enum AppError {
+    FailedToGrabScreenshot,
+}
+
+impl IntoResponse for AppError {
+    fn into_response(self) -> Response {
+        match self {
+            AppError::FailedToGrabScreenshot => {
+                let body = "failed to grab screenshot";
+                (StatusCode::INTERNAL_SERVER_ERROR, body).into_response()
+            }
+        }
+    }
+}
 
 async fn health() -> impl IntoResponse {
     info!("health check");
     (StatusCode::OK, "healthy")
 }
+
+async fn screenshot() -> Result<Png, AppError> {
+    match grab_screenshot() {
+        Ok(png) => Ok(png),
+        Err(e) => {
+            log::error!("failed to grab screenshot: {}", e);
+            Err(AppError::FailedToGrabScreenshot)
+        }
+    }
+}
+
+struct Png(Vec<u8>);
+
+impl IntoResponse for Png {
+    fn into_response(self) -> Response {
+        let bytes = Bytes::from(self.0);
+
+        let mut headers = HeaderMap::new();
+        headers.insert(header::CONTENT_TYPE, "image/png".parse().unwrap());
+        headers.insert(header::CONTENT_LENGTH, bytes.len().to_string().parse().unwrap());
+
+        (headers, bytes).into_response()
+    }
+}
+
+fn grab_screenshot() -> Result<Png, Box<dyn std::error::Error>> {
+    let browser = Browser::new(
+        LaunchOptionsBuilder::default()
+        .idle_browser_timeout(Duration::from_secs(5 * 60))
+        .sandbox(false)
+        .build().unwrap()
+    )?;
+    log::info!("created browser");
+
+    let png_data = preview::grab::grab_screenshot(&browser, "https://quarterly.houseofmoran.io/")?;
+    log::info!("got png data");
+    log::info!("peek: {:02X?}", &png_data[0 .. 8]);
+
+    Ok(Png(png_data))
+}
+
 
 #[tokio::main]
 async fn main() -> std::io::Result<()> {
@@ -18,6 +78,7 @@ async fn main() -> std::io::Result<()> {
 
     let app = Router::new()
         .route("/", get(health))
+        .route("/screenshot.png", get(screenshot))
         .layer(
             ServiceBuilder::new()
                 .layer(TraceLayer::new_for_http())

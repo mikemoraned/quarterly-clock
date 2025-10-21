@@ -1787,6 +1787,7 @@ version = "0.2.0"
 dependencies = [
  "actix-web",
  "axum",
+ "bytes",
  "env_logger",
  "headless_chrome",
  "image",
