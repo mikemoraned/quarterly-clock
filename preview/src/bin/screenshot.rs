@@ -13,7 +13,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let browser = Browser::new(LaunchOptionsBuilder::default().sandbox(false).build().unwrap())?;
     log::info!("created browser");
     
-    let png_data = grab_screenshot(&browser)?;
+    let png_data = grab_screenshot(&browser, "https://quarterly.houseofmoran.io/")?;
     println!("got png data");
     println!("peek: {:02X?}", &png_data[0 .. 8]);
     

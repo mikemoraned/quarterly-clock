@@ -5,11 +5,11 @@ use headless_chrome::protocol::cdp::Page;
 use headless_chrome::{Browser};
 use log;
 
-pub fn grab_screenshot(browser: &Browser) -> Result<Vec<u8>, Box<dyn std::error::Error>> {
+pub fn grab_screenshot(browser: &Browser, url: &str) -> Result<Vec<u8>, Box<dyn std::error::Error>> {
     let tab = browser.new_tab()?;
     log::info!("got tab");
 
-    tab.navigate_to("https://quarterly.houseofmoran.io/")?;
+    tab.navigate_to(url)?;
     log::info!("navigated");
     tab.wait_for_element("#container > svg")?;
     log::info!("got SVG");

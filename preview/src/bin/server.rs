@@ -28,8 +28,8 @@ fn grab_screenshot() -> Result<Vec<u8>, Box<dyn std::error::Error>> {
         .build().unwrap()
     )?;
     log::info!("created browser");
-    
-    let png_data = preview::grab::grab_screenshot(&browser)?;
+
+    let png_data = preview::grab::grab_screenshot(&browser, "https://quarterly.houseofmoran.io/")?;
     log::info!("got png data");
     log::info!("peek: {:02X?}", &png_data[0 .. 8]);
 
