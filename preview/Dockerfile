@@ -39,11 +39,6 @@ RUN echo deb [arch=amd64 signed-by=/usr/share/keyrings/google-chrome.gpg] http:/
 ## Update the APT Package List
 RUN apt update
 
-# install extra fonts
-RUN apt install fonts-texgyre -y
-RUN apt install fontconfig -y
-RUN fc-cache -f -v
-
 # Install the Stable Version of Google Chrome
 RUN apt install google-chrome-stable -y
 
