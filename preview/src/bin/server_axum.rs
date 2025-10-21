@@ -3,7 +3,7 @@ use bytes::Bytes;
 use headless_chrome::{Browser, LaunchOptionsBuilder};
 use tower_http::{trace::TraceLayer};
 use tower::ServiceBuilder;
-use tracing::info;
+use tracing::{error, info};
 use std::time::Duration;
 
 #[derive(Debug)]
@@ -31,7 +31,7 @@ async fn screenshot() -> Result<Png, AppError> {
     match grab_screenshot() {
         Ok(png) => Ok(png),
         Err(e) => {
-            log::error!("failed to grab screenshot: {}", e);
+            error!("failed to grab screenshot: {}", e);
             Err(AppError::FailedToGrabScreenshot)
         }
     }
@@ -58,11 +58,11 @@ fn grab_screenshot() -> Result<Png, Box<dyn std::error::Error>> {
         .sandbox(false)
         .build().unwrap()
     )?;
-    log::info!("created browser");
+    info!("created browser");
 
     let png_data = preview::grab::grab_screenshot(&browser, "https://quarterly.houseofmoran.io/")?;
-    log::info!("got png data");
-    log::info!("peek: {:02X?}", &png_data[0 .. 8]);
+    info!("got png data");
+    info!("peek: {:02X?}", &png_data[0 .. 8]);
 
     Ok(Png(png_data))
 }
