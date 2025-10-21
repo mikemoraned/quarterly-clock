@@ -6,9 +6,17 @@ use tower::ServiceBuilder;
 use tracing::{error, info};
 use std::time::Duration;
 
-#[derive(Clone)]
+#[derive(Clone, Debug)]
 struct AppState {
     url: String,
+}
+
+impl AppState {
+    fn from_env() -> Self {
+        Self {
+            url: std::env::var("APP_URL").unwrap_or_else(|_| "https://quarterly.houseofmoran.io/".to_string()),
+        }
+    }
 }
 
 #[derive(Debug)]
@@ -81,6 +89,9 @@ async fn main() -> std::io::Result<()> {
     tracing_subscriber::fmt::init();
     info!("logging setup completed");
 
+    let state = AppState::from_env();
+    info!("Using state: {:?}", state);
+
     let app = Router::new()
         .route("/", get(health))
         .route("/screenshot.png", get(screenshot))
@@ -88,9 +99,7 @@ async fn main() -> std::io::Result<()> {
             ServiceBuilder::new()
                 .layer(TraceLayer::new_for_http())
         )
-        .with_state(AppState {
-            url: "https://quarterly.houseofmoran.io/".to_string(),
-        });
+        .with_state(state);
 
     let listener = tokio::net::TcpListener::bind("0.0.0.0:8080").await.unwrap();
     axum::serve(listener, app).await
