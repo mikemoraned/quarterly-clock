@@ -16,9 +16,15 @@ The default log-leve is `INFO` and following runs it at `TRACE` level:
 
 Run a local server:
 
-    RUST_LOG=info cargo run --bin server # (Note that I think we need explicit `RUST_LOG` here as I think something else set it to quieter than that)
+    cargo run --bin server 
+    # can also override to set log-level:
+    RUST_LOG=error cargo run --bin server 
 
 If you then go to `http://localhost:8080/screenshot.png` you should see a screenshot
+
+If you want to override the url fetched, you can set `APP_URL`:
+
+    APP_URL=https://example.com cargo run --bin server 
 
 ## Running locally in Docker
 
@@ -35,6 +41,10 @@ Run it locally:
 Because a `RUST_LOG` `ARG` is defined, you can also enable more verbose logging e.g.
 
     docker run --platform linux/amd64 -e RUST_LOG=trace -p 8080:8080 -it quarterly-clock-preview
+
+The `APP_URL` can also be overridden, which is useful for debugging, e.g. with a netlify preview page:
+
+    docker run --platform linux/amd64 -e APP_URL=https://deploy-preview-49--suspicious-heyrovsky-a8dcff.netlify.app -p 8080:8080 -it quarterly-clock-preview
 
 # Running / testing on fly.io
 
