@@ -19,7 +19,7 @@ RUN rm src/*.rs
 COPY ./src ./src
 
 ## build for release, using already compiled dependencies
-RUN touch src/bin/server.rs
+RUN touch src/bin/server_axum.rs
 RUN cargo build --release
 
 FROM debian:bookworm-slim
@@ -56,7 +56,7 @@ RUN groupadd -g ${APP_GID} ${APP_USER} && useradd -r -u ${APP_UID} -g ${APP_USER
 RUN mkdir -p /home/${APP_USER}
 RUN chown -R appuser:appuser /home/appuser
 WORKDIR /home/${APP_USER}
-COPY --from=build --chown=${APP_UID}:${APP_GID} /usr/src/app/target/release/server /home/${APP_USER}/server
+COPY --from=build --chown=${APP_UID}:${APP_GID} /usr/src/app/target/release/server_axum /home/${APP_USER}/server_axum
 
 USER ${APP_USER}
 RUN cd /home/${APP_USER}
@@ -65,4 +65,4 @@ EXPOSE 8080
 ARG RUST_LOG=info
 ENV RUST_LOG=$RUST_LOG
 
-ENTRYPOINT ["./server"]
+ENTRYPOINT ["./server_axum"]
