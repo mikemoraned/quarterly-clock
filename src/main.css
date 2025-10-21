@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'TeX Gyre Heros Regular';
+  src: url('./fonts/texgyreheros-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   margin: 0px;
@@ -11,8 +18,9 @@ div#container {
 }
 
 svg {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
-    Helvetica, Arial, "Lucida Grande", "TeX Gyre Heros", sans-serif;
+  /* font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", "TeX Gyre Heros", sans-serif; */
+  font-family: 'TeX Gyre Heros Regular';
 }
 
 svg .week-tick {
