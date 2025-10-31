@@ -20,14 +20,23 @@ export function drawLogo(dataModel, guidesModel, svg) {
     endX: position.x + guidesModel.outerRadius / 2.0,
     endY: position.y + guidesModel.outerRadius / 5.0,
   };
+  const d = `M ${dpr(path.startX)},${dpr(path.startY)} A ${dpr(path.radiusX)},${dpr(path.radiusY)} 0 0,1 ${dpr(path.endX)},${dpr(path.endY)}`;
   parentGroup
     .append("defs")
     .append("path")
     .attr(
       "d",
-      `M ${dpr(path.startX)},${dpr(path.startY)} A ${dpr(path.radiusX)},${dpr(path.radiusY)} 0 0,1 ${dpr(path.endX)},${dpr(path.endY)}`
+      d
     )
     .attr("id", "logoPath");
+
+  parentGroup.append("path")
+    .attr(
+      "d",
+      d
+    ).attr("class", "guide")
+    .style("fill", "red")
+    .style("stroke", "black");
 
   const text = parentGroup
     .append("a")
@@ -72,14 +81,23 @@ export function drawReadme(dataModel, guidesModel, svg) {
     endX: position.x + guidesModel.outerRadius / 2.0,
     endY: position.y + guidesModel.outerRadius / 5.0,
   };
+  const d = `M ${dpr(path.startX)},${dpr(path.startY)} A ${dpr(path.radiusX)},${dpr(path.radiusY)} 0 0,1 ${dpr(path.endX)},${dpr(path.endY)}`
   parentGroup
     .append("defs")
     .append("path")
     .attr(
       "d",
-      `M ${dpr(path.startX)},${dpr(path.startY)} A ${dpr(path.radiusX)},${dpr(path.radiusY)} 0 0,1 ${dpr(path.endX)},${dpr(path.endY)}`
+      d
     )
     .attr("id", "readmePath");
+
+  parentGroup.append("path")
+    .attr(
+      "d",
+      d
+    ).attr("class", "guide")
+    .style("fill", "red")
+    .style("stroke", "black");
 
   const text = parentGroup
     .append("a")
