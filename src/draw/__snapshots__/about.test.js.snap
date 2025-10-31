@@ -7,8 +7,9 @@ exports[`drawLogo > last day of Q1 1`] = `
             <defs>
                 <path d="M -225,270 A 450,450 0 0,1 225,270" id="logoPath"></path>
             </defs>
+            <path d="M -225,270 A 450,450 0 0,1 225,270" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock">
-                <text style="font-size: 69.23px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 69.23px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#logoPath">
                         <tspan style="font-family: &quot;Font Awesome 5 Free&quot;">
                             
@@ -31,8 +32,9 @@ exports[`drawLogo > last day of Q2 1`] = `
             <defs>
                 <path d="M -225,-180 A 450,450 0 0,1 225,-180" id="logoPath"></path>
             </defs>
+            <path d="M -225,-180 A 450,450 0 0,1 225,-180" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock">
-                <text style="font-size: 69.23px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 69.23px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#logoPath">
                         <tspan style="font-family: &quot;Font Awesome 5 Free&quot;">
                             
@@ -55,8 +57,9 @@ exports[`drawLogo > last day of Q3 1`] = `
             <defs>
                 <path d="M -225,-180 A 450,450 0 0,1 225,-180" id="logoPath"></path>
             </defs>
+            <path d="M -225,-180 A 450,450 0 0,1 225,-180" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock">
-                <text style="font-size: 69.23px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 69.23px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#logoPath">
                         <tspan style="font-family: &quot;Font Awesome 5 Free&quot;">
                             
@@ -79,8 +82,9 @@ exports[`drawLogo > last day of Q4 1`] = `
             <defs>
                 <path d="M -225,270 A 450,450 0 0,1 225,270" id="logoPath"></path>
             </defs>
+            <path d="M -225,270 A 450,450 0 0,1 225,270" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock">
-                <text style="font-size: 69.23px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 69.23px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#logoPath">
                         <tspan style="font-family: &quot;Font Awesome 5 Free&quot;">
                             
@@ -103,8 +107,9 @@ exports[`drawLogo > start of Q1 1`] = `
             <defs>
                 <path d="M -225,270 A 450,450 0 0,1 225,270" id="logoPath"></path>
             </defs>
+            <path d="M -225,270 A 450,450 0 0,1 225,270" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock">
-                <text style="font-size: 69.23px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 69.23px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#logoPath">
                         <tspan style="font-family: &quot;Font Awesome 5 Free&quot;">
                             
@@ -127,8 +132,9 @@ exports[`drawLogo > start of Q2 1`] = `
             <defs>
                 <path d="M -225,-180 A 450,450 0 0,1 225,-180" id="logoPath"></path>
             </defs>
+            <path d="M -225,-180 A 450,450 0 0,1 225,-180" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock">
-                <text style="font-size: 69.23px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 69.23px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#logoPath">
                         <tspan style="font-family: &quot;Font Awesome 5 Free&quot;">
                             
@@ -151,8 +157,9 @@ exports[`drawLogo > start of Q3 1`] = `
             <defs>
                 <path d="M -225,-180 A 450,450 0 0,1 225,-180" id="logoPath"></path>
             </defs>
+            <path d="M -225,-180 A 450,450 0 0,1 225,-180" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock">
-                <text style="font-size: 69.23px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 69.23px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#logoPath">
                         <tspan style="font-family: &quot;Font Awesome 5 Free&quot;">
                             
@@ -175,8 +182,9 @@ exports[`drawLogo > start of Q4 1`] = `
             <defs>
                 <path d="M -225,270 A 450,450 0 0,1 225,270" id="logoPath"></path>
             </defs>
+            <path d="M -225,270 A 450,450 0 0,1 225,270" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock">
-                <text style="font-size: 69.23px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 69.23px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#logoPath">
                         <tspan style="font-family: &quot;Font Awesome 5 Free&quot;">
                             
@@ -199,8 +207,9 @@ exports[`drawReadme > last day of Q1 1`] = `
             <defs>
                 <path d="M -225,324 A 450,450 0 0,1 225,324" id="readmePath"></path>
             </defs>
+            <path d="M -225,324 A 450,450 0 0,1 225,324" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock/blob/main/README.md">
-                <text style="font-size: 30.00px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 30.00px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#readmePath">
                         <tspan style="font-family: &quot;Font Awesome 5 Brands&quot;">
                             
@@ -223,8 +232,9 @@ exports[`drawReadme > last day of Q2 1`] = `
             <defs>
                 <path d="M -225,-121.5 A 450,450 0 0,1 225,-121.5" id="readmePath"></path>
             </defs>
+            <path d="M -225,-121.5 A 450,450 0 0,1 225,-121.5" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock/blob/main/README.md">
-                <text style="font-size: 30.00px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 30.00px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#readmePath">
                         <tspan style="font-family: &quot;Font Awesome 5 Brands&quot;">
                             
@@ -247,8 +257,9 @@ exports[`drawReadme > last day of Q3 1`] = `
             <defs>
                 <path d="M -225,-121.5 A 450,450 0 0,1 225,-121.5" id="readmePath"></path>
             </defs>
+            <path d="M -225,-121.5 A 450,450 0 0,1 225,-121.5" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock/blob/main/README.md">
-                <text style="font-size: 30.00px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 30.00px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#readmePath">
                         <tspan style="font-family: &quot;Font Awesome 5 Brands&quot;">
                             
@@ -271,8 +282,9 @@ exports[`drawReadme > last day of Q4 1`] = `
             <defs>
                 <path d="M -225,324 A 450,450 0 0,1 225,324" id="readmePath"></path>
             </defs>
+            <path d="M -225,324 A 450,450 0 0,1 225,324" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock/blob/main/README.md">
-                <text style="font-size: 30.00px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 30.00px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#readmePath">
                         <tspan style="font-family: &quot;Font Awesome 5 Brands&quot;">
                             
@@ -295,8 +307,9 @@ exports[`drawReadme > start of Q1 1`] = `
             <defs>
                 <path d="M -225,324 A 450,450 0 0,1 225,324" id="readmePath"></path>
             </defs>
+            <path d="M -225,324 A 450,450 0 0,1 225,324" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock/blob/main/README.md">
-                <text style="font-size: 30.00px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 30.00px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#readmePath">
                         <tspan style="font-family: &quot;Font Awesome 5 Brands&quot;">
                             
@@ -319,8 +332,9 @@ exports[`drawReadme > start of Q2 1`] = `
             <defs>
                 <path d="M -225,-121.5 A 450,450 0 0,1 225,-121.5" id="readmePath"></path>
             </defs>
+            <path d="M -225,-121.5 A 450,450 0 0,1 225,-121.5" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock/blob/main/README.md">
-                <text style="font-size: 30.00px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 30.00px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#readmePath">
                         <tspan style="font-family: &quot;Font Awesome 5 Brands&quot;">
                             
@@ -343,8 +357,9 @@ exports[`drawReadme > start of Q3 1`] = `
             <defs>
                 <path d="M -225,-121.5 A 450,450 0 0,1 225,-121.5" id="readmePath"></path>
             </defs>
+            <path d="M -225,-121.5 A 450,450 0 0,1 225,-121.5" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock/blob/main/README.md">
-                <text style="font-size: 30.00px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 30.00px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#readmePath">
                         <tspan style="font-family: &quot;Font Awesome 5 Brands&quot;">
                             
@@ -367,8 +382,9 @@ exports[`drawReadme > start of Q4 1`] = `
             <defs>
                 <path d="M -225,324 A 450,450 0 0,1 225,324" id="readmePath"></path>
             </defs>
+            <path d="M -225,324 A 450,450 0 0,1 225,324" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock/blob/main/README.md">
-                <text style="font-size: 30.00px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 30.00px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#readmePath">
                         <tspan style="font-family: &quot;Font Awesome 5 Brands&quot;">
                             

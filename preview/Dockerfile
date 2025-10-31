@@ -59,5 +59,7 @@ RUN cd /home/${APP_USER}
 EXPOSE 8080
 ARG RUST_LOG=info
 ENV RUST_LOG=$RUST_LOG
+ARG APP_URL=https://quarterly.houseofmoran.io/
+ENV APP_URL=$APP_URL
 
 ENTRYPOINT ["./server"]

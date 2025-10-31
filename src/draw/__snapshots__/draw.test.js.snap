@@ -240,8 +240,9 @@ exports[`last day of Q1 1`] = `
             <defs>
                 <path d="M -225,270 A 450,450 0 0,1 225,270" id="logoPath"></path>
             </defs>
+            <path d="M -225,270 A 450,450 0 0,1 225,270" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock">
-                <text style="font-size: 69.23px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 69.23px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#logoPath">
                         <tspan style="font-family: &quot;Font Awesome 5 Free&quot;">
                             
@@ -257,8 +258,9 @@ exports[`last day of Q1 1`] = `
             <defs>
                 <path d="M -225,324 A 450,450 0 0,1 225,324" id="readmePath"></path>
             </defs>
+            <path d="M -225,324 A 450,450 0 0,1 225,324" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock/blob/main/README.md">
-                <text style="font-size: 30.00px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 30.00px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#readmePath">
                         <tspan style="font-family: &quot;Font Awesome 5 Brands&quot;">
                             
@@ -272,12 +274,12 @@ exports[`last day of Q1 1`] = `
         </g>
         <g id="guides">
             <circle class="guide" cx="0" cy="0" r="450" style="fill: none; stroke: red;"></circle>
-            <circle class="guide" cx="-405" cy="0" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="157.5" cy="0" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="-391.5" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="171" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="0" cy="-270" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="0" cy="180" r="5" style="fill: red; stroke: red;"></circle>
+            <circle class="guide" cx="-405" cy="0" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="157.5" cy="0" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="-391.5" cy="13.5" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="171" cy="13.5" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="0" cy="-270" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="0" cy="180" r="5" style="fill: red; stroke: black;"></circle>
         </g>
     </g>
 </svg>"
@@ -523,8 +525,9 @@ exports[`last day of Q2 1`] = `
             <defs>
                 <path d="M -225,-180 A 450,450 0 0,1 225,-180" id="logoPath"></path>
             </defs>
+            <path d="M -225,-180 A 450,450 0 0,1 225,-180" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock">
-                <text style="font-size: 69.23px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 69.23px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#logoPath">
                         <tspan style="font-family: &quot;Font Awesome 5 Free&quot;">
                             
@@ -540,8 +543,9 @@ exports[`last day of Q2 1`] = `
             <defs>
                 <path d="M -225,-121.5 A 450,450 0 0,1 225,-121.5" id="readmePath"></path>
             </defs>
+            <path d="M -225,-121.5 A 450,450 0 0,1 225,-121.5" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock/blob/main/README.md">
-                <text style="font-size: 30.00px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 30.00px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#readmePath">
                         <tspan style="font-family: &quot;Font Awesome 5 Brands&quot;">
                             
@@ -555,12 +559,12 @@ exports[`last day of Q2 1`] = `
         </g>
         <g id="guides">
             <circle class="guide" cx="0" cy="0" r="450" style="fill: none; stroke: red;"></circle>
-            <circle class="guide" cx="-405" cy="0" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="157.5" cy="0" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="-391.5" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="171" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="0" cy="-270" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="0" cy="180" r="5" style="fill: red; stroke: red;"></circle>
+            <circle class="guide" cx="-405" cy="0" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="157.5" cy="0" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="-391.5" cy="13.5" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="171" cy="13.5" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="0" cy="-270" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="0" cy="180" r="5" style="fill: red; stroke: black;"></circle>
         </g>
     </g>
 </svg>"
@@ -806,8 +810,9 @@ exports[`last day of Q3 1`] = `
             <defs>
                 <path d="M -225,-180 A 450,450 0 0,1 225,-180" id="logoPath"></path>
             </defs>
+            <path d="M -225,-180 A 450,450 0 0,1 225,-180" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock">
-                <text style="font-size: 69.23px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 69.23px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#logoPath">
                         <tspan style="font-family: &quot;Font Awesome 5 Free&quot;">
                             
@@ -823,8 +828,9 @@ exports[`last day of Q3 1`] = `
             <defs>
                 <path d="M -225,-121.5 A 450,450 0 0,1 225,-121.5" id="readmePath"></path>
             </defs>
+            <path d="M -225,-121.5 A 450,450 0 0,1 225,-121.5" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock/blob/main/README.md">
-                <text style="font-size: 30.00px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 30.00px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#readmePath">
                         <tspan style="font-family: &quot;Font Awesome 5 Brands&quot;">
                             
@@ -838,12 +844,12 @@ exports[`last day of Q3 1`] = `
         </g>
         <g id="guides">
             <circle class="guide" cx="0" cy="0" r="450" style="fill: none; stroke: red;"></circle>
-            <circle class="guide" cx="-405" cy="0" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="157.5" cy="0" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="-391.5" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="171" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="0" cy="-270" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="0" cy="180" r="5" style="fill: red; stroke: red;"></circle>
+            <circle class="guide" cx="-405" cy="0" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="157.5" cy="0" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="-391.5" cy="13.5" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="171" cy="13.5" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="0" cy="-270" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="0" cy="180" r="5" style="fill: red; stroke: black;"></circle>
         </g>
     </g>
 </svg>"
@@ -1089,8 +1095,9 @@ exports[`last day of Q4 1`] = `
             <defs>
                 <path d="M -225,270 A 450,450 0 0,1 225,270" id="logoPath"></path>
             </defs>
+            <path d="M -225,270 A 450,450 0 0,1 225,270" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock">
-                <text style="font-size: 69.23px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 69.23px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#logoPath">
                         <tspan style="font-family: &quot;Font Awesome 5 Free&quot;">
                             
@@ -1106,8 +1113,9 @@ exports[`last day of Q4 1`] = `
             <defs>
                 <path d="M -225,324 A 450,450 0 0,1 225,324" id="readmePath"></path>
             </defs>
+            <path d="M -225,324 A 450,450 0 0,1 225,324" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock/blob/main/README.md">
-                <text style="font-size: 30.00px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 30.00px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#readmePath">
                         <tspan style="font-family: &quot;Font Awesome 5 Brands&quot;">
                             
@@ -1121,12 +1129,12 @@ exports[`last day of Q4 1`] = `
         </g>
         <g id="guides">
             <circle class="guide" cx="0" cy="0" r="450" style="fill: none; stroke: red;"></circle>
-            <circle class="guide" cx="-405" cy="0" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="157.5" cy="0" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="-391.5" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="171" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="0" cy="-270" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="0" cy="180" r="5" style="fill: red; stroke: red;"></circle>
+            <circle class="guide" cx="-405" cy="0" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="157.5" cy="0" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="-391.5" cy="13.5" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="171" cy="13.5" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="0" cy="-270" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="0" cy="180" r="5" style="fill: red; stroke: black;"></circle>
         </g>
     </g>
 </svg>"
@@ -1442,8 +1450,9 @@ exports[`start of Q1 1`] = `
             <defs>
                 <path d="M -225,270 A 450,450 0 0,1 225,270" id="logoPath"></path>
             </defs>
+            <path d="M -225,270 A 450,450 0 0,1 225,270" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock">
-                <text style="font-size: 69.23px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 69.23px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#logoPath">
                         <tspan style="font-family: &quot;Font Awesome 5 Free&quot;">
                             
@@ -1459,8 +1468,9 @@ exports[`start of Q1 1`] = `
             <defs>
                 <path d="M -225,324 A 450,450 0 0,1 225,324" id="readmePath"></path>
             </defs>
+            <path d="M -225,324 A 450,450 0 0,1 225,324" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock/blob/main/README.md">
-                <text style="font-size: 30.00px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 30.00px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#readmePath">
                         <tspan style="font-family: &quot;Font Awesome 5 Brands&quot;">
                             
@@ -1474,12 +1484,12 @@ exports[`start of Q1 1`] = `
         </g>
         <g id="guides">
             <circle class="guide" cx="0" cy="0" r="450" style="fill: none; stroke: red;"></circle>
-            <circle class="guide" cx="-405" cy="0" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="157.5" cy="0" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="-391.5" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="171" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="0" cy="-270" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="0" cy="180" r="5" style="fill: red; stroke: red;"></circle>
+            <circle class="guide" cx="-405" cy="0" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="157.5" cy="0" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="-391.5" cy="13.5" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="171" cy="13.5" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="0" cy="-270" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="0" cy="180" r="5" style="fill: red; stroke: black;"></circle>
         </g>
     </g>
     <defs>
@@ -1803,8 +1813,9 @@ exports[`start of Q2 1`] = `
             <defs>
                 <path d="M -225,-180 A 450,450 0 0,1 225,-180" id="logoPath"></path>
             </defs>
+            <path d="M -225,-180 A 450,450 0 0,1 225,-180" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock">
-                <text style="font-size: 69.23px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 69.23px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#logoPath">
                         <tspan style="font-family: &quot;Font Awesome 5 Free&quot;">
                             
@@ -1820,8 +1831,9 @@ exports[`start of Q2 1`] = `
             <defs>
                 <path d="M -225,-121.5 A 450,450 0 0,1 225,-121.5" id="readmePath"></path>
             </defs>
+            <path d="M -225,-121.5 A 450,450 0 0,1 225,-121.5" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock/blob/main/README.md">
-                <text style="font-size: 30.00px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 30.00px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#readmePath">
                         <tspan style="font-family: &quot;Font Awesome 5 Brands&quot;">
                             
@@ -1835,12 +1847,12 @@ exports[`start of Q2 1`] = `
         </g>
         <g id="guides">
             <circle class="guide" cx="0" cy="0" r="450" style="fill: none; stroke: red;"></circle>
-            <circle class="guide" cx="-405" cy="0" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="157.5" cy="0" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="-391.5" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="171" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="0" cy="-270" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="0" cy="180" r="5" style="fill: red; stroke: red;"></circle>
+            <circle class="guide" cx="-405" cy="0" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="157.5" cy="0" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="-391.5" cy="13.5" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="171" cy="13.5" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="0" cy="-270" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="0" cy="180" r="5" style="fill: red; stroke: black;"></circle>
         </g>
     </g>
     <defs>
@@ -2164,8 +2176,9 @@ exports[`start of Q3 1`] = `
             <defs>
                 <path d="M -225,-180 A 450,450 0 0,1 225,-180" id="logoPath"></path>
             </defs>
+            <path d="M -225,-180 A 450,450 0 0,1 225,-180" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock">
-                <text style="font-size: 69.23px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 69.23px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#logoPath">
                         <tspan style="font-family: &quot;Font Awesome 5 Free&quot;">
                             
@@ -2181,8 +2194,9 @@ exports[`start of Q3 1`] = `
             <defs>
                 <path d="M -225,-121.5 A 450,450 0 0,1 225,-121.5" id="readmePath"></path>
             </defs>
+            <path d="M -225,-121.5 A 450,450 0 0,1 225,-121.5" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock/blob/main/README.md">
-                <text style="font-size: 30.00px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 30.00px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#readmePath">
                         <tspan style="font-family: &quot;Font Awesome 5 Brands&quot;">
                             
@@ -2196,12 +2210,12 @@ exports[`start of Q3 1`] = `
         </g>
         <g id="guides">
             <circle class="guide" cx="0" cy="0" r="450" style="fill: none; stroke: red;"></circle>
-            <circle class="guide" cx="-405" cy="0" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="157.5" cy="0" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="-391.5" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="171" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="0" cy="-270" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="0" cy="180" r="5" style="fill: red; stroke: red;"></circle>
+            <circle class="guide" cx="-405" cy="0" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="157.5" cy="0" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="-391.5" cy="13.5" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="171" cy="13.5" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="0" cy="-270" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="0" cy="180" r="5" style="fill: red; stroke: black;"></circle>
         </g>
     </g>
     <defs>
@@ -2525,8 +2539,9 @@ exports[`start of Q4 1`] = `
             <defs>
                 <path d="M -225,270 A 450,450 0 0,1 225,270" id="logoPath"></path>
             </defs>
+            <path d="M -225,270 A 450,450 0 0,1 225,270" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock">
-                <text style="font-size: 69.23px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 69.23px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#logoPath">
                         <tspan style="font-family: &quot;Font Awesome 5 Free&quot;">
                             
@@ -2542,8 +2557,9 @@ exports[`start of Q4 1`] = `
             <defs>
                 <path d="M -225,324 A 450,450 0 0,1 225,324" id="readmePath"></path>
             </defs>
+            <path d="M -225,324 A 450,450 0 0,1 225,324" class="guide" style="fill: red; stroke: black;"></path>
             <a href="https://github.com/mikemoraned/quarterly-clock/blob/main/README.md">
-                <text style="font-size: 30.00px; dominant-baseline: middle; text-anchor: middle" fill="black">
+                <text style="font-size: 30.00px; dominant-baseline: auto; text-anchor: middle" fill="black">
                     <textPath startOffset="50%" href="#readmePath">
                         <tspan style="font-family: &quot;Font Awesome 5 Brands&quot;">
                             
@@ -2557,12 +2573,12 @@ exports[`start of Q4 1`] = `
         </g>
         <g id="guides">
             <circle class="guide" cx="0" cy="0" r="450" style="fill: none; stroke: red;"></circle>
-            <circle class="guide" cx="-405" cy="0" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="157.5" cy="0" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="-391.5" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="171" cy="13.5" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="0" cy="-270" r="5" style="fill: red; stroke: red;"></circle>
-            <circle class="guide" cx="0" cy="180" r="5" style="fill: red; stroke: red;"></circle>
+            <circle class="guide" cx="-405" cy="0" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="157.5" cy="0" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="-391.5" cy="13.5" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="171" cy="13.5" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="0" cy="-270" r="5" style="fill: red; stroke: black;"></circle>
+            <circle class="guide" cx="0" cy="180" r="5" style="fill: red; stroke: black;"></circle>
         </g>
     </g>
     <defs>
