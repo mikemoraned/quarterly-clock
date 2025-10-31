@@ -155,7 +155,7 @@ function drawGuides(model, svg) {
     .attr("cy", dpr(model.quarterLabel.left.y))
     .attr("r", 5)
     .style("fill", "red")
-    .style("stroke", "red");
+    .style("stroke", "black");
 
   parentGroup
     .append("circle")
@@ -164,7 +164,7 @@ function drawGuides(model, svg) {
     .attr("cy", dpr(model.quarterLabel.right.y))
     .attr("r", 5)
     .style("fill", "red")
-    .style("stroke", "red");
+    .style("stroke", "black");
 
   parentGroup
     .append("circle")
@@ -173,7 +173,7 @@ function drawGuides(model, svg) {
     .attr("cy", dpr(model.remainderLabel.left.y))
     .attr("r", 5)
     .style("fill", "red")
-    .style("stroke", "red");
+    .style("stroke", "black");
 
   parentGroup
     .append("circle")
@@ -182,7 +182,7 @@ function drawGuides(model, svg) {
     .attr("cy", dpr(model.remainderLabel.right.y))
     .attr("r", 5)
     .style("fill", "red")
-    .style("stroke", "red");
+    .style("stroke", "black");
 
   parentGroup
     .append("circle")
@@ -191,7 +191,7 @@ function drawGuides(model, svg) {
     .attr("cy", dpr(model.logo.top.y))
     .attr("r", 5)
     .style("fill", "red")
-    .style("stroke", "red");
+    .style("stroke", "black");
 
   parentGroup
     .append("circle")
@@ -200,5 +200,5 @@ function drawGuides(model, svg) {
     .attr("cy", dpr(model.logo.bottom.y))
     .attr("r", 5)
     .style("fill", "red")
-    .style("stroke", "red");
+    .style("stroke", "black");
 }
