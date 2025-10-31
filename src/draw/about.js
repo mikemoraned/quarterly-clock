@@ -46,7 +46,7 @@ export function drawLogo(dataModel, guidesModel, svg) {
   text
     .attr(
       "style",
-      `font-size: ${guidesModel.logo.fontSize}; dominant-baseline: middle; text-anchor: middle`
+      `font-size: ${guidesModel.logo.fontSize}; dominant-baseline: auto; text-anchor: middle`
     )
     .attr("fill", "black");
 
@@ -110,7 +110,7 @@ export function drawReadme(dataModel, guidesModel, svg) {
   text
     .attr(
       "style",
-      `font-size: ${guidesModel.readme.fontSize}; dominant-baseline: middle; text-anchor: middle`
+      `font-size: ${guidesModel.readme.fontSize}; dominant-baseline: auto; text-anchor: middle`
     )
     .attr("fill", "black");
 
