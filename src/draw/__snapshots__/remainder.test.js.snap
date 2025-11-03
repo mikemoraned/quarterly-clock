@@ -3,20 +3,15 @@
 exports[`drawRemainder > last day of Q1 1`] = `
 "<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
     <defs>
-        <pattern id="remainder-pattern" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <rect width="73.64" height="57.27" opacity="0.8" fill="rgb(213, 94, 0)"></rect>
-        </pattern>
-    </defs>
-    <defs>
-        <pattern id="remainder-pattern-extra" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <text x="0" y="49.09" style="font-size: 60.00px" opacity="0.9" fill="black">
+        <pattern id="remainder-pattern-extra" width="125.18" height="97.36" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+            <text x="0" y="65.45" style="font-size: 90.00px" opacity="0.9" fill="black">
                 0
             </text>
         </pattern>
     </defs>
     <g id="remainder">
         <clipPath id="remainder-clip"></clipPath>
-        <path class="remainder" d="M419.529,19.875L149.832,7.098Z" fill="url(#remainder-pattern)" clip-path="url(#remainder-clip)" stroke="none"></path>
+        <path class="remainder" d="M419.529,19.875L149.832,7.098Z" opacity="0.8" fill="rgb(213, 94, 0)" clip-path="url(#remainder-clip)" stroke="none"></path>
         <path class="remainder" d="M419.529,19.875L149.832,7.098Z" fill="url(#remainder-pattern-extra)" clip-path="url(#remainder-clip)" stroke="none"></path>
     </g>
 </svg>"
@@ -25,20 +20,15 @@ exports[`drawRemainder > last day of Q1 1`] = `
 exports[`drawRemainder > last day of Q2 1`] = `
 "<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
     <defs>
-        <pattern id="remainder-pattern" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <rect width="73.64" height="57.27" opacity="0.8" fill="rgb(213, 94, 0)"></rect>
-        </pattern>
-    </defs>
-    <defs>
-        <pattern id="remainder-pattern-extra" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <text x="0" y="49.09" style="font-size: 60.00px" opacity="0.9" fill="black">
+        <pattern id="remainder-pattern-extra" width="125.18" height="97.36" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+            <text x="0" y="65.45" style="font-size: 90.00px" opacity="0.9" fill="black">
                 0
             </text>
         </pattern>
     </defs>
     <g id="remainder">
         <clipPath id="remainder-clip"></clipPath>
-        <path class="remainder" d="M-18.069,419.611L-6.453,149.861Z" fill="url(#remainder-pattern)" clip-path="url(#remainder-clip)" stroke="none"></path>
+        <path class="remainder" d="M-18.069,419.611L-6.453,149.861Z" opacity="0.8" fill="rgb(213, 94, 0)" clip-path="url(#remainder-clip)" stroke="none"></path>
         <path class="remainder" d="M-18.069,419.611L-6.453,149.861Z" fill="url(#remainder-pattern-extra)" clip-path="url(#remainder-clip)" stroke="none"></path>
     </g>
 </svg>"
@@ -47,20 +37,15 @@ exports[`drawRemainder > last day of Q2 1`] = `
 exports[`drawRemainder > last day of Q3 1`] = `
 "<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
     <defs>
-        <pattern id="remainder-pattern" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <rect width="73.64" height="57.27" opacity="0.8" fill="rgb(213, 94, 0)"></rect>
-        </pattern>
-    </defs>
-    <defs>
-        <pattern id="remainder-pattern-extra" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <text x="0" y="49.09" style="font-size: 60.00px" opacity="0.9" fill="black">
+        <pattern id="remainder-pattern-extra" width="125.18" height="97.36" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+            <text x="0" y="65.45" style="font-size: 90.00px" opacity="0.9" fill="black">
                 0
             </text>
         </pattern>
     </defs>
     <g id="remainder">
         <clipPath id="remainder-clip"></clipPath>
-        <path class="remainder" d="M-419.685,-16.263L-149.888,-5.808Z" fill="url(#remainder-pattern)" clip-path="url(#remainder-clip)" stroke="none"></path>
+        <path class="remainder" d="M-419.685,-16.263L-149.888,-5.808Z" opacity="0.8" fill="rgb(213, 94, 0)" clip-path="url(#remainder-clip)" stroke="none"></path>
         <path class="remainder" d="M-419.685,-16.263L-149.888,-5.808Z" fill="url(#remainder-pattern-extra)" clip-path="url(#remainder-clip)" stroke="none"></path>
     </g>
 </svg>"
@@ -69,20 +54,15 @@ exports[`drawRemainder > last day of Q3 1`] = `
 exports[`drawRemainder > last day of Q4 1`] = `
 "<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
     <defs>
-        <pattern id="remainder-pattern" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <rect width="73.64" height="57.27" opacity="0.8" fill="rgb(213, 94, 0)"></rect>
-        </pattern>
-    </defs>
-    <defs>
-        <pattern id="remainder-pattern-extra" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <text x="0" y="49.09" style="font-size: 60.00px" opacity="0.9" fill="black">
+        <pattern id="remainder-pattern-extra" width="125.18" height="97.36" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+            <text x="0" y="65.45" style="font-size: 90.00px" opacity="0.9" fill="black">
                 0
             </text>
         </pattern>
     </defs>
     <g id="remainder">
         <clipPath id="remainder-clip"></clipPath>
-        <path class="remainder" d="M14.457,-419.751L5.163,-149.911Z" fill="url(#remainder-pattern)" clip-path="url(#remainder-clip)" stroke="none"></path>
+        <path class="remainder" d="M14.457,-419.751L5.163,-149.911Z" opacity="0.8" fill="rgb(213, 94, 0)" clip-path="url(#remainder-clip)" stroke="none"></path>
         <path class="remainder" d="M14.457,-419.751L5.163,-149.911Z" fill="url(#remainder-pattern-extra)" clip-path="url(#remainder-clip)" stroke="none"></path>
     </g>
 </svg>"
@@ -91,13 +71,8 @@ exports[`drawRemainder > last day of Q4 1`] = `
 exports[`drawRemainder > start of Q1 1`] = `
 "<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
     <defs>
-        <pattern id="remainder-pattern" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <rect width="73.64" height="57.27" opacity="0.8" fill="rgb(213, 94, 0)"></rect>
-        </pattern>
-    </defs>
-    <defs>
-        <pattern id="remainder-pattern-extra" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <text x="0" y="49.09" style="font-size: 60.00px" opacity="0.9" fill="black">
+        <pattern id="remainder-pattern-extra" width="125.18" height="97.36" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+            <text x="0" y="65.45" style="font-size: 90.00px" opacity="0.9" fill="black">
                 12
             </text>
         </pattern>
@@ -165,7 +140,7 @@ exports[`drawRemainder > start of Q1 1`] = `
             <path d="M416.733,-52.281A420,420,0,0,1,417.572,-45.1L149.133,-16.107A150,150,0,0,0,148.833,-18.672Z" stroke="none"></path>
             <path d="M417.572,-45.1A420,420,0,0,1,418.286,-37.906L149.388,-13.538A150,150,0,0,0,149.133,-16.107Z" stroke="none"></path>
         </clipPath>
-        <path class="remainder" d="M21.68,-419.44A420,420,0,0,1,418.876,-30.7L149.599,-10.964A150,150,0,0,0,7.743,-149.8Z" fill="url(#remainder-pattern)" clip-path="url(#remainder-clip)" stroke="none"></path>
+        <path class="remainder" d="M21.68,-419.44A420,420,0,0,1,418.876,-30.7L149.599,-10.964A150,150,0,0,0,7.743,-149.8Z" opacity="0.8" fill="rgb(213, 94, 0)" clip-path="url(#remainder-clip)" stroke="none"></path>
         <path class="remainder" d="M21.68,-419.44A420,420,0,0,1,418.876,-30.7L149.599,-10.964A150,150,0,0,0,7.743,-149.8Z" fill="url(#remainder-pattern-extra)" clip-path="url(#remainder-clip)" stroke="none"></path>
     </g>
 </svg>"
@@ -174,13 +149,8 @@ exports[`drawRemainder > start of Q1 1`] = `
 exports[`drawRemainder > start of Q2 1`] = `
 "<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
     <defs>
-        <pattern id="remainder-pattern" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <rect width="73.64" height="57.27" opacity="0.8" fill="rgb(213, 94, 0)"></rect>
-        </pattern>
-    </defs>
-    <defs>
-        <pattern id="remainder-pattern-extra" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <text x="0" y="49.09" style="font-size: 60.00px" opacity="0.9" fill="black">
+        <pattern id="remainder-pattern-extra" width="125.18" height="97.36" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+            <text x="0" y="65.45" style="font-size: 90.00px" opacity="0.9" fill="black">
                 12
             </text>
         </pattern>
@@ -248,7 +218,7 @@ exports[`drawRemainder > start of Q2 1`] = `
             <path d="M54.074,416.504A420,420,0,0,1,46.897,417.374L16.749,149.062A150,150,0,0,0,19.312,148.752Z" stroke="none"></path>
             <path d="M46.897,417.374A420,420,0,0,1,39.705,418.119L14.181,149.328A150,150,0,0,0,16.749,149.062Z" stroke="none"></path>
         </clipPath>
-        <path class="remainder" d="M419.529,19.875A420,420,0,0,1,32.502,418.74L11.608,149.55A150,150,0,0,0,149.832,7.098Z" fill="url(#remainder-pattern)" clip-path="url(#remainder-clip)" stroke="none"></path>
+        <path class="remainder" d="M419.529,19.875A420,420,0,0,1,32.502,418.74L11.608,149.55A150,150,0,0,0,149.832,7.098Z" opacity="0.8" fill="rgb(213, 94, 0)" clip-path="url(#remainder-clip)" stroke="none"></path>
         <path class="remainder" d="M419.529,19.875A420,420,0,0,1,32.502,418.74L11.608,149.55A150,150,0,0,0,149.832,7.098Z" fill="url(#remainder-pattern-extra)" clip-path="url(#remainder-clip)" stroke="none"></path>
     </g>
 </svg>"
@@ -257,13 +227,8 @@ exports[`drawRemainder > start of Q2 1`] = `
 exports[`drawRemainder > start of Q3 1`] = `
 "<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
     <defs>
-        <pattern id="remainder-pattern" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <rect width="73.64" height="57.27" opacity="0.8" fill="rgb(213, 94, 0)"></rect>
-        </pattern>
-    </defs>
-    <defs>
-        <pattern id="remainder-pattern-extra" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <text x="0" y="49.09" style="font-size: 60.00px" opacity="0.9" fill="black">
+        <pattern id="remainder-pattern-extra" width="125.18" height="97.36" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+            <text x="0" y="65.45" style="font-size: 90.00px" opacity="0.9" fill="black">
                 12
             </text>
         </pattern>
@@ -331,7 +296,7 @@ exports[`drawRemainder > start of Q3 1`] = `
             <path d="M-416.268,55.866A420,420,0,0,1,-417.168,48.693L-148.989,17.39A150,150,0,0,0,-148.667,19.952Z" stroke="none"></path>
             <path d="M-417.168,48.693A420,420,0,0,1,-417.944,41.504L-149.266,14.823A150,150,0,0,0,-148.989,17.39Z" stroke="none"></path>
         </clipPath>
-        <path class="remainder" d="M-18.069,419.611A420,420,0,0,1,-418.597,34.304L-149.499,12.251A150,150,0,0,0,-6.453,149.861Z" fill="url(#remainder-pattern)" clip-path="url(#remainder-clip)" stroke="none"></path>
+        <path class="remainder" d="M-18.069,419.611A420,420,0,0,1,-418.597,34.304L-149.499,12.251A150,150,0,0,0,-6.453,149.861Z" opacity="0.8" fill="rgb(213, 94, 0)" clip-path="url(#remainder-clip)" stroke="none"></path>
         <path class="remainder" d="M-18.069,419.611A420,420,0,0,1,-418.597,34.304L-149.499,12.251A150,150,0,0,0,-6.453,149.861Z" fill="url(#remainder-pattern-extra)" clip-path="url(#remainder-clip)" stroke="none"></path>
     </g>
 </svg>"
@@ -340,13 +305,8 @@ exports[`drawRemainder > start of Q3 1`] = `
 exports[`drawRemainder > start of Q4 1`] = `
 "<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
     <defs>
-        <pattern id="remainder-pattern" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <rect width="73.64" height="57.27" opacity="0.8" fill="rgb(213, 94, 0)"></rect>
-        </pattern>
-    </defs>
-    <defs>
-        <pattern id="remainder-pattern-extra" width="73.64" height="57.27" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
-            <text x="0" y="49.09" style="font-size: 60.00px" opacity="0.9" fill="black">
+        <pattern id="remainder-pattern-extra" width="125.18" height="97.36" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+            <text x="0" y="65.45" style="font-size: 90.00px" opacity="0.9" fill="black">
                 12
             </text>
         </pattern>
@@ -414,7 +374,7 @@ exports[`drawRemainder > start of Q4 1`] = `
             <path d="M-57.657,-416.024A420,420,0,0,1,-50.487,-416.954L-18.031,-148.912A150,150,0,0,0,-20.592,-148.58Z" stroke="none"></path>
             <path d="M-50.487,-416.954A420,420,0,0,1,-43.303,-417.762L-15.465,-149.201A150,150,0,0,0,-18.031,-148.912Z" stroke="none"></path>
         </clipPath>
-        <path class="remainder" d="M-419.685,-16.263A420,420,0,0,1,-36.105,-418.445L-12.895,-149.445A150,150,0,0,0,-149.888,-5.808Z" fill="url(#remainder-pattern)" clip-path="url(#remainder-clip)" stroke="none"></path>
+        <path class="remainder" d="M-419.685,-16.263A420,420,0,0,1,-36.105,-418.445L-12.895,-149.445A150,150,0,0,0,-149.888,-5.808Z" opacity="0.8" fill="rgb(213, 94, 0)" clip-path="url(#remainder-clip)" stroke="none"></path>
         <path class="remainder" d="M-419.685,-16.263A420,420,0,0,1,-36.105,-418.445L-12.895,-149.445A150,150,0,0,0,-149.888,-5.808Z" fill="url(#remainder-pattern-extra)" clip-path="url(#remainder-clip)" stroke="none"></path>
     </g>
 </svg>"
