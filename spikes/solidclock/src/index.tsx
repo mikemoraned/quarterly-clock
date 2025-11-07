@@ -1,7 +1,8 @@
 import { render } from 'solid-js/web';
 import 'solid-devtools';
 
-import { TodoList } from './todo-list';
+import { Clock } from './clock';
+import './index.css';
 
 const root = document.getElementById('root');
 
@@ -11,4 +12,4 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
   );
 }
 
-render(() => <TodoList />, root!);
+render(() => <Clock />, root!);
