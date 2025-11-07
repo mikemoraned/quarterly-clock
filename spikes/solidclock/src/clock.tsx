@@ -14,7 +14,7 @@ export const Clock = () => {
     const [seconds, setSeconds] = createSignal(0);
     onMount(() => {
         const interval = setInterval(() => {
-            setSeconds(c => (c + 1) % 60);
+            setSeconds(() => new Date().getSeconds());
         }, 1000);
 
         onCleanup(() => {
