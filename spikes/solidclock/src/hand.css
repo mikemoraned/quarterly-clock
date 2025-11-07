@@ -1,0 +1,8 @@
+g.hand line {
+    stroke: black;
+    stroke-width: 8;
+}
+
+g.hand circle {
+    fill: black;
+}
