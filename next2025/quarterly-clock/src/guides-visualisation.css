@@ -1,4 +1,8 @@
-g.guides circle {
+g.guides.enabled circle {
     fill: none;
     stroke: red;
+}
+
+g.guides.disabled circle {
+    display: none;
 }
