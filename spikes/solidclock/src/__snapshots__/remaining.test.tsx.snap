@@ -1,0 +1,118 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`when elapsedFraction is 0.0 1`] = `
+<div>
+  <svg>
+    <defs>
+      <pattern
+        height="10"
+        id="remainingPattern"
+        patternTransform="rotate(-90)"
+        patternUnits="userSpaceOnUse"
+        width="10"
+      >
+        <rect
+          fill="lightgray"
+          height="10"
+          width="10"
+        />
+        <line
+          stroke="white"
+          stroke-width="5"
+          x1="0"
+          x2="0"
+          y1="0"
+          y2="10"
+        />
+      </pattern>
+    </defs>
+    <g
+      class="remaining"
+    >
+      <path
+        d="M0,-93.3A93.3,93.3,0,1,1,0,93.3A93.3,93.3,0,1,1,0,-93.3M0,-33.3A33.3,33.3,0,1,0,0,33.3A33.3,33.3,0,1,0,0,-33.3Z"
+        fill="url(#remainingPattern)"
+        stroke="none"
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`when elapsedFraction is 0.5 1`] = `
+<div>
+  <svg>
+    <defs>
+      <pattern
+        height="10"
+        id="remainingPattern"
+        patternTransform="rotate(90)"
+        patternUnits="userSpaceOnUse"
+        width="10"
+      >
+        <rect
+          fill="lightgray"
+          height="10"
+          width="10"
+        />
+        <line
+          stroke="white"
+          stroke-width="5"
+          x1="0"
+          x2="0"
+          y1="0"
+          y2="10"
+        />
+      </pattern>
+    </defs>
+    <g
+      class="remaining"
+    >
+      <path
+        d="M0,93.3A93.3,93.3,0,1,1,0,-93.3L0,-33.3A33.3,33.3,0,1,0,0,33.3Z"
+        fill="url(#remainingPattern)"
+        stroke="none"
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`when elapsedFraction is 1.0 1`] = `
+<div>
+  <svg>
+    <defs>
+      <pattern
+        height="10"
+        id="remainingPattern"
+        patternTransform="rotate(270)"
+        patternUnits="userSpaceOnUse"
+        width="10"
+      >
+        <rect
+          fill="lightgray"
+          height="10"
+          width="10"
+        />
+        <line
+          stroke="white"
+          stroke-width="5"
+          x1="0"
+          x2="0"
+          y1="0"
+          y2="10"
+        />
+      </pattern>
+    </defs>
+    <g
+      class="remaining"
+    >
+      <path
+        d="M0,-93.3L0,-33.3Z"
+        fill="url(#remainingPattern)"
+        stroke="none"
+      />
+    </g>
+  </svg>
+</div>
+`;

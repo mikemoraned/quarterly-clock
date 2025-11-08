@@ -1,0 +1,64 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`when elapsedFraction is 0.0 1`] = `
+<div>
+  <g
+    class="hand"
+  >
+    <circle
+      cx="0"
+      cy="0"
+      r="5"
+    />
+    <line
+      transform="rotate(0 0 0)"
+      x1="0"
+      x2="0"
+      y1="0"
+      y2="-100"
+    />
+  </g>
+</div>
+`;
+
+exports[`when elapsedFraction is 0.5 1`] = `
+<div>
+  <g
+    class="hand"
+  >
+    <circle
+      cx="0"
+      cy="0"
+      r="5"
+    />
+    <line
+      transform="rotate(180 0 0)"
+      x1="0"
+      x2="0"
+      y1="0"
+      y2="-100"
+    />
+  </g>
+</div>
+`;
+
+exports[`when elapsedFraction is 1.0 1`] = `
+<div>
+  <g
+    class="hand"
+  >
+    <circle
+      cx="0"
+      cy="0"
+      r="5"
+    />
+    <line
+      transform="rotate(360 0 0)"
+      x1="0"
+      x2="0"
+      y1="0"
+      y2="-100"
+    />
+  </g>
+</div>
+`;
