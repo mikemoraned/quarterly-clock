@@ -20,4 +20,5 @@ Behind-the-scenes:
     * [x] rendering in a branch via netlify
     * [x] Basic Solid App showing some SVG
 * [x] Make Guides hide / show based on double-clicking or double-tapping in main area
+* [ ] Visualise months
 * [ ] ...
