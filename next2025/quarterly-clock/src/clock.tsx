@@ -5,6 +5,7 @@ import { GuidesVisualisation } from './guides-visualisation';
 import { createSignal } from 'solid-js';
 import { monthIntervals } from './model/months';
 import { Intervals } from './intervals';
+import { GutterIntervalNames } from './gutter-names';
 
 export const Clock = () => {
     const viewBox: ViewBox = {
@@ -32,6 +33,7 @@ export const Clock = () => {
         </defs>
         <GuidesProvider viewBox={viewBox}>
             <Intervals intervals={intervals} gradientId="month-gradient" />
+            <GutterIntervalNames intervals={intervals} />
             <GuidesVisualisation showGuides={showGuides()} />
         </GuidesProvider>
     </svg>);
