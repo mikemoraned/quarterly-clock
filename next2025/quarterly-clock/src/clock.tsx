@@ -10,8 +10,7 @@ export const Clock = () => {
         height: 1000
     };
 
-    const [showGuides, setShowGuides] = createSignal(true);
-
+    const [showGuides, setShowGuides] = createSignal(false);
     const toggleShowGuides = () => {
         setShowGuides(!showGuides());
     }
@@ -20,7 +19,7 @@ export const Clock = () => {
         class="clock"
         viewBox={`-${viewBox.width / 2} -${viewBox.height / 2} ${viewBox.width} ${viewBox.height}`}
         preserveAspectRatio="xMidYMid meet"
-        on:click={toggleShowGuides}>
+        onDblClick={toggleShowGuides}>
         <GuidesProvider viewBox={viewBox}>
             <GuidesVisualisation showGuides={showGuides()} />
         </GuidesProvider>
