@@ -6,13 +6,13 @@ export const Remaining = (props: { guides: Guides, elapsedFraction: number }) =>
 
     const arcGenerator = arc();
 
-    const d = () => {
+    const d = (): string | undefined => {
         return arcGenerator({
             innerRadius: outerRadius / 3,
             outerRadius: outerRadius - outerRadius / 15,
             startAngle: props.elapsedFraction * 2.0 * Math.PI,
             endAngle: 2.0 * Math.PI
-        });
+        }) ?? undefined;
     }
 
     return (
