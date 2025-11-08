@@ -24,9 +24,15 @@ export const Clock = () => {
         viewBox={`-${viewBox.width / 2} -${viewBox.height / 2} ${viewBox.width} ${viewBox.height}`}
         preserveAspectRatio="xMidYMid meet"
         onDblClick={toggleShowGuides}>
+        <defs>
+            <linearGradient id="month-gradient" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stop-color="gray" />
+                <stop offset="100%" stop-color="white" stop-opacity="0" />
+            </linearGradient>
+        </defs>
         <GuidesProvider viewBox={viewBox}>
             <GuidesVisualisation showGuides={showGuides()} />
-            <Intervals intervals={intervals} />
+            <Intervals intervals={intervals} gradientId="month-gradient" />
         </GuidesProvider>
     </svg>);
 };

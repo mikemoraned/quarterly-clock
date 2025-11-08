@@ -21,4 +21,6 @@ Behind-the-scenes:
     * [x] Basic Solid App showing some SVG
 * [x] Make Guides hide / show based on double-clicking or double-tapping in main area
 * [ ] Visualise months
+    * [x] Show months as an arc
+    * [ ] Show month names on the border of the clock
 * [ ] ...

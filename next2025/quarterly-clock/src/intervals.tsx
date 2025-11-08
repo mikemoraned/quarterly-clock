@@ -5,7 +5,7 @@ import { defaultArcGenerator } from "./standard";
 import { For } from "solid-js";
 import { scaleTime } from "d3-scale";
 
-export function Intervals(props: { intervals: OrderedIntervals }) {
+export function Intervals(props: { intervals: OrderedIntervals, gradientId: string }) {
     const guides: Guides = useGuides()!;
     const arcGenerator = defaultArcGenerator();
 
@@ -25,7 +25,7 @@ export function Intervals(props: { intervals: OrderedIntervals }) {
     return (
         <g class="intervals">
             <For each={props.intervals.intervals}>
-                {(interval) => <path d={pathForInterval(interval)} fill="red" stroke="black" />}
+                {(interval) => <path d={pathForInterval(interval)} fill={`url(#${props.gradientId})`} stroke="white" />}
             </For>
         </g>
     )
