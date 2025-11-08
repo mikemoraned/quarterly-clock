@@ -16,8 +16,16 @@ export const Remaining = (props: { guides: Guides, elapsedFraction: number }) =>
     }
 
     return (
-        <g class="remaining">
-            <path d={d()} fill="lightgray" stroke="none" />
-        </g>
+        <>
+            <defs>
+                <pattern id="remainingPattern" patternUnits="userSpaceOnUse" width="10" height="10" patternTransform="rotate(45)">
+                    <rect width="10" height="10" fill="lightgray" />
+                    <line x1="0" y1="0" x2="0" y2="10" stroke="white" stroke-width="5" />
+                </pattern>
+            </defs>
+            <g class="remaining">
+                <path d={d()} fill="url(#remainingPattern)" stroke="none" />
+            </g>
+        </>
     );
 }
