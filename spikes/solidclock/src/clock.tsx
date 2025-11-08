@@ -12,7 +12,7 @@ export const Clock = () => {
         outerRadius: 480
     };
 
-    const [seconds, setSeconds] = createSignal(0);
+    const [seconds, setSeconds] = createSignal(new Date().getSeconds());
     onMount(() => {
         const interval = setInterval(() => {
             setSeconds(() => new Date().getSeconds());
