@@ -1,26 +1,30 @@
 import { Guides } from "./guides";
 import { useGuides } from "./guides-provider";
-import { Interval } from "./model/months";
+import { Interval, OrderedIntervals } from "./model/months";
 import { defaultArcGenerator } from "./standard";
 import { For } from "solid-js";
+import { scaleTime } from "d3-scale";
 
-export function Intervals(props: { intervals: Array<Interval> }) {
+export function Intervals(props: { intervals: OrderedIntervals }) {
     const guides: Guides = useGuides()!;
     const arcGenerator = defaultArcGenerator();
 
+    const timeScale = scaleTime()
+        .domain([props.intervals.limits.start, props.intervals.limits.end])
+        .range([0, 2 * Math.PI]);
+
     const pathForInterval = (interval: Interval): string => {
-        // Placeholder implementation
         return arcGenerator({
             innerRadius: guides.outerRadius / 3,
             outerRadius: guides.outerRadius - guides.outerRadius / 15,
-            startAngle: 0,
-            endAngle: Math.PI / 6 // Example angle
+            startAngle: timeScale(interval.start),
+            endAngle: timeScale(interval.end)
         })!;
     }
 
     return (
         <g class="intervals">
-            <For each={props.intervals}>
+            <For each={props.intervals.intervals}>
                 {(interval) => <path d={pathForInterval(interval)} fill="red" stroke="black" />}
             </For>
         </g>
