@@ -1,6 +1,7 @@
 g.guides.enabled circle {
     fill: none;
     stroke: red;
+    stroke-width: 3px;
 }
 
 g.guides.disabled circle {

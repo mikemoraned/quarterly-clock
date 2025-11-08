@@ -8,6 +8,8 @@ export const GuidesVisualisation = (props: { showGuides: boolean; }) => {
     return (
         <g class={`guides ${props.showGuides ? 'enabled' : 'disabled'}`}>
             <circle cx={0} cy={0} r={guides.outerRadius} />
+            <circle cx={0} cy={0} r={guides.gutterRadius} />
+            <circle cx={0} cy={0} r={guides.innerRadius} />
         </g>
     );
 };

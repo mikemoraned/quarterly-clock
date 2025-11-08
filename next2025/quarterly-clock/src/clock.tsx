@@ -31,8 +31,8 @@ export const Clock = () => {
             </linearGradient>
         </defs>
         <GuidesProvider viewBox={viewBox}>
-            <GuidesVisualisation showGuides={showGuides()} />
             <Intervals intervals={intervals} gradientId="month-gradient" />
+            <GuidesVisualisation showGuides={showGuides()} />
         </GuidesProvider>
     </svg>);
 };

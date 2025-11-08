@@ -15,8 +15,8 @@ export function Intervals(props: { intervals: OrderedIntervals, gradientId: stri
 
     const pathForInterval = (interval: Interval): string => {
         return arcGenerator({
-            innerRadius: guides.outerRadius / 3,
-            outerRadius: guides.outerRadius - guides.outerRadius / 15,
+            innerRadius: guides.innerRadius,
+            outerRadius: guides.gutterRadius,
             startAngle: timeScale(interval.start),
             endAngle: timeScale(interval.end)
         })!;
