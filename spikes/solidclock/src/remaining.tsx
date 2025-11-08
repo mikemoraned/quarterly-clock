@@ -1,13 +1,13 @@
-import { arc } from "d3-shape";
 import { Guides } from "./guides";
 import { useDefs } from "./defs-provider";
 import { createEffect, onCleanup } from "solid-js";
+import { defaultArcGenerator } from "./standard";
 
 export const Remaining = (props: { guides: Guides, elapsedFraction: number }) => {
     const defs = useDefs();
     const { outerRadius } = props.guides;
 
-    const arcGenerator = arc();
+    const arcGenerator = defaultArcGenerator();
 
     const d = (): string | undefined => {
         return arcGenerator({
