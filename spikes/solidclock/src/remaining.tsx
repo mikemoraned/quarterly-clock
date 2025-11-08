@@ -15,10 +15,12 @@ export const Remaining = (props: { guides: Guides, elapsedFraction: number }) =>
         }) ?? undefined;
     }
 
+    const rotateAngle = (): number => (props.elapsedFraction * 360.0) - 90.0;
+
     return (
         <>
             <defs>
-                <pattern id="remainingPattern" patternUnits="userSpaceOnUse" width="10" height="10" patternTransform="rotate(45)">
+                <pattern id="remainingPattern" patternUnits="userSpaceOnUse" width="10" height="10" patternTransform={`rotate(${rotateAngle()})`}>
                     <rect width="10" height="10" fill="lightgray" />
                     <line x1="0" y1="0" x2="0" y2="10" stroke="white" stroke-width="5" />
                 </pattern>
