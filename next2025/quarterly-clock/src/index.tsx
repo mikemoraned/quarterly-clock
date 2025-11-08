@@ -1,5 +1,7 @@
 import { render } from 'solid-js/web';
 import 'solid-devtools';
+import { Clock } from './clock';
+import './index.css';
 
 const root = document.getElementById('root');
 
@@ -9,4 +11,4 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
   );
 }
 
-render(() => <div>Hello World</div>, root!);
+render(() => <Clock />, root!);

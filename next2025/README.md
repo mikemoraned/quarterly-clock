@@ -16,5 +16,7 @@ Behind-the-scenes:
 
 ## TODOs
 
-* [ ] Set up basic Solid SVG app rendering in a branch via netlify
+* [x] Set up basic Solid SVG app rendering in a branch via netlify
+    * [x] rendering in a branch via netlify
+    * [x] Basic Solid App showing some SVG
 * [ ] ...
