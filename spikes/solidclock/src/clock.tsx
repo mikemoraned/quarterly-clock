@@ -26,6 +26,6 @@ export const Clock = () => {
     return (<svg class="clock" viewBox={`-${viewBoxWidth / 2} -${viewBoxHeight / 2} ${viewBoxWidth} ${viewBoxHeight}`} preserveAspectRatio="xMidYMid meet">
         <circle cx="0" cy="0" r={guidesModel.outerRadius} stroke="black" stroke-width="10" fill="white" />
         <Hand guides={guidesModel} elapsedFraction={seconds() / 60} />
-        <Remaining />
+        <Remaining guides={guidesModel} elapsedFraction={seconds() / 60} />
     </svg>);
 };
