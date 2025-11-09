@@ -1,8 +1,19 @@
 export function parseParameters(params: URLSearchParams): QuarterSpecification {
     // We zero-index months internally because JS does but we don't expose that in the
     // API since it's weird
-    const yearStartMonth = parseInt(params.get('yearStartMonth') || '1') - 1;
-    return new QuarterSpecification(yearStartMonth)
+
+    if (params.has('yearStartMonth')) {
+        const yearStartMonthParam = params.get('yearStartMonth');
+        if (yearStartMonthParam?.match(/^\d+$/)) {
+            const monthNumber = parseInt(yearStartMonthParam);
+            if (monthNumber >= 1 && monthNumber <= 12) {
+                const yearStartMonth = monthNumber - 1;
+                return new QuarterSpecification(yearStartMonth);
+            }
+        }
+    }
+
+    return QuarterSpecification.default();
 }
 
 export class QuarterSpecification {
