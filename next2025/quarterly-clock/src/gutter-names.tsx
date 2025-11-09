@@ -18,10 +18,15 @@ export function GutterIntervalNames(props: { intervals: OrderedIntervals }) {
         .domain([0, 2 * Math.PI])
         .range(["TopRight", "BottomRight", "BottomLeft", "TopLeft"]);
 
-    const pathForInterval = (interval: Interval): string => {
+    const segmentForInterval = (interval: Interval): string => {
         const angleBetween = timeScale(interval.end) - timeScale(interval.start);
         const halfAngle = timeScale(interval.start) + (angleBetween / 2);
-        const segment = segmentScale(halfAngle);
+        return segmentScale(halfAngle);
+    }
+
+    const pathForInterval = (interval: Interval): string => {
+        const angleBetween = timeScale(interval.end) - timeScale(interval.start);
+        const segment = segmentForInterval(interval);
         if (segment === "TopRight" || segment === "TopLeft") {
             const quarterFromStartAngle = timeScale(interval.start) + (angleBetween / 4);
 
@@ -43,6 +48,16 @@ export function GutterIntervalNames(props: { intervals: OrderedIntervals }) {
         }
     };
 
+    const dominantBaselineForInterval = (interval: Interval): "auto" | "hanging" => {
+        const segment = segmentForInterval(interval);
+        if (segment === "TopRight" || segment === "TopLeft") {
+            return "auto";
+        }
+        else {
+            return "hanging";
+        }
+    };
+
     const id = (i: number) => `gutter-interval-names-arcs-${i}`;
 
     return (
@@ -51,7 +66,7 @@ export function GutterIntervalNames(props: { intervals: OrderedIntervals }) {
                 {(interval, i) => <>
                     <path d={pathForInterval(interval)} id={id(i())} fill="green" stroke="red" />
                     <text>
-                        <textPath href={`#${id(i())}`}>
+                        <textPath href={`#${id(i())}`} dominant-baseline={dominantBaselineForInterval(interval)}>
                             {id(i())}
                         </textPath>
                     </text>
