@@ -6,6 +6,7 @@ import { createSignal } from 'solid-js';
 import { monthIntervals } from './model/months';
 import { Intervals } from './intervals';
 import { GutterIntervalNames } from './gutter-names';
+import { QuarterSpecification } from './model/quarterSpecification';
 
 export const Clock = () => {
     const viewBox: ViewBox = {
@@ -18,7 +19,7 @@ export const Clock = () => {
         setShowGuides(!showGuides());
     }
 
-    const intervals = monthIntervals(new Date().getFullYear(), 6);
+    const intervals = monthIntervals(new Date().getFullYear(), QuarterSpecification.default());
 
     return (<svg
         class="clock"

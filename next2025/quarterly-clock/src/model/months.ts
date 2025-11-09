@@ -1,4 +1,5 @@
 import { add } from "date-fns";
+import { QuarterSpecification } from "./quarterSpecification";
 
 export type Interval = {
     start: Date;
@@ -11,8 +12,8 @@ export type OrderedIntervals = {
     intervals: Interval[];
 }
 
-export function monthStarts(year: number, quarterStartMonth: number): Date[] {
-    const baseDate = new Date(year, quarterStartMonth, 1);
+export function monthStarts(year: number, quarterSpecification: QuarterSpecification): Date[] {
+    const baseDate = new Date(year, quarterSpecification.yearStartMonth, 1);
     const months = [baseDate];
     for (let i = 1; i < 12; i++) {
         months.push(add(baseDate, { months: i }));
@@ -20,8 +21,8 @@ export function monthStarts(year: number, quarterStartMonth: number): Date[] {
     return months;
 }
 
-export function monthIntervals(year: number, quarterStartMonth: number): OrderedIntervals {
-    const monthBoundaries = monthStarts(year, quarterStartMonth);
+export function monthIntervals(year: number, quarterSpecification: QuarterSpecification): OrderedIntervals {
+    const monthBoundaries = monthStarts(year, quarterSpecification);
     monthBoundaries.push(add(monthBoundaries[monthBoundaries.length - 1], { months: 1 }));
     const intervals = monthBoundaries.slice(0, 12).map((start, i) => ({
         start,

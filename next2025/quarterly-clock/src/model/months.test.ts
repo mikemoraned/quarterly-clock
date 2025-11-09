@@ -1,11 +1,12 @@
 import { describe, expect, test } from "vitest";
 import { Interval, monthStarts } from "./months";
 import { monthIntervals } from "./months";
+import { QuarterSpecification } from "./quarterSpecification";
 
 describe("calendar year is 2021, and quarters start on January 1st", () => {
-    const quarterStartMonth = 0;
+    const quarterSpecification = QuarterSpecification.default();
     test("month starts", () => {
-        const starts = monthStarts(2021, quarterStartMonth);
+        const starts = monthStarts(2021, quarterSpecification);
         const expected = [
             new Date(2021, 0, 1, 0, 0, 0, 0),
             new Date(2021, 1, 1, 0, 0, 0, 0),
@@ -23,7 +24,7 @@ describe("calendar year is 2021, and quarters start on January 1st", () => {
         expect(starts).toEqual(expected);
     });
     test("month intervals", () => {
-        const intervals = monthIntervals(2021, quarterStartMonth);
+        const intervals = monthIntervals(2021, quarterSpecification);
         const expectedIntervals = [
             { start: new Date(2021, 0, 1, 0, 0, 0, 0), end: new Date(2021, 0, 31, 23, 59, 59, 999), name: "January" },
             { start: new Date(2021, 1, 1, 0, 0, 0, 0), end: new Date(2021, 1, 28, 23, 59, 59, 999), name: "February" },
@@ -44,9 +45,9 @@ describe("calendar year is 2021, and quarters start on January 1st", () => {
 });
 
 describe("calendar year is 2021, and quarters start on July 1st", () => {
-    const quarterStartMonth = 6;
+    const quarterSpecification = new QuarterSpecification(6);
     test("month starts", () => {
-        const starts = monthStarts(2021, quarterStartMonth);
+        const starts = monthStarts(2021, quarterSpecification);
         const expected = [
             new Date(2021, 6, 1, 0, 0, 0, 0),
             new Date(2021, 7, 1, 0, 0, 0, 0),
@@ -64,7 +65,7 @@ describe("calendar year is 2021, and quarters start on July 1st", () => {
         expect(starts).toEqual(expected);
     });
     test("month intervals", () => {
-        const intervals = monthIntervals(2021, quarterStartMonth);
+        const intervals = monthIntervals(2021, quarterSpecification);
         const expectedIntervals = [
             { start: new Date(2021, 6, 1, 0, 0, 0, 0), end: new Date(2021, 6, 31, 23, 59, 59, 999), name: "July" },
             { start: new Date(2021, 7, 1, 0, 0, 0, 0), end: new Date(2021, 7, 31, 23, 59, 59, 999), name: "August" },
