@@ -62,7 +62,7 @@ export function GutterIntervalNames(props: { intervals: OrderedIntervals }) {
         <g class="gutter-interval-names">
             <For each={props.intervals.intervals}>
                 {(interval, i) => <>
-                    <path d={pathForInterval(interval)} id={id(i())} fill="green" />
+                    <path d={pathForInterval(interval)} id={id(i())} />
                     <text>
                         <textPath
                             href={`#${id(i())}`}
