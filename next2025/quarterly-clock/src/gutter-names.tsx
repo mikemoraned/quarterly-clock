@@ -27,22 +27,20 @@ export function GutterIntervalNames(props: { intervals: OrderedIntervals }) {
     const pathForInterval = (interval: Interval): string => {
         const angleBetween = timeScale(interval.end) - timeScale(interval.start);
         const segment = segmentForInterval(interval);
+        const halfAngle = timeScale(interval.start) + (angleBetween / 2);
         if (segment === "TopRight" || segment === "TopLeft") {
-            const quarterFromStartAngle = timeScale(interval.start) + (angleBetween / 4);
-
             return arcGenerator({
                 innerRadius: guides.gutterRadius,
                 outerRadius: guides.gutterRadius,
-                startAngle: quarterFromStartAngle,
+                startAngle: timeScale(interval.start),
                 endAngle: timeScale(interval.end)
             })!;
         }
         else {
-            const quarterFromEndAngle = timeScale(interval.end) - (angleBetween / 4);
             return arcGenerator({
                 innerRadius: guides.gutterRadius,
                 outerRadius: guides.gutterRadius,
-                startAngle: quarterFromEndAngle,
+                startAngle: timeScale(interval.end),
                 endAngle: timeScale(interval.start)
             })!;
         }
@@ -66,7 +64,12 @@ export function GutterIntervalNames(props: { intervals: OrderedIntervals }) {
                 {(interval, i) => <>
                     <path d={pathForInterval(interval)} id={id(i())} fill="green" stroke="red" />
                     <text>
-                        <textPath href={`#${id(i())}`} dominant-baseline={dominantBaselineForInterval(interval)}>
+                        <textPath
+                            href={`#${id(i())}`}
+                            dominant-baseline={dominantBaselineForInterval(interval)}
+                            style="text-anchor: middle;"
+                            startOffset="25%"
+                        >
                             {interval.name}
                         </textPath>
                     </text>
