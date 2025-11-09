@@ -18,7 +18,7 @@ export const Clock = () => {
         setShowGuides(!showGuides());
     }
 
-    const intervals = monthIntervals(new Date().getFullYear());
+    const intervals = monthIntervals(new Date().getFullYear(), 6);
 
     return (<svg
         class="clock"

@@ -36,4 +36,6 @@ Behind-the-scenes:
             * this should be made generic-enough to support display any available days
     * [ ] current Day hand
 * [ ] support yearStartMonth cleanly
+    * [x] add support in model for starting a month sequence that isn't start of year
+    * [ ] parse from URL
 * [ ] ...
