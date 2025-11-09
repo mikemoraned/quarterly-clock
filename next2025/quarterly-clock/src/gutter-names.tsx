@@ -67,7 +67,7 @@ export function GutterIntervalNames(props: { intervals: OrderedIntervals }) {
                     <path d={pathForInterval(interval)} id={id(i())} fill="green" stroke="red" />
                     <text>
                         <textPath href={`#${id(i())}`} dominant-baseline={dominantBaselineForInterval(interval)}>
-                            {id(i())}
+                            {interval.name}
                         </textPath>
                     </text>
                 </>}

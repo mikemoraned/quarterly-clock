@@ -1,6 +1,7 @@
 export type Interval = {
     start: Date;
     end: Date;
+    name?: string;
 };
 
 export type OrderedIntervals = {
@@ -17,7 +18,8 @@ export function monthIntervals(year: number): OrderedIntervals {
     monthBoundaries.push(new Date(year + 1, 0, 1));
     const intervals = monthBoundaries.slice(0, 12).map((start, i) => ({
         start,
-        end: monthBoundaries[i + 1]
+        end: monthBoundaries[i + 1],
+        name: start.toLocaleString('default', { month: 'long' })
     }));
     return {
         limits: {
