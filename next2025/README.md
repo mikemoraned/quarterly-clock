@@ -37,5 +37,6 @@ Behind-the-scenes:
     * [ ] current Day hand
 * [ ] support yearStartMonth cleanly
     * [x] add support in model for starting a month sequence that isn't start of year
-    * [ ] parse from URL
+    * [x] parse from params
+    * [ ] derive quarters from it
 * [ ] ...
