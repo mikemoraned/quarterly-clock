@@ -2,6 +2,7 @@ import { render } from 'solid-js/web';
 import 'solid-devtools';
 import { Clock } from './clock';
 import './index.css';
+import { parseParameters } from './model/quarterSpecification';
 
 const root = document.getElementById('root');
 
@@ -11,4 +12,7 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
   );
 }
 
-render(() => <Clock />, root!);
+const year = new Date().getFullYear();
+const quarterSpecification = parseParameters(new URLSearchParams(document.location.search));
+
+render(() => <Clock year={year} quarterSpecification={quarterSpecification} />, root!);

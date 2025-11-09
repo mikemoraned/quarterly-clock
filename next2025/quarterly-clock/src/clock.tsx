@@ -8,7 +8,7 @@ import { Intervals } from './intervals';
 import { GutterIntervalNames } from './gutter-names';
 import { QuarterSpecification } from './model/quarterSpecification';
 
-export const Clock = () => {
+export const Clock = (props: { year: number, quarterSpecification: QuarterSpecification }) => {
     const viewBox: ViewBox = {
         width: 1000,
         height: 1000
@@ -19,7 +19,7 @@ export const Clock = () => {
         setShowGuides(!showGuides());
     }
 
-    const intervals = monthIntervals(new Date().getFullYear(), QuarterSpecification.default());
+    const intervals = monthIntervals(props.year, props.quarterSpecification);
 
     return (<svg
         class="clock"
