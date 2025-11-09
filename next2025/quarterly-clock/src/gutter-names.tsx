@@ -19,20 +19,25 @@ export function GutterIntervalNames(props: { intervals: OrderedIntervals }) {
         .range(["TopRight", "BottomRight", "BottomLeft", "TopLeft"]);
 
     const pathForInterval = (interval: Interval): string => {
-        const segment = segmentScale(timeScale(interval.end));
+        const angleBetween = timeScale(interval.end) - timeScale(interval.start);
+        const halfAngle = timeScale(interval.start) + (angleBetween / 2);
+        const segment = segmentScale(halfAngle);
         if (segment === "TopRight" || segment === "TopLeft") {
+            const quarterFromStartAngle = timeScale(interval.start) + (angleBetween / 4);
+
             return arcGenerator({
                 innerRadius: guides.gutterRadius,
                 outerRadius: guides.gutterRadius,
-                startAngle: timeScale(interval.start),
+                startAngle: quarterFromStartAngle,
                 endAngle: timeScale(interval.end)
             })!;
         }
         else {
+            const quarterFromEndAngle = timeScale(interval.end) - (angleBetween / 4);
             return arcGenerator({
                 innerRadius: guides.gutterRadius,
                 outerRadius: guides.gutterRadius,
-                startAngle: timeScale(interval.end),
+                startAngle: quarterFromEndAngle,
                 endAngle: timeScale(interval.start)
             })!;
         }
@@ -44,7 +49,7 @@ export function GutterIntervalNames(props: { intervals: OrderedIntervals }) {
         <g class="gutter-interval-names">
             <For each={props.intervals.intervals}>
                 {(interval, i) => <>
-                    <path d={pathForInterval(interval)} id={id(i())} fill="green" stroke="white" />
+                    <path d={pathForInterval(interval)} id={id(i())} fill="green" stroke="red" />
                     <text>
                         <textPath href={`#${id(i())}`}>
                             {id(i())}
