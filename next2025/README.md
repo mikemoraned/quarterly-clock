@@ -23,4 +23,17 @@ Behind-the-scenes:
 * [x] Visualise months
     * [x] Show months as an arc
     * [x] Show month names on the border of the clock
+* [ ] port across main components:
+    * [ ] Logo
+    * [ ] current quarter
+        * [ ] label
+        * [ ] visualisation
+    * [ ] quarter background in center
+    * [ ] Remaining time 
+        * [ ] label
+            * will probably replace this with remaining days
+        * [ ] visualisation
+            * this should be made generic-enough to support display any available days
+    * [ ] current Day hand
+* [ ] support yearStartMonth cleanly
 * [ ] ...
