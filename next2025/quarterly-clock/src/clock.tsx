@@ -3,12 +3,13 @@ import { ViewBox } from './svg/view-box';
 import { GuidesProvider } from './guides-provider';
 import { GuidesVisualisation } from './guides-visualisation';
 import { createSignal } from 'solid-js';
-import { monthIntervals } from './model/months';
+import { createDateWithinInterval, monthIntervals, OrderedIntervals } from './model/months';
 import { Intervals } from './intervals';
 import { GutterIntervalNames } from './gutter-names';
 import { QuarterSpecification } from './model/quarterSpecification';
+import { Hand } from './hand';
 
-export const Clock = (props: { year: number, quarterSpecification: QuarterSpecification }) => {
+export const Clock = (props: { now: Date, quarterSpecification: QuarterSpecification }) => {
     const viewBox: ViewBox = {
         width: 1000,
         height: 1000
@@ -19,7 +20,8 @@ export const Clock = (props: { year: number, quarterSpecification: QuarterSpecif
         setShowGuides(!showGuides());
     }
 
-    const intervals = monthIntervals(props.year, props.quarterSpecification);
+    const intervals = monthIntervals(props.now.getFullYear(), props.quarterSpecification);
+    const nowInContext = createDateWithinInterval(props.now, intervals.limits);
 
     return (<svg
         class="clock"
@@ -35,6 +37,7 @@ export const Clock = (props: { year: number, quarterSpecification: QuarterSpecif
         <GuidesProvider viewBox={viewBox}>
             <Intervals intervals={intervals} gradientId="month-gradient" />
             <GutterIntervalNames intervals={intervals} />
+            <Hand now={nowInContext} />
             <GuidesVisualisation showGuides={showGuides()} />
         </GuidesProvider>
     </svg>);

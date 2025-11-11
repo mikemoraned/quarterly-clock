@@ -1,6 +1,11 @@
 import { add } from "date-fns";
 import { QuarterSpecification } from "./quarterSpecification";
 
+export type DateWithinInterval = {
+    date: Date;
+    interval: Interval
+};
+
 export type Interval = {
     start: Date;
     end: Date;
@@ -10,6 +15,10 @@ export type Interval = {
 export type OrderedIntervals = {
     limits: Interval
     intervals: Interval[];
+}
+
+export function createDateWithinInterval(date: Date, interval: Interval): DateWithinInterval {
+    return { date, interval };
 }
 
 export function monthStarts(year: number, quarterSpecification: QuarterSpecification): Date[] {

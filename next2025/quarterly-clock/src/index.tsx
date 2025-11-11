@@ -12,7 +12,7 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
   );
 }
 
-const year = new Date().getFullYear();
+const now = new Date();
 const quarterSpecification = parseParameters(new URLSearchParams(document.location.search));
 
-render(() => <Clock year={year} quarterSpecification={quarterSpecification} />, root!);
+render(() => <Clock now={now} quarterSpecification={quarterSpecification} />, root!);
