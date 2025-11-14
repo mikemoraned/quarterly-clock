@@ -29,3 +29,25 @@ export function Quarters(props: { intervals: OrderedIntervals }) {
         </g>
     )
 }
+
+export function CurrentQuarter(props: { currentQuarter: Interval, intervals: OrderedIntervals }) {
+    const guides: Guides = useGuides()!;
+    const arcGenerator = defaultArcGenerator();
+
+    const timeScale = timeToAngleScale(props.intervals.limits);
+    const colorScale = timeToQuarterColorScale(props.intervals.limits);
+
+    const pathForCurrentQuarter =
+        arcGenerator({
+            innerRadius: guides.outerRadius / 6,
+            outerRadius: guides.outerRadius - guides.outerRadius / 4,
+            startAngle: timeScale(props.currentQuarter.start),
+            endAngle: timeScale(props.currentQuarter.end)
+        })!;
+
+    return (
+        <g class="current-quarter">
+            <path d={pathForCurrentQuarter} stroke="white" fill={colorScale(midpointOfInterval(props.currentQuarter))} />
+        </g>
+    )
+}

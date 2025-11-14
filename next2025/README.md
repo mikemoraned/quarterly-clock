@@ -27,7 +27,7 @@ Behind-the-scenes:
     * [ ] Logo
     * [ ] current quarter
         * [ ] label
-        * [ ] visualisation
+        * [x] visualisation
     * [x] quarter background in center
     * [ ] Remaining time 
         * [ ] label

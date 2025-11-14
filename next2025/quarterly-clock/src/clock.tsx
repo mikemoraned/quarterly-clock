@@ -8,8 +8,8 @@ import { Intervals } from './intervals';
 import { GutterIntervalNames } from './gutter-names';
 import { QuarterSpecification } from './model/quarterSpecification';
 import { Hand } from './hand';
-import { Quarters } from './quarters';
-import { quarterIntervals } from './model/quarters';
+import { CurrentQuarter, Quarters } from './quarters';
+import { quarterIntervalForDate, quarterIntervals } from './model/quarters';
 
 export const Clock = (props: { now: Date, quarterSpecification: QuarterSpecification }) => {
     const viewBox: ViewBox = {
@@ -25,6 +25,7 @@ export const Clock = (props: { now: Date, quarterSpecification: QuarterSpecifica
     const monthsInYear = monthIntervals(props.now.getFullYear(), props.quarterSpecification);
     const nowInYear = createDateWithinInterval(props.now, monthsInYear.limits);
     const quartersInYear = quarterIntervals(props.now.getFullYear(), props.quarterSpecification);
+    const currentQuarter = quarterIntervalForDate(props.now, props.quarterSpecification)!;
 
     return (<svg
         class="clock"
@@ -41,6 +42,7 @@ export const Clock = (props: { now: Date, quarterSpecification: QuarterSpecifica
             <Intervals intervals={monthsInYear} gradientId="month-gradient" />
             <GutterIntervalNames intervals={monthsInYear} />
             <Quarters intervals={quartersInYear} />
+            <CurrentQuarter currentQuarter={currentQuarter} intervals={quartersInYear} />
             <Hand now={nowInYear} />
             <GuidesVisualisation showGuides={showGuides()} />
         </GuidesProvider>

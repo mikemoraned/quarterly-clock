@@ -1,6 +1,6 @@
 import { add } from "date-fns";
 import { QuarterSpecification } from "./quarterSpecification";
-import { OrderedIntervals } from "./intervals";
+import { Interval, OrderedIntervals } from "./intervals";
 
 export function quarterStarts(year: number, quarterSpecification: QuarterSpecification): Date[] {
     const baseDate = new Date(year, quarterSpecification.yearStartMonth, 1);
@@ -27,4 +27,15 @@ export function quarterIntervals(year: number, quarterSpecification: QuarterSpec
         },
         intervals
     };
+}
+
+export function quarterIntervalForDate(date: Date, quarterSpecification: QuarterSpecification): Interval | undefined {
+    const year = date.getFullYear();
+    const quarters = quarterIntervals(year, quarterSpecification).intervals;
+    for (const quarter of quarters) {
+        if (date >= quarter.start && date <= quarter.end) {
+            return quarter;
+        }
+    }
+    return undefined;
 }
