@@ -2,16 +2,14 @@ import { Guides } from "./guides";
 import { useGuides } from "./guides-provider";
 import { defaultArcGenerator } from "./standard";
 import { For } from "solid-js";
-import { scaleTime } from "d3-scale";
 import { Interval, OrderedIntervals } from "./model/intervals";
+import { timeToAngleScale } from "./scales";
 
 export function Intervals(props: { intervals: OrderedIntervals, gradientId: string }) {
     const guides: Guides = useGuides()!;
     const arcGenerator = defaultArcGenerator();
 
-    const timeScale = scaleTime()
-        .domain([props.intervals.limits.start, props.intervals.limits.end])
-        .range([0, 2 * Math.PI]);
+    const timeScale = timeToAngleScale(props.intervals.limits);
 
     const pathForInterval = (interval: Interval): string => {
         return arcGenerator({

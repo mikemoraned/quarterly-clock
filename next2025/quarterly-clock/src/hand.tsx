@@ -1,8 +1,8 @@
 import { Guides } from "./guides";
 import { useGuides } from "./guides-provider";
-import { DateWithinInterval } from "./model/months";
 import './hand.css';
 import { scaleTime } from "d3-scale";
+import { DateWithinInterval } from "./model/intervals";
 
 export function Hand(props: { now: DateWithinInterval }) {
     const guides: Guides = useGuides()!;

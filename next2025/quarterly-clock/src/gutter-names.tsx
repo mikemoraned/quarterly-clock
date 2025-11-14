@@ -2,17 +2,16 @@ import { Guides } from "./guides";
 import { useGuides } from "./guides-provider";
 import { defaultArcGenerator } from "./standard";
 import { For } from "solid-js";
-import { scaleTime, scaleQuantize } from "d3-scale";
+import { scaleQuantize } from "d3-scale";
 import { Interval, OrderedIntervals } from "./model/intervals";
+import { timeToAngleScale } from "./scales";
 
 
 export function GutterIntervalNames(props: { intervals: OrderedIntervals }) {
     const guides: Guides = useGuides()!;
     const arcGenerator = defaultArcGenerator();
 
-    const timeScale = scaleTime()
-        .domain([props.intervals.limits.start, props.intervals.limits.end])
-        .range([0, 2 * Math.PI]);
+    const timeScale = timeToAngleScale(props.intervals.limits);
 
     const segmentScale = scaleQuantize<string>()
         .domain([0, 2 * Math.PI])
