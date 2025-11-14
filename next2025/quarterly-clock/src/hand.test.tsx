@@ -4,7 +4,8 @@ import { Hand } from "./hand"
 import { GuidesProvider } from "./guides-provider";
 import { JSX } from "solid-js";
 import { ViewBox } from "./svg/view-box";
-import { createDateWithinInterval, Interval } from "./model/months";
+import { createDateWithinInterval } from "./model/months";
+import { Interval } from "./model/intervals";
 
 const YEAR: Interval = {
     start: new Date(2021, 0, 1, 0, 0, 0, 0),
