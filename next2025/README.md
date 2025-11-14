@@ -34,7 +34,7 @@ Behind-the-scenes:
             * will probably replace this with remaining days
         * [ ] visualisation
             * this should be made generic-enough to support display any available days
-    * [ ] current Day hand
+    * [x] current Day hand
 * [ ] support yearStartMonth cleanly
     * [x] add support in model for starting a month sequence that isn't start of year
     * [x] parse from params
