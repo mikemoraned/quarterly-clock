@@ -10,6 +10,8 @@ import { QuarterSpecification } from './model/quarterSpecification';
 import { Hand } from './hand';
 import { CurrentQuarter, Quarters } from './quarters';
 import { quarterIntervalForDate, quarterIntervals } from './model/quarters';
+import { dayIntervals } from './model/days';
+import { DaySelector } from './days';
 
 export const Clock = (props: { now: Date, quarterSpecification: QuarterSpecification }) => {
     const viewBox: ViewBox = {
@@ -26,6 +28,7 @@ export const Clock = (props: { now: Date, quarterSpecification: QuarterSpecifica
     const nowInYear = createDateWithinInterval(props.now, monthsInYear.limits);
     const quartersInYear = quarterIntervals(props.now.getFullYear(), props.quarterSpecification);
     const currentQuarter = quarterIntervalForDate(props.now, props.quarterSpecification)!;
+    const daysInYear = dayIntervals(props.now.getFullYear(), props.quarterSpecification);
 
     return (<svg
         class="clock"
@@ -43,6 +46,7 @@ export const Clock = (props: { now: Date, quarterSpecification: QuarterSpecifica
             <GutterIntervalNames intervals={monthsInYear} />
             <Quarters intervals={quartersInYear} />
             <CurrentQuarter currentQuarter={currentQuarter} intervals={quartersInYear} />
+            <DaySelector intervals={daysInYear} />
             <Hand now={nowInYear} />
             <GuidesVisualisation showGuides={showGuides()} />
         </GuidesProvider>
