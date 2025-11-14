@@ -1,7 +1,8 @@
 import { describe, expect, test } from "vitest";
-import { Interval, monthStarts } from "./months";
+import { monthStarts } from "./months";
 import { monthIntervals } from "./months";
 import { QuarterSpecification } from "./quarterSpecification";
+import { Interval } from "./intervals";
 
 describe("calendar year is 2021, and quarters start on January 1st", () => {
     const quarterSpecification = QuarterSpecification.default();

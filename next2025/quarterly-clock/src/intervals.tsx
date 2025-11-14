@@ -1,9 +1,9 @@
 import { Guides } from "./guides";
 import { useGuides } from "./guides-provider";
-import { Interval, OrderedIntervals } from "./model/months";
 import { defaultArcGenerator } from "./standard";
 import { For } from "solid-js";
 import { scaleTime } from "d3-scale";
+import { Interval, OrderedIntervals } from "./model/intervals";
 
 export function Intervals(props: { intervals: OrderedIntervals, gradientId: string }) {
     const guides: Guides = useGuides()!;

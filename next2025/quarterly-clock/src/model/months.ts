@@ -1,21 +1,6 @@
 import { add } from "date-fns";
 import { QuarterSpecification } from "./quarterSpecification";
-
-export type DateWithinInterval = {
-    date: Date;
-    interval: Interval
-};
-
-export type Interval = {
-    start: Date;
-    end: Date;
-    name?: string;
-};
-
-export type OrderedIntervals = {
-    limits: Interval
-    intervals: Interval[];
-}
+import { DateWithinInterval, Interval, OrderedIntervals } from "./intervals";
 
 export function createDateWithinInterval(date: Date, interval: Interval): DateWithinInterval {
     return { date, interval };
