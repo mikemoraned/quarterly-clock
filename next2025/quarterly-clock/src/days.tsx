@@ -4,6 +4,7 @@ import { defaultArcGenerator } from "./standard";
 import { For } from "solid-js";
 import { Interval, OrderedIntervals } from "./model/intervals";
 import { timeToAngleScale } from "./scales";
+import './days.css';
 
 export function DaySelector(props: { intervals: OrderedIntervals }) {
     const guides: Guides = useGuides()!;
