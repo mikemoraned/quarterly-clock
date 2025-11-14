@@ -1,21 +1,16 @@
-import { scaleQuantize } from "d3-scale";
 import { Guides } from "./guides";
 import { useGuides } from "./guides-provider";
 import { Interval, midpointOfInterval, OrderedIntervals } from "./model/intervals";
 import { defaultArcGenerator } from "./standard";
 import { For } from "solid-js";
-import { BANG_WONG_PALETTE } from "./colors";
-import { timeToAngleScale } from "./scales";
+import { timeToAngleScale, timeToQuarterColorScale } from "./scales";
 
 export function Quarters(props: { intervals: OrderedIntervals }) {
     const guides: Guides = useGuides()!;
     const arcGenerator = defaultArcGenerator();
 
     const timeScale = timeToAngleScale(props.intervals.limits);
-
-    const color = scaleQuantize<string>()
-        .domain([props.intervals.limits.start, props.intervals.limits.end])
-        .range([BANG_WONG_PALETTE["yellow"], BANG_WONG_PALETTE["reddish-purple"], BANG_WONG_PALETTE["sky-blue"], BANG_WONG_PALETTE["bluish-green"]]);
+    const colorScale = timeToQuarterColorScale(props.intervals.limits);
 
     const pathForInterval = (interval: Interval): string => {
         return arcGenerator({
@@ -29,7 +24,7 @@ export function Quarters(props: { intervals: OrderedIntervals }) {
     return (
         <g class="quarters">
             <For each={props.intervals.intervals}>
-                {(interval) => <path d={pathForInterval(interval)} stroke="white" fill={color(midpointOfInterval(interval))} />}
+                {(interval) => <path d={pathForInterval(interval)} stroke="white" fill={colorScale(midpointOfInterval(interval))} />}
             </For>
         </g>
     )
