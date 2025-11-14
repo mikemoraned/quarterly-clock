@@ -39,4 +39,5 @@ Behind-the-scenes:
     * [x] add support in model for starting a month sequence that isn't start of year
     * [x] parse from params
     * [ ] derive quarters from it
+        * [ ] yearStartMonth should always be at exact North
 * [ ] ...

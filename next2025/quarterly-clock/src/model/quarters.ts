@@ -14,10 +14,11 @@ export function quarterStarts(year: number, quarterSpecification: QuarterSpecifi
 export function quarterIntervals(year: number, quarterSpecification: QuarterSpecification): OrderedIntervals {
     const quarterBoundaries = quarterStarts(year, quarterSpecification);
     quarterBoundaries.push(add(quarterBoundaries[quarterBoundaries.length - 1], { months: 3 }));
+    const quarterNames = ["Q1", "Q2", "Q3", "Q4"];
     const intervals = quarterBoundaries.slice(0, 4).map((start, i) => ({
         start,
         end: new Date(quarterBoundaries[i + 1].getTime() - 1),
-        name: start.toLocaleString('default', { month: 'long' })
+        name: quarterNames[i]
     }));
     return {
         limits: {
