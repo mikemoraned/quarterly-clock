@@ -28,16 +28,16 @@ Behind-the-scenes:
     * [ ] current quarter
         * [ ] label
         * [ ] visualisation
-    * [ ] quarter background in center
+    * [x] quarter background in center
     * [ ] Remaining time 
         * [ ] label
             * will probably replace this with remaining days
         * [ ] visualisation
             * this should be made generic-enough to support display any available days
     * [x] current Day hand
-* [ ] support yearStartMonth cleanly
+* [x] support yearStartMonth cleanly
     * [x] add support in model for starting a month sequence that isn't start of year
     * [x] parse from params
-    * [ ] derive quarters from it
-        * [ ] yearStartMonth should always be at exact North
+    * [x] derive quarters from it
+        * [x] yearStartMonth should always be at exact North
 * [ ] ...
