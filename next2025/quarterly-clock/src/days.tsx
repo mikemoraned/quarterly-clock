@@ -6,11 +6,11 @@ import { Interval, OrderedIntervals } from "./model/intervals";
 import { timeToAngleScale } from "./scales";
 import './days.css';
 
-export function DaySelector(props: { intervals: OrderedIntervals }) {
+function DaySelection(props: { interval: Interval, limits: Interval }) {
     const guides: Guides = useGuides()!;
     const arcGenerator = defaultArcGenerator();
 
-    const timeScale = timeToAngleScale(props.intervals.limits);
+    const timeScale = timeToAngleScale(props.limits);
 
     const pathForInterval = (interval: Interval): string => {
         return arcGenerator({
@@ -20,11 +20,14 @@ export function DaySelector(props: { intervals: OrderedIntervals }) {
             endAngle: timeScale(interval.end)
         })!;
     }
+    return (<path d={pathForInterval(props.interval)} />);
+}
 
+export function DaySelector(props: { intervals: OrderedIntervals }) {
     return (
         <g class="day-selector">
             <For each={props.intervals.intervals}>
-                {(interval) => <path d={pathForInterval(interval)} stroke="white" />}
+                {(interval) => <DaySelection interval={interval} limits={props.intervals.limits} />}
             </For>
         </g>
     )
