@@ -8,11 +8,17 @@ export function dayStarts(year: number, quarterSpecification: QuarterSpecificati
     return eachDayOfInterval({ start: baseDate, end: limitDate });
 }
 
+const DATE_FORMAT = new Intl.DateTimeFormat(undefined, {
+    year: "numeric",
+    month: "numeric",
+    day: "numeric",
+});
+
 export function dayIntervals(year: number, quarterSpecification: QuarterSpecification): OrderedIntervals {
     const intervals = dayStarts(year, quarterSpecification).map((start) => ({
         start,
         end: add(start, { days: 1, seconds: -1 }),
-        name: start.toLocaleString('default', { day: 'numeric' })
+        name: DATE_FORMAT.format(start)
     }));
     return {
         limits: {

@@ -1,7 +1,7 @@
 import { Guides } from "./guides";
 import { useGuides } from "./guides-provider";
 import { defaultArcGenerator } from "./standard";
-import { For } from "solid-js";
+import { Accessor, createEffect, createSignal, For } from "solid-js";
 import { Interval, OrderedIntervals } from "./model/intervals";
 import { timeToAngleScale } from "./scales";
 import './days.css';
@@ -10,6 +10,12 @@ import { BANG_WONG_PALETTE } from "./colors";
 function DaySelection(props: { interval: Interval, limits: Interval }) {
     const guides: Guides = useGuides()!;
     const arcGenerator = defaultArcGenerator();
+    const [selected, setSelected] = createSignal(false);
+    createEffect(() => {
+        if (selected()) {
+            console.log("Selected day:", props.interval);
+        }
+    });
 
     const timeScale = timeToAngleScale(props.limits);
 
@@ -21,7 +27,7 @@ function DaySelection(props: { interval: Interval, limits: Interval }) {
             endAngle: timeScale(interval.end)
         })!;
     }
-    return (<path d={pathForInterval(props.interval)} />);
+    return (<path d={pathForInterval(props.interval)} onMouseOver={() => setSelected(true)} onMouseOut={() => setSelected(false)} />);
 }
 
 export function DaySelector(props: { intervals: OrderedIntervals }) {
@@ -60,3 +66,4 @@ export function DaysRemaining(props: { intervals: OrderedIntervals }) {
         </g>
     )
 }
+

@@ -17,3 +17,7 @@ export type OrderedIntervals = {
 export function midpointOfInterval(interval: Interval): Date {
     return new Date((interval.start.getTime() + interval.end.getTime()) / 2);
 }
+
+export function intervalsWhollyAfterDate(intervals: Interval[], date: Date): Interval[] {
+    return intervals.filter(interval => interval.start >= date);
+}
