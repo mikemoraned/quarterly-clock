@@ -11,7 +11,7 @@ import { Hand } from './hand';
 import { CurrentQuarter, Quarters } from './quarters';
 import { quarterIntervalForDate, quarterIntervals } from './model/quarters';
 import { dayIntervals } from './model/days';
-import { DaySelector } from './days';
+import { DaySelector, DaysRemaining } from './days';
 
 export const Clock = (props: { now: Date, quarterSpecification: QuarterSpecification }) => {
     const viewBox: ViewBox = {
@@ -46,7 +46,7 @@ export const Clock = (props: { now: Date, quarterSpecification: QuarterSpecifica
             <GutterIntervalNames intervals={monthsInYear} />
             <Quarters intervals={quartersInYear} />
             <CurrentQuarter currentQuarter={currentQuarter} intervals={quartersInYear} />
-            <DaySelector intervals={daysInYear} />
+            <DaysRemaining intervals={daysInYear} />
             <Hand now={nowInYear} />
             <GuidesVisualisation showGuides={showGuides()} />
         </GuidesProvider>
