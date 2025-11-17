@@ -6,3 +6,8 @@ g.hand line {
     stroke: black;
     stroke-linecap: round;
 }
+
+g.hand .debug {
+    stroke: red;
+    stroke-dasharray: 4 2;
+}

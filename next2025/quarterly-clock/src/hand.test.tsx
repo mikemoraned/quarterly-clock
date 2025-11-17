@@ -1,4 +1,4 @@
-import { test, expect } from "vitest"
+import { test, expect, describe } from "vitest"
 import { render } from "@solidjs/testing-library"
 import { Hand } from "./hand"
 import { GuidesProvider } from "./guides-provider";
@@ -22,20 +22,38 @@ const wrapper = (props: { children: JSX.Element }) => <svg>
     </GuidesProvider>
 </svg>;
 
-test("when start of year", async () => {
+describe("when start of year", async () => {
     const now = createDateWithinInterval(new Date('2021-01-01T00:00:00Z'), YEAR);
-    const { container } = render(() => <Hand now={now} />, { wrapper });
-    expect(container).toMatchSnapshot();
+    test("default", async () => {
+        const { container } = render(() => <Hand now={now} />, { wrapper });
+        expect(container).toMatchSnapshot();
+    });
+    test("debug", async () => {
+        const { container } = render(() => <Hand now={now} debug={true} />, { wrapper });
+        expect(container).toMatchSnapshot();
+    });
 });
 
-test("when mid year", async () => {
+describe("when mid year", async () => {
     const now = createDateWithinInterval(new Date('2021-06-30T12:00:00Z'), YEAR);
-    const { container } = render(() => <Hand now={now} />, { wrapper });
-    expect(container).toMatchSnapshot();
+    test("default", async () => {
+        const { container } = render(() => <Hand now={now} />, { wrapper });
+        expect(container).toMatchSnapshot();
+    });
+    test("debug", async () => {
+        const { container } = render(() => <Hand now={now} debug={true} />, { wrapper });
+        expect(container).toMatchSnapshot();
+    });
 });
 
-test("when end of year", async () => {
+describe("when end of year", async () => {
     const now = createDateWithinInterval(new Date('2021-12-31T23:59:59Z'), YEAR);
-    const { container } = render(() => <Hand now={now} />, { wrapper });
-    expect(container).toMatchSnapshot();
+    test("default", async () => {
+        const { container } = render(() => <Hand now={now} />, { wrapper });
+        expect(container).toMatchSnapshot();
+    });
+    test("debug", async () => {
+        const { container } = render(() => <Hand now={now} debug={true} />, { wrapper });
+        expect(container).toMatchSnapshot();
+    });
 });
