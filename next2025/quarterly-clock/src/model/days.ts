@@ -4,7 +4,7 @@ import { OrderedIntervals } from "./intervals";
 
 export function dayStarts(year: number, quarterSpecification: QuarterSpecification): Date[] {
     const baseDate = new Date(year, quarterSpecification.yearStartMonth, 1);
-    const limitDate = add(baseDate, { years: 1 });
+    const limitDate = add(baseDate, { years: 1, days: -1 });
     return eachDayOfInterval({ start: baseDate, end: limitDate });
 }
 
