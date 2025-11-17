@@ -4,11 +4,11 @@ import { Interval, OrderedIntervals } from "./intervals";
 
 export function quarterStarts(year: number, quarterSpecification: QuarterSpecification): Date[] {
     const baseDate = new Date(year, quarterSpecification.yearStartMonth, 1);
-    const months = [baseDate];
+    const quarters = [baseDate];
     for (let i = 1; i < 4; i++) {
-        months.push(add(baseDate, { months: i * 3 }));
+        quarters.push(add(baseDate, { months: i * 3 }));
     }
-    return months;
+    return quarters;
 }
 
 export function quarterIntervals(year: number, quarterSpecification: QuarterSpecification): OrderedIntervals {
