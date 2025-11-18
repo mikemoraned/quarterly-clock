@@ -27,7 +27,11 @@ function DaySelection(props: { interval: Interval, limits: Interval }) {
             endAngle: timeScale(interval.end)
         })!;
     }
-    return (<path d={pathForInterval(props.interval)} onMouseOver={() => setSelected(true)} onMouseOut={() => setSelected(false)} />);
+    return (<path
+        d={pathForInterval(props.interval)}
+        onMouseOver={() => setSelected(true)} onMouseOut={() => setSelected(false)}
+        class={selected() ? "selected" : "unselected"}
+    />);
 }
 
 export function DaySelector(props: { intervals: OrderedIntervals }) {
