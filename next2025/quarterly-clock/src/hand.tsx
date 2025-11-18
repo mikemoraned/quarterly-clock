@@ -1,9 +1,9 @@
 import { Guides } from "./guides";
 import { useGuides } from "./guides-provider";
 import './hand.css';
-import { scaleTime } from "d3-scale";
 import { DateWithinInterval } from "./model/intervals";
 import { createSignal } from "solid-js";
+import { radiansToDegrees, timeToAngleScale } from "./scales";
 import { defaultRotationRounding } from "./standard";
 
 export function Hand(props: { now: DateWithinInterval, debug?: boolean }) {
@@ -13,11 +13,8 @@ export function Hand(props: { now: DateWithinInterval, debug?: boolean }) {
         setShowDebug(!showDebug());
     }
 
-    const timeScale = scaleTime()
-        .domain([props.now.interval.start, props.now.interval.end])
-        .range([0, 360]);
-
-    const rotateAngle = defaultRotationRounding(timeScale(props.now.date));
+    const timeScale = timeToAngleScale(props.now.interval);
+    const rotateAngle = defaultRotationRounding(radiansToDegrees(timeScale(props.now.date)));
 
     return (
         <g class="hand" onDblClick={toggleShowDebug}>
