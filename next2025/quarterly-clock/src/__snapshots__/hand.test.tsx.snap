@@ -13,7 +13,7 @@ exports[`when end of year > debug 1`] = `
       />
       <line
         stroke-width="9.12"
-        transform="rotate(359.99998859589044)"
+        transform="rotate(360)"
         x1="0"
         x2="0"
         y1="0"
@@ -22,7 +22,7 @@ exports[`when end of year > debug 1`] = `
       <line
         class="debug"
         stroke-width="1px"
-        transform="rotate(359.99998859589044)"
+        transform="rotate(360)"
         x1="0"
         x2="0"
         y1="0"
@@ -46,32 +46,7 @@ exports[`when end of year > default 1`] = `
       />
       <line
         stroke-width="9.12"
-        transform="rotate(359.99998859589044)"
-        x1="0"
-        x2="0"
-        y1="0"
-        y2="-456"
-      />
-      
-    </g>
-  </svg>
-</div>
-`;
-
-exports[`when end of year 1`] = `
-<div>
-  <svg>
-    <g
-      class="hand"
-    >
-      <circle
-        cx="0"
-        cy="0"
-        r="22.8"
-      />
-      <line
-        stroke-width="9.12"
-        transform="rotate(359.99998859589044)"
+        transform="rotate(360)"
         x1="0"
         x2="0"
         y1="0"
@@ -96,7 +71,7 @@ exports[`when mid year > debug 1`] = `
       />
       <line
         stroke-width="9.12"
-        transform="rotate(178.02739726591918)"
+        transform="rotate(178.03)"
         x1="0"
         x2="0"
         y1="0"
@@ -105,7 +80,7 @@ exports[`when mid year > debug 1`] = `
       <line
         class="debug"
         stroke-width="1px"
-        transform="rotate(178.02739726591918)"
+        transform="rotate(178.03)"
         x1="0"
         x2="0"
         y1="0"
@@ -129,32 +104,7 @@ exports[`when mid year > default 1`] = `
       />
       <line
         stroke-width="9.12"
-        transform="rotate(178.02739726591918)"
-        x1="0"
-        x2="0"
-        y1="0"
-        y2="-456"
-      />
-      
-    </g>
-  </svg>
-</div>
-`;
-
-exports[`when mid year 1`] = `
-<div>
-  <svg>
-    <g
-      class="hand"
-    >
-      <circle
-        cx="0"
-        cy="0"
-        r="22.8"
-      />
-      <line
-        stroke-width="9.12"
-        transform="rotate(178.02739726591918)"
+        transform="rotate(178.03)"
         x1="0"
         x2="0"
         y1="0"
@@ -200,31 +150,6 @@ exports[`when start of year > debug 1`] = `
 `;
 
 exports[`when start of year > default 1`] = `
-<div>
-  <svg>
-    <g
-      class="hand"
-    >
-      <circle
-        cx="0"
-        cy="0"
-        r="22.8"
-      />
-      <line
-        stroke-width="9.12"
-        transform="rotate(0)"
-        x1="0"
-        x2="0"
-        y1="0"
-        y2="-456"
-      />
-      
-    </g>
-  </svg>
-</div>
-`;
-
-exports[`when start of year 1`] = `
 <div>
   <svg>
     <g

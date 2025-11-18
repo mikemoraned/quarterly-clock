@@ -4,6 +4,7 @@ import './hand.css';
 import { scaleTime } from "d3-scale";
 import { DateWithinInterval } from "./model/intervals";
 import { createSignal } from "solid-js";
+import { defaultRotationRounding } from "./standard";
 
 export function Hand(props: { now: DateWithinInterval, debug?: boolean }) {
     const guides: Guides = useGuides()!;
@@ -16,7 +17,7 @@ export function Hand(props: { now: DateWithinInterval, debug?: boolean }) {
         .domain([props.now.interval.start, props.now.interval.end])
         .range([0, 360]);
 
-    const rotateAngle = timeScale(props.now.date);
+    const rotateAngle = defaultRotationRounding(timeScale(props.now.date));
 
     return (
         <g class="hand" onDblClick={toggleShowDebug}>

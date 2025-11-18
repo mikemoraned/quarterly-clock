@@ -14,3 +14,8 @@ declare module "d3-shape" {
 export function defaultArcGenerator(): Arc<any, DefaultArcObject> {
     return arc().digits(3);
 }
+
+export function defaultRotationRounding(value: number): number {
+    const rounded = value.toFixed(2);
+    return parseFloat(rounded);
+}
