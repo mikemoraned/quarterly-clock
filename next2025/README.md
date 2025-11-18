@@ -32,8 +32,9 @@ Behind-the-scenes:
     * [ ] Remaining time 
         * [ ] label
             * will probably replace this with remaining days
-        * [ ] visualisation
+        * [x] visualisation
             * this should be made generic-enough to support display any available days
+            * [x] show weekends as not available
     * [x] current Day hand
 * [x] support yearStartMonth cleanly
     * [x] add support in model for starting a month sequence that isn't start of year

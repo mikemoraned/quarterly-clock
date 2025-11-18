@@ -13,6 +13,7 @@ import { quarterIntervalForDate, quarterIntervals } from './model/quarters';
 import { dayIntervals } from './model/days';
 import { DaySelector, DaysRemaining } from './days';
 import { intervalsWhollyAfterDate, OrderedIntervals } from './model/intervals';
+import { excludeWithWeekendOverlaps } from './model/exclusions';
 
 export const Clock = (props: { now: Date, quarterSpecification: QuarterSpecification }) => {
     const viewBox: ViewBox = {
@@ -31,7 +32,7 @@ export const Clock = (props: { now: Date, quarterSpecification: QuarterSpecifica
     const currentQuarter = quarterIntervalForDate(props.now, props.quarterSpecification)!;
     const daysInYear = dayIntervals(props.now.getFullYear(), props.quarterSpecification);
     const daysRemainingInYear: OrderedIntervals = {
-        intervals: intervalsWhollyAfterDate(daysInYear.intervals, props.now),
+        intervals: excludeWithWeekendOverlaps(intervalsWhollyAfterDate(daysInYear.intervals, props.now)),
         limits: daysInYear.limits
     };
 
