@@ -53,7 +53,7 @@ function DayRemaining(props: { interval: Interval, limits: Interval }) {
     const pathForInterval = (interval: Interval): string => {
         return arcGenerator({
             innerRadius: guides.outerRadius / 3,
-            outerRadius: guides.gutterRadius,
+            outerRadius: guides.gutterRadius * 0.9,
             startAngle: timeScale(interval.start),
             endAngle: timeScale(interval.end)
         })!;
