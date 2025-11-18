@@ -51,9 +51,9 @@ export const Clock = (props: { now: Date, quarterSpecification: QuarterSpecifica
             <GutterIntervalNames intervals={monthsInYear} />
             <Quarters intervals={quartersInYear} />
             <CurrentQuarter currentQuarter={currentQuarter} intervals={quartersInYear} />
-            <Hand now={nowInYear} />
             <DaysRemaining intervals={daysRemainingInYear} />
             <DaySelector intervals={daysInYear} />
+            <Hand now={nowInYear} />
             <GuidesVisualisation showGuides={showGuides()} />
         </GuidesProvider>
     </svg>);

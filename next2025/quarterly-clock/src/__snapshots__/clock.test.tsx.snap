@@ -296,24 +296,6 @@ exports[`when end of year 1`] = `
       />
     </g>
     <g
-      class="hand"
-    >
-      <circle
-        cx="0"
-        cy="0"
-        r="22.8"
-      />
-      <line
-        stroke-width="9.12"
-        transform="rotate(359.99998859589044)"
-        x1="0"
-        x2="0"
-        y1="0"
-        y2="-456"
-      />
-      
-    </g>
-    <g
       class="day-remaining"
     />
     <g
@@ -1781,6 +1763,24 @@ exports[`when end of year 1`] = `
       />
     </g>
     <g
+      class="hand"
+    >
+      <circle
+        cx="0"
+        cy="0"
+        r="22.8"
+      />
+      <line
+        stroke-width="9.12"
+        transform="rotate(359.99998859589044)"
+        x1="0"
+        x2="0"
+        y1="0"
+        y2="-456"
+      />
+      
+    </g>
+    <g
       class="guides disabled"
     >
       <circle
@@ -2109,24 +2109,6 @@ exports[`when mid year 1`] = `
         fill="rgb(204, 121, 167)"
         stroke="white"
       />
-    </g>
-    <g
-      class="hand"
-    >
-      <circle
-        cx="0"
-        cy="0"
-        r="22.8"
-      />
-      <line
-        stroke-width="9.12"
-        transform="rotate(178.02739726591918)"
-        x1="0"
-        x2="0"
-        y1="0"
-        y2="-456"
-      />
-      
     </g>
     <g
       class="day-remaining"
@@ -4515,6 +4497,24 @@ exports[`when mid year 1`] = `
         class="unselected"
         d="M-7.849,-455.932A456,456,0,0,1,0,-456L0,-160A160,160,0,0,0,-2.754,-159.976Z"
       />
+    </g>
+    <g
+      class="hand"
+    >
+      <circle
+        cx="0"
+        cy="0"
+        r="22.8"
+      />
+      <line
+        stroke-width="9.12"
+        transform="rotate(178.02739726591918)"
+        x1="0"
+        x2="0"
+        y1="0"
+        y2="-456"
+      />
+      
     </g>
     <g
       class="guides disabled"
@@ -4847,24 +4847,6 @@ exports[`when start of year 1`] = `
       />
     </g>
     <g
-      class="hand"
-    >
-      <circle
-        cx="0"
-        cy="0"
-        r="22.8"
-      />
-      <line
-        stroke-width="9.12"
-        transform="rotate(0)"
-        x1="0"
-        x2="0"
-        y1="0"
-        y2="-456"
-      />
-      
-    </g>
-    <g
       class="day-remaining"
     >
       <path
@@ -8156,6 +8138,24 @@ exports[`when start of year 1`] = `
         class="unselected"
         d="M-7.849,-455.932A456,456,0,0,1,0,-456L0,-160A160,160,0,0,0,-2.754,-159.976Z"
       />
+    </g>
+    <g
+      class="hand"
+    >
+      <circle
+        cx="0"
+        cy="0"
+        r="22.8"
+      />
+      <line
+        stroke-width="9.12"
+        transform="rotate(0)"
+        x1="0"
+        x2="0"
+        y1="0"
+        y2="-456"
+      />
+      
     </g>
     <g
       class="guides disabled"
