@@ -1763,6 +1763,18 @@ exports[`when end of year 1`] = `
       />
     </g>
     <g
+      class="current-quarter-label"
+    >
+      <text
+        fill="rgb(0, 158, 115)"
+        style="font-size: 192px; dominant-baseline: text-bottom; text-anchor: left;"
+        x="168"
+        y="0"
+      >
+        Q4
+      </text>
+    </g>
+    <g
       class="hand"
     >
       <circle
@@ -4237,6 +4249,18 @@ exports[`when mid year 1`] = `
         class="unselected"
         d="M-7.849,-455.932A456,456,0,0,1,0,-456L0,-160A160,160,0,0,0,-2.754,-159.976Z"
       />
+    </g>
+    <g
+      class="current-quarter-label"
+    >
+      <text
+        fill="rgb(204, 121, 167)"
+        style="font-size: 192px; dominant-baseline: text-bottom; text-anchor: left;"
+        x="-432"
+        y="0"
+      >
+        Q2
+      </text>
     </g>
     <g
       class="hand"
@@ -7358,6 +7382,18 @@ exports[`when start of year 1`] = `
         class="unselected"
         d="M-7.849,-455.932A456,456,0,0,1,0,-456L0,-160A160,160,0,0,0,-2.754,-159.976Z"
       />
+    </g>
+    <g
+      class="current-quarter-label"
+    >
+      <text
+        fill="rgb(240, 228, 66)"
+        style="font-size: 192px; dominant-baseline: text-bottom; text-anchor: left;"
+        x="-432"
+        y="0"
+      >
+        Q1
+      </text>
     </g>
     <g
       class="hand"

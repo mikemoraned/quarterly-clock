@@ -8,7 +8,7 @@ import { Intervals } from './intervals';
 import { GutterIntervalNames } from './gutter-names';
 import { QuarterSpecification } from './model/quarterSpecification';
 import { Hand } from './hand';
-import { CurrentQuarter, Quarters } from './quarters';
+import { CurrentQuarter, CurrentQuarterLabel, Quarters } from './quarters';
 import { quarterIntervalForDate, quarterIntervals } from './model/quarters';
 import { dayIntervals } from './model/days';
 import { DaySelector, DaysRemaining } from './days';
@@ -54,6 +54,7 @@ export const Clock = (props: { now: Date, quarterSpecification: QuarterSpecifica
             <CurrentQuarter currentQuarter={currentQuarter} intervals={quartersInYear} />
             <DaysRemaining intervals={daysRemainingInYear} />
             <DaySelector intervals={daysInYear} />
+            <CurrentQuarterLabel currentQuarter={currentQuarter} intervals={quartersInYear} />
             <Hand now={nowInYear} />
             <GuidesVisualisation showGuides={showGuides()} />
         </GuidesProvider>
