@@ -5,6 +5,7 @@ use tower_http::{trace::TraceLayer};
 use tower::ServiceBuilder;
 use tracing::{error, info};
 use std::time::Duration;
+use preview::cleanup;
 
 #[derive(Clone, Debug)]
 struct AppState {
@@ -80,7 +81,6 @@ fn grab_screenshot(url: &str) -> Result<Png, Box<dyn std::error::Error>> {
     Ok(Png(png_data))
 }
 
-
 #[tokio::main]
 async fn main() -> std::io::Result<()> {
     std::env::set_var("RUST_BACKTRACE", "1");
@@ -88,6 +88,25 @@ async fn main() -> std::io::Result<()> {
     println!("setting up logging, next message should be from log (if log-level set to INFO)");
     tracing_subscriber::fmt::init();
     info!("logging setup completed");
+
+    let cleanup_mode = match std::env::var("CLEANUP_MODE").ok().as_deref() {
+        Some("watch") => Some(cleanup::CleanupMode::Watch),
+        Some("delete") => Some(cleanup::CleanupMode::Delete),
+        _ => None,
+    };
+
+    if let Some(mode) = cleanup_mode {
+        info!("starting tmp cleanup task in {:?} mode", mode);
+        tokio::spawn(async move {
+            let mut interval = tokio::time::interval(cleanup::TMP_MAX_AGE);
+            loop {
+                interval.tick().await;
+                cleanup::cleanup_tmp(mode).await;
+            }
+        });
+    } else {
+        info!("tmp cleanup task disabled");
+    }
 
     let state = AppState::from_env();
     info!("Using state: {:?}", state);

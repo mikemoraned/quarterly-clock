@@ -24,7 +24,11 @@ If you then go to `http://localhost:8080/screenshot.png` you should see a screen
 
 If you want to override the url fetched, you can set `APP_URL`:
 
-    APP_URL=https://example.com cargo run --bin server 
+    APP_URL=https://example.com cargo run --bin server
+
+If you want to get to delete tmp files that may be left around then you can define a `CLEANUP_MODE` which is either:
+* `watch`: just log out files it would delete
+* `delete`: actually delete them
 
 ## Running locally in Docker
 
