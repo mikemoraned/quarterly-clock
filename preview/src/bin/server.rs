@@ -105,7 +105,7 @@ async fn cleanup_tmp(mode: CleanupMode) {
     };
 
     for f in &files {
-        info!("tmp file: {}, age: {:?}", f.file_name, f.age(now));
+        info!("tmp file: {}, used age: {:?}", f.file_name, f.used_age(now));
     }
 
     let stale = match cleanup::old_files_with_prefix(files, TMP_PREFIX, TMP_MAX_AGE, now) {

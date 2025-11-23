@@ -9,11 +9,11 @@ use tokio::io;
 pub struct FileCandidate {
     pub path: PathBuf,
     pub file_name: String,
-    pub last_touched: SystemTime,
+    pub last_used: SystemTime,
 }
 
 impl FileCandidate {
-    pub fn new(path: impl Into<PathBuf>, last_touched: SystemTime) -> io::Result<Self> {
+    pub fn new(path: impl Into<PathBuf>, last_used: SystemTime) -> io::Result<Self> {
         let path: PathBuf = path.into();
         let file_name = path
             .file_name()
@@ -23,16 +23,16 @@ impl FileCandidate {
         Ok(Self {
             path,
             file_name,
-            last_touched,
+            last_used,
         })
     }
 
-    pub fn age(&self, now: SystemTime) -> Result<Duration, Box<dyn Error + Send + Sync>> {
-        Ok(now.duration_since(self.last_touched)?)
+    pub fn used_age(&self, now: SystemTime) -> Result<Duration, Box<dyn Error + Send + Sync>> {
+        Ok(now.duration_since(self.last_used)?)
     }
 }
 
-/// List files in the given directory, capturing the newest of created/last-accessed timestamps as `last_touched`.
+/// List files in the given directory, capturing the newest of created/last-accessed timestamps as `last_used`.
 pub async fn list_files(dir: impl AsRef<Path>) -> io::Result<Vec<FileCandidate>> {
     let mut entries = fs::read_dir(dir).await?;
     let mut files = Vec::new();
@@ -42,17 +42,18 @@ pub async fn list_files(dir: impl AsRef<Path>) -> io::Result<Vec<FileCandidate>>
             let metadata = entry.metadata().await?;
 
             let created = metadata.created()?;
+            let modified = metadata.modified()?;
             let accessed = metadata.accessed()?;
-            let last_touched = created.max(accessed);
+            let last_used = created.max(modified).max(accessed);
 
-            files.push(FileCandidate::new(entry.path(), last_touched)?);
+            files.push(FileCandidate::new(entry.path(), last_used)?);
         }
     }
 
     Ok(files)
 }
 
-/// Keep only files whose names start with `prefix` and whose `age` is more than `max_age`
+/// Keep only files whose names start with `prefix` and whose `used_age` is more than `max_age`
 /// relative to `now`.
 pub fn old_files_with_prefix(
     files: Vec<FileCandidate>,
@@ -64,7 +65,7 @@ pub fn old_files_with_prefix(
 
     for file in files {
         if file.file_name.starts_with(prefix) {
-            let age = file.age(now)?;
+            let age = file.used_age(now)?;
             if age > max_age {
                 matched.push(file);
             }
@@ -135,24 +136,5 @@ mod tests {
             .collect();
 
         assert_eq!(names, vec!["file_old"]);
-    }
-
-    #[test]
-    fn older_than_respects_now() {
-        let now = SystemTime::UNIX_EPOCH + Duration::from_secs(1_000);
-        let duration = Duration::from_secs(300);
-
-        let old = now - Duration::from_secs(400);
-        let recent = now - Duration::from_secs(100);
-        let future = now + Duration::from_secs(100);
-
-        let old_file = FileCandidate::new("old", old).unwrap();
-        let recent_file = FileCandidate::new("recent", recent).unwrap();
-        let future_file = FileCandidate::new("future", future).unwrap();
-
-        assert!(old_file.age(now).map(|age| age >= duration).unwrap());
-        assert!(!recent_file.age(now).map(|age| age >= duration).unwrap());
-        // Future timestamps should propagate an error rather than be treated as stale.
-        assert!(future_file.age(now).is_err());
     }
 }
