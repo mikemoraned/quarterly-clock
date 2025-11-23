@@ -3,19 +3,9 @@ use bytes::Bytes;
 use headless_chrome::{Browser, LaunchOptionsBuilder};
 use tower_http::{trace::TraceLayer};
 use tower::ServiceBuilder;
-use tracing::{error, info, warn};
-use std::time::{Duration, SystemTime};
+use tracing::{error, info};
+use std::time::Duration;
 use preview::cleanup;
-
-const TMP_MAX_AGE: Duration = Duration::from_secs(1 * 60);
-const TMP_DIR: &str = "/tmp";
-const TMP_PREFIX: &str = "rust-headless-chrome";
-
-#[derive(Clone, Copy, Debug)]
-enum CleanupMode {
-    Watch,
-    Delete,
-}
 
 #[derive(Clone, Debug)]
 struct AppState {
@@ -91,57 +81,6 @@ fn grab_screenshot(url: &str) -> Result<Png, Box<dyn std::error::Error>> {
     Ok(Png(png_data))
 }
 
-async fn cleanup_tmp(mode: CleanupMode) {
-    info!("starting tmp cleanup ({mode:?})");
-
-    let now = SystemTime::now();
-
-    let files = match cleanup::list_files(TMP_DIR).await {
-        Ok(files) => files,
-        Err(err) => {
-            warn!("tmp cleanup: failed to list files: {err}");
-            return;
-        }
-    };
-
-    for f in &files {
-        info!("tmp file: {}, used age: {:?}", f.file_name, f.used_age(now));
-    }
-
-    let stale = match cleanup::old_files_with_prefix(files, TMP_PREFIX, TMP_MAX_AGE, now) {
-        Ok(stale) => stale,
-        Err(err) => {
-            warn!("tmp cleanup: failed to filter stale files: {err}");
-            return;
-        }
-    };
-
-    if stale.is_empty() {
-        info!("tmp cleanup: no stale files matched criteria");
-    }
-
-    match mode {
-        CleanupMode::Watch => {
-            for file in stale {
-                info!("tmp cleanup (watch): would delete {:?}", file.path);
-            }
-        }
-        CleanupMode::Delete => {
-            info!("tmp cleanup: deleting {} stale files", stale.len());
-            let results = cleanup::delete_files(stale).await;
-            for (path, outcome) in results {
-                match outcome {
-                    Ok(()) => info!("tmp cleanup: deleted {:?}", path),
-                    Err(err) => warn!("tmp cleanup: failed to delete {:?}: {err}", path),
-                }
-            }
-        }
-    }
-
-    info!("tmp cleanup completed");
-}
-
-
 #[tokio::main]
 async fn main() -> std::io::Result<()> {
     std::env::set_var("RUST_BACKTRACE", "1");
@@ -151,18 +90,18 @@ async fn main() -> std::io::Result<()> {
     info!("logging setup completed");
 
     let cleanup_mode = match std::env::var("CLEANUP_MODE").ok().as_deref() {
-        Some("watch") => Some(CleanupMode::Watch),
-        Some("delete") => Some(CleanupMode::Delete),
+        Some("watch") => Some(cleanup::CleanupMode::Watch),
+        Some("delete") => Some(cleanup::CleanupMode::Delete),
         _ => None,
     };
 
     if let Some(mode) = cleanup_mode {
         info!("starting tmp cleanup task in {:?} mode", mode);
         tokio::spawn(async move {
-            let mut interval = tokio::time::interval(TMP_MAX_AGE);
+            let mut interval = tokio::time::interval(cleanup::TMP_MAX_AGE);
             loop {
                 interval.tick().await;
-                cleanup_tmp(mode).await;
+                cleanup::cleanup_tmp(mode).await;
             }
         });
     } else {

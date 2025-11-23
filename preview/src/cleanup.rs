@@ -2,8 +2,70 @@ use std::error::Error;
 use std::path::{Path, PathBuf};
 use std::time::{Duration, SystemTime};
 
+use tracing::{info, warn};
+
 use tokio::fs;
 use tokio::io;
+
+pub const TMP_MAX_AGE: Duration = Duration::from_secs(60);
+const TMP_DIR: &str = "/tmp";
+const TMP_PREFIX: &str = "rust-headless-chrome";
+
+#[derive(Clone, Copy, Debug)]
+pub enum CleanupMode {
+    Watch,
+    Delete,
+}
+
+pub async fn cleanup_tmp(mode: CleanupMode) {
+    info!("starting tmp cleanup ({mode:?})");
+
+    let now = SystemTime::now();
+
+    let files = match list_files(TMP_DIR).await {
+        Ok(files) => files,
+        Err(err) => {
+            warn!("tmp cleanup: failed to list files: {err}");
+            return;
+        }
+    };
+
+    for f in &files {
+        info!("tmp file: {}, used age: {:?}", f.file_name, f.used_age(now));
+    }
+
+    let stale = match old_files_with_prefix(files, TMP_PREFIX, TMP_MAX_AGE, now) {
+        Ok(stale) => stale,
+        Err(err) => {
+            warn!("tmp cleanup: failed to filter stale files: {err}");
+            return;
+        }
+    };
+
+    if stale.is_empty() {
+        info!("tmp cleanup: no stale files matched criteria");
+    }
+
+    match mode {
+        CleanupMode::Watch => {
+            for file in stale {
+                info!("tmp cleanup (watch): would delete {:?}", file.path);
+            }
+        }
+        CleanupMode::Delete => {
+            info!("tmp cleanup: deleting {} stale files", stale.len());
+            let results = delete_files(stale).await;
+            for (path, outcome) in results {
+                match outcome {
+                    Ok(()) => info!("tmp cleanup: deleted {:?}", path),
+                    Err(err) => warn!("tmp cleanup: failed to delete {:?}: {err}", path),
+                }
+            }
+        }
+    }
+
+    info!("tmp cleanup completed");
+}
 
 #[derive(Debug, Clone)]
 pub struct FileCandidate {
