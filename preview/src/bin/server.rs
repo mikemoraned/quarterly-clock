@@ -3,8 +3,9 @@ use bytes::Bytes;
 use headless_chrome::{Browser, LaunchOptionsBuilder};
 use tower_http::{trace::TraceLayer};
 use tower::ServiceBuilder;
-use tracing::{error, info};
-use std::time::Duration;
+use tracing::{error, info, warn};
+use std::time::{Duration, SystemTime};
+use preview::cleanup;
 
 #[derive(Clone, Debug)]
 struct AppState {
@@ -80,6 +81,53 @@ fn grab_screenshot(url: &str) -> Result<Png, Box<dyn std::error::Error>> {
     Ok(Png(png_data))
 }
 
+const TMP_MAX_AGE: Duration = Duration::from_secs(60);
+const TMP_DIR: &str = "/tmp";
+const PREFIX: &str = "rust-headless-chrome";
+
+async fn cleanup_tmp() {
+    info!("starting tmp cleanup");
+
+    let now = SystemTime::now();
+
+    let files = match cleanup::list_files(TMP_DIR).await {
+        Ok(files) => files,
+        Err(err) => {
+            warn!("tmp cleanup: failed to list files: {err}");
+            return;
+        }
+    };
+
+    for f in &files {
+        info!("tmp file: {}, age: {:?}", f.file_name, f.age(now));
+    }
+
+    let stale = match cleanup::old_files_with_prefix(files, PREFIX, TMP_MAX_AGE, now) {
+        Ok(stale) => stale,
+        Err(err) => {
+            warn!("tmp cleanup: failed to filter stale files: {err}");
+            return;
+        }
+    };
+
+    if stale.is_empty() {
+        info!("tmp cleanup: no stale files to delete");
+    }
+    else {
+        info!("tmp cleanup: {} stale files to delete", stale.len());
+
+        let results = cleanup::delete_files(stale).await;
+        for (path, outcome) in results {
+            match outcome {
+                Ok(()) => info!("tmp cleanup: deleted {:?}", path),
+                Err(err) => warn!("tmp cleanup: failed to delete {:?}: {err}", path),
+            }
+        }
+    }
+
+    info!("tmp cleanup completed");
+}
+
 
 #[tokio::main]
 async fn main() -> std::io::Result<()> {
@@ -88,6 +136,20 @@ async fn main() -> std::io::Result<()> {
     println!("setting up logging, next message should be from log (if log-level set to INFO)");
     tracing_subscriber::fmt::init();
     info!("logging setup completed");
+
+    if std::env::var("CLEANUP_TMP").as_deref() == Ok("true") {
+        info!("starting tmp cleanup task");
+        tokio::spawn(async {
+            let mut interval = tokio::time::interval(TMP_MAX_AGE);
+            loop {
+                interval.tick().await;
+                cleanup_tmp().await;
+            }
+        });
+    }
+    else {
+        info!("tmp cleanup task disabled");
+    }
 
     let state = AppState::from_env();
     info!("Using state: {:?}", state);
