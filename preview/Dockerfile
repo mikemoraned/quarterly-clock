@@ -61,6 +61,6 @@ ARG RUST_LOG=info
 ENV RUST_LOG=$RUST_LOG
 ARG APP_URL=https://quarterly.houseofmoran.io/
 ENV APP_URL=$APP_URL
-ENV CLEANUP_MODE=watch
+ENV CLEANUP_MODE=delete
 
 ENTRYPOINT ["./server"]
