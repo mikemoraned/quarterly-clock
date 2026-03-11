@@ -36,9 +36,10 @@ Behind-the-scenes:
             * this should be made generic-enough to support display any available days
             * [x] show weekends as not available
     * [x] current Day hand
-* [x] support yearStartMonth cleanly
+* [ ] support yearStartMonth cleanly
     * [x] add support in model for starting a month sequence that isn't start of year
     * [x] parse from params
     * [x] derive quarters from it
         * [x] yearStartMonth should always be at exact North
+    * [ ] handle quarters that come from previous year e.g. if a quarter starts on July 1st then current year contains Q3,Q4 from previous year and Q1, Q2 from current year
 * [ ] ...

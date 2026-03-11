@@ -29,12 +29,31 @@ export function quarterIntervals(year: number, quarterSpecification: QuarterSpec
     };
 }
 
+export function quarterIntervalsContainedInYear(year: number, quarterSpecification: QuarterSpecification): OrderedIntervals {
+    const minDate = new Date(year, 0, 1);
+    const maxDate = add(minDate, { months: 12 });
+
+    const searchArea = quarterIntervals(year - 1, quarterSpecification).intervals.concat(quarterIntervals(year, quarterSpecification).intervals);
+
+    const found: Interval[] = [];
+    for (const quarter of searchArea) {
+        if (minDate <= quarter.start && quarter.end <= maxDate) {
+            found.push(quarter);
+        }
+    }
+    return {
+        limits: {
+            start: found[0].start,
+            end: found[found.length - 1].end
+        },
+        intervals: found
+    };
+}
+
 export function quarterIntervalForDate(date: Date, quarterSpecification: QuarterSpecification): Interval | undefined {
-    console.log("quarterSpecification", quarterSpecification);
     const year = date.getFullYear();
     // the current date may be in a quarter from a previous year, so we include that in our search
     const quarters = quarterIntervals(year - 1, quarterSpecification).intervals.concat(quarterIntervals(year, quarterSpecification).intervals);
-    console.log("quarters", quarters);
     for (const quarter of quarters) {
         if (date >= quarter.start && date <= quarter.end) {
             return quarter;

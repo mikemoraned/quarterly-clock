@@ -9,7 +9,7 @@ import { GutterIntervalNames } from './gutter-names';
 import { QuarterSpecification } from './model/quarterSpecification';
 import { Hand } from './hand';
 import { CurrentQuarter, CurrentQuarterLabel, Quarters } from './quarters';
-import { quarterIntervalForDate, quarterIntervals } from './model/quarters';
+import { quarterIntervalForDate, quarterIntervalsContainedInYear } from './model/quarters';
 import { dayIntervals } from './model/days';
 import { DaySelector, DaysRemaining } from './days';
 import { intervalsWhollyAfterDate, intervalsWithinInterval, OrderedIntervals } from './model/intervals';
@@ -28,9 +28,10 @@ export const Clock = (props: { now: Date, quarterSpecification: QuarterSpecifica
 
     const monthsInYear = monthIntervals(props.now.getFullYear(), props.quarterSpecification);
     const nowInYear = createDateWithinInterval(props.now, monthsInYear.limits);
-    const quartersInYear = quarterIntervals(props.now.getFullYear(), props.quarterSpecification);
+    const quartersInYear = quarterIntervalsContainedInYear(props.now.getFullYear(), props.quarterSpecification);
     const currentQuarter = quarterIntervalForDate(props.now, props.quarterSpecification)!;
 
+    console.log("quartersInYear", quartersInYear);
     console.log("currentQuarter", currentQuarter);
 
     const daysInYear = dayIntervals(props.now.getFullYear(), props.quarterSpecification);
@@ -62,7 +63,7 @@ export const Clock = (props: { now: Date, quarterSpecification: QuarterSpecifica
             <Quarters intervals={quartersInYear} />
             <CurrentQuarter currentQuarter={currentQuarter} intervals={quartersInYear} />
             <DaysRemaining intervals={daysRemainingInCurrentQuarter} />
-            <DaySelector intervals={daysInYear} />
+            {/* <DaySelector intervals={daysInYear} /> */}
             <CurrentQuarterLabel currentQuarter={currentQuarter} intervals={quartersInYear} />
             <Hand now={nowInYear} />
             <GuidesVisualisation showGuides={showGuides()} />

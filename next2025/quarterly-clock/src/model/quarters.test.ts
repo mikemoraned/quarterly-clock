@@ -1,7 +1,7 @@
 import { describe, expect, test } from "vitest";
 import { QuarterSpecification } from "./quarterSpecification";
 import { Interval } from "./intervals";
-import { quarterIntervalForDate, quarterIntervals, quarterStarts } from "./quarters";
+import { quarterIntervalForDate, quarterIntervals, quarterIntervalsContainedInYear, quarterStarts } from "./quarters";
 
 describe("calendar year is 2021, and quarters start on January 1st", () => {
     const quarterSpecification = QuarterSpecification.default();
@@ -22,6 +22,55 @@ describe("calendar year is 2021, and quarters start on January 1st", () => {
             { start: new Date(2021, 3, 1, 0, 0, 0, 0), end: new Date(2021, 5, 30, 23, 59, 59, 999), name: "Q2" },
             { start: new Date(2021, 6, 1, 0, 0, 0, 0), end: new Date(2021, 8, 30, 23, 59, 59, 999), name: "Q3" },
             { start: new Date(2021, 9, 1, 0, 0, 0, 0), end: new Date(2021, 11, 31, 23, 59, 59, 999), name: "Q4" },
+        ];
+        expectEqualIntervals(expectedIntervals, intervals.intervals);
+        expect(intervals.limits).toEqual({ start: new Date(2021, 0, 1, 0, 0, 0, 0), end: new Date(2021, 11, 31, 23, 59, 59, 999) });
+    });
+    test("quarter intervals covering year", () => {
+        const intervals = quarterIntervalsContainedInYear(2021, quarterSpecification);
+        const expectedIntervals = [
+            { start: new Date(2021, 0, 1, 0, 0, 0, 0), end: new Date(2021, 2, 31, 23, 59, 59, 999), name: "Q1" },
+            { start: new Date(2021, 3, 1, 0, 0, 0, 0), end: new Date(2021, 5, 30, 23, 59, 59, 999), name: "Q2" },
+            { start: new Date(2021, 6, 1, 0, 0, 0, 0), end: new Date(2021, 8, 30, 23, 59, 59, 999), name: "Q3" },
+            { start: new Date(2021, 9, 1, 0, 0, 0, 0), end: new Date(2021, 11, 31, 23, 59, 59, 999), name: "Q4" },
+        ];
+        expectEqualIntervals(expectedIntervals, intervals.intervals);
+        expect(intervals.limits).toEqual({ start: new Date(2021, 0, 1, 0, 0, 0, 0), end: new Date(2021, 11, 31, 23, 59, 59, 999) });
+    });
+});
+
+describe("calendar year is 2021, and quarters start on Feb 1st", () => {
+    const quarterSpecification = new QuarterSpecification(1);
+    test("quarter starts", () => {
+        const starts = quarterStarts(2021, quarterSpecification);
+        const expected = [
+            new Date(2021, 1, 1, 0, 0, 0, 0),
+            new Date(2021, 4, 1, 0, 0, 0, 0),
+            new Date(2021, 7, 1, 0, 0, 0, 0),
+            new Date(2021, 10, 1, 0, 0, 0, 0),
+        ];
+        expect(starts).toEqual(expected);
+    });
+    test("quarter intervals", () => {
+        const intervals = quarterIntervals(2021, quarterSpecification);
+        const expectedIntervals = [
+            { start: new Date(2021, 1, 1, 0, 0, 0, 0), end: new Date(2021, 3, 31, 23, 59, 59, 999), name: "Q1" },
+            { start: new Date(2021, 4, 1, 0, 0, 0, 0), end: new Date(2021, 6, 30, 23, 59, 59, 999), name: "Q2" },
+            { start: new Date(2021, 7, 1, 0, 0, 0, 0), end: new Date(2021, 9, 30, 23, 59, 59, 999), name: "Q3" },
+            { start: new Date(2021, 10, 1, 0, 0, 0, 0), end: new Date(2022, 0, 31, 23, 59, 59, 999), name: "Q4" },
+        ];
+        expectEqualIntervals(expectedIntervals, intervals.intervals);
+        expect(intervals.limits).toEqual({ start: new Date(2021, 1, 1, 0, 0, 0, 0), end: new Date(2022, 0, 31, 23, 59, 59, 999) });
+    });
+    test("quarter intervals covering year", () => {
+        const intervals = quarterIntervalsContainedInYear(2021, quarterSpecification);
+        const expectedIntervals = [
+            // 5 quarters???
+            { start: new Date(2021, 0, 1, 0, 0, 0, 0), end: new Date(2021, 0, 31, 23, 59, 59, 999), name: "Q4" },
+            { start: new Date(2021, 1, 1, 0, 0, 0, 0), end: new Date(2021, 3, 31, 23, 59, 59, 999), name: "Q1" },
+            { start: new Date(2021, 4, 1, 0, 0, 0, 0), end: new Date(2021, 6, 30, 23, 59, 59, 999), name: "Q2" },
+            { start: new Date(2021, 7, 1, 0, 0, 0, 0), end: new Date(2021, 9, 30, 23, 59, 59, 999), name: "Q3" },
+            { start: new Date(2021, 10, 1, 0, 0, 0, 0), end: new Date(2021, 11, 31, 23, 59, 59, 999), name: "Q4" },
         ];
         expectEqualIntervals(expectedIntervals, intervals.intervals);
         expect(intervals.limits).toEqual({ start: new Date(2021, 0, 1, 0, 0, 0, 0), end: new Date(2021, 11, 31, 23, 59, 59, 999) });
@@ -50,6 +99,17 @@ describe("calendar year is 2021, and quarters start on July 1st", () => {
         ];
         expectEqualIntervals(expectedIntervals, intervals.intervals);
         expect(intervals.limits).toEqual({ start: new Date(2021, 6, 1, 0, 0, 0, 0), end: new Date(2022, 5, 30, 23, 59, 59, 999) });
+    });
+    test("quarter intervals covering year", () => {
+        const intervals = quarterIntervalsContainedInYear(2021, quarterSpecification);
+        const expectedIntervals = [
+            { start: new Date(2021, 0, 1, 0, 0, 0, 0), end: new Date(2021, 2, 31, 23, 59, 59, 999), name: "Q3" },
+            { start: new Date(2021, 3, 1, 0, 0, 0, 0), end: new Date(2021, 5, 30, 23, 59, 59, 999), name: "Q4" },
+            { start: new Date(2021, 6, 1, 0, 0, 0, 0), end: new Date(2021, 8, 30, 23, 59, 59, 999), name: "Q1" },
+            { start: new Date(2021, 9, 1, 0, 0, 0, 0), end: new Date(2021, 11, 31, 23, 59, 59, 999), name: "Q2" },
+        ];
+        expectEqualIntervals(expectedIntervals, intervals.intervals);
+        expect(intervals.limits).toEqual({ start: new Date(2021, 0, 1, 0, 0, 0, 0), end: new Date(2021, 11, 31, 23, 59, 59, 999) });
     });
 });
 
