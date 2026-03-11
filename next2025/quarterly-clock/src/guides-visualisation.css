@@ -1,0 +1,19 @@
+g.guides.enabled circle {
+    fill: none;
+    stroke: red;
+    stroke-width: 3px;
+}
+
+g.guides.disabled circle {
+    display: none;
+}
+
+g.guides.enabled line {
+    stroke: red;
+    stroke-width: 3px;
+    stroke-dasharray: 4;
+}
+
+g.guides.disabled line {
+    display: none;
+}

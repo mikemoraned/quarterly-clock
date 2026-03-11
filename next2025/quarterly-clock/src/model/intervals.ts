@@ -1,0 +1,30 @@
+export type DateWithinInterval = {
+    date: Date;
+    interval: Interval
+};
+
+export type Interval = {
+    start: Date;
+    end: Date;
+    name?: string;
+};
+
+export type OrderedIntervals = {
+    limits: Interval
+    intervals: Interval[];
+}
+
+export function midpointOfInterval(interval: Interval): Date {
+    return new Date((interval.start.getTime() + interval.end.getTime()) / 2);
+}
+
+export function intervalsWhollyAfterDate(intervals: Interval[], date: Date): Interval[] {
+    return intervals.filter(interval => interval.start >= date);
+}
+
+export function intervalsWithinInterval(orderedIntervals: OrderedIntervals, bounds: Interval): OrderedIntervals {
+    const intervals = orderedIntervals.intervals.filter(
+        interval => interval.start >= bounds.start && interval.end <= bounds.end
+    );
+    return { intervals, limits: bounds };
+}

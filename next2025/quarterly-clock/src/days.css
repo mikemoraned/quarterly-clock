@@ -1,0 +1,11 @@
+g.day-selector path.unselected {
+    fill: black;
+    stroke-width: 1px;
+    opacity: 0.01;
+}
+
+g.day-selector path.selected {
+    fill: black;
+    stroke: white;
+    stroke-width: 1px;
+}
