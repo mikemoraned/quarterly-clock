@@ -21,3 +21,10 @@ export function midpointOfInterval(interval: Interval): Date {
 export function intervalsWhollyAfterDate(intervals: Interval[], date: Date): Interval[] {
     return intervals.filter(interval => interval.start >= date);
 }
+
+export function intervalsWithinInterval(orderedIntervals: OrderedIntervals, bounds: Interval): OrderedIntervals {
+    const intervals = orderedIntervals.intervals.filter(
+        interval => interval.start >= bounds.start && interval.end <= bounds.end
+    );
+    return { intervals, limits: bounds };
+}

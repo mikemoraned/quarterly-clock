@@ -12,7 +12,7 @@ import { CurrentQuarter, CurrentQuarterLabel, Quarters } from './quarters';
 import { quarterIntervalForDate, quarterIntervals } from './model/quarters';
 import { dayIntervals } from './model/days';
 import { DaySelector, DaysRemaining } from './days';
-import { intervalsWhollyAfterDate, OrderedIntervals } from './model/intervals';
+import { intervalsWhollyAfterDate, intervalsWithinInterval, OrderedIntervals } from './model/intervals';
 import { excludeWithWeekendOverlaps } from './model/exclusions';
 
 export const Clock = (props: { now: Date, quarterSpecification: QuarterSpecification }) => {
@@ -30,11 +30,20 @@ export const Clock = (props: { now: Date, quarterSpecification: QuarterSpecifica
     const nowInYear = createDateWithinInterval(props.now, monthsInYear.limits);
     const quartersInYear = quarterIntervals(props.now.getFullYear(), props.quarterSpecification);
     const currentQuarter = quarterIntervalForDate(props.now, props.quarterSpecification)!;
+
+    console.log("currentQuarter", currentQuarter);
+
     const daysInYear = dayIntervals(props.now.getFullYear(), props.quarterSpecification);
-    const daysRemainingInYear: OrderedIntervals = {
-        intervals: excludeWithWeekendOverlaps(intervalsWhollyAfterDate(daysInYear.intervals, props.now)),
+    const daysInCurrentQuarter = intervalsWithinInterval(daysInYear, currentQuarter);
+
+    console.log("daysInCurrentQuarter", daysInCurrentQuarter);
+
+    const daysRemainingInCurrentQuarter: OrderedIntervals = {
+        intervals: excludeWithWeekendOverlaps(intervalsWhollyAfterDate(daysInCurrentQuarter.intervals, props.now)),
         limits: daysInYear.limits
     };
+
+    console.log("daysRemainingInCurrentQuarter", daysRemainingInCurrentQuarter);
 
     return (<svg
         class="clock"
@@ -52,7 +61,7 @@ export const Clock = (props: { now: Date, quarterSpecification: QuarterSpecifica
             <GutterIntervalNames intervals={monthsInYear} />
             <Quarters intervals={quartersInYear} />
             <CurrentQuarter currentQuarter={currentQuarter} intervals={quartersInYear} />
-            <DaysRemaining intervals={daysRemainingInYear} />
+            <DaysRemaining intervals={daysRemainingInCurrentQuarter} />
             <DaySelector intervals={daysInYear} />
             <CurrentQuarterLabel currentQuarter={currentQuarter} intervals={quartersInYear} />
             <Hand now={nowInYear} />
