@@ -63,12 +63,11 @@ describe("quarter interval for dates, when quarters start on January 1st", () =>
     });
     test("a date after January", () => {
         // March is in Q1
-        const date = new Date(2021, 3, 1, 0, 0, 0, 0);
+        const date = new Date(2021, 2, 1, 0, 0, 0, 0);
         const quarter = quarterIntervalForDate(date, quarterSpecification);
         expect(quarter).toEqual({ start: new Date(2021, 0, 1, 0, 0, 0, 0), end: new Date(2021, 2, 31, 23, 59, 59, 999), name: "Q1" });
     });
 });
-
 
 describe("quarter interval for dates, when quarters start on July 1st", () => {
     const quarterSpecification = new QuarterSpecification(6);
